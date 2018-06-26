@@ -11,4 +11,5 @@
   * [2.06. Konfiguration der Nutzerverwaltung](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/README.md)
     * [2.6.1. OpenID Connect Authentifizierungs-Einstellungen](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/2.6.1.-openid-connect-authentifizierungs-einstellungen.md)
     * [2.6.2. Mail-Einstellungen](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/2.6.2.-mail-einstellungen.md)
+  * [2.07. Bild Optionen](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen.md)
 
