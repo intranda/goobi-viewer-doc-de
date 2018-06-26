@@ -1,4 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Dokumentation Goobi viewer](README.md)
+* [1. Einführung](1.-einfuehrung.md)
 
