@@ -39,4 +39,5 @@
     * [2.10.1. Erweiterte Suche](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.1.-erweiterte-suche.md)
     * [2.10.2. Jahressuche und Kalendereinstieg \(ab Goobi viewer 2.3\)](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.2.-jahressuche-und-kalendereinstieg-ab-goobi-viewer-2.3.md)
     * [2.10.3. Facettierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.3.-facettierung.md)
+    * [2.10.4. Sortierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.4.-sortierung.md)
 
