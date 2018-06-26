@@ -52,4 +52,5 @@
   * [2.14. PDF Download](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/README.md)
     * [2.14.1. Varianten](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/2.14.1.-varianten.md)
     * [2.14.2. Download Links](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/2.14.2.-download-links.md)
+  * [2.15. ePub Download](2.-konfiguration-des-goobi-viewers/2.15.-epub-download.md)
 
