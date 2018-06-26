@@ -8,5 +8,6 @@
   * [2.03. Überschreiben von Standard-Konfigurationsdateien](2.-konfiguration-des-goobi-viewers/2.03.-ueberschreiben-von-standard-konfigurationsdateien.md)
   * [2.04. Internationalisierung mittels messages\_\*.properties](2.-konfiguration-des-goobi-viewers/2.04.-internationalisierung-mittels-messages_-.properties.md)
   * [2.05. URL Konfiguration](2.-konfiguration-des-goobi-viewers/2.05.-url-konfiguration.md)
-  * [2.06. Konfiguration der Nutzerverwaltung](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung.md)
+  * [2.06. Konfiguration der Nutzerverwaltung](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/README.md)
+    * [2.6.1. OpenID Connect Authentifizierungs-Einstellungen](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/2.6.1.-openid-connect-authentifizierungs-einstellungen.md)
 
