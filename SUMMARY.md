@@ -28,4 +28,5 @@
     * [2.8.4. Sortierung der Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.4.-sortierung-der-kollektionen.md)
     * [2.8.5. Sortierung der Objekte in Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.5.-sortierung-der-objekte-in-kollektionen.md)
     * [2.8.6. Anzeige der Kollektionsgröße](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.6.-anzeige-der-kollektionsgroesse.md)
+    * [2.8.7. Weitere Einstellungen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.7.-weitere-einstellungen.md)
 
