@@ -29,5 +29,6 @@
     * [2.8.5. Sortierung der Objekte in Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.5.-sortierung-der-objekte-in-kollektionen.md)
     * [2.8.6. Anzeige der Kollektionsgröße](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.6.-anzeige-der-kollektionsgroesse.md)
     * [2.8.7. Weitere Einstellungen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.7.-weitere-einstellungen.md)
-  * [2.09. Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten.md)
+  * [2.09. Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/README.md)
+    * [2.9.1. Haupt-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.1.-haupt-metadaten.md)
 
