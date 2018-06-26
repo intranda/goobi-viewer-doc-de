@@ -47,4 +47,5 @@
   * [2.12. Inhaltsverzeichnisse](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/README.md)
     * [2.12.1. Konfiguration Inhaltsverzeichnis](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.1.-konfiguration-inhaltsverzeichnis.md)
     * [2.12.2. Konfiguration Seitenleisten-Inhaltsverzeichnis](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.2.-konfiguration-seitenleisten-inhaltsverzeichnis.md)
+    * [2.12.3. Herunterladen von Inhaltsverzeichnissen als PDF](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.3.-herunterladen-von-inhaltsverzeichnissen-als-pdf.md)
 
