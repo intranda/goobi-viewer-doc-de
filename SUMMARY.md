@@ -34,4 +34,5 @@
     * [2.9.2. Titelleisten-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.2.-titelleisten-metadaten.md)
     * [2.9.3. Suchtreffer-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.3.-suchtreffer-metadaten.md)
     * [2.9.4. Seitenleisten-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.4.-seitenleisten-metadaten.md)
+    * [2.9.5. Metadaten-Anzeige von musealen Objekten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.5.-metadaten-anzeige-von-musealen-objekten.md)
 
