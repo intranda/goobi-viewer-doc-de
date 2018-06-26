@@ -19,4 +19,5 @@
     * [2.7.5. Thumbnail Einstellungen](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.5.-thumbnail-einstellungen.md)
     * [2.7.6. Unbeschränkter Zugriff auf Thumbnails von zugriffsbeschränkten Bildern](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.6.-unbeschraenkter-zugriff-auf-thumbnails-von-zugriffsbeschraenkten-bildern.md)
     * [2.7.7. Bildspiegel](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.7.-bildspiegel.md)
+    * [2.7.8. Variable Bildspiegel](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.8.-variable-bildspiegel.md)
 
