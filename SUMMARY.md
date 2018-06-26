@@ -33,4 +33,5 @@
     * [2.9.1. Haupt-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.1.-haupt-metadaten.md)
     * [2.9.2. Titelleisten-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.2.-titelleisten-metadaten.md)
     * [2.9.3. Suchtreffer-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.3.-suchtreffer-metadaten.md)
+    * [2.9.4. Seitenleisten-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.4.-seitenleisten-metadaten.md)
 
