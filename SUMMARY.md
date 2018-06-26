@@ -31,4 +31,5 @@
     * [2.8.7. Weitere Einstellungen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.7.-weitere-einstellungen.md)
   * [2.09. Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/README.md)
     * [2.9.1. Haupt-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.1.-haupt-metadaten.md)
+    * [2.9.2. Titelleisten-Metadaten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.2.-titelleisten-metadaten.md)
 
