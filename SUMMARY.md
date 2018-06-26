@@ -16,4 +16,5 @@
     * [2.7.2. Konfiguration der Bildanzeige](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.2.-konfiguration-der-bildanzeige.md)
     * [2.7.3. Forcierte Bildformatkonversion \(ab Goobi viewer 2.3\)](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.3.-forcierte-bildformatkonversion-ab-goobi-viewer-2.3.md)
     * [2.7.4. Einschränkung der Bild Skalierung](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.4.-einschraenkung-der-bild-skalierung.md)
+    * [2.7.5. Thumbnail Einstellungen](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.5.-thumbnail-einstellungen.md)
 
