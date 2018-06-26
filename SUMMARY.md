@@ -7,4 +7,5 @@
   * [2.02. Corporate Design](2.-konfiguration-des-goobi-viewers/2.02.-corporate-design.md)
   * [2.03. Überschreiben von Standard-Konfigurationsdateien](2.-konfiguration-des-goobi-viewers/2.03.-ueberschreiben-von-standard-konfigurationsdateien.md)
   * [2.04. Internationalisierung mittels messages\_\*.properties](2.-konfiguration-des-goobi-viewers/2.04.-internationalisierung-mittels-messages_-.properties.md)
+  * [2.05. URL Konfiguration](2.-konfiguration-des-goobi-viewers/2.05.-url-konfiguration.md)
 
