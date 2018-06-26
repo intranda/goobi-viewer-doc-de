@@ -49,4 +49,5 @@
     * [2.12.2. Konfiguration Seitenleisten-Inhaltsverzeichnis](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.2.-konfiguration-seitenleisten-inhaltsverzeichnis.md)
     * [2.12.3. Herunterladen von Inhaltsverzeichnissen als PDF](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.3.-herunterladen-von-inhaltsverzeichnissen-als-pdf.md)
   * [2.13. Stöbern](2.-konfiguration-des-goobi-viewers/2.13.-stoebern.md)
+  * [2.14. PDF Download](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download.md)
 
