@@ -21,5 +21,6 @@
     * [2.7.7. Bildspiegel](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.7.-bildspiegel.md)
     * [2.7.8. Variable Bildspiegel](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.8.-variable-bildspiegel.md)
     * [2.7.9. Erhalt des Zooms und der Rotation beim Blättern in der Bildanzeige](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.9.-erhalt-des-zooms-und-der-rotation-beim-blaettern-in-der-bildanzeige.md)
-  * [2.08. Digitale Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen.md)
+  * [2.08. Digitale Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/README.md)
+    * [2.8.1. Kollektionshierarchie](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.1.-kollektionshierarchie.md)
 
