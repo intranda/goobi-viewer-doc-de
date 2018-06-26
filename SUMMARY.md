@@ -25,4 +25,5 @@
     * [2.8.1. Kollektionshierarchie](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.1.-kollektionshierarchie.md)
     * [2.8.2. Blacklist](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.2.-blacklist.md)
     * [2.8.3. Strukturelement-Whitelist](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.3.-strukturelement-whitelist.md)
+    * [2.8.4. Sortierung der Kollektionen](2.-konfiguration-des-goobi-viewers/2.08.-digitale-kollektionen/2.8.4.-sortierung-der-kollektionen.md)
 
