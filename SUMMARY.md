@@ -41,4 +41,5 @@
     * [2.10.3. Facettierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.3.-facettierung.md)
     * [2.10.4. Sortierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.4.-sortierung.md)
     * [2.10.5. Suchquery-Speicherung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.5.-suchquery-speicherung.md)
+    * [2.10.6. Boosting von ganzen Werken in der Relevanz-Sortierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.6.-boosting-von-ganzen-werken-in-der-relevanz-sortierung.md)
 
