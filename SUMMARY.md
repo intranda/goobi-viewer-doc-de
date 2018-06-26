@@ -18,4 +18,5 @@
     * [2.7.4. Einschränkung der Bild Skalierung](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.4.-einschraenkung-der-bild-skalierung.md)
     * [2.7.5. Thumbnail Einstellungen](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.5.-thumbnail-einstellungen.md)
     * [2.7.6. Unbeschränkter Zugriff auf Thumbnails von zugriffsbeschränkten Bildern](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.6.-unbeschraenkter-zugriff-auf-thumbnails-von-zugriffsbeschraenkten-bildern.md)
+    * [2.7.7. Bildspiegel](2.-konfiguration-des-goobi-viewers/2.07.-bild-optionen/2.7.7.-bildspiegel.md)
 
