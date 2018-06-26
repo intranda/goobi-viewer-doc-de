@@ -54,4 +54,5 @@
     * [2.14.2. Download Links](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/2.14.2.-download-links.md)
   * [2.15. ePub Download](2.-konfiguration-des-goobi-viewers/2.15.-epub-download.md)
   * [2.16. Originalinhalte](2.-konfiguration-des-goobi-viewers/2.16.-originalinhalte.md)
+  * [2.17. Web API](2.-konfiguration-des-goobi-viewers/2.17.-web-api.md)
 
