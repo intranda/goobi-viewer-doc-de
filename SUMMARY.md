@@ -37,4 +37,5 @@
     * [2.9.5. Metadaten-Anzeige von musealen Objekten](2.-konfiguration-des-goobi-viewers/2.09.-metadaten/2.9.5.-metadaten-anzeige-von-musealen-objekten.md)
   * [2.10. Suche](2.-konfiguration-des-goobi-viewers/2.10.-suche/README.md)
     * [2.10.1. Erweiterte Suche](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.1.-erweiterte-suche.md)
+    * [2.10.2. Jahressuche und Kalendereinstieg \(ab Goobi viewer 2.3\)](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.2.-jahressuche-und-kalendereinstieg-ab-goobi-viewer-2.3.md)
 
