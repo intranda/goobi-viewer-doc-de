@@ -51,4 +51,5 @@
   * [2.13. Stöbern](2.-konfiguration-des-goobi-viewers/2.13.-stoebern.md)
   * [2.14. PDF Download](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/README.md)
     * [2.14.1. Varianten](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/2.14.1.-varianten.md)
+    * [2.14.2. Download Links](2.-konfiguration-des-goobi-viewers/2.14.-pdf-download/2.14.2.-download-links.md)
 
