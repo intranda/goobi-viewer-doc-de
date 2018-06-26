@@ -44,5 +44,6 @@
     * [2.10.6. Boosting von ganzen Werken in der Relevanz-Sortierung](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.6.-boosting-von-ganzen-werken-in-der-relevanz-sortierung.md)
     * [2.10.7. Versionierung von Werken](2.-konfiguration-des-goobi-viewers/2.10.-suche/2.10.7.-versionierung-von-werken.md)
   * [2.11. Tag Clouds](2.-konfiguration-des-goobi-viewers/2.11.-tag-clouds.md)
-  * [2.12. Inhaltsverzeichnisse](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse.md)
+  * [2.12. Inhaltsverzeichnisse](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/README.md)
+    * [2.12.1. Konfiguration Inhaltsverzeichnis](2.-konfiguration-des-goobi-viewers/2.12.-inhaltsverzeichnisse/2.12.1.-konfiguration-inhaltsverzeichnis.md)
 
