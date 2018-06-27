@@ -111,5 +111,6 @@
     * [6.7.2. Count](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.2.-count.md)
     * [6.7.3. Timeline](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.3.-timeline.md)
     * [6.7.4. Normdaten](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.4.-normdaten.md)
-  * [6.8. Die Funktionalitäten der Übersichtsseite](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite.md)
+  * [6.8. Die Funktionalitäten der Übersichtsseite](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/README.md)
+    * [6.8.1. Metadaten zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.1.-metadaten-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
 

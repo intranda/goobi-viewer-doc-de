@@ -7,5 +7,5 @@ Alle Bereiche lassen sich anpassen und es können Elemente hinzugefügt oder ent
 In den folgenden Erklärungen wird jeweils davon ausgegangen, dass diese Bedingung erfüllt ist.   
 
 
-![](../.gitbook/assets/ansicht-uebersichtseite.png)
+![](../../.gitbook/assets/ansicht-uebersichtseite.png)
 
