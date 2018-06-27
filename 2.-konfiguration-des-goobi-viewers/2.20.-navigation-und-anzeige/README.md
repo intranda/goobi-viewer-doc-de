@@ -36,7 +36,7 @@ Folgende Elemente schalten unterschiedliche Elemente bzw. Funktionen des Viewers
 | **displayTimeMatrix** | Link zur Zeitmatrix \(zweidimensionale Zeitleiste\). Standardwert ist `false`. |
 | **displayTitlePURL** | Steht dieses Element auf `false`, wird in der Komponente title.xhtml die PURL zur aktuellen Seite nicht angezeigt, unabhängig von der Einstellung, die die aufrufende Seite übergibt. Standardwert ist `true`. |
 
-![](../.gitbook/assets/navigation.png)
+![](../../.gitbook/assets/navigation.png)
 
 
 
