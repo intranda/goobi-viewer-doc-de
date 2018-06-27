@@ -124,4 +124,6 @@
     * [7.2.1. Die Seiteninhalte](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.1.-die-seiteninhalte.md)
     * [7.2.2. Eigene Komponente für die Seitenleiste erstellen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.2.-eigene-komponente-fuer-die-seitenleiste-erstellen.md)
     * [7.2.3. Die Seiteneinstellungen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.3.-die-seiteneinstellungen.md)
+  * [7.3. CMS - Hauptmenü](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.3.-cms-hauptmenue.md)
+  * [7.4. CMS - Medien](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.4.-cms-medien.md)
 
