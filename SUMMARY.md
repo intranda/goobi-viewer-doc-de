@@ -93,4 +93,5 @@
   * [4.2. SRU Schnittstelle](4.-goobi-viewer-connector/4.2.-sru-schnittstelle.md)
 * [5. Konfiguration der Zugriffsbeschränkung](5.-konfiguration-der-zugriffsbeschraenkung/README.md)
   * [5.1. Lizenztypen](5.-konfiguration-der-zugriffsbeschraenkung/5.1.-lizenztypen.md)
+  * [5.2. Lizenzen](5.-konfiguration-der-zugriffsbeschraenkung/5.2.-lizenzen.md)
 
