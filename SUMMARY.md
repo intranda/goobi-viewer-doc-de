@@ -59,4 +59,5 @@
   * [2.19. Resolver](2.-konfiguration-des-goobi-viewers/2.19.-resolver.md)
   * [2.20. Navigation und Anzeige](2.-konfiguration-des-goobi-viewers/2.20.-navigation-und-anzeige/README.md)
     * [2.20.1. Verlinkung bestimmter Strukturtypen auf bestimmte Seitenansichten](2.-konfiguration-des-goobi-viewers/2.20.-navigation-und-anzeige/2.20.1.-verlinkung-bestimmter-strukturtypen-auf-bestimmte-seitenansichten.md)
+  * [2.21. Seitenleiste](2.-konfiguration-des-goobi-viewers/2.21.-seitenleiste.md)
 
