@@ -100,4 +100,5 @@
   * [6.3. Konfiguration einer Moving Wall für die zeitabhängige Zugänglichkeit von Inhalten](6.-spezielle-anwendungsszenarien/6.3.-konfiguration-einer-moving-wall-fuer-die-zeitabhaengige-zugaenglichkeit-von-inhalten.md)
   * [6.4. CMS-Templates im Goobi viewer](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/README.md)
     * [6.4.1. Dateistruktur](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/6.4.1.-dateistruktur.md)
+    * [6.4.2. Inhalte der Dateien](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/6.4.2.-inhalte-der-dateien.md)
 
