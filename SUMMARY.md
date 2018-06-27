@@ -78,4 +78,6 @@
   * [3.08. Aktualisierung einzelner Seitendokumente](3.-konfiguration-des-solr-indexers/3.08.-aktualisierung-einzelner-seitendokumente.md)
   * [3.09.  Löschen von Objekten](3.-konfiguration-des-solr-indexers/3.09.-loeschen-von-objekten.md)
   * [3.10.  Verwaiste Anchor-Werke löschen](3.-konfiguration-des-solr-indexers/3.10.-verwaiste-anchor-werke-loeschen.md)
+* [4. Goobi viewer Connector](4.-goobi-viewer-connector/README.md)
+  * [4.1. Konfiguration der OAI-Schnittstelle](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle.md)
 
