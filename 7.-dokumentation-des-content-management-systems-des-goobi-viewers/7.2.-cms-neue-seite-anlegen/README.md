@@ -1,4 +1,4 @@
-# 7.2. CMS - Neue Seite anlegen
+# 7.2 Neue Seite anlegen
 
 #### Auswahl des Templates {#HAuswahldesTemplates}
 

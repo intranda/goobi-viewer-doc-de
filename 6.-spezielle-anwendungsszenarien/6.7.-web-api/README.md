@@ -1,4 +1,4 @@
-# 6.7. Web API
+# 6.7 Web API
 
 Die Web API erlaubt es, Informationen zu Werken als JSON-Datensätze über einen einfachen GET-URL-Aufruf zu erhalten. Die Datensätze des Treffersets bestehen jeweils aus statisch definierten, sowie optionalen frei konfigurierbaren Feldern.
 

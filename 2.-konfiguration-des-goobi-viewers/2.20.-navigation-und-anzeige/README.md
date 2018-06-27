@@ -1,4 +1,4 @@
-# 2.20. Navigation und Anzeige
+# 2.20 Navigation und Anzeige
 
 Folgende Elemente schalten unterschiedliche Elemente bzw. Funktionen des Viewers an oder ab \(Standardwert ist jeweils true\):  
 
