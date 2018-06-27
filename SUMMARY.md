@@ -91,4 +91,6 @@
     * [4.1.09. Konfiguration für Goobi viewer Crowdsourcing-Inhalte](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.09.-konfiguration-fuer-goobi-viewer-crowdsourcing-inhalte.md)
     * [4.1.10. Sets definieren](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.10.-sets-definieren.md)
   * [4.2. SRU Schnittstelle](4.-goobi-viewer-connector/4.2.-sru-schnittstelle.md)
+* [5. Konfiguration der Zugriffsbeschränkung](5.-konfiguration-der-zugriffsbeschraenkung/README.md)
+  * [5.1. Lizenztypen](5.-konfiguration-der-zugriffsbeschraenkung/5.1.-lizenztypen.md)
 
