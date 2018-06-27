@@ -75,4 +75,5 @@
   * [3.05. Weitere Optionen](3.-konfiguration-des-solr-indexers/3.05.-weitere-optionen.md)
   * [3.06. Starten und Beenden des Solr-Indexers](3.-konfiguration-des-solr-indexers/3.06.-starten-und-beenden-des-solr-indexers.md)
   * [3.07. Einspielen von Objekten](3.-konfiguration-des-solr-indexers/3.07.-einspielen-von-objekten.md)
+  * [3.08. Aktualisierung einzelner Seitendokumente](3.-konfiguration-des-solr-indexers/3.08.-aktualisierung-einzelner-seitendokumente.md)
 
