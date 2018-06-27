@@ -108,4 +108,6 @@
   * [6.6. Normdaten von Goobi zum Goobi viewer](6.-spezielle-anwendungsszenarien/6.6.-normdaten-von-goobi-zum-goobi-viewer.md)
   * [6.7. Web API](6.-spezielle-anwendungsszenarien/6.7.-web-api/README.md)
     * [6.7.1. Query](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.1.-query.md)
+    * [6.7.2. Count](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.2.-count.md)
+    * [6.7.3. Timeline](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.3.-timeline.md)
 
