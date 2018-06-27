@@ -1,2 +1,2 @@
-# 4.Konfiguration Goobi viewer Connector
+# 4.Konfiguration Connector
 
