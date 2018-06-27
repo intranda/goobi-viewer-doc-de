@@ -122,4 +122,5 @@
   * [7.1. CMS – Seitenübersicht](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.1.-cms-seitenuebersicht.md)
   * [7.2. CMS - Neue Seite anlegen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/README.md)
     * [7.2.1. Die Seiteninhalte](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.1.-die-seiteninhalte.md)
+    * [7.2.2. Eigene Komponente für die Seitenleiste erstellen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.2.-eigene-komponente-fuer-die-seitenleiste-erstellen.md)
 
