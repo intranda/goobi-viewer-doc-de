@@ -62,4 +62,5 @@
   * [2.21. Seitenleiste](2.-konfiguration-des-goobi-viewers/2.21.-seitenleiste.md)
   * [2.22. Transkribus-Integration](2.-konfiguration-des-goobi-viewers/2.22.-transkribus-integration.md)
   * [2.23. Performanz und Weitere Einstellungen](2.-konfiguration-des-goobi-viewers/2.23.-performanz-und-weitere-einstellungen.md)
+  * [2.24. Crowdsourcing](2.-konfiguration-des-goobi-viewers/2.24.-crowdsourcing.md)
 
