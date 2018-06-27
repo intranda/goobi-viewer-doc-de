@@ -1,4 +1,4 @@
-# 3. Konfiguration des Solr-Indexers
+# 3. Konfiguration Indexer
 
 Der Goobi viewer setzt für die Suche in den deskriptiven Metadaten sowie in den Volltexten die Suchmaschine Apache Solr ein, die intern auf der Suchengine Apache Lucene basiert. 
 

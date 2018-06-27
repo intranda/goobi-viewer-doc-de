@@ -1,7 +1,6 @@
 # 4.1. Konfiguration der OAI-Schnittstelle
 
-In diesem Abschnitt wird die Konfiguration sämtlicher Parameter für die OAI-Schnittstelle detailliert erläutert.  
-
+In diesem Abschnitt wird die Konfiguration sämtlicher Parameter für die OAI-Schnittstelle detailliert erläutert.
 
 {% hint style="info" %}
 Alle aufgelisteten XML-Konfigurationselemente sind relativ zum Wurzelelement &lt;config&gt;.
