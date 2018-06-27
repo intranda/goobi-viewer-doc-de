@@ -98,4 +98,6 @@
   * [6.1. Konfiguration des Crowdsourcing-Bereichs](6.-spezielle-anwendungsszenarien/6.1.-konfiguration-des-crowdsourcing-bereichs.md)
   * [6.2. Die Arbeit mit Serien und Konvoluten](6.-spezielle-anwendungsszenarien/6.2.-die-arbeit-mit-serien-und-konvoluten.md)
   * [6.3. Konfiguration einer Moving Wall für die zeitabhängige Zugänglichkeit von Inhalten](6.-spezielle-anwendungsszenarien/6.3.-konfiguration-einer-moving-wall-fuer-die-zeitabhaengige-zugaenglichkeit-von-inhalten.md)
+  * [6.4. CMS-Templates im Goobi viewer](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/README.md)
+    * [6.4.1. Dateistruktur](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/6.4.1.-dateistruktur.md)
 
