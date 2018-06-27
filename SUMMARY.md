@@ -60,4 +60,5 @@
   * [2.20. Navigation und Anzeige](2.-konfiguration-des-goobi-viewers/2.20.-navigation-und-anzeige/README.md)
     * [2.20.1. Verlinkung bestimmter Strukturtypen auf bestimmte Seitenansichten](2.-konfiguration-des-goobi-viewers/2.20.-navigation-und-anzeige/2.20.1.-verlinkung-bestimmter-strukturtypen-auf-bestimmte-seitenansichten.md)
   * [2.21. Seitenleiste](2.-konfiguration-des-goobi-viewers/2.21.-seitenleiste.md)
+  * [2.22. Transkribus-Integration](2.-konfiguration-des-goobi-viewers/2.22.-transkribus-integration.md)
 
