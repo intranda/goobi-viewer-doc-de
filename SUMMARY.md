@@ -116,4 +116,5 @@
     * [6.8.2. Literaturangabe zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.2.-literaturangabe-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
     * [6.8.3. Beschreibung zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.3.-beschreibung-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
     * [6.8.4. Übersichtshistorie](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.4.-uebersichtshistorie.md)
+    * [6.8.5. Übersichtsseite löschen](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.5.-uebersichtsseite-loeschen.md)
 
