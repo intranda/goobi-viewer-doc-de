@@ -1,2 +1,2 @@
-# 4.Konfiguration Connector
+# 4. Konfiguration Connector
 
