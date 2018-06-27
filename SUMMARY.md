@@ -94,5 +94,6 @@
 * [5. Konfiguration der Zugriffsbeschränkung](5.-konfiguration-der-zugriffsbeschraenkung/README.md)
   * [5.1. Lizenztypen](5.-konfiguration-der-zugriffsbeschraenkung/5.1.-lizenztypen.md)
   * [5.2. Lizenzen](5.-konfiguration-der-zugriffsbeschraenkung/5.2.-lizenzen.md)
-* [6. Spezielle Anwendungsszenarien](6.-spezielle-anwendungsszenarien.md)
+* [6. Spezielle Anwendungsszenarien](6.-spezielle-anwendungsszenarien/README.md)
+  * [6.1. Konfiguration des Crowdsourcing-Bereichs](6.-spezielle-anwendungsszenarien/6.1.-konfiguration-des-crowdsourcing-bereichs.md)
 
