@@ -105,4 +105,5 @@
   * [6.5. Konfiguration der Mandantenfähigkeit](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/README.md)
     * [6.5.1. Einstellungen in Goobi](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/6.5.1.-einstellungen-in-goobi.md)
     * [6.5.2. Einstellungen im Goobi viewer](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/6.5.2.-einstellungen-im-goobi-viewer.md)
+  * [6.6. Normdaten von Goobi zum Goobi viewer](6.-spezielle-anwendungsszenarien/6.6.-normdaten-von-goobi-zum-goobi-viewer.md)
 
