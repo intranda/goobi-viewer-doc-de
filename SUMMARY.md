@@ -90,4 +90,5 @@
     * [4.1.08. Konfiguration für Goobi viewer Übersichtsseiten](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.08.-konfiguration-fuer-goobi-viewer-uebersichtsseiten.md)
     * [4.1.09. Konfiguration für Goobi viewer Crowdsourcing-Inhalte](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.09.-konfiguration-fuer-goobi-viewer-crowdsourcing-inhalte.md)
     * [4.1.10. Sets definieren](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.10.-sets-definieren.md)
+  * [4.2. SRU Schnittstelle](4.-goobi-viewer-connector/4.2.-sru-schnittstelle.md)
 
