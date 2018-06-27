@@ -73,4 +73,6 @@
   * [3.03. Strukturtyp Konfiguration](3.-konfiguration-des-solr-indexers/3.03.-strukturtyp-konfiguration.md)
   * [3.04. Metadaten Konfiguration](3.-konfiguration-des-solr-indexers/3.04.-metadaten-konfiguration.md)
   * [3.05. Weitere Optionen](3.-konfiguration-des-solr-indexers/3.05.-weitere-optionen.md)
+  * [3.06. Starten und Beenden des Solr-Indexers](3.-konfiguration-des-solr-indexers/3.06.-starten-und-beenden-des-solr-indexers.md)
+  * [3.07. Einspielen von Objekten](3.-konfiguration-des-solr-indexers/3.07.-einspielen-von-objekten.md)
 
