@@ -120,5 +120,6 @@
   * [6.9. Konfiguration des Stellvertreterbildes bei beschränktem Zugriff](6.-spezielle-anwendungsszenarien/6.9.-konfiguration-des-stellvertreterbildes-bei-beschraenktem-zugriff.md)
 * [7. Dokumentation des Content Management Systems des Goobi viewers](7.-dokumentation-des-content-management-systems-des-goobi-viewers/README.md)
   * [7.1. CMS – Seitenübersicht](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.1.-cms-seitenuebersicht.md)
-  * [7.2. CMS - Neue Seite anlegen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen.md)
+  * [7.2. CMS - Neue Seite anlegen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/README.md)
+    * [7.2.1. Die Seiteninhalte](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.1.-die-seiteninhalte.md)
 
