@@ -67,4 +67,5 @@
   * [2.26. Cache](2.-konfiguration-des-goobi-viewers/2.26.-cache.md)
   * [2.27. Piwik Statistiken](2.-konfiguration-des-goobi-viewers/2.27.-piwik-statistiken.md)
   * [2.28. Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](2.-konfiguration-des-goobi-viewers/2.28.-ueberschreiben-von-standard-xhtml-seiten-mit-eigenen-angepassten-seiten.md)
+* [3. Konfiguration des Solr-Indexers](3.-konfiguration-des-solr-indexers.md)
 
