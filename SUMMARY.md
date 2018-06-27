@@ -96,4 +96,5 @@
   * [5.2. Lizenzen](5.-konfiguration-der-zugriffsbeschraenkung/5.2.-lizenzen.md)
 * [6. Spezielle Anwendungsszenarien](6.-spezielle-anwendungsszenarien/README.md)
   * [6.1. Konfiguration des Crowdsourcing-Bereichs](6.-spezielle-anwendungsszenarien/6.1.-konfiguration-des-crowdsourcing-bereichs.md)
+  * [6.2. Die Arbeit mit Serien und Konvoluten](6.-spezielle-anwendungsszenarien/6.2.-die-arbeit-mit-serien-und-konvoluten.md)
 
