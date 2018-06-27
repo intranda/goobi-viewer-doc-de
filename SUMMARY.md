@@ -56,4 +56,5 @@
   * [2.16. Originalinhalte](2.-konfiguration-des-goobi-viewers/2.16.-originalinhalte.md)
   * [2.17. Web API](2.-konfiguration-des-goobi-viewers/2.17.-web-api.md)
   * [2.18. RSS Feed](2.-konfiguration-des-goobi-viewers/2.18.-rss-feed.md)
+  * [2.19. Resolver](2.-konfiguration-des-goobi-viewers/2.19.-resolver.md)
 
