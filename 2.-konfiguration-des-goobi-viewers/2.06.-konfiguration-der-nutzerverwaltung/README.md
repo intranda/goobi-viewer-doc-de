@@ -1,2 +1,2 @@
-# 2.06. Konfiguration der Nutzerverwaltung
+# 2.6 Konfiguration der Nutzerverwaltung
 
