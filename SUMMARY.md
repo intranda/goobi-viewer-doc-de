@@ -118,7 +118,7 @@
     * [6.8.4 Übersichtshistorie](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.4.-uebersichtshistorie.md)
     * [6.8.5 Übersichtsseite löschen](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.5.-uebersichtsseite-loeschen.md)
   * [6.9 Konfiguration des Stellvertreterbildes bei beschränktem Zugriff](6.-spezielle-anwendungsszenarien/6.9.-konfiguration-des-stellvertreterbildes-bei-beschraenktem-zugriff.md)
-* [7. Dokumentation des Content Management Systems des Goobi viewers](7.-dokumentation-des-content-management-systems-des-goobi-viewers/README.md)
+* [7. Dokumentation des CMS-Bereichs](7.-dokumentation-des-content-management-systems-des-goobi-viewers/README.md)
   * [7.1 Seitenübersicht](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.1.-cms-seitenuebersicht.md)
   * [7.2 Neue Seite anlegen](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/README.md)
     * [7.2.1 Die Seiteninhalte](7.-dokumentation-des-content-management-systems-des-goobi-viewers/7.2.-cms-neue-seite-anlegen/7.2.1.-die-seiteninhalte.md)
