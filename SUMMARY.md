@@ -113,4 +113,7 @@
     * [6.7.4. Normdaten](6.-spezielle-anwendungsszenarien/6.7.-web-api/6.7.4.-normdaten.md)
   * [6.8. Die Funktionalitäten der Übersichtsseite](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/README.md)
     * [6.8.1. Metadaten zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.1.-metadaten-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
+    * [6.8.2. Literaturangabe zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.2.-literaturangabe-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
+    * [6.8.3. Beschreibung zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.3.-beschreibung-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
+    * [6.8.4. Übersichtshistorie](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.4.-uebersichtshistorie.md)
 
