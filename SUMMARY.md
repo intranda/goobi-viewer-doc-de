@@ -87,4 +87,5 @@
     * [4.1.05. Konfiguration für LIDO](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.05.-konfiguration-fuer-lido.md)
     * [4.1.06. Konfiguration für MARCXML](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.06.-konfiguration-fuer-marcxml.md)
     * [4.1.07. Konfiguration für Xepicur](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.07.-konfiguration-fuer-xepicur.md)
+    * [4.1.08. Konfiguration für Goobi viewer Übersichtsseiten](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.08.-konfiguration-fuer-goobi-viewer-uebersichtsseiten.md)
 
