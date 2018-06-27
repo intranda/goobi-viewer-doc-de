@@ -49,8 +49,7 @@ Angabe, wie mit gelöschten Datensätzen umgegangen wird.
 
 #### 4.1.6. Parameter: granularity {#H4.1.6.Parameter:granularity}
 
-Definiert, wie genau mit Zeiten umgegangen wird. Erlaubt sind Datestamps und UTCdatetime.  
-
+Definiert, wie genau mit Zeiten umgegangen wird. Erlaubt sind Datestamps und UTCdatetime.
 
 ```markup
 <oai-identifier>
