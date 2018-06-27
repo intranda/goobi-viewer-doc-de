@@ -104,5 +104,5 @@
     * [6.4.3. Inhaltstypen](6.-spezielle-anwendungsszenarien/6.4.-cms-templates-im-goobi-viewer/6.4.3.-inhaltstypen.md)
   * [6.5. Konfiguration der Mandantenfähigkeit](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/README.md)
     * [6.5.1. Einstellungen in Goobi](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/6.5.1.-einstellungen-in-goobi.md)
-* [6.5.2. Einstellungen im Goobi viewer](6.5.2.-einstellungen-im-goobi-viewer.md)
+    * [6.5.2. Einstellungen im Goobi viewer](6.-spezielle-anwendungsszenarien/6.5.-konfiguration-der-mandantenfaehigkeit/6.5.2.-einstellungen-im-goobi-viewer.md)
 
