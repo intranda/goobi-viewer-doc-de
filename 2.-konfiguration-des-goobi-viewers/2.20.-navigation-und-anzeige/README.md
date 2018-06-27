@@ -1,7 +1,6 @@
 # 2.20 Navigation und Anzeige
 
-Folgende Elemente schalten unterschiedliche Elemente bzw. Funktionen des Viewers an oder ab \(Standardwert ist jeweils true\):  
-
+Folgende Elemente schalten unterschiedliche Elemente bzw. Funktionen des Viewers an oder ab \(Standardwert ist jeweils `true`\):
 
 ```markup
 <webGuiDisplay>
@@ -19,8 +18,6 @@ Folgende Elemente schalten unterschiedliche Elemente bzw. Funktionen des Viewers
     <displayTitlePURL>true</displayTitlePURL>
 </webGuiDisplay>
 ```
-
-
 
 | **collectionBrowsing** | Seite mit der Auflistung der Sammlungen |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
