@@ -64,4 +64,5 @@
   * [2.23. Performanz und Weitere Einstellungen](2.-konfiguration-des-goobi-viewers/2.23.-performanz-und-weitere-einstellungen.md)
   * [2.24. Crowdsourcing](2.-konfiguration-des-goobi-viewers/2.24.-crowdsourcing.md)
   * [2.25. CMS](2.-konfiguration-des-goobi-viewers/2.25.-cms.md)
+  * [2.26. Cache](2.-konfiguration-des-goobi-viewers/2.26.-cache.md)
 
