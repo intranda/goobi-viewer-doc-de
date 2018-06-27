@@ -5,7 +5,7 @@
 * [2. Konfiguration Core](2.-konfiguration-des-goobi-viewers/README.md)
   * [2.1 Ordnerkonfiguration](2.-konfiguration-des-goobi-viewers/2.01.-ordnerkonfiguration.md)
   * [2.2 Corporate Design](2.-konfiguration-des-goobi-viewers/2.02.-corporate-design.md)
-  * [2.3 Überschreiben von Standard-Konfigurationsdateien](2.-konfiguration-des-goobi-viewers/2.03.-ueberschreiben-von-standard-konfigurationsdateien.md)
+  * [2.3 Lokale Konfigurationsdateien](2.-konfiguration-des-goobi-viewers/2.03.-ueberschreiben-von-standard-konfigurationsdateien.md)
   * [2.4 Internationalisierung mittels messages\_\*.properties](2.-konfiguration-des-goobi-viewers/2.04.-internationalisierung-mittels-messages_-.properties.md)
   * [2.5 URL Konfiguration](2.-konfiguration-des-goobi-viewers/2.05.-url-konfiguration.md)
   * [2.6 Konfiguration der Nutzerverwaltung](2.-konfiguration-des-goobi-viewers/2.06.-konfiguration-der-nutzerverwaltung/README.md)
