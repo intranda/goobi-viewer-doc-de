@@ -69,4 +69,5 @@
   * [2.28. Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](2.-konfiguration-des-goobi-viewers/2.28.-ueberschreiben-von-standard-xhtml-seiten-mit-eigenen-angepassten-seiten.md)
 * [3. Konfiguration des Solr-Indexers](3.-konfiguration-des-solr-indexers/README.md)
   * [3.01. Allgemeine Konfiguration](3.-konfiguration-des-solr-indexers/3.01.-allgemeine-konfiguration.md)
+  * [3.02. Konfiguration der Verzeichnisse](3.-konfiguration-des-solr-indexers/3.02.-konfiguration-der-verzeichnisse.md)
 
