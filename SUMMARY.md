@@ -85,4 +85,5 @@
     * [4.1.03. Konfiguration für Europeana Semantic Elements \(ESE\)](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.03.-konfiguration-fuer-europeana-semantic-elements-ese.md)
     * [4.1.04. Konfiguration für METS](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.04.-konfiguration-fuer-mets.md)
     * [4.1.05. Konfiguration für LIDO](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.05.-konfiguration-fuer-lido.md)
+    * [4.1.06. Konfiguration für MARCXML](4.-goobi-viewer-connector/4.1.-konfiguration-der-oai-schnittstelle/4.1.06.-konfiguration-fuer-marcxml.md)
 
