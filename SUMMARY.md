@@ -71,4 +71,5 @@
   * [3.01. Allgemeine Konfiguration](3.-konfiguration-des-solr-indexers/3.01.-allgemeine-konfiguration.md)
   * [3.02. Konfiguration der Verzeichnisse](3.-konfiguration-des-solr-indexers/3.02.-konfiguration-der-verzeichnisse.md)
   * [3.03. Strukturtyp Konfiguration](3.-konfiguration-des-solr-indexers/3.03.-strukturtyp-konfiguration.md)
+  * [3.04. Metadaten Konfiguration](3.-konfiguration-des-solr-indexers/3.04.-metadaten-konfiguration.md)
 
