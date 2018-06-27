@@ -117,4 +117,6 @@
     * [6.8.3. Beschreibung zur Übersichtsseite hinzufügen / bearbeiten](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.3.-beschreibung-zur-uebersichtsseite-hinzufuegen-bearbeiten.md)
     * [6.8.4. Übersichtshistorie](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.4.-uebersichtshistorie.md)
     * [6.8.5. Übersichtsseite löschen](6.-spezielle-anwendungsszenarien/6.8.-die-funktionalitaeten-der-uebersichtsseite/6.8.5.-uebersichtsseite-loeschen.md)
+  * [6.9. Konfiguration des Stellvertreterbildes bei beschränktem Zugriff](6.-spezielle-anwendungsszenarien/6.9.-konfiguration-des-stellvertreterbildes-bei-beschraenktem-zugriff.md)
+* [7. Dokumentation des Content Management Systems des Goobi viewers](7.-dokumentation-des-content-management-systems-des-goobi-viewers.md)
 
