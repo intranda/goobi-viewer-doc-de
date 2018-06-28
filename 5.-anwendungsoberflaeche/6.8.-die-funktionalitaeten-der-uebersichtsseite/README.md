@@ -1,4 +1,4 @@
-# 6.8 Die Funktionalitäten der Übersichtsseite
+# 5.2 Die Funktionalitäten der Übersichtsseite
 
 In diesem Abschnitt erfahren Sie einige grundlegende Details der Funktionalitäten der Übersichtsseite, welche Ihnen ermöglicht Metadaten, Literaturangaben und Beschreibungen zum Werk zu repräsentieren. Die Übersichtsseite ist in drei Bereiche unterteilt. Der erste Bereich repräsentiert die zum Werk gehörigen Metadaten inklusive einer Bildvorschau. Der zweite zeigt eine individualisierbare Literaturangabe zum Werk und der dritte besteht aus einem frei gestaltbaren Text für Beschreibungen zum Werk.
 

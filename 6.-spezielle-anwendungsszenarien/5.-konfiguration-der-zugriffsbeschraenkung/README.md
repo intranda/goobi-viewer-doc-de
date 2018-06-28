@@ -1,4 +1,4 @@
-# 5. Konfiguration der Zugriffsbeschränkung
+# 6.9 Konfiguration der Zugriffsbeschränkung
 
 Der Goobi viewer verfügt über die Möglichkeit, bestimmte Aspekte eines Werks unzugänglich bzw. nur bestimmten Kreisen zugänglich zu machen.
 
