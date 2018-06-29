@@ -10,6 +10,7 @@
     * [2.3.2 lokaler Benutzeraccount](2.-konfiguration-core/2.6-konfiguration-der-nutzerverwaltung/2.6.2-mail-einstellungen.md)
   * [2.4 Performanz und Weitere Einstellungen](2.-konfiguration-core/2.23-performanz-und-weitere-einstellungen.md)
   * [2.5 Unbeschränkter Zugriff auf Thumbnails von zugriffsbeschränkten Bildern](2.-konfiguration-core/2.7.6-unbeschraenkter-zugriff-auf-thumbnails-von-zugriffsbeschraenkten-bildern.md)
+  * [2.6 Captcha](2.-konfiguration-core/2.6-captcha.md)
   * [2.2 Corporate Design](2.-konfiguration-core/2.2-corporate-design.md)
   * [2.3 Lokale Konfigurationsdateien](2.-konfiguration-core/2.3-lokale-konfigurationsdateien.md)
   * [2.4 Internationalisierung mittels messages\_\*.properties](2.-konfiguration-core/2.4-internationalisierung-mittels-messages_-.properties.md)
