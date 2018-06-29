@@ -4,7 +4,7 @@ Die Suche im Goobi viewer erlaubt eine kombinierte Suche sowohl in den Metadaten
 
 ![](../../.gitbook/assets/suche.png)
 
-Abhängig von der Präzision der Suchabfrage und der Anzahl der indizierten Objekte können sich hunderte bzw. tausende Suchtreffer ergeben, die auf einer über mehrere Seiten verteilten Suchtrefferliste angezeigt werden. Die Anzahl der pro Seite angezeigten Suchtreffer kann über das folgende Element konfiguriert werden \(der Standardwert ist 10\):
+Abhängig von der Präzision der Suchabfrage und der Anzahl der indizierten Objekte können sich hunderte beziehungsweise tausende Suchtreffer ergeben, die auf einer über mehrere Seiten verteilten Suchtrefferliste angezeigt werden. Die Anzahl der pro Seite angezeigten Suchtreffer kann über das folgende Element konfiguriert werden \(der Standardwert ist 10\):
 
 ```markup
 <search>
