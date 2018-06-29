@@ -1,14 +1,19 @@
-# 2.12 Corporate Design
+# 2.16 Theme
 
-Falls Ihr Goobi viewer mit Anpassungen an Ihr Corporate Design installiert wurde, ist das dazugehörige Design Theme in folgendem Konfigurationselement enthalten:
+Falls Ihr Goobi viewer mit einem eigenen Theme installiert wurde, ist das dazugehörige Name in folgendem Konfigurationselement enthalten:
 
 ```markup
 <viewer>
-    <theme subTheme="true" mainTheme="intranda" discriminatorField="DC" autoSwitch=”false” filterQueryVisible=”false” />
+    <theme subTheme="true" 
+           mainTheme="reference" 
+           discriminatorField="DC" 
+           autoSwitch=”false” 
+           addFilterQuery="false" 
+           filterQueryVisible=”false” />
 </viewer>
 ```
 
-Das Attribut `mainTheme` enthält den Namen des Corporate Designs \(Theme\). Dieser muss dem Ordnernamen entsprechen, in dem die Theme-Dateien liegen.
+Das Attribut `mainTheme` enthält den Namen des Themes. Dieser muss dem Ordnernamen entsprechen, in dem die Theme-Dateien liegen.
 
 Optional können für bestimmte Werke alternative Themes zugeschaltet werden. Dafür muss das Attribut `subtheme` auf true stehen.
 
