@@ -1,4 +1,4 @@
-# 2.21 Inhaltsverzeichnisse
+# 2.20 Inhaltsverzeichnisse
 
 Der Goobi viewer stellt zwei Ansichten für die Darstellung der logischen Dokumentstruktur zur Verfügung: die Inhaltsansicht und die Seitenleisten-Inhaltsansicht. 
 
