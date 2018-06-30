@@ -70,6 +70,7 @@
   * [2.23 Seitenleiste](2.-konfiguration-core/2.21-seitenleiste.md)
   * [2.24 Navigation und Anzeige](2.-konfiguration-core/2.20-navigation-und-anzeige.md)
   * [2.25 RSS Feed](2.-konfiguration-core/2.18-rss-feed.md)
+  * [2.26 Merklisten](2.-konfiguration-core/2.26-merklisten.md)
   * [2.23 Originalinhalte](2.-konfiguration-core/2.16-originalinhalte.md)
   * [2.24 Web API](2.-konfiguration-core/2.17-web-api.md)
   * [2.29 Transkribus-Integration](2.-konfiguration-core/2.22-transkribus-integration.md)
