@@ -10,5 +10,5 @@ Unabhängig von der gewählten Authentifizierungsart kann das Registrieren von n
 </user>
 ```
 
-
+![Benutzerkonto](../../.gitbook/assets/benutzerkonto.png)
 

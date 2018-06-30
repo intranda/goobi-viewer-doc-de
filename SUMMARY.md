@@ -38,7 +38,7 @@
     * [2.17.2 Facettierung](2.-konfiguration-core/2.10-suche/2.10.3-facettierung.md)
     * [2.17.3 Erweiterte Suche](2.-konfiguration-core/2.10-suche/2.10.1-erweiterte-suche.md)
     * [2.17.4 Timeline](2.-konfiguration-core/2.10-suche/2.17.4-timeline.md)
-    * [2.17.5 Kalendersuche](2.-konfiguration-core/2.10-suche/2.10.2-jahressuche-und-kalendereinstieg.md)
+    * [2.17.5 Kalendereinstieg](2.-konfiguration-core/2.10-suche/2.10.2-jahressuche-und-kalendereinstieg.md)
     * [2.17.6 Suche Speichern](2.-konfiguration-core/2.10-suche/2.10.5-suchquery-speicherung.md)
     * [2.17.7 Boosting von ganzen Werken in der Relevanz-Sortierung](2.-konfiguration-core/2.10-suche/2.10.6-boosting-von-ganzen-werken-in-der-relevanz-sortierung.md)
     * [2.17.8 aggregierte Suchtrefferanzeige](2.-konfiguration-core/2.10-suche/2.17.8-aggregierte-suchtrefferanzeige.md)
