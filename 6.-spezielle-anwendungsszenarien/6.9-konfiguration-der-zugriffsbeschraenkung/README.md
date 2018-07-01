@@ -1,18 +1,18 @@
 # 6.9 Konfiguration der Zugriffsbeschränkung
 
-Der Goobi viewer verfügt über die Möglichkeit, bestimmte Aspekte eines Werks unzugänglich beziehungsweise nur bestimmten Kreisen zugänglich zu machen.
+Der Goobi viewer unterstützt die Möglichkeit, bestimmte Aspekte eines Werks unzugänglich beziehungsweise nur bestimmten Kreisen zugänglich zu machen.
 
-Voraussetzung ist das Mitführen von sog. Access Conditions im Quelldokument des Werks \(METS oder LIDO\) als Metadatum. Die entsprechenden Werte müssen anschließend im Solr Index im Feld ACCESSCONDITION stehen:
+Voraussetzung ist das Mitführen von sogenannten Access Conditions im Quelldokument des Werks als Metadatum. Die entsprechenden Werte müssen im Solr Index im das Feld ACCESSCONDITION gemappt werden:
 
 ```markup
 <ACCESSCONDITION>
-      <list>
-            <item>
-                  <xpath>mets:xmlData/mods:mods/mods:accessCondition[not(@type)]</xpath>
-                  <addToDefault>false</addToDefault>
-                  <addUntokenizedVersion>false</addUntokenizedVersion>
-            </item>
-      </list>
+    <list>
+        <item>
+            <xpath>mets:xmlData/mods:mods/mods:accessCondition[@type='restriction on access']</xpath>
+            <addToDefault>false</addToDefault>
+            <addUntokenizedVersion>false</addUntokenizedVersion>
+        </item>
+    </list>
 </ACCESSCONDITION>
 ```
 
