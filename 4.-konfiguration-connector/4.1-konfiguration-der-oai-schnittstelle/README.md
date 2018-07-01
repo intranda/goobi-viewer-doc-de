@@ -43,7 +43,7 @@ Werte: no | persistent | transient
 
 Angabe, wie mit gelöschten Datensätzen umgegangen wird.
 
-* no - Es werden in der Repository keine Informationen über gelöschte Objekte unterhalten.
+* no - Es werden in der Repository keine Informationen über gelöschte Werke unterhalten.
 * persistent - Informationen über Löschungen werden protokolliert und ohne zeitliche Einschränkung vorgehalten.
 * transient - Die Repository kann Informationen über Löschungen enthalten. Die Konsistenz der Informationen sowie das Vorhalten über eine unbestimmte Zeit werden aber nicht garantiert.
 
