@@ -128,7 +128,7 @@
     * [6.4.1 Dateistruktur](6.-spezielle-anwendungsszenarien/6.4-cms-templates/6.4.1-dateistruktur.md)
     * [6.4.2 Inhalte der Dateien](6.-spezielle-anwendungsszenarien/6.4-cms-templates/6.4.2-inhalte-der-dateien.md)
     * [6.4.3 Inhaltstypen](6.-spezielle-anwendungsszenarien/6.4-cms-templates/6.4.3-inhaltstypen.md)
-  * [6.5 Konfiguration der Mandantenfähigkeit](6.-spezielle-anwendungsszenarien/6.5-konfiguration-der-mandantenfaehigkeit/README.md)
+  * [6.5 Subthemes](6.-spezielle-anwendungsszenarien/6.5-konfiguration-der-mandantenfaehigkeit/README.md)
     * [6.5.1 Voraussetzungen in Goobi workflow](6.-spezielle-anwendungsszenarien/6.5-konfiguration-der-mandantenfaehigkeit/6.5.1-voraussetzungen-in-goobi-workflow.md)
     * [6.5.2 Einstellungen im Goobi viewer](6.-spezielle-anwendungsszenarien/6.5-konfiguration-der-mandantenfaehigkeit/6.5.2-einstellungen-im-goobi-viewer.md)
   * [6.6 Normdaten](6.-spezielle-anwendungsszenarien/6.6-normdaten.md)
