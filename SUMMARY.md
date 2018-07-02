@@ -88,7 +88,7 @@
   * [3.4 Metadaten](3.-konfiguration-indexer/3.4-metadaten.md)
   * [3.5 Weitere Optionen](3.-konfiguration-indexer/3.5-weitere-optionen.md)
   * [3.6 Starten und Beenden](3.-konfiguration-indexer/3.6-starten-und-beenden.md)
-  * [3.7 Einspielen von Wereken](3.-konfiguration-indexer/3.7-einspielen-von-wereken.md)
+  * [3.7 Einspielen von Werken](3.-konfiguration-indexer/3.7-einspielen-von-wereken.md)
   * [3.8 Aktualisierung einzelner Seitendokumente](3.-konfiguration-indexer/3.8-aktualisierung-einzelner-seitendokumente.md)
   * [3.9  Löschen von Werken](3.-konfiguration-indexer/3.9-loeschen-von-werken.md)
   * [3.10 Löschen verwaister Anchor-Werke](3.-konfiguration-indexer/3.10-loeschen-verwaister-anchor-werke.md)
