@@ -120,7 +120,7 @@
     * [5.2.3 Beschreibung](5.-anwendungsoberflaeche/5.2-die-funktionalitaeten-der-uebersichtsseite/5.2.3-beschreibung.md)
     * [5.2.4 Historie](5.-anwendungsoberflaeche/5.2-die-funktionalitaeten-der-uebersichtsseite/5.2.4-historie.md)
     * [5.2.5 Übersichtsseite löschen](5.-anwendungsoberflaeche/5.2-die-funktionalitaeten-der-uebersichtsseite/5.2.5-uebersichtsseite-loeschen.md)
-* [6. Spezielle Anwendungsszenarien](6.-spezielle-anwendungsszenarien/README.md)
+* [6. Anwendungsszenarien](6.-spezielle-anwendungsszenarien/README.md)
   * [6.1 Crowdsourcing](6.-spezielle-anwendungsszenarien/6.1-crowdsourcing.md)
   * [6.2 Serien und Konvolute](6.-spezielle-anwendungsszenarien/6.2-serien-und-konvolute.md)
   * [6.3 Moving Wall](6.-spezielle-anwendungsszenarien/6.3-moving-wall.md)
