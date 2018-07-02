@@ -4,5 +4,3 @@ Der Goobi viewer verfügt über ein integriertes Content Management System, im F
 
 Die Funktionen des CMS erreicht man über das Administrations-Backend des Goobi viewers über den Link Administration im Hauptmenü. Die in fünf Punkte aufgeteilten Hauptfunktionen des CMS lauten Seitenübersicht, Neue Seite anlegen, Hauptmenü Sammlungen und Medien. Diese werden in den folgenden Unterkapiteln detailliert beschrieben.
 
-![](../../.gitbook/assets/cms-widgets.png)
-
