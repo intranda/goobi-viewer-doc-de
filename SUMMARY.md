@@ -155,5 +155,6 @@
     * [März](7.-digests/2018/maerz.md)
     * [April](7.-digests/2018/april.md)
     * [Mai](7.-digests/2018/mai.md)
+    * [Juni](7.-digests/2018/juni.md)
 * [8. Zusätzliche Details](7.-zusaetzliche-details.md)
 
