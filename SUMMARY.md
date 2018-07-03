@@ -76,7 +76,7 @@
   * [2.28 CMS](2.-konfiguration-core/2.28-cms.md)
   * [2.29 Transkribus-Integration](2.-konfiguration-core/2.29-transkribus-integration.md)
   * [2.30 Originalinhalte](2.-konfiguration-core/2.30-originalinhalte.md)
-  * [2.31 Piwik Statistiken](2.-konfiguration-core/2.31-piwik-statistiken.md)
+  * [2.31 Piwik/Matomo Integration](2.-konfiguration-core/2.31-piwik-statistiken.md)
   * [2.32 Sitelinks](2.-konfiguration-core/2.32-sitelinks.md)
   * [2.33 Web API](2.-konfiguration-core/2.33-web-api/README.md)
     * [2.33.1 JSON](2.-konfiguration-core/2.33-web-api/2.33.1-json.md)
