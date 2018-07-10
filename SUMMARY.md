@@ -160,5 +160,8 @@
     * [April](7.-digests/2018/april.md)
     * [Mai](7.-digests/2018/mai.md)
     * [Juni](7.-digests/2018/juni.md)
-* [8. Zusätzliche Details](7.-zusaetzliche-details.md)
+* [8. Changes](8.-changes/README.md)
+  * [8.1 Core](8.-changes/8.1-core.md)
+  * [8.2 Themes](8.-changes/8.2-themes.md)
+* [9. Zusätzliche Details](7.-zusaetzliche-details.md)
 
