@@ -1,3 +1,7 @@
+---
+description: 'Goobi viewer Digest: 2017/10'
+---
+
 # Oktober
 
 Im Oktober freuen wir uns über die Freischaltung des neuen Themes der HLB-Fulda:

@@ -1,3 +1,7 @@
+---
+description: 'Goobi viewer Digest: 2017/09'
+---
+
 # September
 
 ## Entwicklungen

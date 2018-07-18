@@ -1,3 +1,7 @@
+---
+description: 'Goobi viewer Digest: 2018/06'
+---
+
 # Juni
 
 Im Juni hat die Universitätsbibliothek Kassel eine Veranstaltung zum Thema Crowdsourcing durchgeführt. Dabei wurden ORKA und das Grimm-Portal zusammen mit dem Crowdsourcing-Modul und dessen Möglichkeiten vorgestellt. Wir freuen uns über die Veranstaltung in der Grimm-Welt mit über 50 Teilnehmern.

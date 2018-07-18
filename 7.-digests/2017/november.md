@@ -1,3 +1,7 @@
+---
+description: 'Goobi viewer Digest: 2017/11'
+---
+
 # November
 
 Im November haben zwei Goobi viewer Instanzen ein Update auf die aktuelle stabile Version bekommen:

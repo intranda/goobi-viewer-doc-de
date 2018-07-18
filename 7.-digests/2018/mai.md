@@ -1,3 +1,7 @@
+---
+description: 'Goobi viewer Digest: 2018/05'
+---
+
 # Mai
 
 Im Mai haben drei Kunden ein Update des Goobi viewers bekommen:
