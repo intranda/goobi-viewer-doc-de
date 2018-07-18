@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2018/01'
----
-
 # Januar
 
 Die Arbeit des Januars war im Goobi viewer Team vor allem mit der Entwicklung und Umsetzung von individuellen Kundenwünschen geprägt. Online gegangen ist das Crowdsourcing Modul in der HLB Fulda. Willkommen in der Crowdsourcing Community!

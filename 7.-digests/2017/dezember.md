@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2017/12'
----
-
 # Dezember
 
 Auch wenn der Monat Dezember und das Jahr 2017 noch nicht zu Ende ist, die Entwicklungsarbeiten für diesen Monat sind abgeschlossen. Es gibt verschiedene Neuerungen zu berichten.
