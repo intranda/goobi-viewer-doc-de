@@ -5,7 +5,7 @@ Die Web API erlaubt es, Informationen zu Werken als JSON-Datensätze über einen
 Folgende statische Felder sind stets enthalten:
 
 | **id**  | Identifier des Werks  |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | **title**  | Titels des Werks |
 | **dateCreated**  | Importdatum des Werks in den Goobi viewer  |
 | **collection**  | Erster Sammlungs-Eintrage für dieses Werk |
