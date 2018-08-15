@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2018/04'
----
-
 # April
 
 Der Monat April war von zwei Hauptthemenbereichen geprägt 

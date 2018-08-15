@@ -1,9 +1,3 @@
----
-description: >-
-  Die Web API ist in der jetzigen Form as deprecated markiert und wird durch
-  einen REST Service ersetzt.
----
-
 # 6.7 Web API
 
 Die Web API erlaubt es, Informationen zu Werken als JSON-Datensätze über einen einfachen GET-URL-Aufruf zu erhalten. Die Datensätze des Treffersets bestehen jeweils aus statisch definierten, sowie optionalen frei konfigurierbaren Feldern.

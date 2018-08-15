@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2018/02'
----
-
 # Februar
 
 Im Februar haben die Universitätsbibliothek Kiel und die Landesbibliothek in Liechtenstein ein Update des Goobi viewers erhalten:

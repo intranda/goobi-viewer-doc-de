@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2018/07'
----
-
 # Juli
 
 Bedingt durch die Sommerferien hat sich die Entwicklungsgeschwindigkeit des Goobi viewers im Juli verlangsamt. Dazu haben Arbeiten mehr "unter der Haube" stattgefunden, aber auch an der Oberfläche gibt es Neuerungen zu zeigen.
@@ -41,5 +37,5 @@ Die Ausgabe der Tests ist unter den folgenden URLs zu finden:
 
 Durch die Arbeiten an der Dokumentation sind verschiedene Schalter in der Konfiguration aufgefallen, die nicht mehr in Verwendung waren. Diese wurden aus dem Quelltext entfernt. Für Entwickler wurde eine neue ViewerConfigurationException eingeführt die anzeigt, wenn wichtige Einträge in der Konfigurationsdatei fehlen.
 
-Bedingt durch die Einführung der französischen Übersetzung kam es zu Fehlern bei der Verwendung von Anführungszeichen `"` und halben Anführungszeichen `'`. Der Quelltext wurde eingehend geprüft, damit die Verwendung einfacher Anführungszeichen in der französischen Sprache keine Problemen bei der Seitenanzeige verursachen.
+Bedingt durch die Einführung der französischen Übersetzung kam es zu Fehlern bei der Verwendung von Anführungszeichen `"` und halben Anführungszeichen `'` . Der Quelltext wurde eingehend geprüft, damit die Verwendung einfacher Anführungszeichen in der französischen Sprache keine Problemen bei der Seitenanzeige verursachen.
 

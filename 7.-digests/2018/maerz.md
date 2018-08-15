@@ -1,7 +1,3 @@
----
-description: 'Goobi viewer Digest: 2018/03'
----
-
 # März
 
 Auch im März haben verschiedene neue Features in den Goobi viewer Einzug gehalten. Sie sind in diesem Monat aber vor allem unter der Haube zu finden.
