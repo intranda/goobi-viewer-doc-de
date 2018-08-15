@@ -134,5 +134,5 @@ Um die Heterogenität Image-Pfade in LIDO-Dokumenten zu berücksichtigen, sind d
 
 #### 3.1.18 Parameter: email/...
 
-Sofern bei der Indexierung Fehler auftreten kann der Goobi viewer Indexer die im Element recipients definierten Emailadressen benachrichtigen. Die Konfiguration erfolgt analog zu der in Abschnitt[ 2.5.2](../konfiguration-core/2.5-benutzeraccounts/2.5.2-lokaler-benutzeraccount.md) beschriebenen Weise.
+Sofern bei der Indexierung Fehler auftreten kann der Goobi viewer Indexer die im Element recipients definierten Emailadressen benachrichtigen. Die Konfiguration erfolgt analog zu der in Abschnitt[ 2.5.2](../konfiguration-core/benutzeraccounts/lokaler-benutzeraccount.md) beschriebenen Weise.
 

@@ -16,7 +16,7 @@ Zunächst müssen die auf diese Weise darzustellenden Strukturtypen definiert we
 </metadata>
 ```
 
-Um die Metadaten nach eigenem Bedarf auf unterschiedliche Reiter zu verteilen, gibt es in der Konfiguration der [Haupt-Metadaten](2.19.1-haupt-metadaten.md) das Attribut `type` im Element `<metadata>`:
+Um die Metadaten nach eigenem Bedarf auf unterschiedliche Reiter zu verteilen, gibt es in der Konfiguration der [Haupt-Metadaten](haupt-metadaten.md) das Attribut `type` im Element `<metadata>`:
 
 ```markup
 <metadata>

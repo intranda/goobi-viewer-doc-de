@@ -52,5 +52,5 @@ Folgende Elemente schalten Links in der Seitenleiste zu den verschiedenen Arten 
 
 ![Konfiguration im Widget Ansicht in der Seitenleiste ](../.gitbook/assets/seitenleiste%20%281%29.png)
 
-Innerhalb dieser Sektion wird in der Konfigurationsdatei auch das Seitenleisten-Inhaltsverzeichnis konfiguriert. Aufgrund der thematischen Nähe, ist es in [Kapitel  2.20.2](2.20-inhaltsverzeichnisse/2.20.2-konfiguration-seitenleisten-inhaltsverzeichnis.md) beschrieben.
+Innerhalb dieser Sektion wird in der Konfigurationsdatei auch das Seitenleisten-Inhaltsverzeichnis konfiguriert. Aufgrund der thematischen Nähe, ist es in [Kapitel  2.20.2](inhaltsverzeichnisse/konfiguration-seitenleisten-inhaltsverzeichnis.md) beschrieben.
 

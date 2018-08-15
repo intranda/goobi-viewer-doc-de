@@ -11,7 +11,7 @@ Hierbei handelt es sich um die Standardvariante.
 
 #### Externe Generierung
 
-Für diese Variante muss ein intranda TaskManager mit dem Viewer-PDF-Plugin zur Verfügung stehen. Für die Konfiguration siehe die Sektion [URL-Konfiguration](../2.4-url-konfiguration.md).
+Für diese Variante muss ein intranda TaskManager mit dem Viewer-PDF-Plugin zur Verfügung stehen. Für die Konfiguration siehe die Sektion [URL-Konfiguration](../url-konfiguration.md).
 
 Um die Option dann zu verwenden, muss folgende Konfiguration eingeschaltet sein:
 

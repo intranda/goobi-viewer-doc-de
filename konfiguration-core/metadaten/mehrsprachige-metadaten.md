@@ -49,12 +49,12 @@ Der Goobi viewer unterstützt mehrsprachige Metadaten. Diese sind mit dem Suffix
 
 Die Felder können alle gleichwertig nebeneinander in den folgenden Abschnitten konfiguriert werden:
 
-* [2.17.1 Sortierung](../2.17-suche/2.17.1-sortierung.md) \(`search/sorting/luceneField`\)
-* [2.17.2 Facettierung](../2.17-suche/2.17.2-facettierung.md) \(`search/drillDown/field`\)
-* [2.19.1 Haupt-Metadaten](2.19.1-haupt-metadaten.md) \(`metadata/mainMetadataList/metadata`\)
-* [2.19.3 Suchtreffer-Metadaten](2.19.3-suchtreffer-metadaten.md) \(`metadata/searchHitMetadataList/metadata`\)
-* [2.19.7 Stöbern](2.19.7-stoebern.md) \(`metadata/browsingMenu/luceneField`\)
-* [2.20.1 Konfiguration Inhaltsverzeichnis](../2.20-inhaltsverzeichnisse/2.20.1-konfiguration-inhaltsverzeichnis.md) \(`toc/labelConfig/template/metadata/param`\)
+* [2.17.1 Sortierung](../suche/sortierung.md) \(`search/sorting/luceneField`\)
+* [2.17.2 Facettierung](../suche/facettierung.md) \(`search/drillDown/field`\)
+* [2.19.1 Haupt-Metadaten](haupt-metadaten.md) \(`metadata/mainMetadataList/metadata`\)
+* [2.19.3 Suchtreffer-Metadaten](suchtreffer-metadaten.md) \(`metadata/searchHitMetadataList/metadata`\)
+* [2.19.7 Stöbern](stoebern.md) \(`metadata/browsingMenu/luceneField`\)
+* [2.20.1 Konfiguration Inhaltsverzeichnis](../inhaltsverzeichnisse/konfiguration-inhaltsverzeichnis.md) \(`toc/labelConfig/template/metadata/param`\)
 
-Der Goobi viewer erkennt die mehrsprachigen Felder automatisch und zeigt - sofern der in [Abschnitt 2.15 ](../2.15.-sprachumschaltung-bei-mehrsprachigen-metadaten.md)beschriebene Schalter auf `true` steht - nur die Sprache der aktuellen Benutzeroberfläche an.
+Der Goobi viewer erkennt die mehrsprachigen Felder automatisch und zeigt - sofern der in [Abschnitt 2.15 ](../sprachumschaltung-bei-mehrsprachigen-metadaten.md)beschriebene Schalter auf `true` steht - nur die Sprache der aktuellen Benutzeroberfläche an.
 

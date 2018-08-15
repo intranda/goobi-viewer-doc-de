@@ -1,4 +1,4 @@
 # 2.20.3 Herunterladen von Inhaltsverzeichnissen als PDF
 
-Siehe [PDF-Download](../2.9-pdf-download/)
+Siehe [PDF-Download](../pdf-download/)
 

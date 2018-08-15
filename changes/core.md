@@ -2,15 +2,15 @@
 
 ## 2018-06-21
 
-Bei der [Facettierung](../konfiguration-core/2.17-suche/2.17.2-facettierung.md) dürfen die konfigurierten Feldnamen nicht mehr mit FACET\_ starten, sondern müssen mit MD\_ beginnen.
+Bei der [Facettierung](../konfiguration-core/suche/facettierung.md) dürfen die konfigurierten Feldnamen nicht mehr mit FACET\_ starten, sondern müssen mit MD\_ beginnen.
 
 ## 2018-05-28
 
-Optional: Extrahiertes Theme einbinden. Siehe dazu Kapitel [2.16.1](../konfiguration-core/2.16-theme/2.16.1-externe-themes.md)
+Optional: Extrahiertes Theme einbinden. Siehe dazu Kapitel [2.16.1](../konfiguration-core/theme/externe-themes.md)
 
 ## 2018-05-08
 
-Damit die vom Goobi viewer generierten [IIIF Presentation Manifeste](../konfiguration-core/2.33-web-api/2.33.2-iiif.md) von extern funktionieren, muss CORS erlaubt werde. Dafür das Headers Modul im Apache aktivieren sofern noch nicht geschehen:
+Damit die vom Goobi viewer generierten [IIIF Presentation Manifeste](../konfiguration-core/web-api/iiif.md) von extern funktionieren, muss CORS erlaubt werde. Dafür das Headers Modul im Apache aktivieren sofern noch nicht geschehen:
 
 ```text
 a2enmod headers

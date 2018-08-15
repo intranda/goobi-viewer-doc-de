@@ -199,7 +199,7 @@ In diesem Beispiel wird das Nichtsortierzeichen ‘¬’ durch nichts ersetzt \(
 
 #### 3.8.13 Parameter: nonSortCharacters
 
-Alternativ zum Ersetzen von Nichtsortierzeichen \(siehe [3.8.12](3.8-weitere-optionen.md#3-8-12-parameter-replace)\) kann mit diesem Konfigurationselement die Erkennung von Nichtsortier-Teilen für Metadaten- sowie Sortierfelder konfiguriert werden. Dabei werden für angezeigte Metadatenfelder die Nichtsortierzeichen herausgefiltert, für Sortierfelder wird der gesamte Teil der Zeichenkette, der durch die Nichtsortierzeichen diskriminiert ist, entfernt.
+Alternativ zum Ersetzen von Nichtsortierzeichen \(siehe [3.8.12](weitere-optionen.md#3-8-12-parameter-replace)\) kann mit diesem Konfigurationselement die Erkennung von Nichtsortier-Teilen für Metadaten- sowie Sortierfelder konfiguriert werden. Dabei werden für angezeigte Metadatenfelder die Nichtsortierzeichen herausgefiltert, für Sortierfelder wird der gesamte Teil der Zeichenkette, der durch die Nichtsortierzeichen diskriminiert ist, entfernt.
 
 Ist der für die Sortierung des nicht relevanten Teils beidseitig von Nichtsortierzeichen umschlossen, zum Beispiel `«` und `»,` muss `«` im Attribut prefix, `»` im Attribut suffix konfiguriert werden.
 
