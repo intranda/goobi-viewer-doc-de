@@ -28,8 +28,7 @@ Die Anzeige der Untertreffer kann weiter gesteuert werden. Mit dem Element `<ena
         <ignoreField>UGCTERMS</ignoreField>
         <ignoreField>YEARMONTH</ignoreField>
         <ignoreField>YEARMONTHDAY</ignoreField>
-        
-        <translateField>DC</translateField>
+
         <translateField>DOCSTRCT</translateField>
     </displayAdditionalMetadata>
 </search>
