@@ -46,8 +46,9 @@ Die `config_crowdsourcing.xml` ist wie folgt aufgebaut:
 
 Die vier Content Typen `PERSON`, `ADDRESS`, `CORPORATION` und `COMMENT` \(&lt;Content&gt; Elemente\) sind nicht um weitere Typen erweiterbar. Die verwendbaren Felder \(&lt;field&gt;\) lassen sich aber für jeden Typ beliebig konfigurieren.
 
-| **label** | Der sowohl gespeicherte als auch angezeigte Name des Feldes. |
+| **Attribut** | Beschreibung |
 | :--- | :--- |
+| **label** | Der sowohl gespeicherte als auch angezeigte Name des Feldes. |
 | **titleEntry** | Reihenfolge des Wertes im generierten Titel des Inhaltes. Die Feldwerte werden anhand dieser Zahl sortiert und hintereinander im Titel \(= Ausgabewert des ganzen Inhaltes, zum Beispiel in der Anzeige unter dem Bild\) angezeigt. |
 | **titleFormat** | Besondere Formatierung des Wertes im Titel. Der Platzhalter `{}` wird durch den tatsächlichen Wert ersetzt und um die anderen Zeichen in diesem Attribut ergänzt. |
 | **desc** | Wird derzeit anscheinend nur in der `toString()` Methode der des Konfigurationselements verwendet. |

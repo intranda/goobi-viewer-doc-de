@@ -4,8 +4,9 @@ Im Admin-Backend des Goobi viewers müssen Lizenztypen angelegt werden. Ein Lize
 
 Über den Menüpunkt „Lizenztypen“ gelagt man zur Liste der existierenden Lizenztypen. Um einen neuen Lizenztyp zu erstellen, muss über den Link „Neuen Lizenztyp hinzufügen“ die Erstellungsmaske geöffnet werden. Diese besitzt folgende Eingabefelder:
 
-| **Name** | Der Name des Lizenztyps muss der zugehörigen Access Condition entsprechen \(Groß-/Kleinschreibung muss hier beachtet werden\). |
+| **Feld** | Beschreibung |
 | :--- | :--- |
+| **Name** | Der Name des Lizenztyps muss der zugehörigen Access Condition entsprechen \(Groß-/Kleinschreibung muss hier beachtet werden\). |
 | **Beschreibung** | Freitext-Beschreibung zu diesem Lizenztyp. |
 | **Bedingungen** | Eine optionale Solr-Query, um den Wirkungskreis dieses Lizenztyps auf bestimmte Werke einzuschränken. Dies bedeutet, dass nur für Werke, die dieser Query entsprechen, auch die konfigurierten Einschränkungen dieses Lizenztyps gelten. Alle anderen Werke werden die Einstellungen dieses Lizenztyps ignorieren. |
 | **OpenAccess** | Ist ein Lizenztyp als Open Access definiert, werden alle konfigurierten Einschränkungen ignoriert, und das Werk darf frei eingesehen werden. |

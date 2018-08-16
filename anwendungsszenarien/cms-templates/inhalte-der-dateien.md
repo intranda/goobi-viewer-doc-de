@@ -28,9 +28,10 @@ Die Template-Datei hat dabei stets einen beispielhaften Aufbau:
 Die einzelnen Elemente im Überblick:  
 
 
-| **cms\_page\_template.id**  | Ein einzigartiger Identifier-String des Templates, der intern zur Identifikation des Templates verwendet wird |
+| Option | Beschreibung |
 | :--- | :--- |
-| **cms\_page\_template.version**  | Das Datum der letzten Änderung oder eine andere Versionierung. Wird vom Goobi viewer nicht verwendet. |
+| **cms\_page\_template/id** | Ein einzigartiger Identifier-String des Templates, der intern zur Identifikation des Templates verwendet wird |
+| **cms\_page\_template/version**  | Das Datum der letzten Änderung oder eine andere Versionierung. Wird vom Goobi viewer nicht verwendet. |
 | **name**  | Der Name des Templates, wie er beim Erstellen neuer Seiten angezeigt wird.  |
 | **description**  | Eine Beschreibung des Templates, wie sie beim Erstellen neuer Seiten angezeigt wird. |
 | **icon**  | Der Dateiname des Icons, das dieses Template beim Erstellen neuer Seiten und beim Bearbeiten vorhandener Seiten repräsentiert; ohne Pfadangabe. |

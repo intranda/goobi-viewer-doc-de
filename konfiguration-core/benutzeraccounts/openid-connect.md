@@ -14,7 +14,7 @@ Der Zugriff mittels OpenID Connect wird wie folgt konfiguriert:
 Über das Attribut `show` kann die OpenID Connect Funktionalität separat ein- beziehungsweise abgeschaltet werden.  
 Darüber hinaus können zusätzliche OpenID Connect Provider \(ausstellende Institutionen\) über neue `<provider>` Elemente definiert werden:
 
-| **name** | Angezeigter Provider Name |
+| **Attribut** | Beschreibung |
 | :--- | :--- |
 | **url endpoint** | Authentifizierungs-URL des Providers \(vom jeweiligen Provider zu beziehen - bitte die Anweisungen des Providers beachten\) |
 | **useTextField** | Wenn true, wird der Nutzer zunächst aufgefordert, einen Nutzernamen einzugeben \(erforderlich für manche OpenID Provider\) |

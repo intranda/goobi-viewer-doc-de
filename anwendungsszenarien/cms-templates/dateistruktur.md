@@ -4,10 +4,11 @@ Ein CMS-Template ist eine Layout-Vorlage für eine durch das CMS-System des Goob
 
 Ein Template wird durch drei Dateien definiert :
 
-| **Template-Datei** | Eine XML-Datei, die die Beschreibung des Templates, sowie eine Liste aller möglichen Inhalte enthält. Sie verweist außerdem auf die anderen für das Template verwendeten Dateien, und ist damit das Kernstück der Template-Definition |
+| **Datei** | Beschreibung |
 | :--- | :--- |
-| **Layout-Datei** | Eine XHTML-Datei, die die HTML-Struktur der Seite vorgibt, in welche die vom Benutzer definierten Inhalte eingebettet werden. |
-| **Template-Icon** | Eine Bilddatei, die eine einfache graphische Repräsentation des Templates darstellt. Das Bild mus quadratische Abmessungen haben, und ist üblicherweise eine 128x128 Pixel große png-Datei. |
+| **Template** | Eine XML-Datei, die die Beschreibung des Templates, sowie eine Liste aller möglichen Inhalte enthält. Sie verweist außerdem auf die anderen für das Template verwendeten Dateien, und ist damit das Kernstück der Template-Definition |
+| **Layout** | Eine XHTML-Datei, die die HTML-Struktur der Seite vorgibt, in welche die vom Benutzer definierten Inhalte eingebettet werden. |
+| **Icon** | Eine Bilddatei, die eine einfache graphische Repräsentation des Templates darstellt. Das Bild mus quadratische Abmessungen haben, und ist üblicherweise eine 128x128 Pixel große png-Datei. |
 
 Alle Dateien müssen im Unterverzeichnis `/cms/templates/` des Theme-Ordners des aktiven viewer-Themes im viewer-webapp-Verzeichnis des Servers liegen, also zum Beispiel unter folgendes Verzeichnis:
 

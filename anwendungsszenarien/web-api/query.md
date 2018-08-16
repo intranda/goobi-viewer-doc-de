@@ -6,8 +6,9 @@ In diesem Modus werden die Datensätze über eine selbst definierte Solr-Query g
 https://viewer.example.org/viewer/api?action=query&q=DC:varia&count=100&sortField=DATECREATED&sortOrder=desc&jsonFormat=datecentric
 ```
 
-| **action**  | Immer „query“  |
+| **Parameter**  | Beschreibung |
 | :--- | :--- |
+| **action** | Immer „query“ |
 | **q**  | Definition einer Solr Query  |
 | **count**  | Optional: Maximale Anzahl der auszuliefernden Datensätze  |
 | **sortField**  | Optional \(darf mehrfach vorkommen\): Solr-Sortierfelder für das Trefferset |

@@ -15,8 +15,9 @@ Das Inhaltsverzeichnis der Seitenleiste wird ähnlich konfiguriert:
 </sidebar>
 ```
 
-| **visible** | Anzeige dieses Elementes \(true/false\) |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **visible** | Anzeige dieses Elementes \(true/false\) |
 | **pageNumbersVisible** | Anzeige von Seitenzahlen in dieser Ansicht \(true/false\) |
 | **lengthBeforeCut** | Maximale Anzahl der Zeichen für jedes Element \(längere Titel können durch Klick auf mehr... angezeigt werden\). |
 | **useTreeView** | Darstellung als ausklappbarer Baum |

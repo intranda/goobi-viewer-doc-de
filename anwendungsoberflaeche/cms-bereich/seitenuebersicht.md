@@ -6,8 +6,9 @@ Die gesamte Tabelle der Seitenübersicht lässt sich über die Sucheingabe filte
 
 Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die Tabelle ist wie folgt aufgegliedert:
 
-| **Typ**  | Der Typ der Seite beschreibt die Art des ausgewählten Templates in Form eines zugeordneten Symbols.  |
+| **Spalte**  | Beschreibung  |
 | :--- | :--- |
+| Typ | Der Typ der Seite beschreibt die Art des ausgewählten Templates in Form eines zugeordneten Symbols. |
 | **de / en / es**  | Diese Spalten zeigen, in welcher Sprache die Seite zur Verfügung steht. Ist die Landesflagge nicht ausgegraut, ist die Seite in die entsprechende Sprache übersetzt.  |
 | **Titel**  | Diese Spalte listet den Titel der Seite auf. Die Tabelle ist auch nach Titeln sortierbar.   |
 | **Klassifikationen\(Kategorien\)**  | Jede Seite kann klassifiziert werden. Diese Spalte zeigte die Klassifikation der Seite an. Die Tabelle ist auch nach Klassifikationen sortierbar. |
@@ -16,8 +17,9 @@ Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die T
 
 
 
-| ![](https://documentation.intranda.com/xwiki/bin/download/doc/Goobi%20viewer/07/01/WebHome/bearbeiten.png?width=35) | Icon Bearbeiten  |
+| Icon | Beschreibung |
 | :--- | :--- |
+| ![](https://documentation.intranda.com/xwiki/bin/download/doc/Goobi%20viewer/07/01/WebHome/bearbeiten.png?width=35) | Icon Bearbeiten |
 | ![](https://documentation.intranda.com/xwiki/bin/download/doc/Goobi%20viewer/07/01/WebHome/Ansicht.png?width=35) | Icon Ansicht  |
 | ![](https://documentation.intranda.com/xwiki/bin/download/doc/Goobi%20viewer/07/01/WebHome/L%C3%B6schen.png?width=34) | Icon Löschen  |
 

@@ -22,8 +22,11 @@ Die Orte, an denen der Download Link zur Verfügung stehen soll, werden analog z
 </epub>
 ```
 
-| **titleEpubEnabled** | Schaltet den ePub Downloadlink in der Titelleiste \(diese wird bei der Anzeige von Bildern, Volltexten, Thumbnails und Inhaltsverzeichnissen angezeigt\) ein oder aus. Standardwert ist `false`.  |
+| **Option** | Beschreibung  |
 | :--- | :--- |
+| **titleEpubEnabled** | Schaltet den ePub Downloadlink in der Titelleiste \(diese wird bei der Anzeige von Bildern, Volltexten, Thumbnails und Inhaltsverzeichnissen angezeigt\) ein oder aus. Standardwert ist false.Schaltet den ePub Downloadlink in der Titelleiste \(diese wird bei der Anzeige von Bildern, Volltexten, Thumbnails und Inhaltsverzeichnissen angezeigt\) ein oder aus. Standardwert ist false. |
 | **tocEpubEnabled** | Schaltet ePub Downloadlinks in der Inhaltsansicht ein oder aus. Standardwert ist `false`. |
 | **metadataEpubEnabled** | Schaltet den ePub Downloadlink auf der Seite für bibliographische Daten ein oder aus. Standardwert ist `false`.   |
+
+
 

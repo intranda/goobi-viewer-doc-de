@@ -17,8 +17,9 @@ Das CMS-Modul des Goobi viewers wird im Elementblock `<cms>` konfiguriert.
 </cms>
 ```
 
-| **enabled** | Schaltet CMS-Funktionen grundsätzlich ein beziehungsweise ab. Ist Ihr Goobi viewer ohne CMS-Funktionen installiert worden, hat dieses Konfigurationselement keine Funktion. Standardwerst ist `false`. |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **enabled** | Schaltet CMS-Funktionen grundsätzlich ein beziehungsweise ab. Ist Ihr Goobi viewer ohne CMS-Funktionen installiert worden, hat dieses Konfigurationselement keine Funktion. Standardwerst ist false. |
 | **useCustomNavBar** | Die CMS-Funktionen des Goobi viewers bieten die Möglichkeit, das Haupt-Navigationsmenü anzupassen, etwa dort um selbst erstellte CMS-Seiten zu integrieren. Damit das angepasste Navigationsmenü verwendet wird, muss dieser schalter auf `true` stehen. Standardwert ist `false`. |
 | **mediaFolder** | Ordner, in dem für die CMS-Seiten hochgeladenen Mediendateien \(zum Beispiel Bilder\) abgelegt werden. Der Ordner wird relative zum Root-Datenorder des Goobi viewers erwartet \(typischerweise `/opt/digiverso/viewer`\). Standardwert ist `cms_media`. |
 | **classifications** | Hier werden die Klassifikationen für CMS-Seiten definiert. Diese machen es möglich, CMS-Seiten mit bestimmten Begriffen zu taggen. Auf speziellen CMS-Seiten, die zu anderen CMS-Seiten verlinkten, können dann etwa alle Seiten mit bestimmten Klassifikationen automatisch verlinkt werden. |

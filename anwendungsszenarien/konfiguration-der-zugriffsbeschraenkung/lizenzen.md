@@ -4,10 +4,9 @@ Die durch die Konfiguration von Lizenztypen geltenden Einschränkungen für norm
 
 Um eine Lizenz zu vergeben muss der entsprechende Lizenznehmer zunächst im Bearbeitungsmodus geöffnet werden. Dort befindet sich der Reiter „Lizenzen“, auf dem, sofern vorhanden, bereits vergebene Lizenzen aufgelistet sind. Über den Link „Neue Lizenz hinzufügen“ gelangt man zur Erstellungsseite, welche der Erstellungsseite für Lizenztypen sehr ähnlich aufgebaut ist und folgende Felder enthält:
 
-
-
-| **Lizenztyp**  | Drown-Down-Auswahl des Lizenztyps, für den diese Lizenz gelten soll. Der Lizenztyp muss bereits existieren. |
+| **Feld**  | Beschreibung |
 | :--- | :--- |
+| **Lizenztyp** | Drown-Down-Auswahl des Lizenztyps, für den diese Lizenz gelten soll. Der Lizenztyp muss bereits existieren. |
 | **Start**  | Optionales Startdatum der Lizenz. Die erteilten Berechtigungen gelten in diesem Fall erst ab dem auswählten Datum. |
 | **Ende**  | Optionales Ablaufdatum der Lizenz. Die erteilten Berechtigungen gelten in diesem Fall nur bis zum ausgewählten Datum. |
 | **Bedingungen**  | Eine optionale Solr-Query, um den Wirkungskreis dieser Lizenz auf bestimmte Werke einzuschränken. Dies bedeutet, dass die durch diese Lizenz vergebenen Berechtigungen  nur für Werke, die dieser Query entsprechen, gelten. Auf alle anderen Werke, die zu diesem Lizenztyp gehören, hat diese Lizenz keine Auswirkung. |

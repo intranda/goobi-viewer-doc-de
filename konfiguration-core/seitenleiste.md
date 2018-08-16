@@ -37,8 +37,9 @@ Folgende Elemente schalten Links in der Seitenleiste zu den verschiedenen Arten 
 </sidebar>
 ```
 
-| **overview/visible** | Schaltet die Anzeige von Werks-Übersichtsseiten global ein oder aus |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| overview/visible | Schaltet die Anzeige von Werks-Übersichtsseiten global ein oder aus |
 | **overview/condition** | Optionale Solr Subquery. Werke, die von dieser Query erfasst werden, bekommen grundsätzlich eine Übersichtsseite angezeigt \(falls overview/visible auf true steht\). Hat das Werk keine eigene Übersichtsseiten-Konfiguration im Index, wird eine Standardkonfiguration verwendet \(es muss sich hierfür eine Default-Konfigurationsdatei mit dem Namen overviewpage.default.xml im lokalen Konfigurationsordner, dessen Pfad unter configFolder eingetragen ist, befinden\). |
 | **page/visible** | Bild-/Video-/Audio |
 | **toc/visible** | Sichtbarkeit des Links zum Inhaltsverzeichnis in der Werks-Navigation. Achtung: dies ist nicht das Seitenleisten-Inhaltsverzeichnis, hierfür siehe `sidebarToc`. |

@@ -10,8 +10,9 @@ Mit Hilfe von Piwik/Matomo können Statistiken über die Besucher erfasst werden
 </piwik>
 ```
 
-| **enabled** | Steht es auf `false`, wird Piwik deaktiviert |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **enabled** | Steht es auf false, wird Piwik deaktiviert |
 | **baseURL** | Basis-URL des Piwik Servers \(ohne [http://](http:) aber mit Slash am Ende\) |
 | **siteID** | interne Webseiten-ID |
 

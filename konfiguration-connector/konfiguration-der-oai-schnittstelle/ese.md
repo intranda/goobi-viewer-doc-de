@@ -24,8 +24,21 @@
 </ese>
 ```
 
-|  **enabled**  | Aktiviert die Verfügbarkeit des Formats in der OAI-PMH Schnittstelle. Standardwert ist `false`. |
+
+
+Die einzelnen Parameter im Überblick: 
+
+| Option  | Beschreibung |
 | :--- | :--- |
-| **hitsPerToken**  | Anzahl der Records, die Solr maximal bei einer Anfrage \(Seite/Token\) zurückgibt. Dieser Wert übeschreibt den globalen Standardwert `hitsPerToken` \(siehe [4.1.1.10](hauptkonfiguration.md#H4.1.10.Parameter:hitsPerToken)\) für dieses Metadatenformat. Ist kein Wert hier definiert, wird der globale Wert verwendet. |
-| **setSpec**  | Konfiguration von Indexfeldern, deren Werte für `setSpec`-Elemente von OAI-Records verwendet werden. Pro Feldkonfiguration wird ein field-Element verwendet, und pro gefundenen Wert wird ein `setSpec`-Element generiert. |
+| **enabled** | Aktiviert die Verfügbarkeit des Formats in der OAI-PMH Schnittstelle. Standardwert ist `false`. |
+| **hitsPerToken** | Anzahl der Records, die Solr maximal bei einer Anfrage \(Seite/Token\) zurückgibt. Dieser Wert übeschreibt den globalen Standardwert `hitsPerToken` \(siehe [4.1.1.10](hauptkonfiguration.md#H4.1.10.Parameter:hitsPerToken)\) für dieses Metadatenformat. Ist kein Wert hier definiert, wird der globale Wert verwendet. |
+| **setSpec** | Konfiguration von Indexfeldern, deren Werte für `setSpec`-Elemente von OAI-Records verwendet werden. Pro Feldkonfiguration wird ein field-Element verwendet, und pro gefundenen Wert wird ein `setSpec`-Element generiert. |
+| **providerField** | Solr Feld, aus dem der Wert für das Pflichtelement `<europeana:provider>` bezogen wird. |
+| **dataProviderField**  | Solr Feld, aus dem der Wert für das Pflichtelement `<europeana:dataProvider>` bezogen wird. |
+| **defaultProvider**  | Wert, der in die Pflichtelemente `<europeana:provider>` und `<europeana:dataProvider>` geschrieben werden soll, falls die konfigurierten Solr Felder keinen entsprechenden Wert liefern. |
+| **rightsField**  | Solr Feld, aus dem der Wert für das Pflichtelement `<europeana:rights>` bezogen wird. |
+| **defaultRightsUrl**  | Wert, der in das Pflichtelement `<europeana:rights>` geschrieben werden soll, falls das konfigurierte Solr Feld keinen entsprechenden Wert liefert. |
+| **types**  | Hier kann man für Strukturtypen, die im Index im Solr Feld DC stehen, Werte für das Pflichtelement `<europeana:type>` mappen. Für jeden Strukturtyp wird ein `<docstruct>` Element definiert. Dabei steht der Name des Strukturtyps im Attribut name, das entsprechende ESE Mapping im Attribut type. Erlaubt sind folgende Werte: `TEXT`, `IMAGE`, `SOUND`, `VIDEO`, `3D`. Ist für einen Strukturtyp kein Mapping vorhanden, wird `TEXT` verwendet. |
+
+
 

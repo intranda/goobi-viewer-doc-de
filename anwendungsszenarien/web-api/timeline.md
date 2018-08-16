@@ -6,8 +6,9 @@ Im Zeitleisten-Modus eine zufällige Auswahl an Datensätzen für einer Darstell
 https://viewer.example.org/viewer/api?action=timeline&startDate=1900&endDate=2000 &count=100
 ```
 
-| **action**  | Immer „timeline“  |
+| **Parameter**  | Beschreibung |
 | :--- | :--- |
+| **action** | Immer „timeline“ |
 | **startDate / endDate**  | Jahreszahlen von-bis, aus der Datensätze ausgeliefert werden sollen  |
 | **q**  | Definition einer eigenen Solr Query, ersetzt `startDate` / `endDate`  |
 | **count**  | Optional: Maximale Anzahl der auszuliefernden Datensätze  |

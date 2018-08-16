@@ -56,7 +56,8 @@ Filterung von Werken, die aufgrund von Zugriffsbeschränkungen nicht gelistet we
 <defaultLocale>en</defaultLocale>
 ```
 
-| useCollectionBlacklist | Falls `true`, wird die im Goobi viewer konfigurierten Collection Blacklists berücksichtigt und betreffende Werke herausgefiltert. Standardwert ist `true`. |
+| Option | Beschreibung |
 | :--- | :--- |
-| defaultLocale | Sprache, in die zu übersetztende Werte übersetzt werden sollen. Standardwert ist `en`.  |
+| **useCollectionBlacklist** | Falls true, wird die im Goobi viewer konfigurierten Collection Blacklists berücksichtigt und betreffende Werke herausgefiltert. Standardwert ist true. |
+| **defaultLocale** | Sprache, in die zu übersetztende Werte übersetzt werden sollen. Standardwert ist `en`.  |
 

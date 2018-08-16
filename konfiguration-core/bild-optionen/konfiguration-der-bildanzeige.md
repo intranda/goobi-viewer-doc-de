@@ -23,8 +23,9 @@ Der Konfigurationsblock hat folgende Form:
 
 Die einzelnen Konfigurationsparameter werden im Folgenden erklärt:
 
-| **tileImage** | Legt fest, ob das Bild als ganzes oder gekachelt angezeigt werden soll. Für die gekachelte Ansicht muss der Wert „true“ gesetzt sein. |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **tileImage** | Legt fest, ob das Bild als ganzes oder gekachelt angezeigt werden soll. Für die gekachelte |
 | **footerHeight** | Die absolute Höhe des Footers in Pixeln. Um den Footer ganz auszuschalten, kann man hier einen Wert von „0“ eingeben. |
 | **scale** | Diese Konfiguration wird nur für tileImage=“false“ berücksichtigt. Dann gibt sie die Breite des angezeigten Bildes in Pixeln an. Dies ist nicht die Breite der Bildanzeige, die im html-code gestgelegt wird, sondern die Größe des Bildes, das zur Anzeige geladen wird.Diese Konfiguration ist beliebig wiederholbar, um das Bild in verschiedenen Auflösungen anzuzeigen. Größere Versionen des Bildes beim Zoomen der Bildanzeige werden nachgeladen.  |
 | **tileSize** | Diese Konfiguration wird nur für tileImage=“true“ berücksichtigt. Sie besteht aus zwei Teilkonfigurationen: scaleFactors und size.  |

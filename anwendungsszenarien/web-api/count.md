@@ -6,7 +6,8 @@ In diesem Modus werden die Datensätze ebenfalls über eine selbst definierte So
 https://viewer.example.org/viewer/api?action=count&q=DC:varia
 ```
 
-| **action**  | Immer „count“  |
+| **Parameter**  | Beschreibung |
 | :--- | :--- |
+| **action** | Immer „count“ |
 | **q**  | Definition einer eigenen Solr |
 

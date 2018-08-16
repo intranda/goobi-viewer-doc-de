@@ -36,8 +36,9 @@ Metadaten für LIDO-Events werden ebenfalls über diese Liste konfiguriert. Gew�
 
 Jedes Element `<metadata>` beschreibt ein Metadatenfeld, das angezeigt werden soll. Die Reihenfolge der Auflistung entspricht dabei der Reihenfolge, in der diese Metadaten \(falls vorhanden\) angezeigt werden. Das Element hat folgende Attribute:
 
-| **label** | Der Key für die Bezeichnung dieses Metadatenfeldes \(die Übersetzung für diesen Key muss in der jeweiligen **messages.properties** vorhanden sein\) |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **label** | Der Key für die Bezeichnung dieses Metadatenfeldes \(die Übersetzung für diesen Key muss in der jeweiligen messages.properties vorhanden sein\) |
 | **value** | Standardwert des Metadatums. Dieser Wert kann etwa eine URL sein, die in der messages.properties definiert ist und Platzhalter enthält, die durch tatsächliche Werte aus dem Metadatum ersetzt werden \(siehe die Konfiguration von `MD_AUTHOR` im obigen Beispiel\). Für einfache Metadaten sollte dieses Attribut leer gelassen werden \(siehe die Konfiguration von `MD_TITLE` im obigen Beispiel\). |
 | **type** | Der Wert des Attributs `type` enthält die Nummer des Reiters oder Blocks, in dem das Metadatum angezeigt werden soll \(beginnend mit 0\). Fehlt dieses Attribut, wird automatisch der Wert 0 verwendet. |
 
@@ -57,8 +58,9 @@ Metadaten von Events \(nur aus LIDO-Datensätzen\) werden in der musealen Ansich
 
 Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Diese definieren die Quelle der tatsächlichen Werte für diesen Metadatentyp. Folgende Attribute sind dabei zu konfigurieren:
 
-| **type** | Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird. Mögliche Typen sind:  |
+| **Attribut** | Beschreibung |
 | :--- | :--- |
+| **type** | Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird. Mögliche Typen sind: |
 | **key** | Das Feld im Solr Index, dass den gewünschten Wert enthält |
 | **prefix** | Zeichenkette, die unmittelbar vor dem Wert des Metadatums stehen soll \(Leerzeichen werden mit \_SPACE\_ kodiert\). |
 | **suffix** | Zeichenkette, die unmittelbar nach dem Wert des Metadatums stehen soll \(Leerzeichen werden mit \_SPACE\_kodiert\). |

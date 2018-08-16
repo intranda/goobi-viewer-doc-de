@@ -13,8 +13,9 @@ Für die Registrierung eines lokalen Benutzeraccounts, wie auch für anderweitig
 </user>
 ```
 
-| **smtpServer** | SMTP Server für den Mailversand |
+| Option | Beschreibung |
 | :--- | :--- |
+| **smtpServer** | SMTP Server für den Mailversand |
 | **smtpUser** | Benutzername zur Authentifizierung an dem SMTP Server |
 | **smtpPassword** | Passwort zur Authentifizierung an dem SMTP Server |
 | **smtpSenderAddress** | Die dem Empfänger angezeigte Senderadresse |

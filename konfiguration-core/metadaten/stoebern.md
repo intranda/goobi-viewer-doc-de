@@ -18,8 +18,9 @@ Folgende Konfigurationsmöglichkeiten stehen für die Stöbern-Funktion zur Verf
 </browsingMenu>
 ```
 
-| **enabled** | Schaltet das Stöbern-Menü ein beziehungsweise ab \(Standardwert ist false\) |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **enabled** | Schaltet das Stöbern-Menü ein beziehungsweise ab \(Standardwert ist false\) |
 | **hitsPerPage** | Anzahl der Werte, die pro Seite angezeigt werden sollen \(Standardwert ist 50\) |
 | **luceneField** | Metadatenfelder aus dem Index, über die gestöbert werden darf. Pro Eintrag wird je ein neuer Link im Menü angezeigt \(Bezeichnung in `messages.properties` nicht vergessen\). Zu beachten ist außerdem, dass nur Solr Felder, die nicht als `tokenized` indexiert sind, verwendet werden dürfen, da ansonsten beispielsweise statt vollständiger Titel nur einzelne Wörter angezeigt werden\). |
 

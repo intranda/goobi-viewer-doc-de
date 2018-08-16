@@ -52,22 +52,25 @@ Das Ergebnis ist im folgenden Screenshot zu sehen:
 
 Bei Suchtreffer-Metadaten sind noch folgende Werte für das Attribut `type` zulässig:
 
-| **topstructfield** | Wert wird nicht aus dem aktuellen, sondern aus dem obersten Strukturelement des aktuellen Bandes gelesen |
+| **Wert** | Beschreibung |
 | :--- | :--- |
+| **topstructfield** | Wert wird nicht aus dem aktuellen, sondern aus dem obersten Strukturelement des aktuellen Bandes gelesen |
 | **anchorfield** | Wert wird nicht aus dem aktuellen Strukturelement, sondern aus dem übergeordneten Gesamtwerk gelesen |
 
 Außerdem sind bei Suchtreffer-Metadaten folgende zusätzliche Attribute verwendbar:
 
-| **url** | Wert des Metadatums soll zum zugehörigen Strukturelement verlinken |
+| **Attribut** | Beschreibung |
 | :--- | :--- |
+| **url** | Wert des Metadatums soll zum zugehörigen Strukturelement verlinken |
 | **dontUseTopstructValue** | Beinhaltet das Strukturelement, das zum Suchtreffer gehört, das gewünschte Metadatum nicht, wird normalerweise stattdessen der Wert des Hauptstrukturelements angezeit. Soll dies nicht geschehen, kann dieses Atrribute auf `true` gesetzt werden. |
 
 Für Strukturtypen, die kein eigenes Template haben, wird die Konfiguration auf dem Template DEFAULT verwendet. Falls kein `_DEFAULT` Template definiert ist, werden für diesen Strukturtyp keine Metadaten in der Seitenleiste angezeigt.
 
 Zusätzlich gibt es für die Suchtreffer noch folgende Konfigurationselemente:
 
-| **displayStructType** | Wenn auf `false` gesetzt, wird der Strukturtyp des Treffers nicht angezeigt. Standardwert ist `true`. |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **displayStructType** | Wenn auf false gesetzt, wird der Strukturtyp des Treffers nicht angezeigt. Standardwert ist true. |
 | **valueNumber** | Die Anzahl der maximal angezeigten Werte für jeden Feldtyp \(das heißt wenn mehr als ein Wert für das Feld `MD_CREATOR` existiert, und valueNumber den Wert 1 hat, wird nur der erste Wert angezeigt\). Standardwert ist `3`. |
 | **valueLength** | Der Platz, der in einer Suchtreffer-Box zur Verfügung steht, ist begrenzt. Dadurch ist es manchmal nötig die Länge der Metadaten-Werte auf eine bestimmte Länge zu trunkieren. Diese Länge wird als die maximale Anzahl der anzuzeigenden Zeichen definiert. Standardwert ist `40` \(in diesem Fall findet keine Trunkierung statt\). |
 

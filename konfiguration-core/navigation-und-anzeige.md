@@ -19,8 +19,9 @@ Folgende Elemente schalten unterschiedliche Elemente beziehungsweise Funktionen 
 </webGuiDisplay>
 ```
 
-| **collectionBrowsing** | Seite mit der Auflistung der Sammlungen |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **collectionBrowsing** | Seite mit der Auflistung der Sammlungen |
 | **userAccountNavigation** | Login Seite für Nutzer |
 | **displayTagCloudNavigation** | Link zur Tag Cloud Seite \(nur mobile Ansicht\) |
 | **displayTagCloudStartpage** | Tag Cloud auf der Startseite |

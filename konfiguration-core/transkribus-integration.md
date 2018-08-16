@@ -16,8 +16,9 @@ Für die Zukunft ist geplant, die fertigen und seitens des Benutzers freigegeben
 </transkribus>
 ```
 
-| **@enabled** | schaltet die Transkribus-Integration ein beziehungsweise ab \(Standardwert ist false\) |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **@enabled** | schaltet die Transkribus-Integration ein beziehungsweise ab \(Standardwert ist `false`\) |
 | **userName** | Benutzername für das Tranksibus-Konto der vorliegenden Goobi viewer Instanz \(über dieses Konto erhält die Instanz lesenden Zugriff auf die von Benutzern übergebenen Werke\) |
 | **password** | Passwort für das Transkribus-Konto der vorliegenden Goobi viewer Instanz |
 | **defaultCollection** | Transkribus-Sammlung, in der die von Benutzern übergenenen Werke abgelegt werden \(sowohl bei Benutzer- als auch bei Viewer-Konten\) |

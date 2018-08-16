@@ -24,9 +24,10 @@ Optional kann in der Titelleiste eine Pfad \(„Breadcrumb“\)-Darstellung der 
 </webGUIDisplay>
 ```
 
-Das Element `<displayTitleBreadcrumbs>` kann zwei Parameter aufweisen:
+Das Element `<displayTitleBreadcrumbs>` kann zwei Attribute enthalten:
 
-| **maxTitleLength** | Maximale Anzahl Zeichen für jedes Element der Ansicht \(längere Titel werden abgeschnitten – der vollständige Titel wird jedoch durch Mouseover angezeigt\)  |
+| **Attribut** | Beschreibung |
 | :--- | :--- |
+| **maxTitleLength** | Maximale Anzahl Zeichen für jedes Element der Ansicht \(längere Titel werden abgeschnitten – der vollständige Titel wird jedoch durch Mouseover angezeigt\) |
 | **includeAnchor** | Bestimmt, ob das Anchor-Element in der Pfadansicht enthalten sein soll \(`true`\) oder nicht \(`false`\). |
 

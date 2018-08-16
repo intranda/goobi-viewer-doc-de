@@ -10,11 +10,12 @@ Hierfür steht im Goobi viewer ein Servlet zur Verfügung, das diese Funktion zu
 https://viewer.example.org/viewer/cache?action=emptyCache&identifier=PPN123456789&fromContent=true&fromThumbs=true
 ```
 
-| **action:** | Immer 'emptyCache' |
+| **Parameter** | Beschreibung |
 | :--- | :--- |
-| **identifier:** | Der Identifier des Werkes, dessen Bilder aus dem Cache entfernt werden sollen. |
-| **fromContent:** | Falls `true`, werden die entsprechenden Bilder aus dem Cache für die normale Bildanzeige entfernt. Standardwert ist `false`. |
-| **fromThumbs:** | Falls `true`, werden die entsprechenden Bilder aus dem Cache für Thumbnails entfernt. Standardwert ist `false`. |
+| **action** | Immer 'emptyCache' |
+| **identifier** | Der Identifier des Werkes, dessen Bilder aus dem Cache entfernt werden sollen. |
+| **fromContent** | Falls `true`, werden die entsprechenden Bilder aus dem Cache für die normale Bildanzeige entfernt. Standardwert ist `false`. |
+| **fromThumbs** | Falls `true`, werden die entsprechenden Bilder aus dem Cache für Thumbnails entfernt. Standardwert ist `false`. |
 | **fromPdfs** | Falls `true`, werden die entsprechenden PDF Dateien aus dem Cache entfernt. Standardwert ist `false`. |
 
 Nach dem Aufruf gibt der Server die Meldung `<x> cache elements belonging to 'AC05615318' deleted` zurück. Dabei steht in `<x>` die Anzahl der tatsächlich gelöschten Bilder aus dem Cache \(Bilder und Thumbnails zusammengenommen\). Sind keine Bilder für dieses Werk zum Zeitpunkt des Aufrufs enthalten, ist die Anzahl 0.  

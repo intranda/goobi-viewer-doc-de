@@ -16,9 +16,9 @@ Die folgenden Optionen steuern die URL-Weiterleitung beim Öffnen des gefundenen
 </urnresolver>
 ```
 
-| **doRedirectInsteadOfForward** | Wenn `true`, wird beim Resolving ein HTTP Redirect statt Forward ausgeführt. |
+| **Option** | Beschreibung |
 | :--- | :--- |
-
+| **doRedirectInsteadOfForward** | Wenn true, wird beim Resolving ein HTTP Redirect statt Forward ausgeführt. |
 
 Des Weiteren gibt es die Möglichkeit, die Quelldatei eines Werkes direkt zu öffnen. Je nachdem, ob das Werk aus METS oder LIDO stammt, wird ein anderer Resolver verwendet:
 

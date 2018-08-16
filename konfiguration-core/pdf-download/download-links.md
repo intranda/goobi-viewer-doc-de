@@ -12,8 +12,9 @@ PDF Downloadlinks können an mehreren Stellen angezeigt werden. Diese sind einze
 </pdf>
 ```
 
-| **pdfApiDisabled** | Schaltet die API tur PDF Generierung ab. Sollten PDF Downloadlinks nicht ebenfalls abgeschaltet sein, funktionieren diese nicht mehr. Standardwert ist `false`. |
+| **Option** | Beschreibung |
 | :--- | :--- |
+| **pdfApiDisabled** | Schaltet die API tur PDF Generierung ab. Sollten PDF Downloadlinks nicht ebenfalls abgeschaltet sein, funktionieren diese nicht mehr. Standardwert ist false. |
 | **titlePdfEnabled** | Schaltet den PDF Downloadlink in der Titelleiste \(diese wird bei der Anzeige von Bildern, Volltexten, Thumbnails und Inhaltsverzeichnisssen angezeigt\) ein oder aus. Standardwert ist `true`. |
 | **tocPdfEnabled** | Schaltet PDF Downloadlinks für einzelne Strukturelemente im Inhaltsverzeichnis ein oder aus. Standardwert ist `true`.  |
 | **metadataPdfEnabled** | Schaltet den PDF Downloadlink auf der Seite für bibliographische Daten ein oder aus. Standardwert ist `true`. |
