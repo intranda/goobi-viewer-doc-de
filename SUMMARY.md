@@ -87,7 +87,6 @@
   * [3.3 Performance](konfiguration-indexer/performance.md)
   * [3.4 Mapping von Sprachcodes](konfiguration-indexer/mapping-von-sprachcodes.md)
   * [3.5 Strukturtypen](konfiguration-indexer/strukturtypen.md)
-  * [3.6 Feldoptionen](konfiguration-indexer/feldoptionen.md)
   * [3.7 Metadaten](konfiguration-indexer/metadaten.md)
   * [3.8 Weitere Optionen](konfiguration-indexer/weitere-optionen.md)
   * [3.9 Starten und Beenden](konfiguration-indexer/starten-und-beenden.md)
