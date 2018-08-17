@@ -1,5 +1,15 @@
 # 9.1 Core
 
+## 2018-08-17
+
+Wenn das Crowdsourcing Modul installiert ist, muss aus dessen Konfigurationsdatei `config_viewer-module-crowdsourcing.xml` der folgende Block entfernt werden:
+
+```markup
+<viewImage>
+    <url>resources/components/viewImageUserGeneratedContent.xhtml</url>
+</viewImage>
+```
+
 ## 2018-06-21
 
 Bei der [Facettierung](../konfiguration-core/suche/facettierung.md) dürfen die konfigurierten Feldnamen nicht mehr mit FACET\_ starten, sondern müssen mit MD\_ beginnen.
