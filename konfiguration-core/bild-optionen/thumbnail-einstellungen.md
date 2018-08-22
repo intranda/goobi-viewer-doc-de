@@ -21,7 +21,8 @@ Standardmäßig werden Thumbnail Versionen von Bildern in der Seitenvorschau mit
 </viewer>
 ```
 
-FIXME 
+Thumbnails werden üblicherweise mit einer JPEG Kompressionsqualiät von 85 ausgeliefert. Dabei gelten als Thumbnails alle das komplette Bild beinhaltenden Anzeigederivate, die maximal die Breite haben, für die die Zugriffsbeschränkung der Bildanzeige nicht greift \([siehe 2.7](../unbeschraenkter-zugriff-auf-thumbnails-von-zugriffsbeschraenkten-bildern.md)\).   
+Diese Kompressionsqualiät kann mit dem folgendem Konfigurationselement geändert werden: 
 
 ```markup
 <viewer>
