@@ -1,4 +1,4 @@
-# 3.11 Aktualisierung einzelner Seitendokumente
+# 3.10 Aktualisierung einzelner Seitendokumente
 
 Um unnötige Lasten auf dem Solr-Index im Zusammenhang mit Aktualisierungen aus dem Crowdsourcing zu vermeiden, die sich auch auf die Performance des Goobi viewers auswirken kann, gibt es die Möglichkeit, einzelne Feldwerte der Felder `ALTO`, `FULLTEXT` und `UGCTERMS` in Seitendokumenten mit neuen Werten zu überschreiben, ohne das ganze Werk mit evtl. Tausenden von Seiten neu indexieren zu müssen \(etwa im Zusammenhang mit Crowdsourcing\).
 

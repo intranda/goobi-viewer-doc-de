@@ -1,4 +1,4 @@
-# 3.7 Metadaten
+# 3.6 Metadaten
 
 Jedes Metadaten Feld, das im Goobi viewer verwendet werden soll, muss im Goobi viewer Indexer im Konfigurationselement `fields` konfiguriert sein. Hierfür wird das folgende Schema verwendet:
 
@@ -29,7 +29,7 @@ Feldkonfigurationen, deren Name nicht mit MD\_ im anfängt, sind größtenteils 
 Für die Konfiguration von Solr Metadatenfeldern werden Grundkenntnisse in XPath vorausgesetzt. Nähere Details hierzu finden sich beispielsweise unter der folgenden Adresse: [http://de.wikipedia.org/wiki/XPATH](http://de.wikipedia.org/wiki/XPATH)
 {% endhint %}
 
-#### 3.7.1 Parameter: item
+#### 3.6.1 Parameter: item
 
 Diese Elemente enthalten XPath Ausdrücke, unter denen das jeweilige Metadatum zu finden ist. Es werden alle angegeben Ausdrücke überprüft, so dass ein Metadatenfeld \(falls für mehrere Werte zugelassen\) mehrere Werte aus unterschiedlichen XPath Ausdrücken enthalten kann. Im obigen Beispiel ist jeweils ein Ausdruck für METS/MODS sowie für LIDO definiert, das heißt diese Feldkonfiguration ist für beide Formate gültig.
 
