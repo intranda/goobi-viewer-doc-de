@@ -1,5 +1,11 @@
 # 9.2 Themes
 
+## 2018-08-24
+
+Zusätzliches Thumbnail für Audiodateien.
+
+* /boilerplate/images/thumbnail\_audio.jpg
+
 ## 2018-07-25
 
 Änderungen am Gruntfile \(MS Edge konforme SourceMaps\).
