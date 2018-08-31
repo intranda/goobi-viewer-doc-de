@@ -9,7 +9,7 @@ Dafür muss als Unterelement des Theme-Eintrages noch ein rootPath mit dem absol
     <theme subTheme="true" 
            mainTheme="intranda" 
            discriminatorField="DC" 
-           autoSwitch=”false” 
+           autoSwitch="false"
            addFilterQuery="false" 
            filterQueryVisible=”false” >
         <rootPath>/opt/digiverso/viewer/themes/MYTHEMENAME/src/META-INF/resources/resources/themes/</rootPath>
