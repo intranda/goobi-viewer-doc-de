@@ -11,7 +11,7 @@ Dafür muss als Unterelement des Theme-Eintrages noch ein rootPath mit dem absol
            discriminatorField="DC" 
            autoSwitch="false"
            addFilterQuery="false" 
-           filterQueryVisible=”false” >
+           filterQueryVisible="false" >
         <rootPath>/opt/digiverso/viewer/themes/MYTHEMENAME/src/META-INF/resources/resources/themes/</rootPath>
     </theme>
 </viewer>
