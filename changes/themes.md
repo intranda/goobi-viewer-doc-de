@@ -1,5 +1,15 @@
 # 9.2 Themes
 
+## 2018-09-03
+
+Relative Links zu vorheriger und nachfolgender Seite zu SEO Zwecken hinzugefügt.
+
+* /boilerplate/fullscreenTemplate.html
+* /boilerplate/template.html
+* /boilerplate/templateAdmin.html
+* /boilerplate/templateMirador.html
+* /boilerplate/templateReadingMode.html
+
 ## 2018-08-24
 
 Zusätzliches Thumbnail für Audiodateien.
