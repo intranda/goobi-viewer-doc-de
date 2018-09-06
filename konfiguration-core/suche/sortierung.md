@@ -9,7 +9,6 @@ Die Sortierung der Suchtrefferliste lässt sich folgendermaßen konfigurieren.
            <defaultSortField>DATECREATED</defaultSortField>
            <luceneField>SORT_CREATOR</luceneField>
            <luceneField>SORT_TITLE</luceneField>
-           <luceneField>DATEUPDATED</luceneField>
            <luceneField>SORT_YEARPUBLISH</luceneField>
      </sorting>
 </search>
