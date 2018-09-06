@@ -81,6 +81,7 @@
   * [2.33 Web API](konfiguration-core/web-api/README.md)
     * [2.33.1 JSON](konfiguration-core/web-api/json.md)
     * [2.33.2 IIIF](konfiguration-core/web-api/iiif.md)
+    * [2.33.3 Authentifizierung](konfiguration-core/web-api/2.33.3-authentifizierung.md)
 * [3. Konfiguration Indexer](konfiguration-indexer/README.md)
   * [3.1 Allgemeine Konfiguration](konfiguration-indexer/allgemeine-konfiguration.md)
   * [3.2 Verzeichnisse](konfiguration-indexer/verzeichnisse.md)
