@@ -1,5 +1,40 @@
 # 9.1 Core
 
+## 2018-09-06
+
+Bestehende Cronjobs für den Goobi viewer sind zu prüfen und in die Datei `/etc/cron.d/intranda-goobiviewer` zusammenzuführen. Eine Vorlage für so eine Datei ist wie folgt:
+
+{% code-tabs %}
+{% code-tabs-item title="/etc/cron.d/intranda-monitoring" %}
+```text
+PATH=/usr/bin:/bin:/usr/sbin/
+MAILTO=support@intranda.com
+
+#
+# Regular cron jobs for the Goobi viewer
+#
+
+## This REST call triggers the email notification about new search hits for users, 
+## that enabled notifications for saved searches
+42 8,12,17  * * *   root    curl -s http://localhost:8080/viewer/rest/search/sendnotifications/?token=6326390c-b19f-11e8-a99c-08606e6a464a
+
+## This REST call creates an XML sitemap for the Goobi viewer instance. Please always 
+## call it on it's external URL because otherwise the protocol (http/https) might not 
+## be detected correctly
+18 1        * * *   root    curl -s -X POST -H "Content-Type: application/json" -d '{}' "https://viewer.example.org/viewer/rest/sitemap/update/?token=6326390c-b19f-11e8-a99c-08606e6a464a" 1>/dev/null
+
+## This two scripts pull the theme git repository regulary. The @daily part is only 
+## a reminder for the 1-minute schedule
+*/1 *       * * *   root    cd /opt/digiverso/viewer/themes/goobi-viewer-theme-reference; git pull | grep -v "Already up-to-date." 
+@daily              root    echo "Please look at the git checkout interval for the Goobi viewer theme" | mail -s "Reference: Theme repository is checked out every minute" do-not-reply@example.org
+
+## Optimize the Solr search index once a month
+@monthly            root    curl -s http://localhost:8080/solr/update?optimize=true&waitFlush=false
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## 2018-08-17
 
 Wenn das Crowdsourcing Modul installiert ist, muss aus dessen Konfigurationsdatei `config_viewer-module-crowdsourcing.xml` der folgende Block entfernt werden:
