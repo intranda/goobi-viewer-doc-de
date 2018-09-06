@@ -163,6 +163,7 @@
     * [Mai](digests/2018/mai.md)
     * [Juni](digests/2018/juni.md)
     * [Juli](digests/2018/juli.md)
+    * [August](digests/2018/august.md)
 * [9. Changes](changes/README.md)
   * [9.1 Core](changes/core.md)
   * [9.2 Themes](changes/themes.md)
