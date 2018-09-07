@@ -2,9 +2,11 @@
 
 ## 2018-09-07
 
-Link für Sitelinks zu SEO Zwecken ergänzt.
+Link für Sitelinks zu SEO Zwecken hinzugefügt.  
+Änderungen an LESS Template.
 
 * /boilerplate/components/footerNavigation.xhtml
+* /boilerplate/css/less/viewer/cms/templates/12\_templateSingleCollection.less
 
 ## 2018-09-03
 
