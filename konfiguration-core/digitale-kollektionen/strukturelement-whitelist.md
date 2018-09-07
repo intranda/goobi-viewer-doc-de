@@ -28,3 +28,7 @@ Die Liste kann deaktiviert werden, indem nur ein einziger `docStruct` mit einem 
 </metadata>
 ```
 
+{% hint style="warning" %}
+Nach einer Änderung an der docStructWhiteList muss die Applikation neu gestartet werden, damit die Änderungen aktiv werden.
+{% endhint %}
+
