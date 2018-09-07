@@ -1,5 +1,11 @@
 # 9.2 Themes
 
+## 2018-09-07
+
+Link für Sitelinks zu SEO Zwecken ergänzt.
+
+* /boilerplate/components/footerNavigation.xhtml
+
 ## 2018-09-03
 
 Relative Links zu vorheriger und nachfolgender Seite zu SEO Zwecken hinzugefügt.
