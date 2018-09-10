@@ -1,5 +1,17 @@
 # 9.1 Core
 
+## 2018-09-10
+
+Da sich bei der Suchtreffer- und Sammlungsanzeige in der URL die Position geändert hat an dem die Einschränkung angezeigt ist muss eine Weiterleitung eingerichtet werden, damit externe Verlinkungen weiterhin funktionieren. Dafür kann zum Beispiel im Apache das folgende Snippet verwendet werden:
+
+```text
+ProxyPassMatch ^/viewer/browse/DC(.*)/-/([0-9]+)/-/-/$ !
+RedirectMatch 301 ^/viewer/browse/DC(.*)/-/([0-9]+)/-/-/$ /viewer/browse/-/$2/-/DC$1/
+
+ProxyPassMatch ^/viewer/search/DC(.*)/-/([0-9]+)/-/-/$ !
+RedirectMatch 301 ^/viewer/search/DC(.*)/-/([0-9]+)/-/-/$ /viewer/search/-/-/$2/-/DC$1/
+```
+
 ## 2018-09-06
 
 Bestehende Cronjobs für den Goobi viewer sind zu prüfen und in die Datei `/etc/cron.d/intranda-goobiviewer` zusammenzuführen. Eine Vorlage für so eine Datei ist wie folgt:
