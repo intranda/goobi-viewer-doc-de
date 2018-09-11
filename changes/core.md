@@ -29,12 +29,12 @@ MAILTO=support@intranda.com
 
 ## This REST call triggers the email notification about new search hits for users, 
 ## that enabled notifications for saved searches
-42 8,12,17  * * *   root    curl -s http://localhost:8080/viewer/rest/search/sendnotifications/?token=6326390c-b19f-11e8-a99c-08606e6a464a
+42 8,12,17  * * *   root    curl -s http://localhost:8080/viewer/rest/search/sendnotifications/?token=fc375cda-0908-405b-ad7a-1fc5ba638662
 
 ## This REST call creates an XML sitemap for the Goobi viewer instance. Please always 
 ## call it on it's external URL because otherwise the protocol (http/https) might not 
 ## be detected correctly
-18 1        * * *   root    curl -s -X POST -H "Content-Type: application/json" -d '{}' "https://viewer.example.org/viewer/rest/sitemap/update/?token=6326390c-b19f-11e8-a99c-08606e6a464a" 1>/dev/null
+18 1        * * *   root    curl -s -X POST -H "Content-Type: application/json" -d '{}' "https://viewer.example.org/viewer/rest/sitemap/update/?token=fc375cda-0908-405b-ad7a-1fc5ba638662" 1>/dev/null
 
 ## This two scripts pull the theme git repository regulary. The @daily part is only 
 ## a reminder for the 1-minute schedule
