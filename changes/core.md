@@ -5,6 +5,7 @@
 Da sich bei der Suchtreffer- und Sammlungsanzeige in der URL die Position geändert hat an dem die Einschränkung angezeigt ist muss eine Weiterleitung eingerichtet werden, damit externe Verlinkungen weiterhin funktionieren. Dafür kann zum Beispiel im Apache das folgende Snippet verwendet werden:
 
 ```text
+## Redirect collection facetting to new URL destination
 ProxyPassMatch ^/viewer/browse/DC(.*)/-/([0-9]+)/-/-/$ !
 RedirectMatch 301 ^/viewer/browse/DC(.*)/-/([0-9]+)/-/-/$ /viewer/browse/-/$2/-/DC$1/
 
