@@ -47,6 +47,24 @@ MAILTO=support@intranda.com
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Der Token muss erst generiert und dann in der lokalen config\_viewer.xml konfiguriert werden:
+
+```bash
+cat /proc/sys/kernel/random/uuid
+```
+
+{% code-tabs %}
+{% code-tabs-item title="config\_viewer.xml" %}
+```markup
+<webapi>
+    <authorization>
+        <token>fc375cda-0908-405b-ad7a-1fc5ba638662</token>
+    </authorization>
+</webapi>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## 2018-08-17
 
 Wenn das Crowdsourcing Modul installiert ist, muss aus dessen Konfigurationsdatei `config_viewer-module-crowdsourcing.xml` der folgende Block entfernt werden:
