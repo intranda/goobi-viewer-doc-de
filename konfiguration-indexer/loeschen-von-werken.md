@@ -1,6 +1,6 @@
 # 3.11  Löschen von Werken
 
-Zum Löschen eines Werkes muss eine Datei mit dem Namensmuster `<Identifier>.delete` in den Hotfolder gelegt werden \(zum Beispiel `PPN123456789.delete`\). Sobald die Datei vom Goobi viewer Indexer erfasst worden ist, wird das entsprechende Werk aus dem Index gelöscht. Sämtliche Dateien, die zu diesem Werk gehören, werden ebenfalls aus den entsprechenden Ordnern entfernt.
+Zum Löschen eines Werkes muss eine Datei mit dem Namensmuster `<Identifier>.delete` in den [Hotfolder](verzeichnisse.md#3-2-1-parameter-hotfolder) gelegt werden \(zum Beispiel `PPN123456789.delete`\). Sobald die Datei vom Goobi viewer Indexer erfasst worden ist, wird das entsprechende Werk aus dem Index gelöscht. Sämtliche Dateien, die zu diesem Werk gehören, werden ebenfalls aus den entsprechenden Ordnern entfernt.
 
 Nachdem sämtliche Einträge, die dieses Werk betreffen, aus dem Solr Index entfernt wurden, wird ein neuer Eintrag im Index erstellt, der dieses Werk als ehemalig vorhanden und gegenwärtig gelöscht kennzeichnet. Diese Funktionalität ist für die OAI Schnittstelle relevant und hat keinen Einfluss auf andere Funktionen des Goobi viewers.
 
