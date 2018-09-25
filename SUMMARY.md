@@ -164,8 +164,9 @@
     * [Juni](digests/2018/juni.md)
     * [Juli](digests/2018/juli.md)
     * [August](digests/2018/august.md)
-* [9. Changes](changes/README.md)
-  * [9.1 Core](changes/core.md)
-  * [9.2 Themes](changes/themes.md)
+* [9. Entwickler und Administratoren](changes/README.md)
+  * [9.1 Core changes](changes/core.md)
+  * [9.2 Theme changes](changes/themes.md)
+  * [9.3 API Dokumentation](changes/9.3-api-dokumentation.md)
 * [10. Zusätzliche Details](zusaetzliche-details.md)
 

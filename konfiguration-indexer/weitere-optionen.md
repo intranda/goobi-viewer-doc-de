@@ -16,7 +16,7 @@ Falls `true`, wird zusätzlich zum konfigurierten Metadatenfeld ein zweites Feld
 Werte: true|false
 ```
 
-Metadatenfelder mit Präfix `MD_` werden stets in einzelne Tokens \(grob gesehen einzelne Wörter einer Zeichenkette\) aufgespalten. Damit man ein Feld durchstöbern kann \(siehe Stöbern\), muss die gesamte Zeichenkette als ein Token vorliegen \(andernfalls kann man zum Beispiel keine Haupttitel, sondern nur einzelne Wörter aus Haupttiteln durchstöbern\). Hierfür kann zusätzlich zum Metadatenfeld eine Kopie angelegt werden, deren Wert als ein Token vorliegt \(diese erhält den Suffix `_UNTOKENIZED`\). Solche Felder können für die Stöbern-Funktion konfiguriert werden. Standardwert ist `true`.
+Falls `true`, wird der Wert des konfigurierten Metadatenfeldes an das Feld `DEFAULT` angehängt. Letzteres enthält alle Tokens, nach denen im Goobi viewer gesucht werden kann. Soll ein bestimmtes Metadatum also suchbar sein, muss in der entsprechenden Feldkonfiguration diese Option aktiviert werden. Standardwert ist false.
 
 #### **3.7.3 Parameter: addUntokenizedVersion**
 

@@ -58,15 +58,63 @@ Metadaten von Events \(nur aus LIDO-Datensätzen\) werden in der musealen Ansich
 
 Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Diese definieren die Quelle der tatsächlichen Werte für diesen Metadatentyp. Folgende Attribute sind dabei zu konfigurieren:
 
-| **Attribut** | Beschreibung |
-| :--- | :--- |
-| **type** | Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird. Mögliche Typen sind: |
-| **key** | Das Feld im Solr Index, dass den gewünschten Wert enthält |
-| **prefix** | Zeichenkette, die unmittelbar vor dem Wert des Metadatums stehen soll \(Leerzeichen werden mit \_SPACE\_ kodiert\). |
-| **suffix** | Zeichenkette, die unmittelbar nach dem Wert des Metadatums stehen soll \(Leerzeichen werden mit \_SPACE\_kodiert\). |
-| **value** | Das Attribut `value` in `<param>` überschreibt den Master Value des Metadatums \(`value` in `<metadata>`\), wenn der Parameter einen Wert hat. Es sollte nur ein Override Value pro Metadatenfeld konfiguriert werden \(es wird sonst das vom letzten gefundenen Parameter genommen\). |
-
-Die Reihenfolge der `<param>` Elemente entspricht der Reihenfolge, in der die Platzhalter im Standardwert \(falls konfiguriert\) ersetzt werden. Schauen Sie sich das folgende Beispiel an:  
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Attribut</b>
+      </th>
+      <th style="text-align:left">Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>type</b>
+      </td>
+      <td style="text-align:left">
+        <p>Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird.
+          Mögliche Typen sind:</p>
+        <ul>
+          <li><code>field</code>: Der Wert wird so wie er ist übernommen</li>
+          <li><code>translatedfield</code>: Der Wert wird in die aktuelle Sprache übersetzt,
+            falls eine Übersetzung existiert</li>
+          <li><code>unescapedfield</code>: es wird kein HTML-Unescaping am Wert vorgenommen</li>
+          <li><code>wikifield</code>: Anpassung des Werts für eine Suchanfrage bei Wikipedia:
+            Klammern werden entfernt, Leerzeichen durch Unterstriche ersetzt</li>
+          <li><code>wikipersonfield</code>: Wie wikifield, aber wenn der Wert ein Komma
+            enthält, werden zusätzlich die Strings vor und nach dem Komma vertauscht,
+            so dass Personennamen in das Muster first name_last name für korrektes
+            Wikipedia Resolving überführt werden</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>key</b>
+      </td>
+      <td style="text-align:left">Das Feld im Solr Index, dass den gewünschten Wert enthält</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>prefix</b>
+      </td>
+      <td style="text-align:left">Zeichenkette, die unmittelbar vor dem Wert des Metadatums stehen soll
+        (Leerzeichen werden mit _SPACE_ kodiert).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>suffix</b>
+      </td>
+      <td style="text-align:left">Zeichenkette, die unmittelbar nach dem Wert des Metadatums stehen soll
+        (Leerzeichen werden mit _SPACE_kodiert).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>value</b>
+      </td>
+      <td style="text-align:left">Das Attribut <code>value</code> in <code>&lt;param&gt;</code> überschreibt
+        den Master Value des Metadatums (<code>value</code> in <code>&lt;metadata&gt;</code>),
+        wenn der Parameter einen Wert hat. Es sollte nur ein Override Value pro
+        Metadatenfeld konfiguriert werden (es wird sonst das vom letzten gefundenen
+        Parameter genommen).</td>
+    </tr>
+  </tbody>
+</table>Die Reihenfolge der `<param>` Elemente entspricht der Reihenfolge, in der die Platzhalter im Standardwert \(falls konfiguriert\) ersetzt werden. Schauen Sie sich das folgende Beispiel an:  
 `messages_en.properties` enthält zum Beispiel diesen Eintrag:
 
 ```text

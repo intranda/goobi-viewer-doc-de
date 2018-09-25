@@ -28,17 +28,70 @@ Die Template-Datei hat dabei stets einen beispielhaften Aufbau:
 Die einzelnen Elemente im Überblick:  
 
 
-| Option | Beschreibung |
-| :--- | :--- |
-| **cms\_page\_template/id** | Ein einzigartiger Identifier-String des Templates, der intern zur Identifikation des Templates verwendet wird |
-| **cms\_page\_template/version**  | Das Datum der letzten Änderung oder eine andere Versionierung. Wird vom Goobi viewer nicht verwendet. |
-| **name**  | Der Name des Templates, wie er beim Erstellen neuer Seiten angezeigt wird.  |
-| **description**  | Eine Beschreibung des Templates, wie sie beim Erstellen neuer Seiten angezeigt wird. |
-| **icon**  | Der Dateiname des Icons, das dieses Template beim Erstellen neuer Seiten und beim Bearbeiten vorhandener Seiten repräsentiert; ohne Pfadangabe. |
-| **html** | Der Dateiname der Layout-Datei für dieses Template; ohne Pfadangabe. |
-| **content** | Eine Liste von `<item>`-Elementen. Jedes dieser Elemente bekommt einen eigenen Editorbereich beim Anlegen/Bearbeiten von CMS-Seiten auf Basis dieses Templates. Die Art des Editorbereichs hängt ab von der Art des Items \(Siehe Inhaltstypen\). Jedes Item hat folgende Attribute:  |
-
-**6.4.2.2. Layout-Datei**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Option</th>
+      <th style="text-align:left">Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>cms_page_template/id</b>
+      </td>
+      <td style="text-align:left">Ein einzigartiger Identifier-String des Templates, der intern zur Identifikation
+        des Templates verwendet wird</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>cms_page_template/version</b> 
+      </td>
+      <td style="text-align:left">Das Datum der letzten Änderung oder eine andere Versionierung. Wird vom
+        Goobi viewer nicht verwendet.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>name </b>
+      </td>
+      <td style="text-align:left">Der Name des Templates, wie er beim Erstellen neuer Seiten angezeigt wird.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>description</b> 
+      </td>
+      <td style="text-align:left">Eine Beschreibung des Templates, wie sie beim Erstellen neuer Seiten angezeigt
+        wird.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>icon</b> 
+      </td>
+      <td style="text-align:left">Der Dateiname des Icons, das dieses Template beim Erstellen neuer Seiten
+        und beim Bearbeiten vorhandener Seiten repräsentiert; ohne Pfadangabe.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>html</b>
+      </td>
+      <td style="text-align:left">Der Dateiname der Layout-Datei für dieses Template; ohne Pfadangabe.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>content</b>
+      </td>
+      <td style="text-align:left">
+        <p>Eine Liste von <code>&lt;item&gt;</code>-Elementen. Jedes dieser Elemente
+          bekommt einen eigenen Editorbereich beim Anlegen/Bearbeiten von CMS-Seiten
+          auf Basis dieses Templates. Die Art des Editorbereichs hängt ab von der
+          Art des Items (Siehe Inhaltstypen). Jedes Item hat folgende Attribute:</p>
+        <ul>
+          <li><b>id: </b> Ein für dieses Template einzigartiger Identifier-String, mit
+            dem dieser Inhalt in der Layout-Datei referenziert wird.</li>
+          <li><b>label</b>: Die Bezeichnung dieses Inhaltes im Editorbereich der Seitenbearbeitung.</li>
+          <li><b>type</b> : Der Typ des Inhaltes, einer von TEXT, HTML, MEDIA, PAGELIST
+            und SOLRQUERY (siehe Inhaltstypen).</li>
+          <li><b>mandatory</b> : Ist dieses Attribut gesetzt und hat den Wert true, muss
+            dieses Item mit Inhalt gefüllt werden, bevor eine Seite veröffentlicht
+            werden kann.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>**6.4.2.2. Layout-Datei**
 
 Die Layout-Datei ist eine \(X\)HTML-Datei, die mit der Java-Facelets Technologie in eine Webseite übersetzt wird. Sie ist aufgebaut wie eine übliche viewer-Webseite, benötigt jedoch einige spezielle Annotationen, um CMS-Inhalte anzeigen zu können:
 

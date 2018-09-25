@@ -3,9 +3,33 @@
 Für weitere Details stehen die Entwickler des Goobi viewers jederzeit zur Verfügung. Bitte wenden Sie sich an folgende Ansprechpartner:  
 
 
-| **Ansprechpartner:** | **Kontakt:** |
-| :--- | :--- |
-| Florian Alpers Steffen Hankiewicz Andrey Kozhushkov Marc Lettau-Poelchen Robert Sehr Jan Vonde | intranda GmbH Bertha-von-Suttner Str. 9 D – 37085 Göttingen[http://www.intranda.com](http://www.intranda.com/)info@intranda.com |
-
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Ansprechpartner</b>
+      </th>
+      <th style="text-align:left"><b>Kontakt</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Florian Alpers
+        <br />Steffen Hankiewicz
+        <br />Andrey Kozhushkov
+        <br />Marc Lettau-Poelchen
+        <br />Jan Vonde</td>
+      <td style="text-align:left">
+        <p>intranda GmbH
+          <br />Bertha-von-Suttner Str. 9
+          <br />D – 37085 Göttingen</p>
+        <p></p>
+        <p><a href="https://www.intranda.com">https://www.intranda.com</a>
+        </p>
+        <p><a href="mailto:info@intranda.com">info@intranda.com</a>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 

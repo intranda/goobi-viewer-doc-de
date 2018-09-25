@@ -1,4 +1,4 @@
-# 9.2 Themes
+# 9.2 Theme changes
 
 ## 2018-09-07
 
