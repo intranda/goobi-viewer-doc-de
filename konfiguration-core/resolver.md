@@ -20,8 +20,10 @@ Die folgenden Optionen steuern die URL-Weiterleitung beim Öffnen des gefundenen
 | :--- | :--- |
 | **doRedirectInsteadOfForward** | Wenn true, wird beim Resolving ein HTTP Redirect statt Forward ausgeführt. |
 
-Des Weiteren gibt es die Möglichkeit, die Quelldatei eines Werkes direkt zu öffnen. Je nachdem, ob das Werk aus METS oder LIDO stammt, wird ein anderer Resolver verwendet:
+Des Weiteren gibt es die Möglichkeit, die Quelldatei eines Werkes direkt zu öffnen. Je nachdem, ob das Werk aus METS oder LIDO stammt, wird ein anderer Resolver verwendet. Diesen Resolvern kann entweder die PI \(id=PI\) oder die URN \(urn=URN\) übergeben werden:
 
-* METS: `https://viewer.example.org/viewer/metsresolver?id=PPN123456789`
-* LIDO: `https://viewer.example.org/viewer/lidoresolver?id=PPN123456789`
+* METS PI: `https://viewer.example.org/viewer/metsresolver?id=PPN123456789`
+* METS URN: `https://viewer.example.org/viewer/metsresolver?urn=urn:nbn:xx:000-12345678`
+* LIDO PI: `https://viewer.example.org/viewer/lidoresolver?id=PPN123456789`
+* LIDO URN: `https://viewer.example.org/viewer/lidoresolver?urn=urn:nbn:xx:000-12345678`
 
