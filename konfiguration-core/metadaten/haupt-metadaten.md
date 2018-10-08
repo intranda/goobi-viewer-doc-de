@@ -74,16 +74,18 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
         <p>Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird.
           Mögliche Typen sind:</p>
         <ul>
-          <li><code>field</code>: Der Wert wird so wie er ist übernommen</li>
-          <li><code>translatedfield</code>: Der Wert wird in die aktuelle Sprache übersetzt,
+          <li><code>field</code>- Der Wert wird so wie er ist übernommen</li>
+          <li><code>translatedfield</code>- Der Wert wird in die aktuelle Sprache übersetzt,
             falls eine Übersetzung existiert</li>
-          <li><code>unescapedfield</code>: es wird kein HTML-Unescaping am Wert vorgenommen</li>
-          <li><code>wikifield</code>: Anpassung des Werts für eine Suchanfrage bei Wikipedia:
+          <li><code>unescapedfield</code>- es wird kein HTML-Unescaping am Wert vorgenommen</li>
+          <li><code>wikifield</code>- Anpassung des Werts für eine Suchanfrage bei Wikipedia:
             Klammern werden entfernt, Leerzeichen durch Unterstriche ersetzt</li>
-          <li><code>wikipersonfield</code>: Wie wikifield, aber wenn der Wert ein Komma
+          <li><code>wikipersonfield</code>- Wie wikifield, aber wenn der Wert ein Komma
             enthält, werden zusätzlich die Strings vor und nach dem Komma vertauscht,
             so dass Personennamen in das Muster first name_last name für korrektes
             Wikipedia Resolving überführt werden</li>
+          <li><code>urlescapedfield</code>- Hierbei werden speziell für URLs codierte
+            Zeichen wie der Slash Unicode-Escaped</li>
         </ul>
       </td>
     </tr>
