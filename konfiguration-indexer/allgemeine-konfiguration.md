@@ -9,9 +9,6 @@
     <fulltextEncoding>UTF-8</fulltextEncoding>
     <deleteContentFilesOnFailure>true</deleteContentFilesOnFailure>
     <addVolumeCollectionsToAnchor>false</addVolumeCollectionsToAnchor>
-    <piContainsPartnerId>true</piContainsPartnerId>
-    <piSplittingChar>_</piSplittingChar>
-    <piSplittingCharOccurrence>1</piSplittingCharOccurrence>
     <namespaces>
         <!-- <list> </list> -->
     </namespaces>    
@@ -78,19 +75,7 @@ In einem solchen Fall werden die Datei und alle dazugehörigen Ordner \(Medien, 
 
 Bei der Indexierung von mehrbändigen Werken kann es vorkommen, dass Bände unterschiedlichen Kollektionen angehören. Wenn dieses Element auf `true` steht, werden Kollektionsnamen aus allen im Index enthaltenen Bänden auch in das Gesamtwerk kopiert \(Kollektionen, denen nur das Gesamtwerk angehört, bleiben ebenfalls erhalten\). Zu beachten ist hier, dass evtl. Schreibfehler bei Kollektionsnamen nicht mehr automatisiert aus dem Gesamtwerk entfernt werden können, wenn diese Option aktiviert ist. Standardwert ist `false`.
 
-#### 3.1.8 Parameter: piContainsPartnerId
-
-Wenn der Parameter auf `true` gesetzt ist, wird der Werksidentifier PI am konfigurierten Zeichen aufgetrennt und der linke Teil als Partner ID genutzt
-
-#### 3.1.9 Parameter: piSplittingChar
-
-Trennzeichen, dass die Partner ID vom Werksidentifier separiert \(sofern piContainsPartnerId auf true gesetzt ist\)
-
-#### 3.1.10 Parameter: piSplittingCharOccurrence
-
-Für Fälle, in denen das Trennzeichen in der Zeichenkette, die den Werksidentifier und die Partner ID enthält, mehrfach vorkommt \(z.B. "IdentifierTeil1\_IdentifierTeil2\_PartnerID2"; mit Trennzeichen "\_"\), muss an dieser Stelle die genaue \(0-basierte\) Iteration des Trennzeichens eingetragen werden, an der die Zeichenkette aufgeteil werden soll \(im obigen Beispiel wäre es "1"\).
-
-#### 3.1.11 Parameter: namespaces {#H3.1.1.Parameter:namespaces}
+#### 3.1.8 Parameter: namespaces {#H3.1.1.Parameter:namespaces}
 
 Werden in METS Dokumenten zusätzliche XML Namespaces eingebettet, müssen diese dem Goobi viewer Indexer mitgeteilt werden, damit entsprechende XPath Ausdrücke ausgewertet werden können. Der Namespace Name wird dabei als Elementname innerhalb des Elements `<list>` definiert, die Namespace URI als Textwert dieses Elements: 
 
@@ -108,31 +93,31 @@ Werden in METS Dokumenten zusätzliche XML Namespaces eingebettet, müssen diese
 Sind keine zusätzlichen Namespaces definiert, darf kein leeres Element &lt;list&gt; vorhanden sein.
 {% endhint %}
 
-#### 3.1.12 Parameter: pageCountStart
+#### 3.1.9 Parameter: pageCountStart
 
 Seit Dezember 2014 erwartet der Goobi viewer eine Seitenzählung, die bei 1 anfängt. Versionen davor hingegen fangen mit der Zählung bei 0 an. Um einer stetigen Abweichung in der Seitennavigation entgegenzuwirken, kann die Kompatibilität zu älteren Goobi viewer Versionen hergestellt werden, indem der Wert auf 0 gesetzt wird. Standardwert ist `1`.
 
-#### 3.1.13 Parameter: addLabelToChildren
+#### 3.1.10 Parameter: addLabelToChildren
 
 Steht dieser Schalter auf true, werden die Werte der `LABEL`-Felder von Strukturelementen in das `DEFAULT`-Feld von untergeordnenten Strukturelementen geschrieben. Standardwert ist `false`.
 
-#### 3.1.14 Parameter: labelCleanup
+#### 3.1.11 Parameter: labelCleanup
 
 Steht dieser Schalter auf true, werden Nichtsortierzeichen-Sequenzen „&lt;ns&gt;&lt;/ns&gt;“, „&lt;&lt;&gt;&gt;“ und „¬“ aus dem Wert entfernt. Standardwert ist `false`.
 
-#### 3.1.15 Parameter: addNormDataFieldsToDefault/field
+#### 3.1.12 Parameter: addNormDataFieldsToDefault/field
 
 Werte bestimmte Normdatenfelder \(zum Beispiel alternative Schreibweisen eines Namen\) können zum DEFAULT-Suchfeld hinzugefügt werden, um direkte Suchbarkeit zu gewährleisten. Hierzu wird für jedes gewünschte Feld ein neues Konfigurationselement hinzugefügt \(zum Beispiel `<field>NORM_ALTNAME</field>`\).
 
-#### 3.1.16 Parameter: aggregateRecords
+#### 3.1.13 Parameter: aggregateRecords
 
 Wenn auf `true` gesetzt, werden die für die aggregierte Suche notwendigen Zusatzfelder \(etwa aggregierte Volltexte und Metadaten\) in den Index geschrieben. Standardwert ist `false`.
 
-#### 3.1.17 Parameter: lido/imageXPath
+#### 3.1.14 Parameter: lido/imageXPath
 
 Um die Heterogenität Image-Pfade in LIDO-Dokumenten zu berücksichtigen, sind die möglichen XPath-Ausdrücke \(relativ zu lido:resourceSet\), in denen Bildverlinkungen gesucht werden, konfigurierbar. Die Liste wird von oben nach unten abgearbeitet, und der erste Ausdruck, der Treffer liefert, wird verwendet \(die restlichen werden ignoriert\).
 
-#### 3.1.18 Parameter: email/...
+#### 3.1.15 Parameter: email/...
 
 Sofern bei der Indexierung Fehler auftreten kann der Goobi viewer Indexer die im Element recipients definierten Emailadressen benachrichtigen. Die Konfiguration erfolgt analog zu der in Abschnitt[ 2.5.2](../konfiguration-core/benutzeraccounts/lokaler-benutzeraccount.md) beschriebenen Weise.
 
