@@ -1,5 +1,25 @@
 # 9.1 Core changes
 
+## 2018-10-09
+
+In der `config_viewer.xml` muss der Block `<openIdConnect>` umbenannt werden in `<authenticationProviders>`. Sein Attribut `show`wandert in die einzelnen enthaltenen `<provider>` Einträge. Der Default-Wert für `show` ist dabei `true.` Alle `<provider>` Einträge mit Namen `Google` und `Facebook` müssen zusätzlich das Attribut `type=„openId“` bekommen. Die Anmeldung über lokale Viewer-Nutzeraccounts muss als separater `<provider>` eingetragen werden:
+
+```markup
+<provider type="local" name="Goobi viewer"/>
+```
+
+Eine typische komplette Konfiguration sieht dann so aus:
+
+```markup
+<authenticationProviders>
+    <provider type="openId" name="Google" endpoint="https://accounts.google.com/o/oauth2/auth" clientId="CHANGEME" clientSecret="CHANGEME" image="google.png" />
+    <provider type="openId" name="Facebook" endpoint="https://www.facebook.com/dialog/oauth" clientId="CHANGEME" clientSecret="CHANGEME" image="facebook.png" />
+    <provider type="local" name="Goobi viewer"/>
+</authenticationProviders>
+```
+
+Siehe auch Sektion [5.2 Benutzeraccounts](../konfiguration-core/benutzeraccounts/).
+
 ## 2018-09-10
 
 Da sich bei der Suchtreffer- und Sammlungsanzeige in der URL die Position geändert hat an dem die Einschränkung angezeigt ist muss eine Weiterleitung eingerichtet werden, damit externe Verlinkungen weiterhin funktionieren. Dafür kann zum Beispiel im Apache das folgende Snippet verwendet werden:

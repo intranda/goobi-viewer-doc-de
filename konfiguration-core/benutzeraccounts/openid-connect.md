@@ -4,20 +4,21 @@ Der Zugriff mittels OpenID Connect wird wie folgt konfiguriert:
 
 ```markup
 <user>
-    <openIdConnect show="true">
-        <provider name="Google" endpoint="https://accounts.google.com/o/oauth2/auth" clientId="CHANGEME" clientSecret="CHANGEME" image="google.png" />
-        <provider name="Facebook" endpoint="https://www.facebook.com/dialog/oauth" clientId="" clientSecret="" image="facebook.png" />
-    </openIdConnect> 
+    <authenticationProviders>
+        <provider type="openId" show="true" name="Google" endpoint="https://accounts.google.com/o/oauth2/auth" clientId="CHANGEME" clientSecret="CHANGEME" image="google.png" />
+        <provider type="openId" show="false" name="Facebook" endpoint="https://www.facebook.com/dialog/oauth" clientId="" clientSecret="" image="facebook.png" />
+    </authenticationProviders> 
 </user>
 ```
 
-Über das Attribut `show` kann die OpenID Connect Funktionalität separat ein- beziehungsweise abgeschaltet werden.  
-Darüber hinaus können zusätzliche OpenID Connect Provider \(ausstellende Institutionen\) über neue `<provider>` Elemente definiert werden:
+Folgende Parameter sind im `<provider>` Element für den `type="openId"` verfügbar:
 
 | **Attribut** | Beschreibung |
 | :--- | :--- |
-| **url endpoint** | Authentifizierungs-URL des Providers \(vom jeweiligen Provider zu beziehen - bitte die Anweisungen des Providers beachten\) |
-| **useTextField** | Wenn true, wird der Nutzer zunächst aufgefordert, einen Nutzernamen einzugeben \(erforderlich für manche OpenID Provider\) |
+| **type** | Definiert den Provider-Typ. Der Wert ist in diesem Fall immer `openId`. |
+| **show** | Gibt an, ob der Provider auf der Anmeldeseite angezeigt werden soll oder ausgeblendet ist. Standardwert ist `true` |
+| **name** | Name des Providers.  |
+| **endpoint** | Authentifizierungs-URL des Providers \(vom jeweiligen Provider zu beziehen - bitte die Anweisungen des Providers beachten\) |
 | **clientId** | Registrierte ID des Goobi viewers beim jeweiligen Provider. Pro Goobi viewer Installation muss ein neuer Client beim Provider registriert werden. |
 | **clientSecret** | Geheimer Schlüssel für die registrierte clientId |
 | **image** | Dateiname des angezeigten Provider-spezifischen Bildes |
