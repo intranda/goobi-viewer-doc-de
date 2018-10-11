@@ -165,6 +165,7 @@
     * [Juni](digests/2018/juni.md)
     * [Juli](digests/2018/juli.md)
     * [August](digests/2018/august.md)
+    * [September](digests/2018/september.md)
 * [9. Entwickler und Administratoren](changes/README.md)
   * [9.1 Core changes](changes/core.md)
   * [9.2 Theme changes](changes/themes.md)
