@@ -1,5 +1,15 @@
 # 9.2 Theme changes
 
+## 2018-10-11
+
+Neues LESS-Template, sowie LESS-Template Refaktorisierung. Aktivierung neuer JavaScript Funktionalität \(_cmsJS.modules.init\(\);_\).
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/cms/modules/options.less
+* /boilerplate/css/less/viewer/cms/views/cmsMenuItems.less
+* /boilerplate/css/less/variables.less
+* /boilerplate/includes/customJS.xhtml
+
 ## 2018-09-07
 
 Link für Sitelinks zu SEO Zwecken hinzugefügt.  
