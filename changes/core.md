@@ -5,16 +5,16 @@
 In der `config_viewer.xml` muss der Block `<openIdConnect>` umbenannt werden in `<authenticationProviders>`. Sein Attribut `show`wandert in die einzelnen enthaltenen `<provider>` Einträge. Der Default-Wert für `show` ist dabei `true.` Alle `<provider>` Einträge mit Namen `Google` und `Facebook` müssen zusätzlich das Attribut `type=„openId“` bekommen. Die Anmeldung über lokale Viewer-Nutzeraccounts muss als separater `<provider>` eingetragen werden:
 
 ```markup
-<provider type="local" name="Goobi viewer"/>
+<provider type="local" show="true" name="Goobi viewer"/>
 ```
 
 Eine typische komplette Konfiguration sieht dann so aus:
 
 ```markup
 <authenticationProviders>
-    <provider type="openId" name="Google" endpoint="https://accounts.google.com/o/oauth2/auth" clientId="CHANGEME" clientSecret="CHANGEME" image="google.png" />
-    <provider type="openId" name="Facebook" endpoint="https://www.facebook.com/dialog/oauth" clientId="CHANGEME" clientSecret="CHANGEME" image="facebook.png" />
-    <provider type="local" name="Goobi viewer"/>
+    <provider type="openId" show="true" name="Google" endpoint="https://accounts.google.com/o/oauth2/auth" clientId="CHANGEME" clientSecret="CHANGEME" image="google.png" />
+    <provider type="openId" show="false" name="Facebook" endpoint="https://www.facebook.com/dialog/oauth" clientId="CHANGEME" clientSecret="CHANGEME" image="facebook.png" />
+    <provider type="local" show="true" name="Goobi viewer"/>
 </authenticationProviders>
 ```
 
