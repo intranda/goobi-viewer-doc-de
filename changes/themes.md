@@ -8,6 +8,7 @@ Neues LESS-Template, sowie LESS-Template Refaktorisierung. Aktivierung neuer Jav
 * /boilerplate/css/less/viewer/cms/modules/options.less
 * /boilerplate/css/less/viewer/cms/views/cmsMenuItems.less
 * /boilerplate/css/less/variables.less
+* /boilerplate/css/less/viewer/views/user/user.less
 * /boilerplate/includes/customJS.xhtml
 
 ## 2018-09-07
