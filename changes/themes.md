@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2018-10-12
+
+LESS-Template Refaktorisierung.
+
+* /boilerplate/css/less/viewer/components/buttons.less
+
 ## 2018-10-11
 
 Neues LESS-Template, sowie LESS-Template Refaktorisierung. Aktivierung neuer JavaScript Funktionalität \(_cmsJS.modules.init\(\);_\).
