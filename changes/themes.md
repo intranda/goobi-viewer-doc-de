@@ -2,9 +2,18 @@
 
 ## 2018-10-12
 
-LESS-Template Refaktorisierung.
+LESS-Template Refaktorisierung.  
+JavaScript Framework RiotJS zum Grunt-Task hinzugefügt und in die Templates eingebunden. Neuen Ordner für Tags angelegt.
 
 * /boilerplate/css/less/viewer/components/buttons.less
+* Gruntfile.js
+* package.json
+* /boilerplate/includes/customJS.xhtml
+* /boilerplate/javascript/dev/tags/
+* /boilerplate/javascript/dist/boilerplate-tags.js
+* /boilerplate/template.html
+* /boilerplate/templateAdmin.html
+* /boilerplate/templateReadingMode.html
 
 ## 2018-10-11
 
