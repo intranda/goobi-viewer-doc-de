@@ -4,7 +4,7 @@ Sollte es einmal durch fehlerhafte Importe vorkommen, dass der Solr Index leere 
 
 ```text
 cd /opt/digiverso/indexer
-java –jar solrIndexer.jar solr_indexerconfig.xml -cleanupGrievingAnchors
+java -jar solrIndexer.jar solr_indexerconfig.xml -cleanupGrievingAnchors
 ```
 
 
