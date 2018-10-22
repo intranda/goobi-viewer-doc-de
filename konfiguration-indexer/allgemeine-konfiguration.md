@@ -48,7 +48,7 @@
 
 Wartezeit des Goobi viewer Indexers \(in Millisekunden\) zwischen Überwachungszyklen des Hotfolders. Standardwert ist `3000`.
 
-#### 3.1.2 Parameter: minStorageSpace {#H3.1.3.Parameter:minStorageSpace}
+#### 3.1.2 Parameter: minStorageSpace <a id="H3.1.3.Parameter:minStorageSpace"></a>
 
 Minimum an freiem Festplattenspeicher \(in MB\) auf dem Laufwerk, auf dem sich der Hotfolder befindet, um indexieren zu können. 
 
@@ -62,20 +62,20 @@ URL des Apache Solr HTTP Servers, der den Index enthält. Sämtliche Kommunikati
 
 URL zum Goobi viewer damit zum Beispiel beim Neuindexieren eines Werkes automatisch alte Bilder aus dem Cache entfernt werden.
 
-#### 3.1.5 Parameter: fulltextEncoding {#H3.1.8.Parameter:fulltextEncoding}
+#### 3.1.5 Parameter: fulltextEncoding <a id="H3.1.8.Parameter:fulltextEncoding"></a>
 
 Volltexte liegen beim Indexieren als normale Textdateien vor, die aus unterschiedlichen Quellen stammen und unterschiedliche Zeichenkodierungen verwenden können. So liefert etwa ABBYY bei Standardeinstellungen seine OCR-Ergebnisse als Cp1250 kodiert aus. Mit diesem Konfigurationselement kann die erwartete Zeichenkodierung der OCR-Ergebnisse angepasst werden. Standardwert ist `Cp1250`.
 
-#### 3.1.6 Parameter: deleteContentFilesOnFailure {#H3.1.9.Parameter:deleteContentFilesOnFailure}
+#### 3.1.6 Parameter: deleteContentFilesOnFailure <a id="H3.1.9.Parameter:deleteContentFilesOnFailure"></a>
 
 Es kann vorkommen, dass die Indexierung eines Objektes etwa durch eine fehlerhafte XML Datei fehlschlägt.  
 In einem solchen Fall werden die Datei und alle dazugehörigen Ordner \(Medien, Volltexte, Wordkoordinaten, etc.\) aus dem Hotfolder entfernt. Je nach Objekt kann es aber vorkommen, dass die dazugehörigen Ordner große Datenmengen enthalten, so dass das Kopieren dieser Daten in den Hotfolder sehr viel Zeit in Anspruch nimmt. In solchen Fällen gibt es die Möglichkeit, diese Ordner auch bei Scheitern im Hotfolder zu belassen, damit diese mit einer korrigierten XML Datei verwendet werden können. Das Verbleiben dieser Ordner im Hotfolder hat keinen Einfluss auf die Indexierung etwaiger anderer Objekte.
 
-#### 3.1.7 Parameter: addVolumeCollectionsToAnchor {#H3.1.10.Parameter:addVolumeCollectionsToAnchor}
+#### 3.1.7 Parameter: addVolumeCollectionsToAnchor <a id="H3.1.10.Parameter:addVolumeCollectionsToAnchor"></a>
 
 Bei der Indexierung von mehrbändigen Werken kann es vorkommen, dass Bände unterschiedlichen Kollektionen angehören. Wenn dieses Element auf `true` steht, werden Kollektionsnamen aus allen im Index enthaltenen Bänden auch in das Gesamtwerk kopiert \(Kollektionen, denen nur das Gesamtwerk angehört, bleiben ebenfalls erhalten\). Zu beachten ist hier, dass evtl. Schreibfehler bei Kollektionsnamen nicht mehr automatisiert aus dem Gesamtwerk entfernt werden können, wenn diese Option aktiviert ist. Standardwert ist `false`.
 
-#### 3.1.8 Parameter: namespaces {#H3.1.1.Parameter:namespaces}
+#### 3.1.8 Parameter: namespaces <a id="H3.1.1.Parameter:namespaces"></a>
 
 Werden in METS Dokumenten zusätzliche XML Namespaces eingebettet, müssen diese dem Goobi viewer Indexer mitgeteilt werden, damit entsprechende XPath Ausdrücke ausgewertet werden können. Der Namespace Name wird dabei als Elementname innerhalb des Elements `<list>` definiert, die Namespace URI als Textwert dieses Elements: 
 

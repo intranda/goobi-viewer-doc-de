@@ -17,23 +17,23 @@ Alle aufgelisteten XML-Konfigurationselemente sind relativ zum Wurzelelement
 
 Die einzelnen Parameter im Überblick
 
-#### 4.1.1.1 Parameter: repositoryName {#H4.1.1.Parameter:repositoryName}
+#### 4.1.1.1 Parameter: repositoryName <a id="H4.1.1.Parameter:repositoryName"></a>
 
 Dieser Parameter legt den Namen des OAI-Repositories fest.
 
-#### 4.1.1.2 Parameter: baseURL {#H4.1.2.Parameter:baseURL}
+#### 4.1.1.2 Parameter: baseURL <a id="H4.1.2.Parameter:baseURL"></a>
 
 Dieser Parameter definiert diejenige URL, unter der die OAI-Schnittstelle angesprochen werden kann.
 
-#### 4.1.1.3 Parameter: protocolVersion {#H4.1.3.Parameter:protocolVersion}
+#### 4.1.1.3 Parameter: protocolVersion <a id="H4.1.3.Parameter:protocolVersion"></a>
 
 Version des OAI Protokolls.
 
-#### 4.1.1.4 Parameter: adminEmail {#H4.1.4.Parameter:adminEmail}
+#### 4.1.1.4 Parameter: adminEmail <a id="H4.1.4.Parameter:adminEmail"></a>
 
 Kontakt E-Mail Adresse.
 
-#### 4.1.1.5 deleteRecord {#H4.1.5.deleteRecord}
+#### 4.1.1.5 deleteRecord <a id="H4.1.5.deleteRecord"></a>
 
 ```text
 Werte: no | persistent | transient
@@ -45,7 +45,7 @@ Angabe, wie mit gelöschten Datensätzen umgegangen wird.
 * persistent - Informationen über Löschungen werden protokolliert und ohne zeitliche Einschränkung vorgehalten.
 * transient - Die Repository kann Informationen über Löschungen enthalten. Die Konsistenz der Informationen sowie das Vorhalten über eine unbestimmte Zeit werden aber nicht garantiert.
 
-#### 4.1.1.6 Parameter: granularity {#H4.1.6.Parameter:granularity}
+#### 4.1.1.6 Parameter: granularity <a id="H4.1.6.Parameter:granularity"></a>
 
 Definiert, wie genau mit Zeiten umgegangen wird. Erlaubt sind Datestamps und UTCdatetime.
 
@@ -56,11 +56,11 @@ Definiert, wie genau mit Zeiten umgegangen wird. Erlaubt sind Datestamps und UTC
 </oai-identifier>
 ```
 
-#### 4.1.1.7 Parameter: xmlns {#H4.1.7.Parameter:xmlns}
+#### 4.1.1.7 Parameter: xmlns <a id="H4.1.7.Parameter:xmlns"></a>
 
 Standard Namespace für OAI
 
-#### 4.1.1.8 Parameter: repositoryIdentier {#H4.1.8.Parameter:repositoryIdentier}
+#### 4.1.1.8 Parameter: repositoryIdentier <a id="H4.1.8.Parameter:repositoryIdentier"></a>
 
 Optionaler Identifier der Repository. Wird als Präfix für Record Identifier verwendet.
 
@@ -76,15 +76,15 @@ Optionaler Identifier der Repository. Wird als Präfix für Record Identifier ve
 </solr>
 ```
 
-#### 4.1.1.9 solrUrl {#H4.1.9.solrUrl}
+#### 4.1.1.9 solrUrl <a id="H4.1.9.solrUrl"></a>
 
 URL zur Instanz von Apache Solr. Diese ist in der Regel dieselbe URL, die der Goobi viewer verwendet.
 
-#### 4.1.1.10 Parameter: hitsPerToken {#H4.1.10.Parameter:hitsPerToken}
+#### 4.1.1.10 Parameter: hitsPerToken <a id="H4.1.10.Parameter:hitsPerToken"></a>
 
 Anzahl der Records, die Solr maximal bei einer Anfrage \(Seite/Token\) zurückgibt. Standardwert ist `20`.
 
-#### 4.1.1.11 Parameter: querySuffix {#H4.1.10.Parameter:querySuffix}
+#### 4.1.1.11 Parameter: querySuffix <a id="H4.1.10.Parameter:querySuffix"></a>
 
 Statisches Suffix, das in sämtlichen Solr Queries enthalten sein soll, um etwa bestimmte Dokumente komplett herauszufiltern.
 

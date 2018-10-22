@@ -2,7 +2,7 @@
 
 Für den Goobi viewer Indexer wurde auf Ihrer Maschine ein Shell-Skript eingerichtet. Zum Starten und Beenden sollte ausschließlich dieses Skript verwendet werden.
 
-#### 3.8.1. Starten des Indexers {#H3.6.1.StartendesIndexers}
+#### 3.8.1. Starten des Indexers <a id="H3.6.1.StartendesIndexers"></a>
 
 Mit dem folgenden Befehl können Sie den Goobi viewer Indexer starten.
 
@@ -10,7 +10,7 @@ Mit dem folgenden Befehl können Sie den Goobi viewer Indexer starten.
 systemctl start solrindexer
 ```
 
-#### 3.8.2. Beenden des Indexers {#H3.6.2.BeendendesIndexers}
+#### 3.8.2. Beenden des Indexers <a id="H3.6.2.BeendendesIndexers"></a>
 
 Mit dem folgenden Befehl können Sie den Goobi viewer Indexer stoppen.
 
@@ -18,7 +18,7 @@ Mit dem folgenden Befehl können Sie den Goobi viewer Indexer stoppen.
 systemctl stop solrindexer
 ```
 
-#### 3.8.3. Statusabfrage {#H3.6.3.Statusabfrage}
+#### 3.8.3. Statusabfrage <a id="H3.6.3.Statusabfrage"></a>
 
 Mit dem folgenden Kommando können Sie überprüfen, in welchem Status sich der Goobi viewer Indexer gerade befindet:
 
