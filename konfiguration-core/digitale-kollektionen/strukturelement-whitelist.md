@@ -1,3 +1,7 @@
+---
+description: OBSOLET
+---
+
 # 2.18.7 Strukturelement-Whitelist
 
 Damit beim Öffnen einer Kollektion nur komplette Werke aufgelistet werden \(und nicht etwa einzelne Kapitel\), gibt es eine Whitelist der anzuzeigenden Strukturelemente bei Kollektionen:
