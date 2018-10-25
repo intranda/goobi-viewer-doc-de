@@ -4,18 +4,6 @@ Für die Darstellung der Metadaten von musealen Objekten gibt es eine alternativ
 
 ![](../../.gitbook/assets/museale_metadaten.png)
 
-Zunächst müssen die auf diese Weise darzustellenden Strukturtypen definiert werden:
-
-```markup
-<metadata>
-      <museumDocstructTypes>
-             <docStruct>Painting</docStruct>
-             <docStruct>Sculpture</docStruct>
-             <docStruct>Coin</docStruct>
-      </museumDocstructTypes>
-</metadata>
-```
-
 Um die Metadaten nach eigenem Bedarf auf unterschiedliche Reiter zu verteilen, gibt es in der Konfiguration der [Haupt-Metadaten](haupt-metadaten.md) das Attribut `type` im Element `<metadata>`:
 
 ```markup

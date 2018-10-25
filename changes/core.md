@@ -1,5 +1,35 @@
 # 9.1 Core changes
 
+## 2018-10-25
+
+Die folgenden beiden Feldeinträge sollen in der Konfigurationsdatei des Goobi viewer Indexers ergänzt werden:
+
+{% code-tabs %}
+{% code-tabs-item title="solr\_indexerconfig.xml" %}
+```markup
+<MD_PROCESSID>
+    <list>
+        <item>
+            <xpath>@OBJID</xpath>
+            <addToDefault>false</addToDefault>
+            <addUntokenizedVersion>false</addUntokenizedVersion>
+        </item>
+    </list>
+</MD_PROCESSID>
+
+<BOOL_CONTAINSIMAGE>
+    <list>
+        <item>
+            <xpath>string(boolean(mets:fileSec/mets:fileGrp[@USE="PRESENTATION"]))</xpath>
+            <addToDefault>false</addToDefault>
+            <addSortField>true</addSortField>
+        </item>
+    </list>
+</BOOL_CONTAINSIMAGE>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## 2018-10-19
 
 Der Goobi viewer Indexer muss aktualisiert und der Datenbestand neu indexiert werden um sicherzustellen, dass keine falschen Suchtreffer angezeigt werden.
