@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2018-1029
+
+Setzen eine globalen Variablen im JavaScript, die den aktuellen Theme Namen enthält.
+
+* /boilerplate/includes/customJS.xhtml
+* /boilerplate/javascript/dev/custom.js
+
 ## 2018-10-12
 
 LESS-Template Refaktorisierung.  
