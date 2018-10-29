@@ -2,7 +2,7 @@
 
 ## 2018-1029
 
-Setzen eine globalen Variablen im JavaScript, die den aktuellen Theme Namen enthält.
+Setzen einer globalen Variablen im JavaScript, die den aktuellen Theme Namen enthält.
 
 * /boilerplate/includes/customJS.xhtml
 * /boilerplate/javascript/dev/custom.js
