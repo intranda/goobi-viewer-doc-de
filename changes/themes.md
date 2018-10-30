@@ -1,6 +1,6 @@
 # 9.2 Theme changes
 
-## 2018-1029
+## 2018-10-29
 
 Setzen einer globalen Variablen im JavaScript, die den aktuellen Theme Namen enthält.
 
