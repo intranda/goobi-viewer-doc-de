@@ -37,6 +37,7 @@ Eine Liste mit gängigen Unicode Sonderzeichen ist:
 | á | \u00E1 |
 | é | \u00E9 |
 | í | \u00ED |
+| ã | \u00E3 |
 
 
 
