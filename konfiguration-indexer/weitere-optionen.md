@@ -203,49 +203,60 @@ Alternativ zum Ersetzen von Nichtsortierzeichen \(siehe [3.8.12](weitere-optione
 
 Ist der für die Sortierung des nicht relevanten Teils beidseitig von Nichtsortierzeichen umschlossen, zum Beispiel `«` und `»,` muss `«` im Attribut prefix, `»` im Attribut suffix konfiguriert werden.
 
-Beispiel 1:  
-METS:
+Beispiel 1:
 
-```text
+{% code-tabs %}
+{% code-tabs-item title="METS Datei" %}
+```markup
 <mods:name>
-     ...
-     <mods:displayForm><<von>> Goethe, Johann Wolfgang</mods:displayForm>
+    <mods:displayForm>«von» Goethe, Johann Wolfgang</mods:displayForm>
 <mods:name>
-
-solr_indexerconfig.xml:
-<nonSortCharacters prefix="&lt;&lt;" suffix="&gt;&gt;" />
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% code-tabs %}
+{% code-tabs-item title="solr\_indexerconfig.xml" %}
+```markup
+<nonSortCharacters prefix="«" suffix="»" />
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Ergebnis
 
 ```text
 <MD_TITLE>von Goethe, Johann Wolfgang</MD_TITLE>
-<SORT_TITLE>Goethe, Johann Wolfgang<MD_TITLE>
+<SORT_TITLE>Goethe, Johann Wolfgang<SORT_TITLE>
 ```
 
 Wird der nicht für die Sortierung relevante Teil nur auf einer Seite vom Rest der Zeichenkette getrennt, muss dieses Zeichen nur als `prefix` \(nicht relevanter Teil am Anfang der Zeichenkette\) beziehungsweise `suffix` \(nicht relevanter Teil am Ende der Zeichenkette\) konfiguriert werden.
 
-Beispiel 2:  
-METS:
+Beispiel 2:
 
-```text
+{% code-tabs %}
+{% code-tabs-item title="METS Datei" %}
+```markup
 <mods:name>
-     ...
-     <mods:displayForm>von¬ Goethe, Johann Wolfgang</mods:displayForm>
+    <mods:displayForm>von¬ Goethe, Johann Wolfgang</mods:displayForm>
 <mods:name>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-solr\_indexerconfig.xml:
-
+{% code-tabs %}
+{% code-tabs-item title="solr\_indexerconfig.xml" %}
 ```markup
 <nonSortCharacters suffix="\u00AC" />
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Ergebnis:
 
 ```text
 <MD_TITLE>von Goethe, Johann Wolfgang</MD_TITLE>
-<SORT_TITLE>Goethe, Johann Wolfgang<MD_TITLE>
+<SORT_TITLE>Goethe, Johann Wolfgang<SORT_TITLE>
 ```
 
 #### 3.7.14 Parameter: addToChildren
