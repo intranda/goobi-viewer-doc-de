@@ -1,31 +1,33 @@
 # 3.9 Einspielen von Werken
 
-Um ein Werk zu indexieren, müssen die entsprechenden METS/MODS beziehungsweise LIDO Dateien im Hotfolder platziert werden. Zusätzlich können folgende Datenordner mit abgelegt werden, die bei der Indexierung ebenfalls berücksichtigt werden:
+Um ein Werk zu indexieren, müssen die gewünschten XML-Dateien \(zum Beispiel im METS/MODS, LIDO oder TEI Format\) im Hotfolder platziert werden. Zusätzlich können folgende Ordner mit abgelegt werden, die bei der Indexierung ebenfalls berücksichtigt werden:
 
 ```text
 /<Dateiname>_media/*.* (Medien: Bilder, Video und Audio)
-/<Dateiname>_txt/*.txt (Volltexte)
-/<Dateiname>_wc*.xml (Wortkoordinaten)
-/<Dateiname>_mix/*.xml (MIX Dateien)
+/<Dateiname>_txt/*.txt (Plain-Text Volltexte)
+/<Dateiname>_alto/*.xml (ALTO XML)
+/<Dateiname>_xml/*.xml (ABBYY XML)
 /<Dateiname>_pdf/*.pdf (vorgerenderte PDF-Seiten)
 /<Dateiname>_src/*.* (Dateien, die direkt zum Download angeboten werden sollen)
 ```
 
-Die Ordner müssen dabei den Dateinamen der zu indexierenden METS beziehungsweise LIDO Datei tragen \(ohne deren Erweiterung, aber mit dem entsprechenden Suffix\).  
+Die Ordner müssen dabei den Dateinamen der zu indexierenden XML-Datei tragen \(ohne deren Erweiterung, aber mit dem entsprechenden Suffix\).  
 Beispiel:
 
 ```text
-../hotfolder/PPN123456789.xml
-../hotfolder/PPN123456789_media/
-../hotfolder/PPN123456789_txt/
-../hotfolder/PPN123456789_wc/
+/opt/digiverso/viewer/hotfolder/PPN123456789.xml
+/opt/digiverso/viewer/hotfolder/PPN123456789_media/
+/opt/digiverso/viewer/hotfolder/PPN123456789_txt/
+/opt/digiverso/viewer/hotfolder/PPN123456789_wc/
 ```
 
 {% hint style="info" %}
-Dateinamen in Ordnern mit Volltexten, Wortkoordinaten, MIX Daten und PDF Seiten müssen jeweils den Dateinamen des entsprechenden Datei im Medienordner tragen, zum Beispiel für das Bild 00000001.tif heißt die Volltextdatei 00000001.txt.
-
-Da der Goobi viewer Indexer sofort anfängt zu indexieren, sobald eine METS beziehungsweise LIDO Datei vorliegt, könnte die Indexierung abgeschlossen sein, bevor die Datenordner fertig kopiert wurden. In dem Fall werden die Ordner nicht berücksichtigt und verbleiben im Hotfolder. Darum sollten METS und LIDO Dateien erst in den Hotfolder kopiert werden, wenn das Kopieren der dazugehörigen Datenordner abgeschlossen ist.
+Dateinamen in Ordnern müssen jeweils den Dateinamen des entsprechenden Datei im Medienordner tragen, zum Beispiel für das Bild 00000001.tif heißt die Volltextdatei 00000001.txt.
 {% endhint %}
 
-Falls Goobi für das Exportieren von Daten in den Hotfolder verwendet wird, ist darauf zu achten, dass die Konfiguration die oben beschriebenen Anforderungen erfüllt.
+{% hint style="info" %}
+Da der Goobi viewer Indexer sofort anfängt zu indexieren, sobald eine XML-Datei gefunden wird, könnte die Indexierung abgeschlossen sein, bevor die Datenordner fertig kopiert wurden. In dem Fall werden die Ordner nicht berücksichtigt und verbleiben im Hotfolder. Darum sollten METS und LIDO Dateien erst in den Hotfolder kopiert werden, wenn das Kopieren der dazugehörigen Datenordner abgeschlossen ist.
+{% endhint %}
+
+Falls nicht Goobi workflow für das Exportieren von Daten in den Hotfolder verwendet wird, ist darauf zu achten, dass die Konfiguration die oben beschriebenen Anforderungen erfüllt.
 
