@@ -1,32 +1,45 @@
 # 3.9 Einspielen von Werken
 
-Um ein Werk zu indexieren, müssen die gewünschten XML-Dateien \(zum Beispiel im METS/MODS, LIDO oder TEI Format\) im Hotfolder platziert werden. Zusätzlich können folgende Ordner mit abgelegt werden, die bei der Indexierung ebenfalls berücksichtigt werden:
+Um ein Werk zu indexieren, muss die gewünschten XML-Datei \(zum Beispiel im METS/MODS, LIDO oder TEI Format\) im [Hotfolder](verzeichnisse.md#3-2-1-parameter-hotfolder) gespeichert werden. Pro einzuspielendes Werk ist eine eigene XML-Datei notwendig. 
 
-```text
-/<Dateiname>_media/*.* (Medien: Bilder, Video und Audio)
-/<Dateiname>_txt/*.txt (Plain-Text Volltexte)
-/<Dateiname>_alto/*.xml (ALTO XML)
-/<Dateiname>_xml/*.xml (ABBYY XML)
-/<Dateiname>_pdf/*.pdf (vorgerenderte PDF-Seiten)
-/<Dateiname>_src/*.* (Dateien, die direkt zum Download angeboten werden sollen)
-```
+Optional können weitere Ordner neben der XML-Datei abgelegt werden damit diese bei der Indexierung Berücksichtigung finden. 
 
-Die Ordner müssen dabei den Dateinamen der zu indexierenden XML-Datei tragen \(ohne deren Erweiterung, aber mit dem entsprechenden Suffix\).  
-Beispiel:
+| Ordnersuffix | Dateinamensuffix | Funktion |
+| :--- | :--- | :--- |
+| **\_media** | .jpg, .tif, .png, .jp2, .mp4, .avi, .mpg, .wav, ... | Medien. Bilder, Video und Audio |
+| **\_txt** | .txt | Plain-Text Volltexte |
+| **\_alto** | .xml | ALTO |
+| **\_xml** | .xml | ABBYY XML |
+| **\_pdf** | .pdf | \(vorgerenderte\) PDF Seiten |
+| **\_src** | \*.\* | Dateien, die direkt zum Download angeboten werden sollen |
 
-```text
-/opt/digiverso/viewer/hotfolder/PPN123456789.xml
-/opt/digiverso/viewer/hotfolder/PPN123456789_media/
-/opt/digiverso/viewer/hotfolder/PPN123456789_txt/
-/opt/digiverso/viewer/hotfolder/PPN123456789_wc/
-```
+Die Ordner müssen dabei den Dateinamen der zu indexierenden XML-Datei tragen \(ohne deren Erweiterung, aber mit dem entsprechenden Suffix\). Im folgenden eine exemplarische Verzeichnisstruktur, bei der die Verzeichnisnamen **fett** markiert sind:  
+
+
+* **hotfolder/**
+  * PPN123456789.xml
+  * **PPN123456789\_media/**
+    * 00000001.jpg
+    * 00000002.jpg
+  * **PPN123456789\_alto/**
+    * 00000001.xml
+    * 00000002.xml
+  * AC987654321.xml
+  * **AC987654321\_media/**
+    * prefix\_0001.jp2
+    * prefix\_0002.jp2
+    * prefix\_0003.jp2
+  * **AC987654321\_src/**
+    * additional\_document.docx
+
+
 
 {% hint style="info" %}
-Dateinamen in Ordnern müssen jeweils den Dateinamen des entsprechenden Datei im Medienordner tragen, zum Beispiel für das Bild 00000001.tif heißt die Volltextdatei 00000001.txt.
+Dateinamen in Ordnern müssen jeweils den Dateinamen des entsprechenden Datei im Medienordner tragen, zum Beispiel für das Bild 00000001.jpg heißt die ALTO Datei 00000001.xml.
 {% endhint %}
 
 {% hint style="info" %}
-Da der Goobi viewer Indexer sofort anfängt zu indexieren, sobald eine XML-Datei gefunden wird, könnte die Indexierung abgeschlossen sein, bevor die Datenordner fertig kopiert wurden. In dem Fall werden die Ordner nicht berücksichtigt und verbleiben im Hotfolder. Darum sollten METS und LIDO Dateien erst in den Hotfolder kopiert werden, wenn das Kopieren der dazugehörigen Datenordner abgeschlossen ist.
+Da der Goobi viewer Indexer sofort anfängt zu indexieren, sobald eine XML-Datei gefunden wird, könnte die Indexierung abgeschlossen sein, bevor die Datenordner fertig kopiert wurden. In dem Fall werden die Ordner nicht berücksichtigt und verbleiben im Hotfolder. Darum sollten Werks-XML Dateien erst in den Hotfolder kopiert werden, wenn das Kopieren der dazugehörigen Datenordner abgeschlossen ist.
 {% endhint %}
 
 Falls nicht Goobi workflow für das Exportieren von Daten in den Hotfolder verwendet wird, ist darauf zu achten, dass die Konfiguration die oben beschriebenen Anforderungen erfüllt.
