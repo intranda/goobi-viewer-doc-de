@@ -1,7 +1,9 @@
 # 2.11.9 Footer
 
-Der Footer, der wahlweise unterhalb des Bildes angezeigt wird, enthält einen Text, der folgendermaßen konfiguriert wird.
+Unter dem Bild kann ein optionaler Footer angezeigt werden. Der darin enthaltene Text wird wie folgt konfiguriert:
 
+{% code-tabs %}
+{% code-tabs-item title="config\_viewer.xml" %}
 ```markup
 <viewer>
      <watermarkTextConfiguration>
@@ -11,39 +13,50 @@ Der Footer, der wahlweise unterhalb des Bildes angezeigt wird, enthält einen Te
      </watermarkTextConfiguration>
 </viewer>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Die Werte `urn` und `purl` für &lt;text&gt; sind reservierte Wörter \(Groß-/Kleinschreibung spielt keine Rolle\).
+Die Werte `urn` und `purl` für `<text>` sind reservierte Wörter \(Groß-/Kleinschreibung spielt keine Rolle\).
 
 Werte, die mit `SOLR:` anfangen, gefolgt vom Namen eines existierenden Solr Metadatenfeldes, bewirken, dass das entsprechende Feld im Hauptdokument des Werkes ausgewertet wird - bei Vorhandensein wird dessen Wert in das Watermark geschrieben. Alle anderen Werte werden 1:1 in das Watermark geschrieben. Im letzteren Fall sollte darauf geachtet werden, dass der eingegebene Text nicht zu lang für das Watermark ist. 
 
-Es können in Abhängigkeit des Wertes eines Feldes im Solr Suchindex alternative Footer gerendert werden. Der Feldname wird in der config\_viewer.xml wie folgt definiert:
+Es können in Abhängigkeit des Wertes eines Feldes im Solr Suchindex alternative Footer gerendert werden. Der Eintrag `<watermarkIdField>` kann mehrfach vorkommen. Verwendet für die Bildfooter-ID wird der Wert aus dem ersten Feld, das nicht leer ist. Der Feldname wird wie folgt definiert:
 
+{% code-tabs %}
+{% code-tabs-item title="config\_viewer.xml" %}
 ```markup
 <viewer>
+    <watermarkIdField>MD_OTHEROWNERINSTITUTION</watermarkIdField>
     <watermarkIdField>DC</watermarkIdField>
 </viewer>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Der Inhalt des Feldes kann dann in der config\_imageFooter.xml ausgelesen werden. Dafür muss die folgende Struktur vorhanden sein:
+Der Inhalt des Feldes kann dann in der `config_imageFooter.xml` ausgelesen werden. Dafür muss die folgende Struktur vorhanden sein:
 
+{% code-tabs %}
+{% code-tabs-item title="config\_imageFooter.xml" %}
 ```markup
 <watermarks>
-    <watermark id=“Wert1“ height=“50“ width=“500“ color=“CCCCCC“>
+    <watermark id="Wert1" height="50" width="500" color="CCCCCC">
     [...]
     </watermark>
-    <watermark id=“Wert2“ height=“50“ width=“500“ color=“CCCCCC“>
+    <watermark id="Wert2" height="50" width="500" color="CCCCCC">
     [...]
     </watermark>
-    <watermark id=“Wert3“ height=“50“ width=“500“ color=“CCCCCC“>
+    <watermark id="Wert3" height="50" width="500" color="CCCCCC">
     [...]
     </watermark>
-    <watermark id=“default“ height=“50“ width=“500“ color=“CCCCCC“>
+    <watermark id="default" height="50" width="500" color="CCCCCC">
     [...]
     </watermark>
 </watermarks>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Der Inhalt des Attributs id="" entspricht dabei dem Wert des Indexfeldes, ansonsten greift die Konfiguration mit `id=“default“`.
+Der Inhalt des Attributs `id=""` entspricht dabei dem Wert des Indexfeldes, ansonsten greift die Konfiguration mit `id="default"`.
 
 Footer, die für `height` oder `width` einen Wert von 0 haben, werden nicht gerendert.
 
