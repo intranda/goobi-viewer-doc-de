@@ -36,7 +36,7 @@ Der Goobi viewer Indexer muss aktualisiert und der Datenbestand neu indexiert we
 
 ## 2018-10-09
 
-In der `config_viewer.xml` muss der Block `<openIdConnect>` umbenannt werden in `<authenticationProviders>`. Sein Attribut `show`wandert in die einzelnen enthaltenen `<provider>` Einträge. Der Default-Wert für `show` ist dabei `true.` Alle `<provider>` Einträge mit Namen `Google` und `Facebook` müssen zusätzlich das Attribut `type=„openId“` bekommen. Die Anmeldung über lokale Viewer-Nutzeraccounts muss als separater `<provider>` eingetragen werden:
+In der `config_viewer.xml` muss der Block `<openIdConnect>` umbenannt werden in `<authenticationProviders>`. Sein Attribut `show`wandert in die einzelnen enthaltenen `<provider>` Einträge. Der Default-Wert für `show` ist dabei `true.` Alle `<provider>` Einträge mit Namen `Google` und `Facebook` müssen zusätzlich das Attribut `type="openId"` bekommen. Die Anmeldung über lokale Viewer-Nutzeraccounts muss als separater `<provider>` eingetragen werden:
 
 ```markup
 <provider type="local" show="true" name="Goobi viewer"/>
