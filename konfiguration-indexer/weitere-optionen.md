@@ -189,6 +189,10 @@ Beispiel 1:
 
 Im obigen Beispiel wird ein ASCII Zeichen für den Zeilenumbruch `(10)` durch die HTML Zeichenkette für den Zeilenumbruch ersetzt.
 
+{% hint style="info" %}
+Eine Liste an ASCII Zeichen kann zum Beispiel auf [https://ascii.cl/](https://ascii.cl/) nachgeschlagen werden.
+{% endhint %}
+
 Beispiel 2:
 
 ```markup
