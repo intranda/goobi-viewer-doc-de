@@ -13,9 +13,12 @@ Der Konfigurationsblock hat folgende Form:
         <scale>900</scale>
         <scale>1800</scale>
         <scale>3200</scale>
+        <useFor>
+            <!--view>fullscreen</view-->
+        </useFor>
         <tileSize>
-            <scaleFactors>1,32,64</scaleFactors>
-            <size>512</size>
+            <scaleFactors>4</scaleFactors>
+            <size>1024</size>
         </tileSize>
     </zoomImageView>
 </viewer>
