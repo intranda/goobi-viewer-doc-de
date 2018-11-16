@@ -1,5 +1,14 @@
 # 9.2 Theme changes
 
+## 
+
+## 2018-11-16 <a id="2018-07-05"></a>
+
+Neues LESS-Template.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/widgets/widgetUsage.less
+
 ## 2018-10-29
 
 Setzen einer globalen Variablen im JavaScript, die den aktuellen Theme Namen enthält.
