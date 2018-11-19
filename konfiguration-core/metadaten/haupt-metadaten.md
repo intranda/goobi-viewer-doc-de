@@ -86,6 +86,8 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
             Wikipedia Resolving überführt werden</li>
           <li><code>urlescapedfield</code>- Hierbei werden speziell für URLs codierte
             Zeichen wie der Slash Unicode-Escaped</li>
+          <li><code>normdatauri</code>- Es wird ein Button gerendert, der mithilfe der
+            hier enthaltenen Normdaten-URI die Normdaten einholt und öffnet</li>
         </ul>
       </td>
     </tr>
