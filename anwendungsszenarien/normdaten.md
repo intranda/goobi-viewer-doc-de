@@ -96,8 +96,8 @@ Für die Anzeige muss nun in der zentrale Konfigurationsdatei des Goobi viewers 
 ```markup
 <metadata label="MD_AUTHOR" value="MASTERVALUE_WIKINORM" group="true">
     <param type="field" key="MD_VALUE" />
-    <param type="normdatauri" key="NORM_URI" />
     <param type="wikipersonfield" key="MD_DISPLAYFORM" />
+    <param type="normdatauri" key="NORM_URI" />
 </metadata>
 ```
 
