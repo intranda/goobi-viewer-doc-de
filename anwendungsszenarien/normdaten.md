@@ -95,17 +95,16 @@ Für die Anzeige muss nun in der zentrale Konfigurationsdatei des Goobi viewers 
 
 ```markup
 <metadata label="MD_AUTHOR" value="MASTERVALUE_WIKINORM" group="true">
-    <param type="field" key="MD_DISPLAYFORM" />
+    <param type="field" key="MD_VALUE" />
+    <param type="normdatauri" key="NORM_URI" />
     <param type="wikipersonfield" key="MD_DISPLAYFORM" />
-    <param type="normfield" key="NORM_URI" />
-    <param type="normfield" key="NORM_URIGND" />
 </metadata>
 ```
 
 Sollten zusätzliche Informationen in der Anzeige gewünscht sein, so sind die Parameter entsprechend anzupassen. Dabei darauf achten, dass in den Attributen `value=""` ein neuer KEY definiert wird, der dann in den `messages_*`-Dateien vorhanden ist. Für das obige Beispiel entspricht die Konfiguration innerhalb der Sprachdatei `messages_de.properties`  beispielsweise:
 
 ```text
-MASTERVALUE_WIKINORM={1} <a href="http://de.wikipedia.org/wiki/{3}" target="_blank"><img src="/viewer/javax.faces.resource/wikipedia.png.xhtml?ln=images/" style="height:16px;" title="Wikipedia" alt="Wikipedia" /></a>
+MASTERVALUE_WIKINORM={1} <a href="http://de.wikipedia.org/wiki/{3}" target="_blank"><img src="/viewer/javax.faces.resource/wikipedia.png.xhtml?ln=images/" style="height:16px;" title="Wikipedia" alt="Wikipedia" /></a> {5}
 ```
 
 
