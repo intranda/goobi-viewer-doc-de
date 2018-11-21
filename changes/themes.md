@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2018-11-21
+
+Zusätzliches Thumbnail für nicht vorhandene Bildvorschauen.
+
+* /boilerplate/images/image\_not\_found.png
+
 ## 2018-11-16 <a id="2018-07-05"></a>
 
 Neues LESS-Template.
