@@ -6,6 +6,13 @@ Zusätzliches Thumbnail für nicht vorhandene Bildvorschauen.
 
 * /boilerplate/images/image\_not\_found.png
 
+## 2018-11-19 <a id="2018-07-05"></a>
+
+LESS-Template gelöscht.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/search/searchTimeline.less
+
 ## 2018-11-16 <a id="2018-07-05"></a>
 
 Neues LESS-Template.
