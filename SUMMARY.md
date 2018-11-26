@@ -20,6 +20,7 @@
   * [2.10 ePub Download](konfiguration-core/epub-download.md)
   * [2.11 Bild Optionen](konfiguration-core/bild-optionen/README.md)
     * [2.11.1 Erweitertes Blättern in der Bildanzeige](konfiguration-core/bild-optionen/erweitertes-blaettern-in-der-bildanzeige.md)
+    * [Untitled](konfiguration-core/bild-optionen/untitled.md)
     * [2.11.2 Doppelseitenansicht](konfiguration-core/bild-optionen/doppelseitenansicht.md)
     * [2.11.3 Konfiguration der Bildanzeige](konfiguration-core/bild-optionen/konfiguration-der-bildanzeige.md)
     * [2.11.4 Erhalt des Zooms und der Rotation beim Blättern in der Bildanzeige](konfiguration-core/bild-optionen/erhalt-des-zooms-und-der-rotation-beim-blaettern-in-der-bildanzeige.md)
