@@ -10,7 +10,15 @@ Werte: true|false
 
 Falls `true`, wird zusätzlich zum konfigurierten Metadatenfeld ein zweites Feld geschrieben, das für die Sortierung von Suchtreffern verwendet werden kann. Dabei erhält das zweite Feld den Präfix SORT\_ im Namen. Dies ist insbesondere bei Feldern nützlich, deren Name mit dem Präfix MD\_ anfängt \(MD\_ wird dabei durch `SORT_` ersetzt\). Diese sind im Solr Schema stets so konfiguriert, dass sie mehrere Werte als Liste enthalten können - solche Felder können in Solr nicht für die Sortierung verwendet werden. Zu beachten ist, dass ein Sortierfeld nicht alle gefundenen Werte enthält, sondern nur den ersten \(zum Beispiel den ersten Autor eines Werks\). Standardwert ist `false`.
 
-#### **3.7.2 Parameter: addToDefault**
+#### **3.7.2 Parameter: addSortFieldToTopstruct**
+
+```text
+Werte: true|false
+```
+
+Spezialeinstellung für Metadatenfelder aus LIDO-Events. Sollen Suchtreffer nach einem Metadatenfeld aus einem LIDO-Event sortiert werden können, wird durch die Einstellung `true` ein Sortierfeld aus diesem Metadatenfeld in das Dokument des Hauptelements geschrieben. Standardwert ist `false`.
+
+#### **3.7.3 Parameter: addToDefault**
 
 ```text
 Werte: true|false
@@ -18,7 +26,7 @@ Werte: true|false
 
 Falls `true`, wird der Wert des konfigurierten Metadatenfeldes an das Feld `DEFAULT` angehängt. Letzteres enthält alle Tokens, nach denen im Goobi viewer gesucht werden kann. Soll ein bestimmtes Metadatum also suchbar sein, muss in der entsprechenden Feldkonfiguration diese Option aktiviert werden. Standardwert ist false.
 
-#### **3.7.3 Parameter: addUntokenizedVersion**
+#### **3.7.4 Parameter: addUntokenizedVersion**
 
 ```text
 Werte: true|false
@@ -26,7 +34,7 @@ Werte: true|false
 
 Metadatenfelder mit Präfix MD\_ werden stets in einzelne Tokens \(grob gesehen einzelne Wörter einer Zeichenkette\) aufgespalten. Damit man ein Feld durchstöbern kann \(siehe Stöbern\), muss die gesamte Zeichenkette als ein Token vorliegen \(andernfalls kann man zum Beispiel keine Haupttitel, sondern nur einzelne Wörter aus Haupttiteln durchstöbern\). Hierfür kann zusätzlich zum Metadatenfeld eine Kopie angelegt werden, deren Wert als ein Token vorliegt \(diese erhält den Suffix `_UNTOKENIZED`\). Solche Felder können für die Stöbern-Funktion konfiguriert werden. Standardwert ist `true`.
 
-#### **3.7.4 Parameter:Parameter: groupEntity**
+#### **3.7.5 Parameter:Parameter: groupEntity**
 
 Personen und Körperschaften können unter Umständen zusätzliche Metadaten enthalten, wie etwa Lebensdaten beziehungsweise externe Links. Diese Metadaten möchte man evtl. gruppiert anzeigen, um die Zusammengehörigkeit deutlich zu machen:
 
@@ -91,7 +99,7 @@ Das Unterfeld MD\_VALUE enthält den „Hauptwert“ des Metadatums \(Etwa den N
 
 Fehlt das Konfigurationselement, wird eine einfache Zeichenkette mit dem Namen der Person beziehungsweise Körperschaft in `mods:displayForm` erwartet.
 
-#### 3.7.5 Parameter: getnode
+#### 3.7.6 Parameter: getnode
 
 ```text
 Werte: first
@@ -99,7 +107,7 @@ Werte: first
 
 Ist der Wert auf `first` gesetzt, wird nach dem ersten gefundenen Wert für den aktuellen XPath Ausdruck abgebrochen. Zu beachten ist, dass für ein Solr Feld mehrere XPath-Ausdrücke definiert werden können, für die ebenfalls Werte existieren können.
 
-#### 3.7.6 Parameter: getchildren
+#### 3.7.7 Parameter: getchildren
 
 ```text
 Werte: all
@@ -107,7 +115,7 @@ Werte: all
 
 Ist der Wert auf `all` gesetzt, werden Werte für dieses Metadatum von allen unmittelbar untergeordneten Strukturelementen mit übernommen.
 
-#### 3.7.7 Parameter: getparents
+#### 3.7.8 Parameter: getparents
 
 ```text
 Werte: first|all
@@ -115,7 +123,7 @@ Werte: first|all
 
 Ist der Wert auf `first` gesetzt, werden Werte für dieses Metadatum auch vom unmittelbar übergeordneten Strukturelement mit übernommen. Bei `all` werden Werte für dieses Metadatum aus allen übergeordneten Strukturelementen bis hin zum obersten übernommen.
 
-#### 3.7.8 Parameter: lowercase
+#### 3.7.9 Parameter: lowercase
 
 ```text
 Werte: true|false
@@ -129,7 +137,7 @@ Beispiel:
 “Buch Druck” ==> “buch druck”
 ```
 
-#### 3.7.9 Parameter: onefield
+#### 3.7.10 Parameter: onefield
 
 ```text
 Werte: true|false
@@ -137,7 +145,7 @@ Werte: true|false
 
 Falls `true`, werden alle gefundenen Werte in das Solr Feld als eine Zeichenkette geschrieben. Die Werte werden dabei durch die Zeichenkette `"; "` separiert. Bei `false` wird für jeden Wert eine neue Zeichenkette geschrieben. Im letzteren Fall muss das betreffende Feld im Solr Schema so konfiguriert sein, dass Listen aus mehreren Werten erlaubt sind. Standardwert ist `false`.
 
-#### 3.7.10 Parameter: onetoken / splittingCharacter
+#### 3.7.11 Parameter: onetoken / splittingCharacter
 
 ```text
 Werte (onetoken): true|false
@@ -165,7 +173,7 @@ Beispiel:
 Diese Konfigurationselemente existieren speziell für die Behandlung von Kollektionsnamen im Goobi viewer \(Feld DC\) und bringen keinen Mehrwert bei anderen Metadatenfeldern.
 {% endhint %}
 
-#### 3.7.11 Parameter: normalizeYear
+#### 3.7.12 Parameter: normalizeYear
 
 ```text
 Werte: true|false
@@ -177,7 +185,7 @@ Beide Felder können zum Beispiel für die Facettierung von Suchtreffern verwend
 
 Optional kann das Attribut `<normalizeYear minYearDigits="n">` konfiguriert werden. Der Wert `n` gibt dabei an, ab wie vielen Ziffern frei stehende Zahlen in einer Zeichenkette als Jahreszahlen interpretiert werden sollen. Mindestwert ist 1. Standardwert ist `3`.
 
-#### 3.7.12 Parameter: replace
+#### 3.7.13 Parameter: replace
 
 Dieses Konfigurationselement ersetzt einzelne ASCII Zeichen beziehungsweise Zeichenketten durch eine andere Zeichenkette. Ein zu ersetztes Zeichen wird im Attribut `char` als ASCII Zahlencode angegeben. Alternativ kann im Attribut `string` eine Zeichenkette angegeben werden. Die Zeichenkette, die stattdessen geschrieben werden soll, wird innerhalb des Elements angegeben.
 
@@ -201,7 +209,7 @@ Beispiel 2:
 
 In diesem Beispiel wird das Nichtsortierzeichen ‘¬’ durch nichts ersetzt \(das heißt entfernt\).
 
-#### 3.7.13 Parameter: nonSortCharacters
+#### 3.7.14 Parameter: nonSortCharacters
 
 Alternativ zum Ersetzen von Nichtsortierzeichen \(siehe [3.8.12](weitere-optionen.md#3-8-12-parameter-replace)\) kann mit diesem Konfigurationselement die Erkennung von Nichtsortier-Teilen für Metadaten- sowie Sortierfelder konfiguriert werden. Dabei werden für angezeigte Metadatenfelder die Nichtsortierzeichen herausgefiltert, für Sortierfelder wird der gesamte Teil der Zeichenkette, der durch die Nichtsortierzeichen diskriminiert ist, entfernt.
 
@@ -263,11 +271,11 @@ Ergebnis:
 <SORT_TITLE>Goethe, Johann Wolfgang<SORT_TITLE>
 ```
 
-#### 3.7.14 Parameter: addToChildren
+#### 3.7.15 Parameter: addToChildren
 
 Ist diese Parameter auf `true` gesetzt, werden die Werte dieses Metadatums an untergeordnete Strukturtyp-Dokumente vererbt. Dies ist zum Beispiel für Lizenztypen wichtig, die eine Solr-Bedingungsquery verwenden. Die in der Query verwendeten Feldnamen müssen in der Regel diesen Parameter aktiviert haben. Das Feld DC muss diesen Parameter immer aktiviert haben. Standardwert ist `false`.
 
-#### 3.7.15 Parameter: addToPages
+#### 3.7.16 Parameter: addToPages
 
 Ist diese Parameter auf `true` gesetzt, werden die Werte dieses Metadatums an die der jeweiligen Strukturhierarchie zugewiesene Seitendokumenten vererbt. Dies ist zum Beispiel für Lizenztypen wichtig, die eine Solr-Bedingungsquery verwenden. Die in der Query verwendeten Feldnamen müssen in der Regel diesen Parameter aktiviert haben. Und auch Metadatenfelder, die in der erweiterten Suche mit Volltexten kombiniert werden sollen. in den SeitendokumentenDas Feld DC muss diesen Parameter immer aktiviert haben. Standardwert ist `false`.
 
