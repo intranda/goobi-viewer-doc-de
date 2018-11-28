@@ -10,12 +10,14 @@ Jedes Werk gehört mindestens einer Kollektion an. Dabei wird diese Information 
 science.mathematics.algebra.algebra1800to1900
 ```
 
-Die als Trennzeichen interpretierte Zeichenkette \(im obigen Beispiel ein Punkt\) kann über das folgende Konfigurationselement geändert werden:
+Die als Trennzeichen interpretierte Zeichenkette \(im obigen Beispiel ein Punkt\) kann für jedes hierarchische Feld individuell über das folgende Konfigurationselement geändert werden:
 
 ```markup
-<viewer>
-     <splittingCharacter>.</splittingCharacter>
-</viewer>
+<collections>
+    <collection field="DC">
+        <splittingCharacter>.</splittingCharacter>
+    </collection>
+</collections>
 ```
 
 Dabei ist zu beachten, dass die Namen der einzelnen Hierarchiestufen selbst das Trennzeichen nicht enthalten dürfen, da an diesen Stellen sonst ebenfalls eine Unterteilung stattfindet.
