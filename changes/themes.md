@@ -5,7 +5,7 @@
 Neue LESS-Templates.
 
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/cms/templates/23\_templateSearchStandrad.less
+* /boilerplate/css/less/viewer/cms/templates/23\_templateSearchStandard.less
 * /boilerplate/css/less/viewer/cms/templates/24\_templateSearchAdvanced.less
 * /boilerplate/css/less/viewer/cms/templates/25\_templateTags.less
 
