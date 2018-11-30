@@ -1,5 +1,33 @@
 # 9.1 Core changes
 
+## 2018-11-19
+
+Eine Änderung in der Darstellung von Normdaten-Buttons erfordert eine Umkonfigurierung aller Installationen, die Normdaten anzeigen.
+
+Der Type für NORM\_URI lautet nicht mehr `field` sondern neu `normdatauri` und kann als Parameter an beliebige Stelle platziert werden. So können Normdaten-Buttons auch zwischen anderen Parametern gerendert werden, anstatt wie bisher nur ganz am Ende. 
+
+{% code-tabs %}
+{% code-tabs-item title="config\_viewer.xml" %}
+```markup
+<metadata label="MD_AUTHOR" value="MASTERVALUE_WIKINORM" group="true">
+    <param type="field" key="MD_VALUE"/>
+    <param type="wikipersonfield" key="MD_VALUE"/>
+    <param type="normdatauri" key="NORM_URI" />
+</metadata>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Für den Normdaten-Button muss ein eigener Platzhalter \(hier: `{5}`\) definiert werden: 
+
+{% code-tabs %}
+{% code-tabs-item title="messages\_de.properties" %}
+```text
+MASTERVALUE_WIKINORM={1} <a href="http://de.wikipedia.org/wiki/{3}" target="_blank" title="Wikipedia" alt="Wikipedia" data-trigger="hover" data-placement="top" data-toggle="tooltip"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a> {5}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## 2018-10-25
 
 Die folgenden beiden Feldeinträge sollen in der Konfigurationsdatei des Goobi viewer Indexers ergänzt werden:
