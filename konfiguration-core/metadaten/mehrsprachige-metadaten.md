@@ -1,4 +1,4 @@
-# 2.19.9 mehrsprachige Metadaten
+# 2.19.10 mehrsprachige Metadaten
 
 Der Goobi viewer unterstützt mehrsprachige Metadaten. Diese sind mit dem Suffix \_LANG\_XX im Indexfeld gekennzeichnet wobei XX durch den Sprachkürzel ersetzt werden muss. Hier ein Beispiel für ein dreisprachiges Titelfeld:
 

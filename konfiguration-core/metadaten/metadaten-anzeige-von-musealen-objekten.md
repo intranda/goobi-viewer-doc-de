@@ -1,4 +1,4 @@
-# 2.19.5 Metadaten-Anzeige von musealen Objekten
+# 2.19.6 Metadaten-Anzeige von musealen Objekten
 
 Für die Darstellung der Metadaten von musealen Objekten gibt es eine alternative Metadaten-Ansicht. Dabei werden Metadaten direkt unterhalb der Bildanzeige in Reitern gruppiert dargestellt.
 

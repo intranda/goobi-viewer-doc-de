@@ -1,4 +1,4 @@
-# 2.19.7 Stöbern
+# 2.19.8 Stöbern
 
 Die Stöbern-Funktion ermöglicht es, über ein bestimmtes Metadatum den gesamten Datenbestand aufgelistet zu bekommen, zum Beispiel den Titel oder Namen des Autors. Klickt man einen Link an, werden alle im Datenbestand vorhandenen Werte aufgelistet.
 

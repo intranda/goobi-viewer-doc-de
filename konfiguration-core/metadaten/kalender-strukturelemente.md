@@ -1,4 +1,4 @@
-# 2.19.6 Kalender Strukturelemente
+# 2.19.7 Kalender Strukturelemente
 
 Damit für bestimmte Strukturelemente auch eine Kalenderansicht zur Verfügung steht, müssen diese in der folgenden Liste enthalten sein:
 
