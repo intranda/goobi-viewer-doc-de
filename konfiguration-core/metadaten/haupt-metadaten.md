@@ -88,6 +88,8 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
             Zeichen wie der Slash Unicode-Escaped</li>
           <li><code>normdatauri</code>- Es wird ein Button gerendert, der mithilfe der
             hier enthaltenen Normdaten-URI die Normdaten einholt und öffnet</li>
+          <li><code>hierarchicalfield</code> - Erzeugt einen Link für jedes Hierarchielevel.
+            Für die Verwendung mit dem Solr Feld <code>DC</code> gedacht.</li>
         </ul>
       </td>
     </tr>
