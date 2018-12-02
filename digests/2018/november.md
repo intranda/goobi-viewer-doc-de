@@ -26,9 +26,9 @@ Die Anzeige in diesem DropDown Menü ist nun konfigurierbar. Mit Platzhaltern k�
 
 ### Normdatenanzeige / Provenienzen
 
-Auch im Kontext Werksanzeige steht die neue Möglichkeit die Anzeige der Normdaten jetzt zu konfigurieren. Diese Entwicklung wurde im für die Darstellung von Provenienzangaben innerhalb des Goobi viewers umgesetzt. War die Anzeige von Normdaten  bisher starr vorgegeben, besteht nun die Möglichkeit die Felder einzeln zu konfigurieren und in der Reihenfolge festzulegen. Die Funktionalität ist in Kapitel [2.19.5](../../konfiguration-core/metadaten/2.19.5-normdatenanzeige.md) beschrieben.
+Auch im Kontext Werksanzeige steht die neue Möglichkeit die Anzeige der Normdaten jetzt zu konfigurieren. Diese Entwicklung wurde für die Darstellung von Provenienzangaben innerhalb des Goobi viewers umgesetzt. War die Anzeige bisher starr vorgegeben, können die Felder einzeln konfiguriert und in der Reihenfolge festgelegt werden. Die Funktionalität ist in Kapitel [2.19.5](../../konfiguration-core/metadaten/2.19.5-normdatenanzeige.md) beschrieben.
 
-Ebenfalls neu hinzugekommen ist der Feldtyp `normdatauri`. Bitte dafür auch die [Hinweise](../../changes/core.md#2018-11-19) für [Core Changes](../../changes/core.md) für Administratoren beachten.
+Geändert hat sich der Feldtyp für die NORM\_URI Einträge in der config\_viewer.xml. Diese sind jetzt vom neuen Typ `normdatauri`. Bitte dafür auch die [Hinweise](../../changes/core.md#2018-11-19) für [Core Changes](../../changes/core.md) für Administratoren beachten.
 
 ![Anzeige von Provenienzinformationen inklusive Normdaten](../../.gitbook/assets/bildschirmfoto-vom-2018-12-01-11-55-03.png)
 
@@ -36,18 +36,15 @@ Ebenfalls neu hinzugekommen ist der Feldtyp `normdatauri`. Bitte dafür auch die
 
 Es besteht schon immer die Möglichkeit unter einem Bild einen Footer anzuzeigen. Dieser kann in Abhängigkeit eines Wertes eines Feldes im Solr Suchindex unterschiedlich sein. Neu ist die Möglichkeit den Wert `<watermarkIdField>` mehrfach zu definieren. Verwendet wird dann für die Bildfooter-ID der Wert aus dem ersten Feld, das nicht leer ist. Siehe auch Kapitel [2.11.9](../../konfiguration-core/bild-optionen/footer.md)
 
-* Breadcrumb Anpassungen
-* Rest für thumbnailliste
-
 ### Überschreiben von Lizenzen
 
 Besitzt ein Werk mehrere zugriffsbeschränkende Access Conditions \(Lizenztypen\), reicht es nun, dass der Benutzer für _eine_ dieser Lizenztypen eine Zugriffsberechtigung besitzt. Vorher musste für jeden Lizenztyp eine Zugriffsberechtigung vorliegen.
 
-Dafür gibt es nun in der Maske zum Anlegen von Lizenztypen ein neues Multiselect Menü, dass es ermöglicht die überschreibenden Lizenztypen auszuwählen.
+Dafür gibt es nun in der Maske zum Anlegen von Lizenztypen ein neues multiselect Menü, dass es ermöglicht die überschreibenden Lizenztypen auszuwählen.
 
 ### Paginator bei Werken mit wenigen Bildern
 
-Der Paginator für Seiten mit wenigen Bildern wurde weiter angepasst. So wird nun zum Beispiel das DropDown Menü für die direkte Seitenauswahl wie Möglichkeit zur ersten oder zur letzten Seite zu springen erst angezeigt, wenn mehr als zwei Bilder vorliegen.
+Der Paginator für Seiten mit wenigen Bildern wurde weiter angepasst. So wird nun zum Beispiel das DropDown Menü für die direkte Seitenauswahl wie auch die Möglichkeit zur ersten oder zur letzten Seite zu springen erst angezeigt, wenn mehr als zwei Bilder vorliegen.
 
 ### Sortierung und LIDO Events
 
