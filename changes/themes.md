@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2018-12-05
+
+Neues URL-Mapping für LIDO Werke und optionales META-Tag für Indexierung durch Roboter.
+
+* /theme-url-mappings.xml
+* /boilerplate/template.html
+
 ## 2018-11-30
 
 Neue LESS-Templates.
