@@ -2,7 +2,7 @@
 
 ## 2018-12-05
 
-Neues URL-Mapping für LIDO Werke und optionales META-Tag für Indexierung durch Roboter.
+Neues URL-Mapping für Werke und optionales META-Tag für Indexierung durch Roboter.
 
 * /theme-url-mappings.xml
 * /boilerplate/template.html
