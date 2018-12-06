@@ -33,7 +33,6 @@ Außerdem die folgende Datei unter /opt/digiverso/viewer/config/ ablegen:
 {% code-tabs %}
 {% code-tabs-item title="normdatamap.properties" %}
 ```text
-
 001=NORM_IDENTIFIER_ZLB
 0247_a=URI
 035__(DE-101)=NORM_IDENTIFIER_ZLB
@@ -164,7 +163,6 @@ MAILTO=support@intranda.com
 
 ## Optimize the Solr search index once a month
 @monthly            root    curl -s http://localhost:8080/solr/update?optimize=true&waitFlush=false
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
