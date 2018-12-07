@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2018-12-07
+
+Änderungen an LESS Templates.
+
+* /boilerplate/css/less/viewer/components/imageControls.less
+* /boilerplate/css/less/viewer/widgets/widgetUsage.less
+
 ## 2018-12-05
 
 Neues URL-Mapping für Werke und optionales META-Tag für Indexierung durch Roboter.
