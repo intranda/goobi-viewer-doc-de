@@ -187,7 +187,7 @@ Optional kann das Attribut `<normalizeYear minYearDigits="n">` konfiguriert werd
 
 #### 3.7.13 Parameter: replace
 
-Dieses Konfigurationselement ersetzt einzelne ASCII Zeichen beziehungsweise Zeichenketten durch eine andere Zeichenkette. Ein zu ersetztes Zeichen wird im Attribut `char` als ASCII Zahlencode angegeben. Alternativ kann im Attribut `string` eine Zeichenkette angegeben werden. Die Zeichenkette, die stattdessen geschrieben werden soll, wird innerhalb des Elements angegeben.
+Dieses Konfigurationselement ersetzt einzelne ASCII Zeichen beziehungsweise Zeichenketten durch eine andere Zeichenkette. Ein zu ersetztes Zeichen wird im Attribut `char` als ASCII Zahlencode angegeben. Alternativ kann im Attribut `string` eine Zeichenkette angegeben werden oder im Attribut `regex` ein Regulärer Ausdruck. Die Zeichenkette, die stattdessen geschrieben werden soll, wird innerhalb des Elements angegeben.
 
 Beispiel 1:
 
@@ -208,6 +208,14 @@ Beispiel 2:
 ```
 
 In diesem Beispiel wird das Nichtsortierzeichen ‘¬’ durch nichts ersetzt \(das heißt entfernt\).
+
+Beispiel 3:
+
+```markup
+<replace regex="(.*)\[(.*) (.*)\]">$1[$3 $2]</replace>
+```
+
+In diesem Beispiel werden drei Gruppen gebildet und die zweite und dritte innerhalb der eckigen Klammern vertauscht, zum Beispiel würde aus "_Der heilige Stuhl \[Max Mustermann\]_" ein "_Der heilige Stuhl \[Mustermann Max\]_" werden.
 
 #### 3.7.14 Parameter: nonSortCharacters
 
