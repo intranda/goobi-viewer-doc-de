@@ -11,7 +11,7 @@ Gleichzeitige Facettierung nach über- und untergeordneten Strukturelementen ist
 		</drillDown>
 ```
 
-Hierfür sind Updates des Indexer auf 3.2.20181214 und des Solr-Schemas auf 20181214 erforderlich.
+Hierfür sind Updates des Indexer auf 3.2.20181214 und des Solr-Schemas auf 20181214 erforderlich. Anschließend müssen alle Werke neu indexiert werden.
 
 ## 2018-11-19
 
