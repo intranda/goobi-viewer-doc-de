@@ -1,5 +1,18 @@
 # 9.1 Core changes
 
+## 2018-12-17
+
+Gleichzeitige Facettierung nach über- und untergeordneten Strukturelementen ist konfigurierbar, indem neu eingeführte Indexfelder verwendet werden:
+
+```markup
+		<drillDown>
+			<field initialElementNumber="3">DOCSTRCT_TOP</field>
+			<field initialElementNumber="3">DOCSTRCT_SUB</field>
+		</drillDown>
+```
+
+Hierfür sind Updates des Indexer auf 3.2.20181214 und des Solr-Schemas auf 20181214 erforderlich.
+
 ## 2018-11-19
 
 Eine Änderung in der Darstellung von Normdaten-Buttons erfordert eine Umkonfigurierung aller Installationen, die Normdaten anzeigen.
