@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2018-12-17
+
+Änderungen an LESS Template.
+
+* /boilerplate/css/less/viewer/components/buttons.less
+
 ## 2018-12-07
 
 Änderungen an LESS Templates.
