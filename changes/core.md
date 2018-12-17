@@ -2,16 +2,21 @@
 
 ## 2018-12-17
 
-Gleichzeitige Facettierung nach über- und untergeordneten Strukturelementen ist konfigurierbar, indem neu eingeführte Indexfelder verwendet werden:
+Für die neue Facettierung nach Strukturelementen muss der Goobi viewer Indexer auf die Version 3.2.20181214 und das Solr-Schema auf 20181214 aktualisiert und der Datenbestand neu indexiert werden. 
+
+Außerdem muss in der lokalen config\_viewer.xml geprüft werden, ob das Feld `DOCSTRCT` zur Facettierung konfiguriert ist. Wenn ja ist dieses durch die neuen beiden Feldnamen `DOCSTRCT_TOP` und `DOCSTRCT_SUB` zu ersetzen.
 
 ```markup
-		<drillDown>
-			<field initialElementNumber="3">DOCSTRCT_TOP</field>
-			<field initialElementNumber="3">DOCSTRCT_SUB</field>
-		</drillDown>
+<search>
+    <drillDown>
+        <!--field initialElementNumber="3">DOCSTRCT</field-->
+        <field initialElementNumber="3">DOCSTRCT_TOP</field>
+        <field initialElementNumber="3">DOCSTRCT_SUB</field>
+    </drillDown>
+</search>
 ```
 
-Hierfür sind Updates des Indexer auf 3.2.20181214 und des Solr-Schemas auf 20181214 erforderlich. Anschließend müssen alle Werke neu indexiert werden.
+
 
 ## 2018-11-19
 
