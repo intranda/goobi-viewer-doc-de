@@ -19,9 +19,8 @@ Neues URL-Mapping für Werke und optionales META-Tag für Indexierung durch Robo
 Neue LESS-Templates.
 
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/cms/templates/23\_templateSearchStandard.less
-* /boilerplate/css/less/viewer/cms/templates/24\_templateSearchAdvanced.less
-* /boilerplate/css/less/viewer/cms/templates/25\_templateTags.less
+* /boilerplate/css/less/viewer/cms/templates/23\_templateSearch.less
+* /boilerplate/css/less/viewer/cms/templates/24\_templateTags.less
 
 ## 2018-11-21
 
