@@ -8,6 +8,10 @@ Ihr Goobi viewer bietet Resolver an, um Werke über einen Identifier \(PI\), ein
 
 Mangels Notwendigkeit sind die für das Resolving verwendeten Felder und Parameter nicht mehr konfigurierbar.
 
+{% hint style="info" %}
+Der `/piresolver?id=` kann auch über die Aliase `/ppnresolver?id=` und `/epnresolver?id=` angesprochen werden.
+{% endhint %}
+
 Die folgenden Optionen steuern die URL-Weiterleitung beim Öffnen des gefundenen Werkes:
 
 ```markup
