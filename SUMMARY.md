@@ -17,6 +17,7 @@
   * [2.9 PDF Download](konfiguration-core/pdf-download/README.md)
     * [2.9.1 Varianten](konfiguration-core/pdf-download/varianten.md)
     * [2.9.2 Download Links](konfiguration-core/pdf-download/download-links.md)
+    * [2.9.3 vorgeschaltete PDF Titelseite](konfiguration-core/pdf-download/2.9.3-vorgeschaltete-pdf-titelseite.md)
   * [2.10 ePub Download](konfiguration-core/epub-download.md)
   * [2.11 Bild Optionen](konfiguration-core/bild-optionen/README.md)
     * [2.11.1 Erweitertes Blättern in der Bildanzeige](konfiguration-core/bild-optionen/erweitertes-blaettern-in-der-bildanzeige.md)
