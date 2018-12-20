@@ -41,7 +41,7 @@ In der Sitemap werden nun Seiten aus GROUP Dokumenten wie zum Beispiel Konvolute
 
 Im Kontext Suche hat es zwei Veränderungen gegeben. Einmal einen Bugfix der die erweiterte Suche betrifft. War dort ein Wert in einem Dropdown Menü ausgewählt und wurde eine neue Zeile hinzugefügt dann wurde der Wert aus dem Dropdown Menü wieder zurück gesetzt. Dieser Fehler wurde behoben.
 
-Außerdem wurde die Liste der Strukturelemente Whitelist abgelöst. In dieser Liste wurden die Publikationstypen aufgelistet, die in den digitalen Sammlungen angezeigt werden sollten. Allerdings hat es immer wieder zur Verwirrung geführt, dass die Publikationstypen selbst noch einmal explizit definiert werden mussten. Die Liste wird von jetzt an automatisch generiert und die Konfiguration entfällt ersatzlos.
+Außerdem wurde die Liste der Strukturelemente Whitelist abgelöst. In dieser Liste wurden die Strukturelemente aufgelistet, die in den digitalen Sammlungen angezeigt werden sollten. Allerdings hat es immer wieder zur Verwirrung geführt, dass die Dokumenttypen selbst noch einmal explizit definiert werden mussten. Die Liste wird von jetzt an automatisch generiert und die Konfiguration entfällt ersatzlos.
 
 ### XHTML Seiten
 

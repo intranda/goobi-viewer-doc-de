@@ -1,6 +1,6 @@
-# 2.13 Öffnen bestimmter Publikationstypen in alternativen Seitenansichten
+# 2.13 Öffnen bestimmter Dokumententypen in alternativen Seitenansichten
 
-Es ist möglich bestimmte Publikationstypen in alternativen Seitenansichten zu öffnen. Sollen zum Beispiel Zeitungen und Zeitungsbände immer in der Kalenderansicht \(anstelle der Bildanzeige\) geöffnet werden, kann dies folgendermaßen konfiguriert werden:
+Es ist möglich bestimmte Dokumententypen in alternativen Seitenansichten zu öffnen. Sollen zum Beispiel Zeitungen und Zeitungsbände immer in der Kalenderansicht \(anstelle der Bildanzeige\) geöffnet werden, kann dies folgendermaßen konfiguriert werden:
 
 ```markup
 <viewer>

@@ -30,7 +30,7 @@
     * [2.11.8 Forcierte Bildformatkonversion](konfiguration-core/bild-optionen/forcierte-bildformatkonversion.md)
     * [2.11.9 Footer](konfiguration-core/bild-optionen/footer.md)
   * [2.12 individuelle Seitentypen](konfiguration-core/individuelle-seitentypen.md)
-  * [2.13 Öffnen bestimmter Publikationstypen in alternativen Seitenansichten](konfiguration-core/verlinkung-bestimmter-strukturtypen-auf-bestimmte-seitenansichten.md)
+  * [2.13 Öffnen bestimmter Dokumententypen in alternativen Seitenansichten](konfiguration-core/verlinkung-bestimmter-strukturtypen-auf-bestimmte-seitenansichten.md)
   * [2.14 Volltexthinweise](konfiguration-core/volltexthinweise.md)
   * [2.15. Sprachumschaltung bei mehrsprachigen Metadaten](konfiguration-core/sprachumschaltung-bei-mehrsprachigen-metadaten.md)
   * [2.16 Theme](konfiguration-core/theme/README.md)

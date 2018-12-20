@@ -18,7 +18,7 @@ Es findet automatisch eine Facettierung über die Suchtreffer statt. Die Konfigu
 Es lassen sich über `<field>` Elemente beliebig viele zusätzliche Indexfelder für die Facettierung definieren. Zu beachten ist, dass hierfür Felder mit dem Präfix `FACET_` im Index existieren sollten, da diese aufgrund Ihrer Konfiguration hierfür effizienter verarbeitet werden. Felder mit dem Präfix `FACET_` werden während der Indexierung automatisch für alle `MD_*` Felder sowie für `DC`, `DOCSTRCT`, `CENTURY` und `YEAR` generiert. Konfiguriert sollten dennoch die regulären Feldbezeichnungen – die speziellen Facettierungsfelder werden intern automatisch verwendet. 
 
 {% hint style="info" %}
-Die Felder `DOCSTRCT_TOP` \(Publikationstyp\) und `DOCSTRCT_SUB` \(Strukturelement\) werden automatisch generiert.
+Die Felder `DOCSTRCT_TOP` \(Dokumententyp\) und `DOCSTRCT_SUB` \(Strukturelement\) werden automatisch generiert.
 {% endhint %}
 
 Felder, die hierarchisch dursucht werden \(zum Beispiel `DC`\) sollten als `<hierarchicalField>` konfiguriert werden. Das Attribut `initialElementNumber=""` definiert die Anzahl der nach einer Suche anfänglich angezeigten Facettierungswerte. Alle weiteren werden angezeigt, indem das betreffende Facettierungselement aufgeklappt wird.\). Über das Attribut `sortOrder=""` kann die initiale Sortierung innerhalb der Facettierung gesetzt werden. Mögliche Werte sind `alphabetical_asc`, `alphabetical_desc`, `numerical_asc` und `numerical_desc`. Ist keine sortOrder gesetzt, wird automatisch nach Vorkommen der Treffer absteigend sortiert. Die Reihenfolge in der Konfigurationsdatei spiegelt die Reihenfolge in der Oberfläche wieder. Wird das Feld YEAR definiert, so wird dieses in Form eines Sliders in der Oberfläche angezeigt.
