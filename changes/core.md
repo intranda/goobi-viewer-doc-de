@@ -1,5 +1,9 @@
 # 9.1 Core changes
 
+## 2018-12-19
+
+Der Goobi viewer Indexer und das dazugehörige Schema müssen aktualisiert und der Datenbestand neu indexiert werden damit die Bildmaße als WIDTH und HEIGHT in den Solr Suchindex geschrieben werden. 
+
 ## 2018-12-17
 
 Für die neue Facettierung nach Strukturelementen muss der Goobi viewer Indexer auf die Version 3.2.20181214 und das Solr-Schema auf 20181214 aktualisiert und der Datenbestand neu indexiert werden. 
