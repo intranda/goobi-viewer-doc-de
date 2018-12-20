@@ -7,8 +7,8 @@
       <providerField>MD_ACCESSCONDITIONCOPYRIGHT</providerField>
       <dataProviderField>MD_ACCESSCONDITIONCOPYRIGHT</dataProviderField>
       <defaultProvider>Instutution XYZ</defaultProvider>
-      <rightsField> http://www.example.com/rights </rightsField>
-      <defaultRightsUrl>http://www.example.com/rights</defaultRightsUrl>
+      <rightsField>https://www.example.org/rights</rightsField>
+      <defaultRightsUrl>https://www.example.org/rights</defaultRightsUrl>
       <types>
             <docstruct name="video" type="VIDEO" />
             <docstruct name="audio" type="SOUND" />

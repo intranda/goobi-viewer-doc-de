@@ -5,7 +5,7 @@ Mit Hilfe von Piwik/Matomo können Statistiken über die Besucher erfasst werden
 ```markup
 <piwik>
     <enabled>false</enabled>
-    <baseURL>example.com/piwik/</baseURL>
+    <baseURL>example.org/piwik/</baseURL>
     <siteID>1</siteID>
 </piwik>
 ```

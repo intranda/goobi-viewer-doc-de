@@ -6,23 +6,17 @@ Wir freuen uns im Dezember über zwei neue Goobi viewer Instanzen. Das Landesmus
 
 {% embed url="https://twitter.com/MuseumHalle/status/1069632260675158017" %}
 
-Der Goobi viewer ist unter der folgenden Adresse zu finden: 
-
-* [https://digital-heritage.landesmuseum-vorgeschichte.de](https://digital-heritage.landesmuseum-vorgeschichte.de)
+Der Goobi viewer ist unter der Adresse [https://digital-heritage.landesmuseum-vorgeschichte.de](https://digital-heritage.landesmuseum-vorgeschichte.de) zu finden.
 
 Außerdem freuen wir uns über die Eröffnung des Chester Beatty Goobi viewers durch die irische Kultusministerin Josepha Madigan: 
 
 {% embed url="https://twitter.com/CBL\_Dublin/status/1070280473920880640" %}
 
-Die Instanz ist unter der folgenden Adresse zu finden: 
+Die Instanz ist befindet sich unter der URL [https://viewer.cbl.ie](https://viewer.cbl.ie)
 
-* [https://viewer.cbl.ie](https://viewer.cbl.ie)
+Ein Update hat die [digitale Landesbibliothek Oberösterreich](https://digi.landesbibliothek.at) bekommen.
 
-Ein Update hat die digitale Landesbibliothek Oberösterreich bekommen:
-
-* [https://digi.landesbibliothek.at/viewer/](https://digi.landesbibliothek.at/viewer/)
-
-Stellvertretend für die Goobi Community treten wir im Kontext IIIF auch in der Öffentlichkeit stärker in Erscheinung. So ist der Goobi viewer mit seinen unterstützten APIs im letzten IIIF Newsletter erwähnt: 
+Stellvertretend für die Goobi Community treten wir im Kontext [IIIF](https://iiif.io) auch in der Öffentlichkeit stärker in Erscheinung. So ist der Goobi viewer mit seinen unterstützten APIs im letzten IIIF Newsletter erwähnt: 
 
 * [https://iiif.io/news/2018/12/19/newsletter/\#goobi-viewer-implements-the-iiif-image-and-presentation-apis](https://iiif.io/news/2018/12/19/newsletter/#goobi-viewer-implements-the-iiif-image-and-presentation-apis)
 
@@ -69,6 +63,10 @@ Es ist ab sofort möglich nicht nur nach Dokumententypen \(Monographie, Karte, A
 ![Suchtreffer und Facettierung nach Sammlung, Dokument- und neu: Strukturtyp](../../.gitbook/assets/bildschirmfoto-vom-2018-12-20-16-35-16.png)
 
 Siehe dazu auch die [Hinweise für Administratoren bei den Core changes am 2018-12-17](../../changes/core.md#2018-12-17) sowie das aktualisierte [Kapitel 2.17.2](../../konfiguration-core/suche/facettierung.md) in der Dokumentation.
+
+### Authentifizierung gegen Aleph X-Services
+
+Neu hinzugekommen ist die Möglichkeit die Benutzerauthentifizierung auch gegen einen Aleph X-Service laufen zu lassen. Dafür wurde ein neuer Authenticationprovider für bor\_auth implementiert. Siehe auch Kapitel 2.5.4
 
 ### optional automatische Phrasensuche
 

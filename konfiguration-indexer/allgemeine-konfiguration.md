@@ -32,7 +32,7 @@
     <dataFolderSizeThreshold>157286400</dataFolderSizeThreshold>
     <autoOptimize>false</autoOptimize>
     <email>
-        <recipients>admin@example.com</recipients>
+        <recipients>admin@example.org</recipients>
         <smtpServer>localhost</smtpServer>
         <smtpUser></smtpUser>
         <smtpPassword>p455w0rd</smtpPassword>
@@ -83,7 +83,7 @@ Werden in METS Dokumenten zusätzliche XML Namespaces eingebettet, müssen diese
 <init>
     <namespaces>
         <list>
-            <xyz>http://www.example.com/xyz/</xyz>
+            <xyz>http://www.example.org/xyz/</xyz>
         </list>
     </namespaces>
 <init>
