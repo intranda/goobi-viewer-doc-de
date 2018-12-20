@@ -19,7 +19,7 @@ Die Konfiguration hierfür findet folgendermaßen statt:
             <field>DOCSTRCT</field>
             <field>MD_TITLE</field>
             <field>MD_PUBLISHER</field>
-            <field>MD_SHELFMARK</field>
+            <field untokenizeForPhraseSearch="true">MD_SHELFMARK</field>
             <field>MD_YEARPUBLISH</field>
             <field hierarchical="true">DC</field>
         </searchFields>
@@ -33,6 +33,7 @@ Die Konfiguration hierfür findet folgendermaßen statt:
 | **defaultItemNumber** | Anzahl der angezeigten Suchfelder |
 | **searchFields**  | Indexfelder, die für die durchsuchbar sein sollen \(Diese stehen zur Auswahl im Drop-Down Menü\). Die Auswahl `Alle Felder` gibt es immer. Diese Auswahl bewirkt, dass der entsprechende Begriff über alle Metadaten und Volltext- Felder gesucht wird \(und auch in nutzergenerierten Inhalten, falls Crowdsourcing Modul aktiviert ist - analog zur Standardsuche „in allen Daten“. Zusätzlich können die Felder `DEFAULT` \(Suche in Metadaten\) und `FULLTEXT` \(Suche in Volltexten\) definiert werden, um entsprechende Filterung auch in der erweiterten Suche zu ermöglichen. Achtung: das Feld `PI_TOPSTRUCT` muss hier definiert sein, damit die  Suche innerhalb eines Werkes funktioniert.  |
 | **searchFields/@hierachical** | Wenn das Element das Attribut `hierarchical="true"` besitzt, wird in dieser Zeile statt eines Eingabefeldes automatisch eine hierarchisch sortierte Liste der im Index vorhandenen Kollektionen als Drop-Down-Menü angezeigt.  |
+| **searchFields/@untokenizeForPhraseSearch** | Das Attribut `untokenizeForPhraseSearch="true"` bewirkt, dass für die Phrasensuche automatisch die `_UNTOKENIZED` Version des Feldes verwendet wird, um nur komplette und keine enthaltenen Übereinstimmungen zuzulassen \(etwa für eine Signaturensuche\). |
 
 {% hint style="info" %}
 Die Felder `DOCSTRCT`, `DOCSTRCT_TOP` und `DOCSTRCT_SUB` werden gesondert behandelt und automatisch als DropDown-Menü angezeigt.
