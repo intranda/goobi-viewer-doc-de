@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2018-12-21
+
+Refaktorisierung LESS Template.
+
+* /boilerplate/css/less/viewer/widgets/widgetToc.less
+
 ## 2018-12-17
 
 Änderungen an LESS Template.
