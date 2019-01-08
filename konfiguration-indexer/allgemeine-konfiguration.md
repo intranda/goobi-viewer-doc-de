@@ -28,9 +28,6 @@
         <imageXPath>lido:resourceRepresentation[@lido:type='image_overview']/lido:linkResource</imageXPath>
         <imageXPath>lido:resourceID</imageXPath>
     </lido>
-    <metsFileSizeThreshold>10485760</metsFileSizeThreshold>
-    <dataFolderSizeThreshold>157286400</dataFolderSizeThreshold>
-    <autoOptimize>false</autoOptimize>
     <email>
         <recipients>admin@example.org</recipients>
         <smtpServer>localhost</smtpServer>
