@@ -22,3 +22,16 @@ Die als Trennzeichen interpretierte Zeichenkette \(im obigen Beispiel ein Punkt\
 
 Dabei ist zu beachten, dass die Namen der einzelnen Hierarchiestufen selbst das Trennzeichen nicht enthalten dürfen, da an diesen Stellen sonst ebenfalls eine Unterteilung stattfindet.
 
+Die Übersetzung des oben gegebenen Beispiels für einen intuitiven Sammlungsbaum in den messages Dateien sieht wie folgt aus:
+
+{% code-tabs %}
+{% code-tabs-item title="messages\_en.properties" %}
+```text
+science=Science
+science.mathematics=Mathematics
+science.mathematics.algebra=Algebra
+science.mathematics.algebra.algebra1800to1900=Algebra 1800 to 1900
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
