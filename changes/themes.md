@@ -2,6 +2,11 @@
 
 ## 2019-01-16
 
+Änderungen an HTML- und LESS-Templates.
+
+* /boilerplate/templateMirador.html
+* /boilerplate/css/less/viewer/views/viewMirador.less
+
 Refaktorisierung Lesemodus.
 
 * /boilerplate/templateReadingMode.html
