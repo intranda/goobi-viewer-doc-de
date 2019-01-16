@@ -1,5 +1,17 @@
 # 9.2 Theme changes
 
+## 2019-01-16
+
+Refaktorisierung Lesemodus.
+
+* /boilerplate/templateReadingMode.html
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/views/readingmode/rmImageControls.less
+* /boilerplate/css/less/viewer/views/readingmode/rmMetadata.less
+* /boilerplate/css/less/viewer/views/readingmode/rmToc.less
+* /boilerplate/css/less/viewer/views/readingmode/rmUsage.less
+* /boilerplate/css/less/viewer/views/readingmode/viewReadingMode.less
+
 ## 2018-12-21
 
 Refaktorisierung LESS Template.
