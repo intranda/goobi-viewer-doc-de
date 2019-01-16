@@ -6,6 +6,7 @@
 
 * /boilerplate/templateMirador.html
 * /boilerplate/css/less/viewer/views/viewMirador.less
+* /boilerplate/css/less/viewer/components/imageControls.less
 
 Refaktorisierung Lesemodus.
 
