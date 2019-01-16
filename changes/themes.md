@@ -17,6 +17,7 @@ Refaktorisierung Lesemodus.
 * /boilerplate/css/less/viewer/views/readingmode/rmToc.less
 * /boilerplate/css/less/viewer/views/readingmode/rmUsage.less
 * /boilerplate/css/less/viewer/views/readingmode/viewReadingMode.less
+* ~~/boilerplate/css/less/viewer/views/viewReadingMode.less~~
 
 ## 2018-12-21
 
