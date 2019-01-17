@@ -1,6 +1,6 @@
 # 9.2 Theme changes
 
-## 2019-01-16
+## 2019-01-17
 
 Änderungen an HTML- und LESS-Templates.
 
@@ -8,16 +8,21 @@
 * /boilerplate/css/less/viewer/views/viewMirador.less
 * /boilerplate/css/less/viewer/components/imageControls.less
 
-Refaktorisierung Lesemodus.
+Refaktorisierung Lesemodus. Vereinigung Lesemodus und Vollbildanzeige.
 
-* /boilerplate/templateReadingMode.html
+* /boilerplate/images/icons/
+* /boilerplate/includes/customJS.xhtml
+* ~~/boilerplate/fullscreenTemplate.html~~
+* ~~/boilerplate/templateReadingMode.html~~
+* /boilerplate/templateFullscreen.html
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/views/readingmode/rmImageControls.less
-* /boilerplate/css/less/viewer/views/readingmode/rmMetadata.less
-* /boilerplate/css/less/viewer/views/readingmode/rmToc.less
-* /boilerplate/css/less/viewer/views/readingmode/rmUsage.less
-* /boilerplate/css/less/viewer/views/readingmode/viewReadingMode.less
 * ~~/boilerplate/css/less/viewer/views/viewReadingMode.less~~
+* ~~/boilerplate/css/less/viewer/views/viewFullscreen.less~~
+* /boilerplate/css/less/viewer/views/viewObjectFullscreen.less
+* /boilerplate/css/less/viewer/views/fullscreen/fsImageControls.less
+* /boilerplate/css/less/viewer/views/fullscreen/fsMetadata.less
+* /boilerplate/css/less/viewer/views/fullscreen/fsToc.less
+* /boilerplate/css/less/viewer/views/fullscreen/fsUsage.less
 
 ## 2018-12-21
 
