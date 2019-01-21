@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2019-01-21
+
+Änderung eines CSS-Klassennamens.
+
+* /boilerplate/css/less/viewer/components/imageControls.less
+
 ## 2019-01-17
 
 Änderungen an HTML- und LESS-Templates.
