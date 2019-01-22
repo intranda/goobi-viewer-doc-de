@@ -1,5 +1,13 @@
 # 9.2 Theme changes
 
+## 2019-01-22
+
+Neue Methode zum anzeigen von Subtheme-CSS.
+
+* /boilerplate/template.html
+* /boilerplate/templateAdmin.html
+* /boilerplate/templateFullscreen.html
+
 ## 2019-01-21
 
 Änderung eines CSS-Klassennamens.
