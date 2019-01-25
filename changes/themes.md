@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2019-01-24
+
+Neues LESS-Template.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/components/metaMuseal.less
+
 ## 2019-01-22
 
 Neue Methode zum anzeigen von Subtheme-CSS.
