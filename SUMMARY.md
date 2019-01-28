@@ -99,6 +99,7 @@
   * [3.10 Aktualisierung einzelner Seitendokumente](konfiguration-indexer/aktualisierung-einzelner-seitendokumente.md)
   * [3.11  Löschen von Werken](konfiguration-indexer/loeschen-von-werken.md)
   * [3.12 Löschen verwaister Anchor-Werke](konfiguration-indexer/loeschen-verwaister-anchor-werke.md)
+  * [3.13 Solr Schema und Index Felder](konfiguration-indexer/3.13-solr-schema-und-index-felder.md)
 * [4. Konfiguration Connector](konfiguration-connector/README.md)
   * [4.1 Konfiguration der OAI-Schnittstelle](konfiguration-connector/konfiguration-der-oai-schnittstelle/README.md)
     * [4.1.1 Hauptkonfiguration](konfiguration-connector/konfiguration-der-oai-schnittstelle/hauptkonfiguration.md)
