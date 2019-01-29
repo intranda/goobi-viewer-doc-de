@@ -4,21 +4,94 @@ Im Admin-Backend des Goobi viewers müssen Lizenztypen angelegt werden. Ein Lize
 
 Über den Menüpunkt „Lizenztypen“ gelagt man zur Liste der existierenden Lizenztypen. Um einen neuen Lizenztyp zu erstellen, muss über den Link „Neuen Lizenztyp hinzufügen“ die Erstellungsmaske geöffnet werden. Diese besitzt folgende Eingabefelder:
 
-| **Feld** | Beschreibung |
-| :--- | :--- |
-| **Name** | Der Name des Lizenztyps muss der zugehörigen Access Condition entsprechen \(Groß-/Kleinschreibung muss hier beachtet werden\). |
-| **Beschreibung** | Freitext-Beschreibung zu diesem Lizenztyp. |
-| **Bedingungen** | Eine optionale Solr-Query, um den Wirkungskreis dieses Lizenztyps auf bestimmte Werke einzuschränken. Dies bedeutet, dass nur für Werke, die dieser Query entsprechen, auch die konfigurierten Einschränkungen dieses Lizenztyps gelten. Alle anderen Werke werden die Einstellungen dieses Lizenztyps ignorieren. |
-| **OpenAccess** | Ist ein Lizenztyp als Open Access definiert, werden alle konfigurierten Einschränkungen ignoriert, und das Werk darf frei eingesehen werden. |
-| **Standardrechte** | Standardberechtigungen gelten für alle Benutzer. Alle hier nicht ausgewählten Rechte müssen anschließend explizit als Lizenz vergeben werden. |
-| **Werk auflisten** | Diese Berechtigung steuert die Sichtbarkeit von Werken insgesamt. Ist dieses Recht nicht vergeben, erscheinen die Werke nicht in Suchergebnissen, werden nicht in Sammlungen aufgelistet und lassen sich nicht öffnen \(der Benutzer bekommt die Meldung, dass das betreffende Werk nicht existiert\). |
-| **Bilder anschauen** | Bildanzeige im Normalen- und im Vollbild-Modus. |
-| **Thumbnails anschauen** | Anzeige von Thumbnails zu den betreffenden Werken \(Suchergebnisse und Seitenansicht\). |
-| **Volltext anschauen** | Volltext-Ansicht der betreffenden Werke. |
-| **PDF herunterladen** | PDF-Dokumente aus den betreffenden Werken generieren. |
-| **Dateien herunterladen** | Den betreffenden Werken zugeordnete Quelldateien \(zum Beispiel Born-Digital-Dokumente\) herunterladen. |
-
-![Neuen Lizenztyp hinzuf&#xFC;gen](../../.gitbook/assets/neuerlizenztyp.png)
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Feld</b>
+      </th>
+      <th style="text-align:left">Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>Name</b>
+      </td>
+      <td style="text-align:left">Der Name des Lizenztyps muss der zugehörigen Access Condition entsprechen
+        (Groß-/Kleinschreibung muss hier beachtet werden).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Beschreibung</b>
+      </td>
+      <td style="text-align:left">Freitext-Beschreibung zu diesem Lizenztyp.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Bedingungen</b>
+      </td>
+      <td style="text-align:left">
+        <p>Eine optionale Solr-Query, um den Wirkungskreis dieses Lizenztyps auf
+          bestimmte Werke einzuschränken. Dies bedeutet, dass nur für Werke, die
+          dieser Query entsprechen, auch die konfigurierten Einschränkungen dieses
+          Lizenztyps gelten. Alle anderen Werke werden die Einstellungen dieses Lizenztyps
+          ignorieren.</p>
+        <p>Es ist auch möglich, in diesem Feld Bedingungen für den Download von Dateien
+          in Abhängigkeit vom Dateinamen unterzubringen. Dazu kann ein <a href="http://www.regexe.de/hilfe.jsp">Regulärer Ausdruck</a> in
+          der Form<code>FILENAME:{&lt;regul&#xE4;rer Ausdruck&gt;}</code> eingegeben
+          werden. Alle downloadbaren Dateien, deren Dateiname auf den Regulären Ausdruck
+          passt, werden damit vom Lizenztyp erfasst und somit geschützt. Andere Dateien
+          sind davon ausgenommen. Dieser Ausdruck kann allein oder zusätzlich - durch
+          Leerzeichen getrennt - zu den normalen Solr-Query Bedingungen eingetragen
+          werden.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>OpenAccess</b>
+      </td>
+      <td style="text-align:left">Ist ein Lizenztyp als Open Access definiert, werden alle konfigurierten
+        Einschränkungen ignoriert, und das Werk darf frei eingesehen werden.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Standardrechte</b>
+      </td>
+      <td style="text-align:left">Standardberechtigungen gelten für alle Benutzer. Alle hier nicht ausgewählten
+        Rechte müssen anschließend explizit als Lizenz vergeben werden.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Werk auflisten</b>
+      </td>
+      <td style="text-align:left">Diese Berechtigung steuert die Sichtbarkeit von Werken insgesamt. Ist
+        dieses Recht nicht vergeben, erscheinen die Werke nicht in Suchergebnissen,
+        werden nicht in Sammlungen aufgelistet und lassen sich nicht öffnen (der
+        Benutzer bekommt die Meldung, dass das betreffende Werk nicht existiert).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Bilder anschauen</b>
+      </td>
+      <td style="text-align:left">Bildanzeige im Normalen- und im Vollbild-Modus.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Thumbnails anschauen</b>
+      </td>
+      <td style="text-align:left">Anzeige von Thumbnails zu den betreffenden Werken (Suchergebnisse und
+        Seitenansicht).</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Volltext anschauen</b>
+      </td>
+      <td style="text-align:left">Volltext-Ansicht der betreffenden Werke.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>PDF herunterladen</b>
+      </td>
+      <td style="text-align:left">PDF-Dokumente aus den betreffenden Werken generieren.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Dateien herunterladen</b>
+      </td>
+      <td style="text-align:left">Den betreffenden Werken zugeordnete Quelldateien (zum Beispiel Born-Digital-Dokumente)
+        herunterladen.</td>
+    </tr>
+  </tbody>
+</table>![Neuen Lizenztyp hinzuf&#xFC;gen](../../.gitbook/assets/neuerlizenztyp.png)
 
 Nach der Erstellung wird der neue Lizenztyp auf der Seite `Lizenztypen` mit aufgelistet. Dort kann er bei Bedarf zum Bearbeiten geöffnet oder gelöscht werden.
 
