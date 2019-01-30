@@ -287,3 +287,29 @@ Ist diese Parameter auf `true` gesetzt, werden die Werte dieses Metadatums an un
 
 Ist diese Parameter auf `true` gesetzt, werden die Werte dieses Metadatums an die der jeweiligen Strukturhierarchie zugewiesene Seitendokumenten vererbt. Dies ist zum Beispiel für Lizenztypen wichtig, die eine Solr-Bedingungsquery verwenden. Die in der Query verwendeten Feldnamen müssen in der Regel diesen Parameter aktiviert haben. Und auch Metadatenfelder, die in der erweiterten Suche mit Volltexten kombiniert werden sollen. in den SeitendokumentenDas Feld DC muss diesen Parameter immer aktiviert haben. Standardwert ist `false`.
 
+#### 3.7.17 Parameter: normalizeValue
+
+{% code-tabs %}
+{% code-tabs-item title="solr\_indexerconfig.xml" %}
+```markup
+<normalizeValue length="5" filler="0" position="front" regex="foo([0-9]+).*$" />
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Insbesondere für Sortierfelder ist es manchmal notwendig, etwa enthaltene Zahlenwerte zu normalisieren, um korrekte Sortierung zu erhalten.
+
+Beispiel: "foo1138bar" und "foo123bar". "123" ist als Zahl kleiner, als "1138", durch die String-Sortierung wird der Wert allerdings hinter "1138" einsortiert, da "11" vor "12" kommt.
+
+Durch die Anwendung der oben beschriebenen Konfiguration wird der Zahlenwert auf fünf Stellen aufgefüllt: "foo00123bar" wird nach der Normalisierung vor "foo01138bar" einsortiert.
+
+`length` - Die gewünschte Anzahl von Zeichen im normalisierten Teil der Zeichenkette.
+
+`filler` - Ein Füllzeichen, mit dem bis zur gewünschten Länge aufgefüllt werden soll.
+
+`position` - `front|rear` - Position, an der die Füllzeichen angefügt werden. Standardwert ist `front`.
+
+`regex` - Optionaler regulärer Ausdruck, um den für die Normalisierung relevanten Teil zu definieren. Kann bis zu einer Capture Group enthalten \(ansonsten wird der gesamte ausdruck gematcht\).
+
+
+
