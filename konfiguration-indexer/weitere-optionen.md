@@ -303,13 +303,10 @@ Beispiel: "foo1138bar" und "foo123bar". "123" ist als Zahl kleiner, als "1138", 
 
 Durch die Anwendung der oben beschriebenen Konfiguration wird der Zahlenwert auf fünf Stellen aufgefüllt: "foo00123bar" wird nach der Normalisierung vor "foo01138bar" einsortiert.
 
-`length` - Die gewünschte Anzahl von Zeichen im normalisierten Teil der Zeichenkette.
-
-`filler` - Ein Füllzeichen, mit dem bis zur gewünschten Länge aufgefüllt werden soll.
-
-`position` - `front|rear` - Position, an der die Füllzeichen angefügt werden. Standardwert ist `front`.
-
-`regex` - Optionaler regulärer Ausdruck, um den für die Normalisierung relevanten Teil zu definieren. Kann bis zu einer Capture Group enthalten \(ansonsten wird der gesamte ausdruck gematcht\).
-
-
+| Attribut | Beschreibung |
+| :--- | :--- |
+| `length` | Die gewünschte Anzahl von Zeichen im normalisierten Teil der Zeichenkette. |
+| `filler` | Ein Füllzeichen, mit dem bis zur gewünschten Länge aufgefüllt werden soll. |
+| `position` | Position, an der die Füllzeichen angefügt werden. Mögliche Werte sind `front` und `rear`. Standardwert ist `front`. |
+| `regex` | Optionaler regulärer Ausdruck, um den für die Normalisierung relevanten Teil zu definieren. Kann bis zu einer Capture Group enthalten \(ansonsten wird der gesamte Ausdruck gematcht\). |
 
