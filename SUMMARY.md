@@ -154,6 +154,7 @@
   * [6.11 Leeren des Solr Suchindex](anwendungsszenarien/leeren-des-solr-suchindex.md)
   * [6.12 Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](anwendungsszenarien/ueberschreiben-von-standard-xhtml-seiten-mit-eigenen-angepassten-seiten.md)
   * [6.13 Untersammlungen konfigurieren und anzeigen](anwendungsszenarien/6.13-untersammlungen-konfigurieren-und-anzeigen.md)
+  * [6.14 COinS](anwendungsszenarien/6.14-coins.md)
 * [7. FAQ](faq.md)
 * [8. Digests](digests/README.md)
   * [2017](digests/2017/README.md)
