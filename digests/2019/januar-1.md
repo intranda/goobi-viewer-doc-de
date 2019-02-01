@@ -54,6 +54,10 @@ Hier ein paar Impressionen:
 
 ![Neue Vollbildanzeige mit Bild und dazugeh&#xF6;rigem danebenliegenden Volltext](../../.gitbook/assets/bildschirmfoto-vom-2019-01-30-15-35-06.png)
 
+{% hint style="warning" %}
+Achtung. Diese neue Anzeige ersetzt die bisherige Vollbildanzeige und den bisherigen Lesemodus. Das muss bei einem Theme Update bedacht werden.
+{% endhint %}
+
 ### CMS
 
 Im CMS-Bereich hat es folgende Änderungen gegeben:
