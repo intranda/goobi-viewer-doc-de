@@ -90,7 +90,7 @@ Zusätzliches Thumbnail für nicht vorhandene Bildvorschauen.
 LESS-Template gelöscht.
 
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/search/searchTimeline.less
+* ~~/boilerplate/css/less/viewer/search/searchTimeline.less~~
 
 ## 2018-11-16 <a id="2018-07-05"></a>
 
