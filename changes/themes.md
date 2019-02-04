@@ -119,7 +119,7 @@ JavaScript Framework RiotJS zum Grunt-Task hinzugefügt und in die Templates ein
 * /boilerplate/javascript/dist/boilerplate-tags.js
 * /boilerplate/template.html
 * /boilerplate/templateAdmin.html
-* /boilerplate/templateReadingMode.html
+* ~~/boilerplate/templateReadingMode.html~~
 
 ## 2018-10-11
 
