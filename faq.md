@@ -26,5 +26,9 @@ cp /opt/digiverso/viewer/indexed_mets/*.xml /opt/digiverso/viewer/hotfolder/
 Vor dem Kopieren muss darauf geachtet werden, dass der Hotfolder leer ist damit keine potentiell korrigierten Werke mit einer älteren Version aus dem indexed\_mets Ordner überschrieben werden.
 {% endhint %}
 
+## Welche Webbrowser werden vom Goobi viewer unterstützt?
 
+Der Goobi viewer unterstützt alle alle sogenannten "Evergreen Browser". Das sind die aktuellen Versionen von [Google Chrome](https://www.google.com/chrome/), [Firefox](http://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/) und [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge).
+
+Ältere Versionen, insbesondere der Internet Explorer 11 werden seit Mitte Juli 2018 nicht mehr offiziell unterstützt.
 
