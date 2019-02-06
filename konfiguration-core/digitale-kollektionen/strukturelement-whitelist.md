@@ -1,38 +1,18 @@
----
-description: OBSOLET
----
-
 # 2.18.7 Strukturelement-Whitelist
 
-Damit beim Öffnen einer Kollektion nur komplette Werke aufgelistet werden \(und nicht etwa einzelne Kapitel\), gibt es eine Whitelist der anzuzeigenden Strukturelemente bei Kollektionen:
+Standardmäßig werden für Suchqueries ohne konkrete Suchbegriffe \(etwa Sammlungsauflistung, RSS-Generierung, etc.\) selbständige Werke sowie Gesamtwerke \(Anchor\) ausgeliefert, was durch die folgende Query konfiguriert ist.
 
 ```markup
-<metadata>
-    <docStructWhiteList>
-        <docStruct>Monograph</docStruct>
-        <docStruct>MultiVolumeWork</docStruct>
-        <docStruct>Periodical</docStruct>
-        <docStruct>VolumeRun</docStruct>
-        <docStruct>Manuscript</docStruct>
-        <docStruct>Map</docStruct>
-        <docStruct>Incunable</docStruct>
-    </docStructWhiteList>
-</metadata>
+<search>
+    <docstrctWhitelistFilterQuery>(ISWORK:true ISANCHOR:true) -IDDOC_PARENT:*</docstrctWhitelistFilterQuery>
+</search>
 ```
 
-Strukturelemente, die nicht in dieser Liste stehen, werden nicht berücksichtigt. Dies gilt nur für die Auflistung von Werken in einer Kollektion, nicht für die normale Suche.
-
-Die Liste kann deaktiviert werden, indem nur ein einziger `docStruct` mit einem `*` angelegt wird:
+Sollen etwa weitere Dokumenttypen aufgelistet werden \(z.B. Zeitschriftenbände\), muss diese Query entsprechend erweitert werden:
 
 ```markup
-<metadata>
-    <docStructWhiteList>
-        <docStruct>*</docStruct>
-    </docStructWhiteList>
-</metadata>
+<search>
+    <docstrctWhitelistFilterQuery>(+(ISWORK:true ISANCHOR:true) -IDDOC_PARENT:*) (+ISWORK:true +DOCSTRCT:PeriodicalVolume))</docstrctWhitelistFilterQuery>
+</search>
 ```
-
-{% hint style="warning" %}
-Nach einer Änderung an der docStructWhiteList muss die Applikation neu gestartet werden, damit die Änderungen aktiv werden.
-{% endhint %}
 
