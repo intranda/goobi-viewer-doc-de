@@ -14,7 +14,7 @@ Das Datum ist ein guter, erster Indikator. Nach dem Git-Commit-Hash kann zum Bei
 
 
 
-## Wie kann ich meinen gesamten Datenbestand im Goobi viewer neu indexieren?
+## Wie kann ich meinen gesamten Datenbestand neu indexieren?
 
 Für die Neuindexierung des gesamten Datenbestandes muss der Inhalt des [indexed\_mets](konfiguration-indexer/verzeichnisse.md#3-2-18-parameter-indexedmets) Ordners in den [hotfolder](konfiguration-indexer/verzeichnisse.md#3-2-1-parameter-hotfolder) kopiert werden:
 
