@@ -4,7 +4,9 @@ Eine digitale Kollektion kann mehrere Hierarchiestufen an Subkollektionen enthal
 
 ![Sammlungen](../../.gitbook/assets/sammlungen.png)
 
-Jedes Werk gehört mindestens einer Kollektion an. Dabei wird diese Information im Index im Feld DC hinterlegt. Die Einträge in diesem Feld bestehen stets aus einem Textstring, der gegebenenfalls durch ein Trennzeichen in mehrere Hierarchiestufen für die Kollektion unterteilt ist:
+Jedes Werk kann einer beliebigen Anzahl von Kollektionen angehören. Auch keine Kollektionszugehörigkeit ist möglich. 
+
+Ist ein Werk mindestens einer Kollektion zugewiesen, so wird diese Information im Index im Feld `DC` hinterlegt. Die Einträge in diesem Feld bestehen stets aus einem Textstring, der gegebenenfalls durch ein Trennzeichen in mehrere Hierarchiestufen für die Kollektion unterteilt ist:
 
 ```text
 science.mathematics.algebra.algebra1800to1900
