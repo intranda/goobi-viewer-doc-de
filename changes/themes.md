@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2019-02-13
+
+Änderungen an LESS-Templates.
+
+* /boilerplate/css/less/viewer/views/search/searchListGrid.less
+
 ## 2019-01-24
 
 Neues LESS-Template.
