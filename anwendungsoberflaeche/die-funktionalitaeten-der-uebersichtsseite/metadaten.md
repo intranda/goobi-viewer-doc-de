@@ -1,8 +1,0 @@
-# 5.2.1 Metadaten
-
-Ist ein Nutzer mit den entsprechenden Rechten angemeldet, bekommt er ein Auswahlmenü angezeigt, welches ihm die zur Verfügung stehenden Metadaten auflistet. Ein Metadatum wird dem Werk zugeteilt, indem man auf die Schaltfläche `Hinzufügen` klickt. Zum Entfernen eines Metadatums muss der Benutzer auf das Löschen-Icon klicken. 
-
-Sobald alle gewünschten Metadaten zum Werk hinzugefügt wurden, speichert ein Klick auf die Schaltfläche `Metadaten speichern` das Ergebnis.
-
-![](../../.gitbook/assets/metadaten-uebersichtseite.png)
-
