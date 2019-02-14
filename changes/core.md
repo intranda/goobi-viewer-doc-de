@@ -1,5 +1,19 @@
 # 9.1 Core changes
 
+## 2019-02-14
+
+Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Um bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, muss dieser Aufruf einmal ausgefüllt werden:
+
+```text
+https://example.com/viewer/tools?action=migrateOverviewPages
+```
+
+Ggf. muss vorher noch der Zeichensatz der CMS-Zieltabelle angepasst werden, damit die Migration nicht fehlschlägt:
+
+```text
+ALTER TABLE cms_content_items CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
 ## 2018-12-19
 
 Der Goobi viewer Indexer und das dazugehörige Schema müssen aktualisiert und der Datenbestand neu indexiert werden damit die Bildmaße als WIDTH und HEIGHT in den Solr Suchindex geschrieben werden. 
