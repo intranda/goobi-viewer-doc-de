@@ -12,7 +12,7 @@
     * [2.5.2 lokaler Benutzeraccount](konfiguration-core/benutzeraccounts/lokaler-benutzeraccount.md)
     * [2.5.3 VueFind](konfiguration-core/benutzeraccounts/2.5.3-vuefind.md)
     * [2.5.4 Aleph X-Services](konfiguration-core/benutzeraccounts/2.5.4-aleph-x-services.md)
-    * [2.5.5 Littera](konfiguration-core/benutzeraccounts/2.5.5-littera.md)
+    * [2.5.5 Littera](konfiguration-core/benutzeraccounts/littera.md)
   * [2.6 Performanz und Weitere Einstellungen](konfiguration-core/performanz-und-weitere-einstellungen.md)
   * [2.7 Unbeschränkter Zugriff auf Thumbnails von zugriffsbeschränkten Bildern](konfiguration-core/unbeschraenkter-zugriff-auf-thumbnails-von-zugriffsbeschraenkten-bildern.md)
   * [2.8 Captcha](konfiguration-core/captcha.md)
