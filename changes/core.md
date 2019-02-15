@@ -2,6 +2,10 @@
 
 ## 2019-02-14
 
+* Goobi viewer und Goobi Solr Indexer werden ab jetzt unter der Version 3.4 geführt
+* Solr Schema muss auf Version 20190206 aktualisiert werden
+* Goobi Solr Indexer muss auf Version 3.4.20190307 aktualisiert werden
+
 Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Um bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, muss dieser Aufruf einmal ausgefüllt werden:
 
 ```text
