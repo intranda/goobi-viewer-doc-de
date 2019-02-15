@@ -2,10 +2,6 @@
 
 ## 2019-02-14
 
-* Goobi viewer und Goobi Solr Indexer werden ab jetzt unter der Version 3.4 geführt
-* Solr Schema muss auf Version 20190206 aktualisiert werden
-* Goobi Solr Indexer muss auf Version 3.4.20190207 aktualisiert werden
-
 Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Um bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, muss dieser Aufruf einmal ausgefüllt werden:
 
 ```text
@@ -14,9 +10,15 @@ https://example.com/viewer/tools?action=migrateOverviewPages
 
 Ggf. muss vorher noch der Zeichensatz der CMS-Zieltabelle angepasst werden, damit die Migration nicht fehlschlägt:
 
-```text
+```sql
 ALTER TABLE cms_content_items CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
+
+
+* Goobi viewer Core und Goobi viewer Indexer werden ab jetzt unter der Version 3.4 geführt
+* Das Solr Schema muss auf die Version 20190206 aktualisiert werden
+* Der Goobi viewer Indexer muss auf die Version 3.4.20190207 aktualisiert werden
 
 ## 2018-12-19
 
