@@ -5,7 +5,7 @@
 Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Um bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, muss dieser Aufruf einmal ausgefüllt werden:
 
 ```text
-https://example.com/viewer/tools?action=migrateOverviewPages
+https://viewer.example.org/viewer/tools?action=migrateOverviewPages
 ```
 
 Ggf. muss vorher noch der Zeichensatz der CMS-Zieltabelle angepasst werden, damit die Migration nicht fehlschlägt:
