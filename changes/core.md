@@ -27,11 +27,19 @@ Nun folgendes SQL Statement ausführen um sicherzustellen, dass der Zeichensatz 
 ALTER TABLE cms_content_items CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-Um dann bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, muss dieser Aufruf einmalig ausgefüllt werden:
+Ob die Migration ausgeführt werden muss, kann in der Datenbank geprüft werden:
+
+```sql
+SELECT COUNT(*) FROM overview_pages,overview_page_updates;
+```
+
+Um dann bereits angelegte Übersichtsseiten aller Werke ins CMS zu migrieren, den folgenden Aufruf einmalig ausführen:
 
 ```text
 https://viewer.example.org/viewer/tools?action=migrateOverviewPages
 ```
+
+Am Ende kann der overview Ordner aus dem Dateisystem auch in das Backup verschoben werden.
 
 ## 2018-12-19
 
