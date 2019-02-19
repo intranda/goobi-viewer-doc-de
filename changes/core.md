@@ -194,6 +194,9 @@ RedirectMatch 301 ^/viewer/browse/DC(.*)/-/([0-9]+)/-/-/$ /viewer/browse/-/$2/-/
 
 ProxyPassMatch ^/viewer/search/DC(.*)/-/([0-9]+)/-/-/$ !
 RedirectMatch 301 ^/viewer/search/DC(.*)/-/([0-9]+)/-/-/$ /viewer/search/-/-/$2/-/DC$1/
+
+ProxyPassMatch ^/viewer/search/(.*)/-/([0-9]+)/-/-/$ !
+RedirectMatch 301 ^/viewer/search/(.*)/-/([0-9]+)/-/-/$ /viewer/search/-/-/$2/-/DC:$1/
 ```
 
 ## 2018-09-06
