@@ -1,8 +1,14 @@
 # 9.2 Theme changes
 
+## 2019-02-21
+
+Änderungen an LESS-Template \(~~overflow-x: hidden;~~\).
+
+* /boilerplate/css/less/general.less
+
 ## 2019-02-13
 
-Änderungen an LESS-Templates.
+Änderungen an LESS-Template.
 
 * /boilerplate/css/less/viewer/views/search/searchListGrid.less
 
