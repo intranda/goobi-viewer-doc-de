@@ -1,5 +1,19 @@
 # 9.2 Theme changes
 
+## 2019-02-25
+
+Umstellung der Dateistruktur für das neue Admin-Backend.
+
+* ~~/boilerplate/css/less/viewer/views/admin/admin.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/adminBackendTables.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/adminIpRange.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/adminLicenseType.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/adminUser.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/adminUserGroup.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/tabUserLicenses.less~~
+* ~~/boilerplate/css/less/viewer/widgets/widgetAdmin.less~~
+* ~~/boilerplate/css/less/viewer/widgets/widgetCms.less~~
+
 ## 2019-02-21
 
 Änderungen an LESS-Template \(~~overflow-x: hidden;~~\).
