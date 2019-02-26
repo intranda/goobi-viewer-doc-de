@@ -171,11 +171,11 @@ Link für Sitelinks zu SEO Zwecken hinzugefügt.
 
 Relative Links zu vorheriger und nachfolgender Seite zu SEO Zwecken hinzugefügt.
 
-* /boilerplate/fullscreenTemplate.html
+* ~~/boilerplate/fullscreenTemplate.html~~
 * /boilerplate/template.html
 * /boilerplate/templateAdmin.html
 * /boilerplate/templateMirador.html
-* /boilerplate/templateReadingMode.html
+* ~~/boilerplate/templateReadingMode.html~~
 
 ## 2018-08-24
 
@@ -276,7 +276,7 @@ Refaktorisierung von LESS-Templates.
 Refaktorisierung von LESS-Templates.
 
 * /boilerplate/css/less/viewer/components/imageControls.less
-* /boilerplate/css/less/viewer/views/viewReadingMode.less
+* ~~/boilerplate/css/less/viewer/views/viewReadingMode.less~~
 
 ## 2018-04-19
 
@@ -321,7 +321,7 @@ Refaktorisierung eines LESS-Templates.
 Neue LESS-Templates.
 
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/views/user/userBookshelf.less
+* ~~/boilerplate/css/less/viewer/views/user/userBookshelf.less~~
 * /boilerplate/css/less/viewer/views/user/userBookshelfEdit.less
 * /boilerplate/css/less/viewer/views/user/userBookshelfSingle.less
 * /boilerplate/css/less/viewer/views/user/userBookshelves.less
