@@ -13,6 +13,7 @@ Umstellung der Dateistruktur für das neue Admin-Backend.
 * ~~/boilerplate/css/less/viewer/views/admin/tabUserLicenses.less~~
 * ~~/boilerplate/css/less/viewer/widgets/widgetAdmin.less~~
 * ~~/boilerplate/css/less/viewer/widgets/widgetCms.less~~
+* /boilerplate/templateAdmin.html
 
 ## 2019-02-21
 
