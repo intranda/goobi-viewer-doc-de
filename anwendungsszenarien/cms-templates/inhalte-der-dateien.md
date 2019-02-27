@@ -11,8 +11,8 @@ Die Template-Datei hat dabei stets einen beispielhaften Aufbau:
 
 ```markup
 <cms_page_template id="example_template" version="2015-02-03">
-     <name>BeispielTemplate</name>
-     <description>Dies ist eine Beschreibung des Templates</description>
+     <name>Beispiel Template</name>
+     <description>Dies ist eine Beschreibung des Templates.</description>
      <icon>cms_template_example.png</icon>
      <html>cms_template_example.xhtml</html>
      <content>
@@ -21,6 +21,7 @@ Die Template-Datei hat dabei stets einen beispielhaften Aufbau:
             <item id="image01" label="Bild" type="MEDIA" />
             <item id="queryList01" label="Werke" type="SOLRQUERY" />
             <item id="pageList01" label="News-Einträge" type="PAGELIST" />
+            <item id="document" label="Dokument" type="MEDIA" filter=".*(.docx|.rtf|.htm|.html|.xhtml)" />
      </content>
 </cms_page_template>
 ```
@@ -45,19 +46,20 @@ Die einzelnen Elemente im Überblick:
     <tr>
       <td style="text-align:left"><b>cms_page_template/version</b> 
       </td>
-      <td style="text-align:left">Das Datum der letzten Änderung oder eine andere Versionierung. Wird vom
-        Goobi viewer nicht verwendet.</td>
+      <td style="text-align:left">Das Datum der letzten Änderung. Wird vom Goobi viewer Core nicht verwendet
+        sondern dient dem internen Tracking von Änderungen.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>name </b>
       </td>
-      <td style="text-align:left">Der Name des Templates, wie er beim Erstellen neuer Seiten angezeigt wird.</td>
+      <td style="text-align:left">Der Name des Templates. Dieser wird beim Erstellen neuer Seiten in der
+        Oberfläche angezeigt.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b> 
       </td>
-      <td style="text-align:left">Eine Beschreibung des Templates, wie sie beim Erstellen neuer Seiten angezeigt
-        wird.</td>
+      <td style="text-align:left">Eine Beschreibung des Templates. Diese wird beim Erstellen neuer Seiten
+        in der Oberfläche angezeigt.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>icon</b> 
@@ -77,25 +79,25 @@ Die einzelnen Elemente im Überblick:
         <p>Eine Liste von <code>&lt;item&gt;</code>-Elementen. Jedes dieser Elemente
           bekommt einen eigenen Editorbereich beim Anlegen/Bearbeiten von CMS-Seiten
           auf Basis dieses Templates. Die Art des Editorbereichs hängt ab von der
-          Art des Items (Siehe Inhaltstypen). Jedes Item hat folgende Attribute:</p>
+          Art des Items. Jedes Item hat folgende Attribute:</p>
         <ul>
           <li><b>id: </b> Ein für dieses Template einzigartiger Identifier-String, mit
             dem dieser Inhalt in der Layout-Datei referenziert wird.</li>
           <li><b>label</b>: Die Bezeichnung dieses Inhaltes im Editorbereich der Seitenbearbeitung.</li>
-          <li><b>type</b> : Der Typ des Inhaltes, einer von TEXT, HTML, MEDIA, PAGELIST
-            und SOLRQUERY (siehe Inhaltstypen).</li>
-          <li><b>mandatory</b> : Ist dieses Attribut gesetzt und hat den Wert true, muss
-            dieses Item mit Inhalt gefüllt werden, bevor eine Seite veröffentlicht
-            werden kann.</li>
+          <li><b>order</b>: Bestimmt die Reihenfolge in der der Anzeige. Muss Zahlen
+            enthalten. Ist das Attribut nicht gesetzt wird nach der ID sortiert.</li>
+          <li><b>type</b>: Der Inhaltstyp, siehe <a href="inhaltstypen.md">Kapitel 6.4.3</a>.</li>
+          <li><b>mandatory</b>: Optionales. Wenn gesetzt und der Wert <code>&quot;true&quot;</code> dann
+            ist das Feld ein Pflichtfeld.</li>
+          <li><b>filter</b>: Optional. Regulärer Ausdruck (regex), um die Medienauswahl
+            auf bestimmte Dateiendungen zu beschränken.</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>**6.4.2.2. Layout-Datei**
 
-Die Layout-Datei ist eine \(X\)HTML-Datei, die mit der Java-Facelets Technologie in eine Webseite übersetzt wird. Sie ist aufgebaut wie eine übliche viewer-Webseite, benötigt jedoch einige spezielle Annotationen, um CMS-Inhalte anzeigen zu können:
-
-Am Anfang der Seite \(vor irgendwelchen CMS-Inhalten\) muss folgende Zeile eingefügt sein:
+Die Layout-Datei ist eine XHTML-Datei die das Layout mit JSF beschreibt. Sie ist wie eine übliche Goobi viewer Core Seite aufgebaut, benötigt jedoch für die Anzeige von CMS-Inhalten einige spezielle Annotationen. So muss am Anfang der Seite vor etwaigen CMS-Inhalten die folgende Zeile zwingend existieren:
 
 ```markup
 <ui:param name="cmsPage" value="#{cmsBean.currentPage}" />
@@ -107,7 +109,7 @@ Dies setzt den Parameter `page`, aus dem alle CMS-Inhalte ausgelesen werden. Um 
 "#{cmsPage.getContent('content01')}"
 ```
 
-Dabei stellt `content01` die `id` eines in der Template-Datei definierten Inhalts-Items dar. Der Inhalt wird automatisch je nach Typ des Inhalts-Items eingefügt \(siehe Inhaltstypen\).
+Dabei stellt `content01` die `id` eines in der Template-Datei definierten Inhaltstyps dar. Der Inhalt wird automatisch je nach Typ eingefügt.
 
 Die Sidebar der Seite muss im Tag `<ui:define name=“sidebar“/>` definiert werden. Zur Verwendung benutzderdefinierter Sidebars muss sie folgende Form haben:
 
@@ -131,6 +133,6 @@ Jedes möglicherweise vorkommende Sidebar-Widget muss in der Liste als `<widgetC
 
 **6.4.2.3. Template-Icon**
 
-Hierbei handelt es sich um eine einfache Bilddatei zur Repräsentation des Templates. Das Bild muss quadratische Abmessungen haben. Üblicherweise werden 128x128 Pixel große PNG-Bilder verwendet.  
+Hierbei handelt es sich um eine einfache Bilddatei zur Repräsentation des Templates. Das Bild muss quadratische Abmessungen haben. Üblicherweise werden 128x128px große PNG-Dateien verwendet.  
 
 

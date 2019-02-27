@@ -173,6 +173,7 @@
     * [Dezember](digests/2018/dezember.md)
   * [2019](digests/2019/README.md)
     * [Januar](digests/2019/januar-1.md)
+    * [Februar](digests/2019/februar.md)
 * [9. Entwickler und Administratoren](changes/README.md)
   * [9.1 Core changes](changes/core.md)
   * [9.2 Theme changes](changes/themes.md)
