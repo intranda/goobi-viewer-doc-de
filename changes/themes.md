@@ -1,5 +1,13 @@
 # 9.2 Theme changes
 
+## 2019-02-27
+
+Neue LESS-Templates.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/cms/templates/25\_templateOverviewPage.less
+* /boilerplate/css/less/viewer/cms/templates/26\_templateOverviewPageLegacy.less
+
 ## 2019-02-25
 
 Umstellung der Dateistruktur für das neue Admin-Backend.
