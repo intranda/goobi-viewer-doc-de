@@ -16,8 +16,8 @@ Im Admin-Backend des Goobi viewers müssen Lizenztypen angelegt werden. Ein Lize
     <tr>
       <td style="text-align:left"><b>Name</b>
       </td>
-      <td style="text-align:left">Der Name des Lizenztyps muss der zugehörigen Access Condition entsprechen
-        (Groß-/Kleinschreibung muss hier beachtet werden).</td>
+      <td style="text-align:left">Der Name des Lizenztyps muss der zugeh&#xF6;rigen Access Condition entsprechen
+        (Gro&#xDF;-/Kleinschreibung muss hier beachtet werden).</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Beschreibung</b>
@@ -29,39 +29,41 @@ Im Admin-Backend des Goobi viewers müssen Lizenztypen angelegt werden. Ein Lize
       </td>
       <td style="text-align:left">
         <p>Eine optionale Solr-Query, um den Wirkungskreis dieses Lizenztyps auf
-          bestimmte Werke einzuschränken. Dies bedeutet, dass nur für Werke, die
-          dieser Query entsprechen, auch die konfigurierten Einschränkungen dieses
-          Lizenztyps gelten. Alle anderen Werke werden die Einstellungen dieses Lizenztyps
-          ignorieren.</p>
-        <p>Es ist auch möglich, in diesem Feld Bedingungen für den Download von Dateien
-          in Abhängigkeit vom Dateinamen unterzubringen. Dazu kann ein <a href="http://www.regexe.de/hilfe.jsp">Regulärer Ausdruck</a> in
+          bestimmte Werke einzuschr&#xE4;nken. Dies bedeutet, dass nur f&#xFC;r Werke,
+          die dieser Query entsprechen, auch die konfigurierten Einschr&#xE4;nkungen
+          dieses Lizenztyps gelten. Alle anderen Werke werden die Einstellungen dieses
+          Lizenztyps ignorieren.</p>
+        <p>Es ist auch m&#xF6;glich, in diesem Feld Bedingungen f&#xFC;r den Download
+          von Dateien in Abh&#xE4;ngigkeit vom Dateinamen unterzubringen. Dazu kann
+          ein <a href="http://www.regexe.de/hilfe.jsp">Regul&#xE4;rer Ausdruck</a> in
           der Form<code>FILENAME:{&lt;regul&#xE4;rer Ausdruck&gt;}</code> eingegeben
-          werden. Alle downloadbaren Dateien, deren Dateiname auf den Regulären Ausdruck
-          passt, werden damit vom Lizenztyp erfasst und somit geschützt. Andere Dateien
-          sind davon ausgenommen. Dieser Ausdruck kann allein oder zusätzlich - durch
-          Leerzeichen getrennt - zu den normalen Solr-Query Bedingungen eingetragen
-          werden.</p>
+          werden. Alle downloadbaren Dateien, deren Dateiname auf den Regul&#xE4;ren
+          Ausdruck passt, werden damit vom Lizenztyp erfasst und somit gesch&#xFC;tzt.
+          Andere Dateien sind davon ausgenommen. Dieser Ausdruck kann allein oder
+          zus&#xE4;tzlich - durch Leerzeichen getrennt - zu den normalen Solr-Query
+          Bedingungen eingetragen werden.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>OpenAccess</b>
       </td>
       <td style="text-align:left">Ist ein Lizenztyp als Open Access definiert, werden alle konfigurierten
-        Einschränkungen ignoriert, und das Werk darf frei eingesehen werden.</td>
+        Einschr&#xE4;nkungen ignoriert, und das Werk darf frei eingesehen werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Standardrechte</b>
       </td>
-      <td style="text-align:left">Standardberechtigungen gelten für alle Benutzer. Alle hier nicht ausgewählten
-        Rechte müssen anschließend explizit als Lizenz vergeben werden.</td>
+      <td style="text-align:left">Standardberechtigungen gelten f&#xFC;r alle Benutzer. Alle hier nicht
+        ausgew&#xE4;hlten Rechte m&#xFC;ssen anschlie&#xDF;end explizit als Lizenz
+        vergeben werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Werk auflisten</b>
       </td>
       <td style="text-align:left">Diese Berechtigung steuert die Sichtbarkeit von Werken insgesamt. Ist
         dieses Recht nicht vergeben, erscheinen die Werke nicht in Suchergebnissen,
-        werden nicht in Sammlungen aufgelistet und lassen sich nicht öffnen (der
-        Benutzer bekommt die Meldung, dass das betreffende Werk nicht existiert).</td>
+        werden nicht in Sammlungen aufgelistet und lassen sich nicht &#xF6;ffnen
+        (der Benutzer bekommt die Meldung, dass das betreffende Werk nicht existiert).</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Bilder anschauen</b>

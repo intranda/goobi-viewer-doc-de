@@ -59,55 +59,57 @@ Das Inhaltsverzeichnis wird in der `config_viewer.xml` im Element `<toc>` konfig
     <tr>
       <td style="text-align:left"><b>multiVolumeThumbnailsWidth/Height</b>
       </td>
-      <td style="text-align:left">Größe der Thumbnails in der Inhaltsansicht für Anchor-Elemente (mehrbändige
-        Werke und Zeitschriften)</td>
+      <td style="text-align:left">Gr&#xF6;&#xDF;e der Thumbnails in der Inhaltsansicht f&#xFC;r Anchor-Elemente
+        (mehrb&#xE4;ndige Werke und Zeitschriften)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>multiVolumeThumbnailsEnabled</b>
       </td>
-      <td style="text-align:left">Auf <code>true</code> setzen, um in der Inhaltsansicht für Anchor-Elemente
+      <td style="text-align:left">Auf <code>true</code> setzen, um in der Inhaltsansicht f&#xFC;r Anchor-Elemente
         Thumbnails der untergeordneten Werke anzuzeigen</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>volumeSortFields</b>
       </td>
-      <td style="text-align:left">Sortierung von Bänden im Inhaltsverzeichnis eines mehrbändigen Werks.
-        Hier können über Templates (analog zur Metadaten-Konfiguration) abweichende
-        Konfigurationen für bestimmte Anchor-Strukturtypen definiert werden. Ist
-        keine spezielle Konfiguration vorhanden, wird das Template <code>&#x201E;_DEFAULT&#x201C;</code> verwendet.
-        Das optionale Attribut „groupBy“ gruppiert die Bände in einzelne Blöcke
-        nach einem Solr-Metadatenfeld (etwa Jahrgänge einer Zeitschrift). Das hier
-        konfigurierte Feld sollte vorzugsweise nicht multivalued sein. Falls die
-        Gruppen ebenfalls sortiert werden sollen, muss das konfigurierte Gruppierungsfeld
-        auch als Sortierfeld für diese Template konfiguriert sein (das heißt als
-        Unterelement <code>&lt;field&gt;</code> innerhalb des Templates). Die definierten <code>&lt;field&gt;</code>-Elemente
-        werden in der angegebenen Reihenfolge zur Solr-Query hinzugefügt, das heißt
-        es wird primär nach dem Feld im ersten
-        <field>-Element sortiert, gleichwertige Treffer untereinander nach dem zweiten,
-          etc. Über das optionale Attribut order kann die Sortierung auf Wunsch absteigend
-          erfolgen („desc“). Standardwert ist <code>asc</code>.</td>
+      <td style="text-align:left">Sortierung von B&#xE4;nden im Inhaltsverzeichnis eines mehrb&#xE4;ndigen
+        Werks. Hier k&#xF6;nnen &#xFC;ber Templates (analog zur Metadaten-Konfiguration)
+        abweichende Konfigurationen f&#xFC;r bestimmte Anchor-Strukturtypen definiert
+        werden. Ist keine spezielle Konfiguration vorhanden, wird das Template <code>&#x201E;_DEFAULT&#x201C;</code> verwendet.
+        Das optionale Attribut &#x201E;groupBy&#x201C; gruppiert die B&#xE4;nde
+        in einzelne Bl&#xF6;cke nach einem Solr-Metadatenfeld (etwa Jahrg&#xE4;nge
+        einer Zeitschrift). Das hier konfigurierte Feld sollte vorzugsweise nicht
+        multivalued sein. Falls die Gruppen ebenfalls sortiert werden sollen, muss
+        das konfigurierte Gruppierungsfeld auch als Sortierfeld f&#xFC;r diese
+        Template konfiguriert sein (das hei&#xDF;t als Unterelement <code>&lt;field&gt;</code> innerhalb
+        des Templates). Die definierten <code>&lt;field&gt;</code>-Elemente werden
+        in der angegebenen Reihenfolge zur Solr-Query hinzugef&#xFC;gt, das hei&#xDF;t
+        es wird prim&#xE4;r nach dem Feld im ersten &lt;field&gt;-Element sortiert,
+        gleichwertige Treffer untereinander nach dem zweiten, etc. &#xDC;ber das
+        optionale Attribut order kann die Sortierung auf Wunsch absteigend erfolgen
+        (&#x201E;desc&#x201C;). Standardwert ist <code>asc</code>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>labelConfig</b>
       </td>
-      <td style="text-align:left">Konfiguration von Labels im Inhaltsverzeichnis. Hier können über Templates
-        (analog zur Metadaten-Konfiguration) abweichende Konfigurationen für bestimmte
-        Strukturtypen definiert werden. Ist keine spezielle Konfiguration vorhanden,
-        wird das Template <code>&#x201E;_DEFAULT&#x201C;</code> verwendet. Das spezielle
-        Template "<code>_GROUPS</code>" wird für die Konfiguration des Wurzelelements
-        einer abstrakten Gruppe (etwa einer Bandserie) verwendet. Die optionalen
-        Attribute "prefix" und "suffix" können hier zusätzlich durch die automatische
-        Übersetzung behandelt werden. Hierfür müssen entsprechende Message Keys
-        definiert und als Werte dieser Attribute verwendet werden.</td>
+      <td style="text-align:left">Konfiguration von Labels im Inhaltsverzeichnis. Hier k&#xF6;nnen &#xFC;ber
+        Templates (analog zur Metadaten-Konfiguration) abweichende Konfigurationen
+        f&#xFC;r bestimmte Strukturtypen definiert werden. Ist keine spezielle
+        Konfiguration vorhanden, wird das Template <code>&#x201E;_DEFAULT&#x201C;</code> verwendet.
+        Das spezielle Template &quot;<code>_GROUPS</code>&quot; wird f&#xFC;r die
+        Konfiguration des Wurzelelements einer abstrakten Gruppe (etwa einer Bandserie)
+        verwendet. Die optionalen Attribute &quot;prefix&quot; und &quot;suffix&quot;
+        k&#xF6;nnen hier zus&#xE4;tzlich durch die automatische &#xDC;bersetzung
+        behandelt werden. Hierf&#xFC;r m&#xFC;ssen entsprechende Message Keys definiert
+        und als Werte dieser Attribute verwendet werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>tocAnchorGroupElementsPerPage</b>
       </td>
-      <td style="text-align:left">Bei Gesamtwerken und Gruppen mit vielen Bänden kann der Aufbau der Bandauflistung
-        sehr lange dauern. Hier gibt es die Möglichkeit, eine Paginierung der Bandauflistung
-        einzusetzen und die Anzahl der angezeigten Bände pro Seite auf die hier
-        konfigurierte Zahl zu beschränkten. Ist der Wert 0 oder kleiner, ist die
-        Paginierung abgeschaltet.</td>
+      <td style="text-align:left">Bei Gesamtwerken und Gruppen mit vielen B&#xE4;nden kann der Aufbau der
+        Bandauflistung sehr lange dauern. Hier gibt es die M&#xF6;glichkeit, eine
+        Paginierung der Bandauflistung einzusetzen und die Anzahl der angezeigten
+        B&#xE4;nde pro Seite auf die hier konfigurierte Zahl zu beschr&#xE4;nkten.
+        Ist der Wert 0 oder kleiner, ist die Paginierung abgeschaltet.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>recordGroupIdentifierFields</b>
@@ -123,30 +125,30 @@ Das Inhaltsverzeichnis wird in der `config_viewer.xml` im Element `<toc>` konfig
       </td>
       <td style="text-align:left">
         <p>Diese Liste von Identifier-Feldern dient dazu, Inhaltsverzeichnis-Hierarchien
-          aus Werken zu erstellen, die entweder feste gemeinsame übergeordnete Struktur
-          (Anchor), oder in einer eher losen Eltern-Kind Beziehung zueinander stehen
-          (Related Item). Dabei besitzen die Child-Dokumente jeweil den Identifier
+          aus Werken zu erstellen, die entweder feste gemeinsame &#xFC;bergeordnete
+          Struktur (Anchor), oder in einer eher losen Eltern-Kind Beziehung zueinander
+          stehen (Related Item). Dabei besitzen die Child-Dokumente jeweil den Identifier
           des Parent-Dokuments im entsprechenden Metadatenfeld. Hinweis: Dieser Mechanismus
-          wird auch verwendet, um Bände eines Gesamtwerks (Anchors) aufzulisten.
-          Der hierfür benötigte Eintrag <code>&lt;field&gt;PI_PARENT&lt;/field&gt;</code> kann
+          wird auch verwendet, um B&#xE4;nde eines Gesamtwerks (Anchors) aufzulisten.
+          Der hierf&#xFC;r ben&#xF6;tigte Eintrag <code>&lt;field&gt;PI_PARENT&lt;/field&gt;</code> kann
           konfiguriert werden, wird aber bei Nichtvorhandensein implizit zu dieser
           Liste</p>
-        <p>hinzugefügt. Das Attribut listSiblingRecords (wenn auf true gestellt)
-          sorgt dafür, dass andere Werke auf gleicher Ebene (z.B. andere Bände desselben
-          Gesamtwerks) ebenfalls aufgelistet werden, wenn gerade ein Band geöffnet
-          ist.</p>
+        <p>hinzugef&#xFC;gt. Das Attribut listSiblingRecords (wenn auf true gestellt)
+          sorgt daf&#xFC;r, dass andere Werke auf gleicher Ebene (z.B. andere B&#xE4;nde
+          desselben Gesamtwerks) ebenfalls aufgelistet werden, wenn gerade ein Band
+          ge&#xF6;ffnet ist.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>useTreeView</b>
       </td>
-      <td style="text-align:left">Wenn auf "<code>true</code>" gesetzt, wird das Inhaltsverzeichnis als
-        auf- und zuklappbarer Baum dargestellt. Für die Inhaltsverzeichnis-Seite
-        kann zusätzlich konfiguriert werden, ob die Baumstruktur für alle oder
-        nur für bestimmte Dokumenttypen aktiviert werden soll. Die geschieht mit
-        dem Attribut "<code>showDocStructs</code>", mit Semikolon-separierten Dokumenttypen
-        (z.B. <code>showDocstructs=&quot;Monograph;Manuscript;PeriodicalVolume&quot;</code>)
-        beziehungsweise mit einem Eintrag für alle Typen (<code>showDocstructs=&quot;_ALL&quot;</code>).</td>
+      <td style="text-align:left">Wenn auf &quot;<code>true</code>&quot; gesetzt, wird das Inhaltsverzeichnis
+        als auf- und zuklappbarer Baum dargestellt. F&#xFC;r die Inhaltsverzeichnis-Seite
+        kann zus&#xE4;tzlich konfiguriert werden, ob die Baumstruktur f&#xFC;r
+        alle oder nur f&#xFC;r bestimmte Dokumenttypen aktiviert werden soll. Die
+        geschieht mit dem Attribut &quot;<code>showDocStructs</code>&quot;, mit
+        Semikolon-separierten Dokumenttypen (z.B. <code>showDocstructs=&quot;Monograph;Manuscript;PeriodicalVolume&quot;</code>)
+        beziehungsweise mit einem Eintrag f&#xFC;r alle Typen (<code>showDocstructs=&quot;_ALL&quot;</code>).</td>
     </tr>
   </tbody>
 </table>

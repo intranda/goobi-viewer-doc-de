@@ -46,31 +46,31 @@ Die einzelnen Elemente im Überblick:
     <tr>
       <td style="text-align:left"><b>cms_page_template/version</b> 
       </td>
-      <td style="text-align:left">Das Datum der letzten Änderung. Wird vom Goobi viewer Core nicht verwendet
-        sondern dient dem internen Tracking von Änderungen.</td>
+      <td style="text-align:left">Das Datum der letzten &#xC4;nderung. Wird vom Goobi viewer Core nicht
+        verwendet sondern dient dem internen Tracking von &#xC4;nderungen.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>name </b>
       </td>
       <td style="text-align:left">Der Name des Templates. Dieser wird beim Erstellen neuer Seiten in der
-        Oberfläche angezeigt.</td>
+        Oberfl&#xE4;che angezeigt.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>description</b> 
       </td>
       <td style="text-align:left">Eine Beschreibung des Templates. Diese wird beim Erstellen neuer Seiten
-        in der Oberfläche angezeigt.</td>
+        in der Oberfl&#xE4;che angezeigt.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>icon</b> 
       </td>
       <td style="text-align:left">Der Dateiname des Icons, das dieses Template beim Erstellen neuer Seiten
-        und beim Bearbeiten vorhandener Seiten repräsentiert; ohne Pfadangabe.</td>
+        und beim Bearbeiten vorhandener Seiten repr&#xE4;sentiert; ohne Pfadangabe.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>html</b>
       </td>
-      <td style="text-align:left">Der Dateiname der Layout-Datei für dieses Template; ohne Pfadangabe.</td>
+      <td style="text-align:left">Der Dateiname der Layout-Datei f&#xFC;r dieses Template; ohne Pfadangabe.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>content</b>
@@ -78,19 +78,19 @@ Die einzelnen Elemente im Überblick:
       <td style="text-align:left">
         <p>Eine Liste von <code>&lt;item&gt;</code>-Elementen. Jedes dieser Elemente
           bekommt einen eigenen Editorbereich beim Anlegen/Bearbeiten von CMS-Seiten
-          auf Basis dieses Templates. Die Art des Editorbereichs hängt ab von der
-          Art des Items. Jedes Item hat folgende Attribute:</p>
+          auf Basis dieses Templates. Die Art des Editorbereichs h&#xE4;ngt ab von
+          der Art des Items. Jedes Item hat folgende Attribute:</p>
         <ul>
-          <li><b>id: </b> Ein für dieses Template einzigartiger Identifier-String, mit
-            dem dieser Inhalt in der Layout-Datei referenziert wird.</li>
+          <li><b>id: </b> Ein f&#xFC;r dieses Template einzigartiger Identifier-String,
+            mit dem dieser Inhalt in der Layout-Datei referenziert wird.</li>
           <li><b>label</b>: Die Bezeichnung dieses Inhaltes im Editorbereich der Seitenbearbeitung.</li>
           <li><b>order</b>: Bestimmt die Reihenfolge in der der Anzeige. Muss Zahlen
             enthalten. Ist das Attribut nicht gesetzt wird nach der ID sortiert.</li>
           <li><b>type</b>: Der Inhaltstyp, siehe <a href="inhaltstypen.md">Kapitel 6.4.3</a>.</li>
           <li><b>mandatory</b>: Optionales. Wenn gesetzt und der Wert <code>&quot;true&quot;</code> dann
             ist das Feld ein Pflichtfeld.</li>
-          <li><b>filter</b>: Optional. Regulärer Ausdruck (regex), um die Medienauswahl
-            auf bestimmte Dateiendungen zu beschränken.</li>
+          <li><b>filter</b>: Optional. Regul&#xE4;rer Ausdruck (regex), um die Medienauswahl
+            auf bestimmte Dateiendungen zu beschr&#xE4;nken.</li>
         </ul>
       </td>
     </tr>

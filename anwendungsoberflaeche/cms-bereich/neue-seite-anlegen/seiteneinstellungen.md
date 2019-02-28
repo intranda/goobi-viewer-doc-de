@@ -14,16 +14,16 @@ Die Einstellungen der Seite sind in fünf Sektionen aufgeteilt, die sich wie fol
     <tr>
       <td style="text-align:left"><b>Template</b>
       </td>
-      <td style="text-align:left">Die erste Sektion informiert den Benutzer darüber, welches Template gerade
-        verwendet wird. Mit einem Klick auf das Fragezeichen ? kann der Benutzer
-        sich die Kurzbeschreibung des Templates anzeigen lassen.</td>
+      <td style="text-align:left">Die erste Sektion informiert den Benutzer dar&#xFC;ber, welches Template
+        gerade verwendet wird. Mit einem Klick auf das Fragezeichen ? kann der
+        Benutzer sich die Kurzbeschreibung des Templates anzeigen lassen.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Status</b> 
       </td>
       <td style="text-align:left">
-        <p>Die zweite Sektion gibt dem Benutzer eine Übersicht über ein paar Metadaten
-          zur Seite.</p>
+        <p>Die zweite Sektion gibt dem Benutzer eine &#xDC;bersicht &#xFC;ber ein
+          paar Metadaten zur Seite.</p>
         <ul>
           <li><b>ID: </b>Dies ist die eindeutige ID, die nach anlegen der Seite vergeben
             wird.</li>
@@ -37,31 +37,31 @@ Die Einstellungen der Seite sind in fünf Sektionen aufgeteilt, die sich wie fol
     </tr>
     <tr>
       <td style="text-align:left"><b>Klassifikationen </b>(Kategorien)</td>
-      <td style="text-align:left">Über das Auswahlmenü kann die Klassifikation der Seite festgelegt werden.
-        Welche Klassifikationen zur Verfügung stehen sollen, kann über die Konfiguration
-        des viewers festgelegt werden.</td>
+      <td style="text-align:left">&#xDC;ber das Auswahlmen&#xFC; kann die Klassifikation der Seite festgelegt
+        werden. Welche Klassifikationen zur Verf&#xFC;gung stehen sollen, kann
+        &#xFC;ber die Konfiguration des viewers festgelegt werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Status</b>
       </td>
-      <td style="text-align:left">Es können zwei unterschiedliche Stati für eine Seite gesetzt werden. <code>Entwurf</code> (Standard)
-        und <code>&#xD6;ffentlich</code>. Steht eine Seite auf Entwurf, ist sie
-        nicht im Goobi viewer sichtbar. Sichtbar wird sie erst, wenn der Status
-        Öffentlich gewählt wird.</td>
+      <td style="text-align:left">Es k&#xF6;nnen zwei unterschiedliche Stati f&#xFC;r eine Seite gesetzt
+        werden. <code>Entwurf</code> (Standard) und <code>&#xD6;ffentlich</code>.
+        Steht eine Seite auf Entwurf, ist sie nicht im Goobi viewer sichtbar. Sichtbar
+        wird sie erst, wenn der Status &#xD6;ffentlich gew&#xE4;hlt wird.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Aktionen</b>
       </td>
       <td style="text-align:left">
-        <p>In der letzten Sektion können mehrere Aktionen für die Seite ausgeführt
-          werden.</p>
+        <p>In der letzten Sektion k&#xF6;nnen mehrere Aktionen f&#xFC;r die Seite
+          ausgef&#xFC;hrt werden.</p>
         <ul>
           <li><b>Vorschau</b>: Um eine Vorschau der Seite anzeigen zu lassen, muss die
-            Seite gespeichert sein. Dann wird die Schaltfläche aktiviert.</li>
-          <li><b>Löschen</b>: Um eine Seite zu löschen, muss diese Schalfläche geklickt
-            werden. Anschließend muss dieser Vorgang noch über ein Dialogfenster bestätigt
-            werden.</li>
-          <li><b>Speichern</b>: Um eine Seite zu speichern, muss diese Schaltfläche
+            Seite gespeichert sein. Dann wird die Schaltfl&#xE4;che aktiviert.</li>
+          <li><b>L&#xF6;schen</b>: Um eine Seite zu l&#xF6;schen, muss diese Schalfl&#xE4;che
+            geklickt werden. Anschlie&#xDF;end muss dieser Vorgang noch &#xFC;ber ein
+            Dialogfenster best&#xE4;tigt werden.</li>
+          <li><b>Speichern</b>: Um eine Seite zu speichern, muss diese Schaltfl&#xE4;che
             geklickt werden.</li>
         </ul>
       </td>

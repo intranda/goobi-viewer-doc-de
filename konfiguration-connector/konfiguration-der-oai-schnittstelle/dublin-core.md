@@ -37,60 +37,61 @@
     <tr>
       <td style="text-align:left"><b>enabled</b>
       </td>
-      <td style="text-align:left">Aktiviert die Verfügbarkeit des Formats in der OAI-PMH Schnittstelle.
+      <td style="text-align:left">Aktiviert die Verf&#xFC;gbarkeit des Formats in der OAI-PMH Schnittstelle.
         Standardwert ist <code>false</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>hitsPerToken</b>
       </td>
-      <td style="text-align:left">Anzahl der Records, die Solr maximal bei einer Anfrage (Seite/Token) zurückgibt.
-        Dieser Wert überschreibt den globalen Standardwert <code>hitsPerToken</code> (siehe
+      <td style="text-align:left">Anzahl der Records, die Solr maximal bei einer Anfrage (Seite/Token) zur&#xFC;ckgibt.
+        Dieser Wert &#xFC;berschreibt den globalen Standardwert <code>hitsPerToken</code> (siehe
         <a
-        href="hauptkonfiguration.md#H4.1.10.Parameter:hitsPerToken">4.1.1.10</a>) für dieses Metadatenformat. Ist kein Wert hier definiert,
+        href="hauptkonfiguration.md#H4.1.10.Parameter:hitsPerToken">4.1.1.10</a>) f&#xFC;r dieses Metadatenformat. Ist kein Wert hier definiert,
           wird der globale Wert verwendet.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>fields</b>
       </td>
       <td style="text-align:left">
-        <p>Konfiguration der ausgelieferten Metadatenfelder für dieses Format. Jedes
-          field-Element entpricht einem Eintrag im Record. Folgende Attribute sind
-          möglich:</p>
+        <p>Konfiguration der ausgelieferten Metadatenfelder f&#xFC;r dieses Format.
+          Jedes field-Element entpricht einem Eintrag im Record. Folgende Attribute
+          sind m&#xF6;glich:</p>
         <ul>
-          <li><b>name</b> – Name des Dublin Core Feldes (aus „title“ wird etwa <code>&lt;dc:title&gt;</code>).
-            Dies ist ein Pflicht-Attribut, und sollte einen validen Namen nach Dublin
-            Core Spezifikation enthalten.</li>
-          <li><b>valueSource</b> – Solr-Feld, aus dem der Wert für dieses Feld gelesen
-            wird. Für die Felder <code>identifier</code>, <code>source</code> und <code>rights</code> kann
+          <li><b>name</b> &#x2013; Name des Dublin Core Feldes (aus &#x201E;title&#x201C;
+            wird etwa <code>&lt;dc:title&gt;</code>). Dies ist ein Pflicht-Attribut,
+            und sollte einen validen Namen nach Dublin Core Spezifikation enthalten.</li>
+          <li><b>valueSource</b> &#x2013; Solr-Feld, aus dem der Wert f&#xFC;r dieses
+            Feld gelesen wird. F&#xFC;r die Felder <code>identifier</code>, <code>source</code> und <code>rights</code> kann
             auch der Wert <code>AUTO</code> eingetragen werden, wobei dann im Programm
             fest definierte Algorithmen zur Wertermittlung eingesetzt werden.</li>
-          <li><b>translated</b> – Wenn true, wird der Wert über messages.properties übersetzt
-            (in die Sprache, die unter <code>&lt;defaultLocale&gt;</code> konfiguriert
+          <li><b>translated</b> &#x2013; Wenn true, wird der Wert &#xFC;ber messages.properties
+            &#xFC;bersetzt (in die Sprache, die unter <code>&lt;defaultLocale&gt;</code> konfiguriert
             ist. Standardwert ist <code>false</code>
           </li>
-          <li><b>multivalued</b> – Wenn dieses Attribut vorhanden ist und den Wert <code>true</code> besitzt,
-            wird für jeden gefundenen Wert des in <code>valueSource</code> definierten
+          <li><b>multivalued</b> &#x2013; Wenn dieses Attribut vorhanden ist und den
+            Wert <code>true</code> besitzt, wird f&#xFC;r jeden gefundenen Wert des in <code>valueSource</code> definierten
             Solr-Feldes ein Dublin Core Element erzeugt.</li>
-          <li><b>useTopstructValueIfNoneFound</b> – Wenn im aktuellen Strukturelement
-            kein Wert für das im Attribut valueSource definiertes Feld gefunden wird,
-            kann optional der Wert des obersten Strukturelements verwendet werden,
+          <li><b>useTopstructValueIfNoneFound</b> &#x2013; Wenn im aktuellen Strukturelement
+            kein Wert f&#xFC;r das im Attribut valueSource definiertes Feld gefunden
+            wird, kann optional der Wert des obersten Strukturelements verwendet werden,
             wenn dieses Attribut vorhanden ist und den Wert <code>true</code> besitzt.
-            Dies ist nützlich, wenn zusätzliche, untergeordnete Strukturelemente als
-            Records ausgeliefert werden.</li>
-          <li><b>defaultValue</b> – Definierbarer statischer Wert. Der Wert wird nur
-            eingetragen, wenn kein Wert aus der Konfiguration in <code>valueSource</code> ermittelt
+            Dies ist n&#xFC;tzlich, wenn zus&#xE4;tzliche, untergeordnete Strukturelemente
+            als Records ausgeliefert werden.</li>
+          <li><b>defaultValue</b> &#x2013; Definierbarer statischer Wert. Der Wert wird
+            nur eingetragen, wenn kein Wert aus der Konfiguration in <code>valueSource</code> ermittelt
             werden konnte.</li>
-          <li><b>prefix / suffix</b> – Optionales vor beziehungsweise hinter den Wert
-            gestelltes Prä- beziehungsweise Suffix. Der Wert dieser Attribute wird
-            automatisch übersetzt, falls es einen gleichnamingen Message Key gibt.</li>
+          <li><b>prefix / suffix</b> &#x2013; Optionales vor beziehungsweise hinter den
+            Wert gestelltes Pr&#xE4;- beziehungsweise Suffix. Der Wert dieser Attribute
+            wird automatisch &#xFC;bersetzt, falls es einen gleichnamingen Message
+            Key gibt.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>setSpec</b>
       </td>
-      <td style="text-align:left">Konfiguration von Indexfeldern, deren Werte für <code>setSpec</code>-Elemente
+      <td style="text-align:left">Konfiguration von Indexfeldern, deren Werte f&#xFC;r <code>setSpec</code>-Elemente
         von OAI-Records verwendet werden. Pro Feldkonfiguration wird ein <code>field</code>-Element
         verwendet, und pro gefundenen Wert wird ein <code>setSpec</code>-Element
         generiert.</td>

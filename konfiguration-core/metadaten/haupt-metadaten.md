@@ -72,31 +72,32 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
       </td>
       <td style="text-align:left">
         <p>Der Typ des Werts beschreibt die Art, ob und wie der Wert behandelt wird.
-          Mögliche Typen sind:</p>
+          M&#xF6;gliche Typen sind:</p>
         <ul>
-          <li><code>field</code>- Der Wert wird so wie er ist übernommen</li>
-          <li><code>translatedfield</code>- Der Wert wird in die aktuelle Sprache übersetzt,
-            falls eine Übersetzung existiert</li>
+          <li><code>field</code>- Der Wert wird so wie er ist &#xFC;bernommen</li>
+          <li><code>translatedfield</code>- Der Wert wird in die aktuelle Sprache &#xFC;bersetzt,
+            falls eine &#xDC;bersetzung existiert</li>
           <li><code>unescapedfield</code>- es wird kein HTML-Unescaping am Wert vorgenommen</li>
-          <li><code>wikifield</code>- Anpassung des Werts für eine Suchanfrage bei Wikipedia:
-            Klammern werden entfernt, Leerzeichen durch Unterstriche ersetzt</li>
+          <li><code>wikifield</code>- Anpassung des Werts f&#xFC;r eine Suchanfrage
+            bei Wikipedia: Klammern werden entfernt, Leerzeichen durch Unterstriche
+            ersetzt</li>
           <li><code>wikipersonfield</code>- Wie wikifield, aber wenn der Wert ein Komma
-            enthält, werden zusätzlich die Strings vor und nach dem Komma vertauscht,
-            so dass Personennamen in das Muster first name_last name für korrektes
-            Wikipedia Resolving überführt werden</li>
-          <li><code>urlescapedfield</code>- Hierbei werden speziell für URLs codierte
+            enth&#xE4;lt, werden zus&#xE4;tzlich die Strings vor und nach dem Komma
+            vertauscht, so dass Personennamen in das Muster first name_last name f&#xFC;r
+            korrektes Wikipedia Resolving &#xFC;berf&#xFC;hrt werden</li>
+          <li><code>urlescapedfield</code>- Hierbei werden speziell f&#xFC;r URLs codierte
             Zeichen wie der Slash Unicode-Escaped</li>
           <li><code>normdatauri</code>- Es wird ein Button gerendert, der mithilfe der
-            hier enthaltenen Normdaten-URI die Normdaten einholt und öffnet</li>
-          <li><code>hierarchicalfield</code> - Erzeugt einen Link für jedes Hierarchielevel.
-            Für die Verwendung mit dem Solr Feld <code>DC</code> gedacht.</li>
+            hier enthaltenen Normdaten-URI die Normdaten einholt und &#xF6;ffnet</li>
+          <li><code>hierarchicalfield</code> - Erzeugt einen Link f&#xFC;r jedes Hierarchielevel.
+            F&#xFC;r die Verwendung mit dem Solr Feld <code>DC</code> gedacht.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>key</b>
       </td>
-      <td style="text-align:left">Das Feld im Solr Index, dass den gewünschten Wert enthält</td>
+      <td style="text-align:left">Das Feld im Solr Index, dass den gew&#xFC;nschten Wert enth&#xE4;lt</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>prefix</b>
@@ -113,7 +114,7 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
     <tr>
       <td style="text-align:left"><b>value</b>
       </td>
-      <td style="text-align:left">Das Attribut <code>value</code> in <code>&lt;param&gt;</code> überschreibt
+      <td style="text-align:left">Das Attribut <code>value</code> in <code>&lt;param&gt;</code> &#xFC;berschreibt
         den Master Value des Metadatums (<code>value</code> in <code>&lt;metadata&gt;</code>),
         wenn der Parameter einen Wert hat. Es sollte nur ein Override Value pro
         Metadatenfeld konfiguriert werden (es wird sonst das vom letzten gefundenen

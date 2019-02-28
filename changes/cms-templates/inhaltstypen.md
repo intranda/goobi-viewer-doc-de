@@ -14,20 +14,20 @@ Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufge
       <td style="text-align:left"><b>TEXT</b> 
       </td>
       <td style="text-align:left">Dies ist ein einfacher Text, ohne HTML-Elemente, der beliebig in der Layout-Datei
-        aufgerufen werden kann. Die Texte sind mehrsprachig verfügbar.</td>
+        aufgerufen werden kann. Die Texte sind mehrsprachig verf&#xFC;gbar.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>HTML</b> 
       </td>
       <td style="text-align:left">Dies ist ein HTML-Text, der als echtes HTML in die Seite eingebettet wird.
-        HTML-Texte sind mehrsprachig verfügbar.</td>
+        HTML-Texte sind mehrsprachig verf&#xFC;gbar.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>MEDIA</b> 
       </td>
       <td style="text-align:left">
-        <p>Dies ist eine Bilddatei, die außerhalb des Templates erstellt und mit
-          einer Beschriftung versehen wird. Folgende Methoden stehen zur Verfügung:</p>
+        <p>Dies ist eine Bilddatei, die au&#xDF;erhalb des Templates erstellt und
+          mit einer Beschriftung versehen wird. Folgende Methoden stehen zur Verf&#xFC;gung:</p>
         <ul>
           <li><b>Name: </b><code>#{cmsPage.getMedia(&apos;image&apos;).name}</code>
           </li>
@@ -37,7 +37,7 @@ Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufge
           </li>
           <li><b>absolute URL: </b><code>#{cmsPage.getMedia(&apos;image&apos;).linkURI}</code>
           </li>
-          <li><b>IIIF-URL zu Bild mit Höhe und Breite: <br /></b><code>#{cmsPage.getMedia(&apos;image&apos;).getIconURI(width, height)}</code>
+          <li><b>IIIF-URL zu Bild mit H&#xF6;he und Breite: <br /></b><code>#{cmsPage.getMedia(&apos;image&apos;).getIconURI(width, height)}</code>
           </li>
         </ul>
       </td>
@@ -46,34 +46,34 @@ Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufge
       <td style="text-align:left"><b>SOLRQUERY</b> 
       </td>
       <td style="text-align:left">Gibt eine Liste von Werks-Strukturelementen einer Solr-Anfrage als Java-Objekte
-        zurück. Sie kann nur mit einer entsprechenden JSF verwendet werden.</td>
+        zur&#xFC;ck. Sie kann nur mit einer entsprechenden JSF verwendet werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>PAGELIST</b> 
       </td>
-      <td style="text-align:left">Gibt eine Liste von CMS-Seiten als Java-Objekte zurück, aus denen deren
-        Inhalte analog zu den Inhalten von cmsPage abgerufen werden können. Nur
-        stehen die Elemente der Liste an Stelle von cmsPage.</td>
+      <td style="text-align:left">Gibt eine Liste von CMS-Seiten als Java-Objekte zur&#xFC;ck, aus denen
+        deren Inhalte analog zu den Inhalten von cmsPage abgerufen werden k&#xF6;nnen.
+        Nur stehen die Elemente der Liste an Stelle von cmsPage.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>COLLECTION</b>
       </td>
-      <td style="text-align:left">Gibt ein Sammlungsobjekt zurück, das von der Komponente 'collectionView'
-        oder 'collectionViewTiled' verwendet werden kann um eine Sammlungsanzeige
+      <td style="text-align:left">Gibt ein Sammlungsobjekt zur&#xFC;ck, das von der Komponente &apos;collectionView&apos;
+        oder &apos;collectionViewTiled&apos; verwendet werden kann um eine Sammlungsanzeige
         darzustellen. Beim Erstellen der Seite kann das Solr-Feld, das die Sammlungen
-        enthält gewählt werden, evenso wie eine Beschränkung auf bestimmte Sammlungen
-        und weitere Einstellungen zur Darstellung.</td>
+        enth&#xE4;lt gew&#xE4;hlt werden, evenso wie eine Beschr&#xE4;nkung auf
+        bestimmte Sammlungen und weitere Einstellungen zur Darstellung.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>TILEGRID</b>
       </td>
       <td style="text-align:left">Liefert eine Liste von Bild-URLs zu CMS-Mediendateien die zum Erzeugen
-        eines Gitters aus Bildkacheln verwendet werden können</td>
+        eines Gitters aus Bildkacheln verwendet werden k&#xF6;nnen</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>TOC</b>
       </td>
-      <td style="text-align:left">Gibt ein Java-Objekt zurück, dass das Inhaltsverzeichnis eines Werkes
+      <td style="text-align:left">Gibt ein Java-Objekt zur&#xFC;ck, dass das Inhaltsverzeichnis eines Werkes
         abbildet. Der Identifier des Werkes muss im Backend angegeben werden.</td>
     </tr>
     <tr>
@@ -85,17 +85,17 @@ Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufge
     <tr>
       <td style="text-align:left"><b>SEARCH</b>
       </td>
-      <td style="text-align:left">Erzeugt ein Java-Objekt das eine Suchfunktionalität enthält und zur Erstellung
-        einer Seite dient, die eine Suche im Datenbestand des Viewers ermöglicht.
-        Der Bereich der Suche kann im CMS-Backend weiter eingeschränkt und spezifiziert
-        werden.</td>
+      <td style="text-align:left">Erzeugt ein Java-Objekt das eine Suchfunktionalit&#xE4;t enth&#xE4;lt
+        und zur Erstellung einer Seite dient, die eine Suche im Datenbestand des
+        Viewers erm&#xF6;glicht. Der Bereich der Suche kann im CMS-Backend weiter
+        eingeschr&#xE4;nkt und spezifiziert werden.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>GLOSSARY</b>
       </td>
-      <td style="text-align:left">Dient der Verwendung eines internen Wörterbuches für Begriffserklärungen
-        auf der CMS-Seite. Im Backend muss eine Wörterbuchdatei angegeben werden
-        die verwendet werden soll.</td>
+      <td style="text-align:left">Dient der Verwendung eines internen W&#xF6;rterbuches f&#xFC;r Begriffserkl&#xE4;rungen
+        auf der CMS-Seite. Im Backend muss eine W&#xF6;rterbuchdatei angegeben
+        werden die verwendet werden soll.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>COMPONENT</b>
@@ -111,9 +111,9 @@ Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufge
     <tr>
       <td style="text-align:left"><b>METADATA</b>
       </td>
-      <td style="text-align:left">Lädt eine Liste von Metadaten eines Werkes. Das Werk ist das mit der CMS-Seite
-        verknüpfte. Welche Metadaten angezeigt werden kann im Backend festgelegt
-        werden.</td>
+      <td style="text-align:left">L&#xE4;dt eine Liste von Metadaten eines Werkes. Das Werk ist das mit
+        der CMS-Seite verkn&#xFC;pfte. Welche Metadaten angezeigt werden kann im
+        Backend festgelegt werden.</td>
     </tr>
   </tbody>
 </table>

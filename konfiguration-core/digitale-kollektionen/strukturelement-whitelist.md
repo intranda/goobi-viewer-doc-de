@@ -12,7 +12,7 @@ Sollen etwa weitere Dokumenttypen aufgelistet werden \(z.B. Zeitschriftenbände\
 
 ```markup
 <search>
-    <docstrctWhitelistFilterQuery>(+(ISWORK:true ISANCHOR:true) -IDDOC_PARENT:*) (+ISWORK:true +DOCSTRCT:PeriodicalVolume))</docstrctWhitelistFilterQuery>
+    <docstrctWhitelistFilterQuery>((ISWORK:true ISANCHOR:true) -IDDOC_PARENT:*) (+DOCTYPE:DOCSTRCT +DOCSTRCT:PeriodicalVolume)</docstrctWhitelistFilterQuery>
 </search>
 ```
 

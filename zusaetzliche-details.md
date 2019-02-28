@@ -22,7 +22,7 @@ Für weitere Details stehen die Entwickler des Goobi viewers jederzeit zur Verf�
       <td style="text-align:left">
         <p>intranda GmbH
           <br />Bertha-von-Suttner Str. 9
-          <br />D – 37085 Göttingen</p>
+          <br />D &#x2013; 37085 G&#xF6;ttingen</p>
         <p></p>
         <p><a href="https://www.intranda.com">https://www.intranda.com</a>
         </p>

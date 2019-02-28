@@ -40,9 +40,9 @@ Der Goobi viewer implementiert die IIIF Presentation API in der Version 2.1.1. D
     <tr>
       <td style="text-align:left"><b>metadataFields/field[@label]</b>
       </td>
-      <td style="text-align:left">Jedes Field-Element kann über ein optionales <code>label=&quot;&quot;</code> Attribut
-        verfügen. Hier kann ein überschreibender message Key definiert werden,
-        der dann nur im IIIF Presentation Manifest verwendet wird.</td>
+      <td style="text-align:left">Jedes Field-Element kann &#xFC;ber ein optionales <code>label=&quot;&quot;</code> Attribut
+        verf&#xFC;gen. Hier kann ein &#xFC;berschreibender message Key definiert
+        werden, der dann nur im IIIF Presentation Manifest verwendet wird.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>metadataFields/event</b>
@@ -52,7 +52,7 @@ Der Goobi viewer implementiert die IIIF Presentation API in der Version 2.1.1. D
           kann eine Liste an Events definiert werden. In einem Event-Element ist
           der Wert immer EVENTNAME/FELDNAME. Im obigen Beispiel also aus den Events <em>Production</em> und <em>Use</em> das
           Feld MD_EVENTACTOR.</p>
-        <p>Auch Events können das optionale <code>label=&quot;&quot;</code> Attribut
+        <p>Auch Events k&#xF6;nnen das optionale <code>label=&quot;&quot;</code> Attribut
           enthalten.</p>
       </td>
     </tr>
@@ -60,13 +60,13 @@ Der Goobi viewer implementiert die IIIF Presentation API in der Version 2.1.1. D
       <td style="text-align:left"><b>descriptionFields/field</b>
       </td>
       <td style="text-align:left">Eine Liste mit allen Metadatenfeldern, die eine IIIF Presentation Manifest
-        Beschreibung enthalten können. Die Beschreibung wird aus dem ersten Feld
-        mit Inhalt befüllt.</td>
+        Beschreibung enthalten k&#xF6;nnen. Die Beschreibung wird aus dem ersten
+        Feld mit Inhalt bef&#xFC;llt.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>navDateField</b>
       </td>
-      <td style="text-align:left">Solr Feld für die IIIF Presentation navDate Eigenschaft</td>
+      <td style="text-align:left">Solr Feld f&#xFC;r die IIIF Presentation navDate Eigenschaft</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>attribution</b>
