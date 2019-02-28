@@ -1,4 +1,4 @@
-# 6.7 Web API
+# 6.6 Web API
 
 {% hint style="warning" %}
 Die Web API ist in der jetzigen Form als deprecated markiert und wird durch einen REST Service ersetzt.

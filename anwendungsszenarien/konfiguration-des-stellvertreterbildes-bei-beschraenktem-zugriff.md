@@ -1,4 +1,4 @@
-# 6.8 Konfiguration des Stellvertreterbildes bei beschränktem Zugriff
+# 6.7 Konfiguration des Stellvertreterbildes bei beschränktem Zugriff
 
 Sofern im Goobi viewer die Bildanzeige durch eine Access Condition verhindert ist, wird ein Stellvertreterbild angezeigt.
 

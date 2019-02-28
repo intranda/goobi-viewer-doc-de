@@ -1,4 +1,4 @@
-# 6.14 Mehrsprachigkeit
+# 6.12 Mehrsprachigkeit
 
 Der Goobi viewer Core ist in den Sprachen Deutsch, Englisch, Spanisch und Französisch verfügbar. Die Oberfläche wird - sofern verfügbar - automatisch in der Sprache angezeigt, die der Browser als Standardsprache definiert hat. Die Sprachunterstützung ist unabhängig davon, ob auch ein Sprachumschalter in der Oberfläche angeboten wird.
 

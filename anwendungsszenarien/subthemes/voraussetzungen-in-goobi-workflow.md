@@ -1,4 +1,4 @@
-# 6.5.1 Voraussetzungen in Goobi workflow
+# 6.4.1 Voraussetzungen in Goobi workflow
 
 Im Regelsatz muss ein neues Metadatum `ViewerSubTheme` hinzugefügt werden. Dieses wird dann bei `DocStructs`, die das Metadatum `CatalogIDDigital` als Pflichtmetadatum konfiguriert hatten, ebenfalls hinzugefügt.
 

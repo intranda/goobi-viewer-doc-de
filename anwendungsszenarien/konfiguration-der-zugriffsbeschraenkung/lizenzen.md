@@ -1,4 +1,4 @@
-# 6.9.2 Lizenzen
+# 6.8.2 Lizenzen
 
 Die durch die Konfiguration von Lizenztypen geltenden Einschränkungen für normale Benutzer können durch die Vergabe von Lizenzen an Lizenznehmer wieder teilweise oder ganz aufgehoben werden. Lizenznehmer können einzelne Benutzer, Benutzergruppen oder definierte IP-Bereiche sein.
 

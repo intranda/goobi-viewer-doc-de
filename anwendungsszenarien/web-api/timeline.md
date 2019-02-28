@@ -1,4 +1,4 @@
-# 6.7.3 Timeline
+# 6.6.3 Timeline
 
 Im Zeitleisten-Modus eine zufällige Auswahl an Datensätzen für einer Darstellung in einer Zeitleiste beziehungsweise Zeitmatrix ausgeliefert.
 

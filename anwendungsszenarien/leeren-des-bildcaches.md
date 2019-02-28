@@ -1,4 +1,4 @@
-# 6.10 Leeren des Bildcaches
+# 6.9 Leeren des Bildcaches
 
 Der Goobi viewer unterhält separate Bilder-Caches für die normale Bildanzeige sowie für Thumbnails. Beide Caches basieren auf Ehcache.
 

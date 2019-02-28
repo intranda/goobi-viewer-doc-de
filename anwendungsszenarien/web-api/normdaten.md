@@ -1,4 +1,4 @@
-# 6.7.4 Normdaten
+# 6.6.4 Normdaten
 
 Die Web API bietet die Möglichkeit, Anfragen an den intranda Normdaten-Service beziehungsweise  GND abzuschicken, und die Normdatensätze als JSON-Objekte zu erhalten.
 

@@ -1,4 +1,4 @@
-# 6.6 Normdaten
+# 6.5 Normdaten
 
 Im Regelsatz muss bei dem gewünschten Metadatum das Attribut `normdata="true"` aktiviert sein damit die Normdaten im Metadateneditor erfasst werden können:
 

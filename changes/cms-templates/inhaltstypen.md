@@ -1,4 +1,4 @@
-# 6.4.3 Inhaltstypen
+# 9.4.3 Inhaltstypen
 
 Im folgenden sind die verschiedenen Inhaltstypen und deren Funktionalität aufgelistet:
 

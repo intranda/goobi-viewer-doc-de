@@ -1,4 +1,4 @@
-# 6.4.1 Dateistruktur
+# 9.4.1 Dateistruktur
 
 Ein CMS-Template ist eine Layout-Vorlage für eine durch das CMS-System des Goobi viewers definierbare Webseite. Es definiert die HTML-Struktur sowie die möglichen einfügbaren Inhalte der Seite.
 

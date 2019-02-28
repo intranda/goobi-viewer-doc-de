@@ -1,4 +1,4 @@
-# 6.5.2 Einstellungen im Goobi viewer
+# 6.4.2 Einstellungen im Goobi viewer
 
 Das Metadatum `viewerSubTheme` wird innerhalb des Solr Index in ein eigenständiges Feld geschrieben. Dafür muss in der Konfigurationsdatei solr\_indexerconfig.xml folgende Felddefinition hinzugefügt werden:
 

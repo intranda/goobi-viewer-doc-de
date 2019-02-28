@@ -1,6 +1,6 @@
-# 6.4.2 Inhalte der Dateien
+# 9.4.2 Inhalte der Dateien
 
-**6.4.2.1. Template-Datei**
+**9.4.2.1. Template-Datei**
 
 Die Template-Datei ist eine XML-Datei, die alle Meta-Informationen zu dem Template beinhaltet, außerdem eine Liste der möglichen benutzerdefinierten Inhalte. Diese Inhalte werden in der Layout-Datei referenziert, teilweise auch in Layout-Dateien anderer Templates, die dieses Template als Teil einer Liste enthalten.
 
@@ -95,7 +95,7 @@ Die einzelnen Elemente im Überblick:
       </td>
     </tr>
   </tbody>
-</table>**6.4.2.2. Layout-Datei**
+</table>**9.4.2.2. Layout-Datei**
 
 Die Layout-Datei ist eine XHTML-Datei die das Layout mit JSF beschreibt. Sie ist wie eine übliche Goobi viewer Core Seite aufgebaut, benötigt jedoch für die Anzeige von CMS-Inhalten einige spezielle Annotationen. So muss am Anfang der Seite vor etwaigen CMS-Inhalten die folgende Zeile zwingend existieren:
 
@@ -131,7 +131,7 @@ Jedes möglicherweise vorkommende Sidebar-Widget muss in der Liste als `<widgetC
 
 ![](../../.gitbook/assets/cms_neue_seite_sidebar.png)
 
-**6.4.2.3. Template-Icon**
+**9.4.2.3. Template-Icon**
 
 Hierbei handelt es sich um eine einfache Bilddatei zur Repräsentation des Templates. Das Bild muss quadratische Abmessungen haben. Üblicherweise werden 128x128px große PNG-Dateien verwendet.  
 

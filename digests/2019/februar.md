@@ -68,5 +68,5 @@ Manchmal dauert das Stöbern in einem großen Datenbestand ganz schön lange. Um
 
 ### Dokumentation
 
-Bei dem Brainstorm-Treffen zum Admin-Backend kam heraus, dass nicht bekannt war wie die Mehrsprachigkeit von Themes verwaltet und gesteuert werden kann. Nach kurzer Prüfung ist uns aufgefallen, dass das auch gar nicht dokumentiert war. Das haben wir direkt nachgeholt, für alle die es interessiert sei an dieser Stelle auf die Dokumentation, [Kapitel 6.14](../../anwendungsszenarien/6.14-mehrsprachigkeit.md) verwiesen.
+Bei dem Brainstorm-Treffen zum Admin-Backend kam heraus, dass nicht bekannt war wie die Mehrsprachigkeit von Themes verwaltet und gesteuert werden kann. Nach kurzer Prüfung ist uns aufgefallen, dass das auch gar nicht dokumentiert war. Das haben wir direkt nachgeholt, für alle die es interessiert sei an dieser Stelle auf die Dokumentation, [Kapitel 6.12](../../anwendungsszenarien/mehrsprachigkeit.md) verwiesen.
 
