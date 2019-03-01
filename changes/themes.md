@@ -1,5 +1,14 @@
 # 9.2 Theme changes
 
+## 2019-03-01
+
+Entfernung nicht mehr benötigter LESS-Templates.
+
+* /boilerplate/css/less/viewer/constructor.less
+* ~~/boilerplate/css/less/viewer/cms/components/~~
+* ~~/boilerplate/css/less/viewer/cms/modules/~~
+* ~~/boilerplate/css/less/viewer/cms/views/~~
+
 ## 2019-02-27
 
 Neue LESS-Templates.
@@ -161,8 +170,8 @@ JavaScript Framework RiotJS zum Grunt-Task hinzugefügt und in die Templates ein
 Neues LESS-Template, sowie LESS-Template Refaktorisierung. Aktivierung neuer JavaScript Funktionalität \(_cmsJS.modules.init\(\);_\).
 
 * /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/cms/modules/options.less
-* /boilerplate/css/less/viewer/cms/views/cmsMenuItems.less
+* ~~/boilerplate/css/less/viewer/cms/modules/options.less~~
+* ~~/boilerplate/css/less/viewer/cms/views/cmsMenuItems.less~~
 * /boilerplate/css/less/variables.less
 * /boilerplate/css/less/viewer/views/user/user.less
 * /boilerplate/includes/customJS.xhtml
@@ -205,13 +214,6 @@ Neues LESS- und HTML-Template, sowie LESS-Template Refaktorisierung.
 * /boilerplate/css/less/viewer/cms/views/viewMirador.less
 * /boilerplate/css/less/templateMirador.html
 * /boilerplate/css/less/viewer/components/mobileNavigation.less
-
-## 2018-07-05
-
-Neues LESS-Template.
-
-* /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/cms/views/cmsCollections.less
 
 ## 2018-07-03
 
