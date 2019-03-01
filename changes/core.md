@@ -228,7 +228,7 @@ MAILTO=support@intranda.com
 @daily              root    echo "Please look at the git checkout interval for the Goobi viewer theme" | mail -s "Reference: Theme repository is checked out every minute" do-not-reply@example.org
 
 ## Optimize the Solr search index once a month
-@monthly            root    curl -s http://localhost:8080/solr/update?optimize=true&waitFlush=false
+@monthly            root    curl -s "http://localhost:8080/solr/update?optimize=true&waitFlush=false"
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
