@@ -10,6 +10,9 @@ Entfernung nicht mehr benötigter LESS-Templates. Änderungen an LESS-Templates.
 * ~~/boilerplate/css/less/viewer/cms/views/~~
 * ~~/boilerplate/css/less/viewer/views/viewOverview.less~~
 * ~~/boilerplate/css/less/viewer/widgets/widgetDownloads.less~~
+* ~~/boilerplate/css/less/viewer/components/mobileNavigation.less~~
+* ~~/boilerplate/css/less/viewer/components/mobileToggleWrapper.less~~
+* ~~/boilerplate/css/less/viewer/components/responsiveColumnGallery.less~~
 * /boilerplate/css/less/viewer/widgets/widgetBookshelfList.less
 
 ## 2019-02-27
