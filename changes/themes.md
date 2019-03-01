@@ -15,6 +15,12 @@ Entfernung nicht mehr benötigter LESS-Templates. Änderungen an LESS-Templates.
 * ~~/boilerplate/css/less/viewer/components/responsiveColumnGallery.less~~
 * /boilerplate/css/less/viewer/widgets/widgetBookshelfList.less
 
+Aufräumarbeiten.
+
+* /boilerplate/template.html
+* /boilerplate/templateAdmin.html
+* /boilerplate/templateFullscreen.html
+
 ## 2019-02-27
 
 Neue LESS-Templates.
