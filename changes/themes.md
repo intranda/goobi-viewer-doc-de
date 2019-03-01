@@ -2,12 +2,15 @@
 
 ## 2019-03-01
 
-Entfernung nicht mehr benötigter LESS-Templates.
+Entfernung nicht mehr benötigter LESS-Templates. Änderungen an LESS-Templates.
 
 * /boilerplate/css/less/viewer/constructor.less
 * ~~/boilerplate/css/less/viewer/cms/components/~~
 * ~~/boilerplate/css/less/viewer/cms/modules/~~
 * ~~/boilerplate/css/less/viewer/cms/views/~~
+* ~~/boilerplate/css/less/viewer/views/viewOverview.less~~
+* ~~/boilerplate/css/less/viewer/widgets/widgetDownloads.less~~
+* /boilerplate/css/less/viewer/widgets/widgetBookshelfList.less
 
 ## 2019-02-27
 
