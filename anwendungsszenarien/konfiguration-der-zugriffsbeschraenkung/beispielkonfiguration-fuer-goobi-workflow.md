@@ -1,49 +1,29 @@
 # 6.8.3 Beispielkonfiguration für Goobi workflow
 
-Um eine Lizenz in Goobi workflow zu konfigurieren muss als erstes ein Metadatum dafür existieren, zum Beispiel:
+Um eine Lizenz in Goobi workflow zu konfigurieren muss als erstes ein Metadatum dafür existieren.
+
+Dieses Metadatum muss dann in allen Strukturelementen freigeschaltet sein, die potentiell mit einer Zugriffslizenz belegt werden sollen. In der Regel bieten sich dafür vor allem die Dokumententypen wie Monographien, Zeitschriften, Karten etc. an. Es kann aber auch für Unterstrukturelemente Sinn ergeben, wenn zum Beispiel eine Zeitschrift gesperrt, aber ein Artikel daraus als Open Access freigegeben werden soll. Wichtig ist das Metadatum nicht mehr als einmal zu erlauben.
 
 {% code-tabs %}
-{% code-tabs-item title="ruleset.xml" %}
+{% code-tabs-item title="/opt/digiverso/goobi/rulesets/ruleset.xml" %}
 ```markup
 <MetadataType>
     <Name>AccessLicense</Name>
     <language name="de">Zugriffslizenz</language>
     <language name="en">License</language>
-    <language name="es">Licencia de acceso</language>
 </MetadataType>
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
-Dieses Metadatum muss dann in allen Strukturelementen freigeschaltet sein, die potentiell mit einer Zugriffslizenz belegt werden sollen. In der Regel bieten sich dafür vor allem die Dokumententypen wie Monographien, Zeitschriften, Karten etc. an. Es kann aber auch für Unterstrukturelemente Sinn ergeben, wenn zum Beispiel eine Zeitschrift gesperrt, aber ein Artikel daraus als Open Access freigegeben werden soll. Wichtig ist das Metadatum nicht mehr als einmal zu erlauben.
+[...]
 
-Beispiel für die Freischaltung in einer Monographie:
+<metadata num="1o">AccessLicense</metadata>
 
-{% code-tabs %}
-{% code-tabs-item title="ruleset.xml" %}
-```markup
-<DocStrctType topStruct="true">
-    <Name>Monograph</Name>
-    <language name="de">Monographie</language>
-    <language name="en">Monograph</language>
-    <language name="es">Monografía</language>
-    ...
-    <metadata num="1o">AccessLicense</metadata>
-    ...
-</DocStrctType>
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+[...]
 
-Hier ein Beispiel für einen Export nach MODS:
-
-{% code-tabs %}
-{% code-tabs-item title="ruleset.xml" %}
-```markup
 <Metadata>
     <InternalName>AccessLicense</InternalName>
     <WriteXPath>./mods:mods/#mods:accessCondition[@type='use and reproduction']</WriteXPath>
 </Metadata>
+
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -53,7 +33,7 @@ Hier ein Beispiel für einen Export nach MODS:
 Um zu verhindern, dass in Goobi workflow im Metadateneditor für die Zugriffslizenz ein Freitextfeld  angezeigt wird, und dadurch potentiell fehleranfällig verschiedene Schreibweisen des gleichen Wertes eingetragen werden, kann dort in der `goobi_metadataDisplayRules.xml` ein DropDown Menü mit möglichen Werten definiert werden:
 
 {% code-tabs %}
-{% code-tabs-item title="goobi\_metadataDisplayRules.xml" %}
+{% code-tabs-item title="/opt/digiverso/goobi/config/goobi\_metadataDisplayRules.xml" %}
 ```markup
 <select1 ref="AccessLicense">
     <item selected="true">
