@@ -142,6 +142,7 @@
   * [6.8 Konfiguration der Zugriffsbeschränkung](anwendungsszenarien/konfiguration-der-zugriffsbeschraenkung/README.md)
     * [6.8.1 Lizenztypen](anwendungsszenarien/konfiguration-der-zugriffsbeschraenkung/lizenztypen.md)
     * [6.8.2 Lizenzen](anwendungsszenarien/konfiguration-der-zugriffsbeschraenkung/lizenzen.md)
+    * [6.8.3 Beispielkonfiguration für Goobi workflow](anwendungsszenarien/konfiguration-der-zugriffsbeschraenkung/beispielkonfiguration-fuer-goobi-workflow.md)
   * [6.9 Leeren des Bildcaches](anwendungsszenarien/leeren-des-bildcaches.md)
   * [6.10 Leeren des Solr Suchindex](anwendungsszenarien/leeren-des-solr-suchindex.md)
   * [6.11 Untersammlungen konfigurieren und anzeigen](anwendungsszenarien/6.13-untersammlungen-konfigurieren-und-anzeigen.md)
