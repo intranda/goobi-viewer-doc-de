@@ -36,13 +36,7 @@ Neue LESS-Templates.
 
 Umstellung der Dateistruktur für das neue Admin-Backend.
 
-* ~~/boilerplate/css/less/viewer/views/admin/admin.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/adminBackendTables.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/adminIpRange.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/adminLicenseType.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/adminUser.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/adminUserGroup.less~~
-* ~~/boilerplate/css/less/viewer/views/admin/tabUserLicenses.less~~
+* ~~/boilerplate/css/less/viewer/views/admin/~~
 * ~~/boilerplate/css/less/viewer/widgets/widgetAdmin.less~~
 * ~~/boilerplate/css/less/viewer/widgets/widgetCms.less~~
 * /boilerplate/templateAdmin.html
