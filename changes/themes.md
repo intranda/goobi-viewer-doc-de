@@ -5,6 +5,7 @@
 Änderungen an LESS-Templates.
 
 * ~~/boilerplate/css/less/viewer/components/icons.less~~
+* /boilerplate/css/less/viewer/widgets/widgetBookshelfList.less
 * /boilerplate/css/less/layout.less
 * /boilerplate/css/less/viewer/constructor.less
 
