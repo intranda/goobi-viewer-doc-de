@@ -179,5 +179,6 @@
     * [9.4.2 Inhalte der Dateien](changes/cms-templates/inhalte-der-dateien.md)
     * [9.4.3 Inhaltstypen](changes/cms-templates/inhaltstypen.md)
   * [9.5 Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](changes/ueberschreiben-von-standard-xhtml-seiten-mit-eigenen-angepassten-seiten.md)
+  * [9.6 Entwicklungsumgebung](changes/9.6-entwicklungsumgebung.md)
 * [10. Zusätzliche Details](zusaetzliche-details.md)
 
