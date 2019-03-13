@@ -10,7 +10,7 @@ Für den Betrieb muss für den Goobi viewer Indexer eine Reihe von Ordnern konfi
      <dataRepositories>
           <strategy>SingleRepositoryStrategy</strategy>
           <maxRecords>10000</maxRecords>
-          <dataRepository>/opt/digiverso/viewer/data/1</dataRepository>
+          <dataRepository buffer="10G">/opt/digiverso/viewer/data/1</dataRepository>
           [...]
      </dataRepositories>
      <mediaFolder>media</mediaFolder>
@@ -62,6 +62,8 @@ Anzahl der Werke, die ein Datenrepository maximal enthalten darf. Standardwert i
 #### 3.2.6 Parameter: dataRepositories/dataRepository
 
 Dieses Element darf beliebig oft existieren und definiert die einzelnen Datenrepositories. Es muss der volle Pfad zu dem Datenrepository eingetragen werden. In jedem Datenrepository befindet sich jeweils eine komplette Ordnerstruktur für Mediendateien, XML, Volltexte etc. Diese werden automatisch angelegt.
+
+Mit dem optionalen Attribut `buffer` kann speziell für `RemainingSpaceRepository` ein Speicherpuffer definiert werden, der ungenutzt bleiben soll. Es können hier Größen in Bytes, Megabytes \(großes "M" hinter der Zahl\) oder Gigabytes \(großes "G" hinter der Zahl\) angegeben werden. Standardwert ist 0 Bytes.
 
 #### 3.2.7 Parameter: mediaFolder
 
