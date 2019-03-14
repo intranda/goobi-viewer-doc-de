@@ -7,7 +7,7 @@ So kann zum Beispiel die Zugriffsbeschränkung für Werke, deren Regelschutzfris
 In Goobi workflow muss dafür ein Metadatum existieren, in dem eine Jahreszahl erfasst wurde. Hier ein Beispiel für die relevanten Sektionen innerhalb eines Regelsatzes:
 
 {% code-tabs %}
-{% code-tabs-item title="/opt/digiverso/viewer/rulesets/ruleset.xml" %}
+{% code-tabs-item title="/opt/digiverso/goobi/rulesets/ruleset.xml" %}
 ```markup
 <MetadataType>
     <Name>PublicReleaseYear</Name>
