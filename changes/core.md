@@ -19,6 +19,7 @@ Außerdem den Ordner im Dateisystem anlegen:
 
 ```bash
 mkdir /opt/digiverso/viewer/cms/
+chown tomcat8:tomcat8 /opt/digiverso/viewer/cms/
 ```
 
 Nun folgendes SQL Statement ausführen um sicherzustellen, dass der Zeichensatz der CMS-Zieltabelle korrekt ist und die Migration nicht fehlschlägt:
