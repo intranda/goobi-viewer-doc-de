@@ -72,11 +72,10 @@ Die Konfiguration erfolgt im Konfigurationselement &lt;groupEntity&gt;. Dieses k
             </xpath>
             <groupEntity type="PERSON">
                 <field name="MD_VALUE">mods:displayForm</field>
-                <field name="MD_DISPLAYFORM">mods:displayForm</field>
                 <field name="MD_LINK">@xlink:href</field>
                 <field name="MD_CORPORATION">mods:namePart[not(@type)]</field>
                 <field name="MD_LASTNAME">mods:namePart[@type="family"]</field>
-                <field name="MD_FIRSTNAME">mods:namePart[@type="given"]</field>
+                <field name="MD_FIRSTNAME" multivalied="false">mods:namePart[@type="given"]</field>
                 <field name="MD_LIFEPERIOD">mods:namePart[@type="date"]</field>
                 <field name="NORM_URI">@valueURI</field>
             </groupEntity>
@@ -85,7 +84,9 @@ Die Konfiguration erfolgt im Konfigurationselement &lt;groupEntity&gt;. Dieses k
 </MD_AUTHOR>
 ```
 
-Die einzelnen Metadatenfelder innerhalb des Index-Dokuments werden in `<field>`-Elementen konfiguriert. Das Attribut name beschreibt den gewpnschten Namen des Indexfelds innerhalb des Dokuments, der Textwert des `<field>`-Elements beinhaltet den XPath-Ausdruck des jeweiligen Metadatums.
+Die einzelnen Metadatenfelder innerhalb des Index-Dokuments werden in `<field>`-Elementen konfiguriert. Das Attribut name beschreibt den gewünschten Namen des Indexfelds innerhalb des Dokuments, der Textwert des `<field>`-Elements beinhaltet den XPath-Ausdruck des jeweiligen Metadatums.
+
+Mit dem optionalen Attribut `multivalued=false` kann bewirkt werden, dass nur der erste gefundene Wert des jeweiligen Feldes in den Index übernommen wird. Standardwert ist `true`.
 
 Die XPath Ausdrücke werden dabei relativ zum Element definiert, das durch den jeweiligen XPath-Ausdruck in einem `<item>`-Element gefunden wird. Im obigen Beispiel verstehen sich die XPath Ausdrücke in &lt;field&gt;-Elementen relativ zu `<mods:name>`.
 
