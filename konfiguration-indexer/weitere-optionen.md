@@ -75,7 +75,7 @@ Die Konfiguration erfolgt im Konfigurationselement &lt;groupEntity&gt;. Dieses k
                 <field name="MD_LINK">@xlink:href</field>
                 <field name="MD_CORPORATION">mods:namePart[not(@type)]</field>
                 <field name="MD_LASTNAME">mods:namePart[@type="family"]</field>
-                <field name="MD_FIRSTNAME" multivalied="false">mods:namePart[@type="given"]</field>
+                <field name="MD_FIRSTNAME" multivalued="false">mods:namePart[@type="given"]</field>
                 <field name="MD_LIFEPERIOD">mods:namePart[@type="date"]</field>
                 <field name="NORM_URI">@valueURI</field>
             </groupEntity>
