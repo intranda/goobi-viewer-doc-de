@@ -1,5 +1,13 @@
 # 9.2 Theme changes
 
+## 2019-03-25
+
+Änderung an LESS-Template und neues LESS-Template.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/widgets/widgetUser.less
+* /boilerplate/css/less/viewer/widgets/widgetUserInteractions.less
+
 ## 2019-03-11
 
 Änderungen an LESS-Templates.
