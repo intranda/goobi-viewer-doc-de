@@ -32,12 +32,11 @@
         <recipients>admin@example.org</recipients>
         <smtpServer>localhost</smtpServer>
         <smtpUser></smtpUser>
-        <smtpPassword>p455w0rd</smtpPassword>
+        <smtpPassword></smtpPassword>
         <smtpSenderAddress>do-not-reply@goobi-viewer.example.org</smtpSenderAddress>
         <smtpSenderName>Goobi viewer Indexer</smtpSenderName>
         <smtpSecurity>NONE</smtpSecurity>
     </email>
-
 </init>
 ```
 
