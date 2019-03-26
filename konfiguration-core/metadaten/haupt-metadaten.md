@@ -9,9 +9,10 @@ Die Liste der Haupt-Metadaten \(das heißt Metadaten, die auf der Seite “Bibli
             <metadata label="MD_TITLE" value="" type="">
                 <param type="field" key="MD_TITLE" />
             </metadata>
-            <metadata label="MD_AUTHOR" value="LINK_WIKIPEDIA" type="">
-                <param type="field" key="MD_AUTHOR" />
-                <param type="wikifield" key="MD_AUTHOR" />
+            <metadata label="MD_AUTHOR" value="MASTERVALUE_WIKINORM" group="true" type="" >
+                <param type="field" key="MD_DISPLAYFORM" />
+                <param type="wikifield" key="MD_DISPLAYFORM" />
+                <param type="normdatauri" key="NORM_URI" />
             </metadata>
             <metadata label="URN " value="" type="">
                 <param type="field" key="URN" />
@@ -21,9 +22,10 @@ Die Liste der Haupt-Metadaten \(das heißt Metadaten, die auf der Seite “Bibli
             <metadata label="MD_TITLE" value="" type="">
                 <param type="field" key="MD_TITLE" />
             </metadata>
-            <metadata label="MD_AUTHOR" value="LINK_WIKIPEDIA" type="">
-                <param type="field" key="MD_AUTHOR" />
-                <param type="wikifield" key="MD_AUTHOR" />
+            <metadata label="MD_AUTHOR" value="MASTERVALUE_WIKINORM" group="true" type="" >
+                <param type="field" key="MD_DISPLAYFORM" />
+                <param type="wikifield" key="MD_DISPLAYFORM" />
+                <param type="normdatauri" key="NORM_URI" />
             </metadata>
         </template>
     </mainMetadataList>
@@ -41,6 +43,7 @@ Jedes Element `<metadata>` beschreibt ein Metadatenfeld, das angezeigt werden so
 | **label** | Der Key für die Bezeichnung dieses Metadatenfeldes \(die Übersetzung für diesen Key muss in der jeweiligen messages.properties vorhanden sein\) |
 | **value** | Standardwert des Metadatums. Dieser Wert kann etwa eine URL sein, die in der messages.properties definiert ist und Platzhalter enthält, die durch tatsächliche Werte aus dem Metadatum ersetzt werden \(siehe die Konfiguration von `MD_AUTHOR` im obigen Beispiel\). Für einfache Metadaten sollte dieses Attribut leer gelassen werden \(siehe die Konfiguration von `MD_TITLE` im obigen Beispiel\). |
 | **type** | Der Wert des Attributs `type` enthält die Nummer des Reiters oder Blocks, in dem das Metadatum angezeigt werden soll \(beginnend mit 0\). Fehlt dieses Attribut, wird automatisch der Wert 0 verwendet. |
+| **group** | Optionales Attribut das angibt, ob es sich um ein gruppiertes Metadatum handelt. Standard ist `false`. |
 
 Titel für die einzelnen Reiter werden in der `messages.properties` nach dem Muster `metadataTab<Nummer>` konfiguriert:
 
@@ -121,20 +124,27 @@ Jedes Element `<metadata>` muss mindestens ein Element `<param>` enthalten. Dies
         Parameter genommen).</td>
     </tr>
   </tbody>
-</table>Die Reihenfolge der `<param>` Elemente entspricht der Reihenfolge, in der die Platzhalter im Standardwert \(falls konfiguriert\) ersetzt werden. Schauen Sie sich das folgende Beispiel an:  
-`messages_en.properties` enthält zum Beispiel diesen Eintrag:
+</table>Die Reihenfolge der `<param>` Elemente entspricht der Reihenfolge, in der die Platzhalter im Standardwert \(falls konfiguriert\) ersetzt werden. 
 
+Beispiel:
+
+{% code-tabs %}
+{% code-tabs-item title="messages\_de.properties" %}
 ```text
-LINK_WIKIPEDIA={0} <a href\="http\://de.wikipedia.org/wiki/{1}" target\="_blank"><img src\="/viewer/javax.faces.resource/wikipedia.png.xhtml?ln\=themes/intranda/images/" style\="height\:16px;" title\="Wikipedia" alt\="Wikipedia" /></a>,
+MASTERVALUE_WIKINORM={1} <a href\="http\://de.wikipedia.org/wiki/{3}" target\="_blank" title\="Wikipedia" alt\="Wikipedia" data-trigger\="hover" data-placement\="top" data-toggle\="tooltip"><i class\="fa fa-wikipedia-w" aria-hidden\="true"></i></a> {5}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Der Key `LINK_WIKIPEDIA` enthält ein vollständiges HTML Fragment mit einer Wikipedia URL, die wiederum zwei Platzhalter `{0}` und `{1}` enthält.
+Der Key `MASTERVALUE_WIKINORM` enthält ein vollständiges HTML Fragment mit einer Wikipedia URL, die wiederum zwei Platzhalter `{1}` und `{3}` enthält. Am Ende wird der Platzhalter für den dann automatisch generierten Link zur GND konfiguriert.
 
-Die Metadaten-Konfiguration für `MD_AUTHOR` \(siehe erstes Beispiel\) enthält zwei `<param>` Elemente: ein `field` und ein `wikifield`. Der unveränderte Wert in field ersetzt dabei `{0}` \(der angezeigte Name\). Derselbe Wert als wikifield wird für Wikipedal Konformität formatiert und ersetzt `{1}` \(Teil der URL\). Das Ergebnis besteht dann aus dem Namen des Autors, gefolgt von einem Wikipedia Icon, das nach folgender URL verlinkt:
+Die Metadaten-Konfiguration für `MD_AUTHOR` \(siehe erstes Beispiel\) enthält drei `<param>` Elemente: ein `field`, ein`wikifield` und ein `normdatauri`. Der unveränderte Wert in field ersetzt dabei `{1}` \(der angezeigte Name\). Derselbe Wert als wikifield wird für Wikipedal Konformität formatiert und ersetzt `{2}` \(Teil der URL\). Das Ergebnis besteht dann aus dem Namen des Autors, gefolgt von einem Wikipedia Icon, das nach folgender URL verlinkt:
 
 ```text
 http://en.wikipedia.org/wiki/Georges_Grosjean
 ```
 
-![](../../.gitbook/assets/titelleiste-2.png)
+{% hint style="info" %}
+Die Parameter werden mit `{0}`, `{1}`, ... angesprochen. Ist allerdings `group="true"` gesetzt, dann sind es `{1}`, `{3}`, ...
+{% endhint %}
 
