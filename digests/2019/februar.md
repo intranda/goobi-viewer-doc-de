@@ -56,7 +56,7 @@ Bei der Konfiguration der IIIF Presentation API ist es nun möglich einem Metada
 
 ### Authentifizierung gegen Littera webOPAC
 
-Neu hinzugekommen ist die Möglichkeit der Benutzerauthentifizierung gegen einen Littera webOPAC. Dafür wurde ein weiterer Authenticationprovider implementiert. Siehe auch [Kapitel 2.5.5](../../konfiguration-core/benutzeraccounts/littera.md).
+Neu hinzugekommen ist die Möglichkeit der Benutzerauthentifizierung gegen einen Littera webOPAC. Dafür wurde ein weiterer Authenticationprovider implementiert. Siehe auch [Kapitel 2.5.5]().
 
 ### Werke in Sammlungsanzeige wieder konfigurierbar
 

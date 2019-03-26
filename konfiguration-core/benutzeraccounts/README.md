@@ -1,14 +1,6 @@
 # 2.5 Benutzeraccounts
 
-Der Goobi viewer hat einen Benutzerbereich, der erst nach vorheriger Authentifizierung zugänglich ist. Für die Anmeldung stehen drei Wege zur Verfügung. Diese sind in den Unterkapiteln [OpenID Connect](openid-connect.md), [lokaler Benutzeraccount](lokaler-benutzeraccount.md) und [VueFind](2.5.3-vuefind.md) beschrieben.
+Der Goobi viewer hat einen Benutzerbereich, der erst nach vorheriger Authentifizierung zugänglich ist. Wie der Zugang zu diesem Bereich konfiguriert wird ist auf den Unterkapiteln beschrieben.
 
-Unabhängig von der gewählten Authentifizierungsart kann das Registrieren von neuen Accounts oder das Passwort zurücksetzen deaktiviert werden. Dazu dient der folgende Schalter:
-
-```markup
-<user>
-    <userRegistrationEnabled>true</userRegistrationEnabled>
-</user>
-```
-
-![Benutzerkonto](../../.gitbook/assets/benutzerkonto.png)
+![Anmeldebildschirm f&#xFC;r ein Benutzerkonto](../../.gitbook/assets/benutzerkonto.png)
 

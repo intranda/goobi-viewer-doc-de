@@ -66,7 +66,7 @@ Siehe dazu auch die [Hinweise für Administratoren bei den Core changes am 2018-
 
 ### Authentifizierung gegen Aleph X-Services
 
-Neu hinzugekommen ist die Möglichkeit die Benutzerauthentifizierung auch gegen einen Aleph X-Service laufen zu lassen. Dafür wurde ein neuer Authenticationprovider für bor\_auth implementiert. Siehe auch [Kapitel 2.5.4](../../konfiguration-core/benutzeraccounts/2.5.4-aleph-x-services.md)
+Neu hinzugekommen ist die Möglichkeit die Benutzerauthentifizierung auch gegen einen Aleph X-Service laufen zu lassen. Dafür wurde ein neuer Authenticationprovider für bor\_auth implementiert. Siehe auch [Kapitel 2.5.4]()
 
 ### optional automatische Phrasensuche
 

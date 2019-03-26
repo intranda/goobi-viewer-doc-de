@@ -1,22 +1,4 @@
-# 2.5.2 lokaler Benutzeraccount
-
-Der Zugriff über einen Goobi viewer internen Benutzeraccount wird wie folgt konfiguriert:
-
-```markup
-<user>
-    <authenticationProviders>
-        <provider type="local" show="true" name="Goobi viewer"/>
-    </authenticationProviders> 
-</user>
-```
-
-Folgende Parameter sind im `<provider>` Element für den `type="local"` verfügbar:
-
-| **Attribut** | Beschreibung |
-| :--- | :--- |
-| **type** | Definiert den Provider-Typ. Der Wert ist in diesem Fall immer `local`. |
-| **show** | Gibt an, ob der Provider auf der Anmeldeseite angezeigt werden soll oder ausgeblendet ist. Standardwert ist `true` |
-| **name** | Name des Providers.  |
+# 2.5.2 Emailversand
 
 Für die Registrierung eines lokalen Benutzeraccounts, wie auch für anderweitigen Mailversand muss ein Mailserver konfiguriert werden. Die Konfiguration dafür ist wie folgt:
 
