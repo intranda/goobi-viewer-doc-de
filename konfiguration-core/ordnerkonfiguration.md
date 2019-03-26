@@ -1,7 +1,5 @@
 # 2.3 Ordnerkonfiguration
 
-
-
 Der Goobi viewer enthält verschiedene Ordnerkonfigurationen, die im Folgenden näher erläutert sind.
 
 Der Parameter `configFolder` enthält den Pfad zum lokalen Konfigurationsordner. Dieser enthält angepasste Konfigurations- und Übersetzungsdateien, die die Standardkonfiguration überschreiben.
