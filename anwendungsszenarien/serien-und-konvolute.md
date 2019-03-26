@@ -67,6 +67,15 @@ Beispiel für das Mapping und Indexieren in der Goobi viewer Indexer Konfigurati
         </item>
     </list>
 </GROUPORDER_CONVOLUTE>
+
+<MD_TITLE_CONVOLUTE>
+    <list>
+        <item>
+            <xpath>mets:xmlData/mods:mods/mods:note[@type='convolutetitle']</xpath>
+            <addUntokenizedVersion>false</addUntokenizedVersion>
+        </item>
+    </list>
+</MD_TITLE_CONVOLUTE>
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -85,5 +94,5 @@ Beispiel für die Freischaltung in dem Goobi viewer Core:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Anhand der als Gruppen-Identifier definierter Felder werden im Inhaltsverzeichnis die durch die Gruppenzugehörigkeit entstandenen Hierarchien abgebildet. Der Teil des Feldnamens hinter `GROUPID_` bildet dabei eine konkrete Gruppe ab \(hier: `CONVOLUTE`\). Über das Feld `GROUPORDER_CONVOLUTE` wird dabei die Reihenfolge des Werks innerhalb der Gruppe definiert und entsprechend im Inhaltsverzeichnis verwendet.
+Anhand der als Gruppen-Identifier definierter Felder werden im Inhaltsverzeichnis die durch die Gruppenzugehörigkeit entstandenen Hierarchien abgebildet. Der Teil des Feldnamens hinter `GROUPID_` bildet dabei eine konkrete Gruppe ab \(hier: `CONVOLUTE`\). Über das Feld `GROUPORDER_CONVOLUTE` wird dabei die Reihenfolge des Werks innerhalb der Gruppe definiert und entsprechend im Inhaltsverzeichnis verwendet. Ist ein Feld mit dem Namensschema `MD_TITLE_<GRUPPE>` vorhanden \(z.B. `MD_TITLE_CONVOLUTE`\), wird daraus das Label des Gruppe gebildet.
 
