@@ -63,7 +63,7 @@ Anzahl der Werke, die ein Datenrepository maximal enthalten darf. Standardwert i
 
 Dieses Element darf beliebig oft existieren und definiert die einzelnen Datenrepositories. Es muss der volle Pfad zu dem Datenrepository eingetragen werden. In jedem Datenrepository befindet sich jeweils eine komplette Ordnerstruktur für Mediendateien, XML, Volltexte etc. Diese werden automatisch angelegt.
 
-Mit dem optionalen Attribut `buffer` kann speziell für `RemainingSpaceRepository` ein Speicherpuffer definiert werden, der ungenutzt bleiben soll. Es können hier Größen in Bytes, Megabytes \(großes "M" hinter der Zahl\) oder Gigabytes \(großes "G" hinter der Zahl\) angegeben werden. Standardwert ist 0 Bytes.
+Mit dem optionalen Attribut `buffer` kann speziell für `RemainingSpaceStrategy` ein Speicherpuffer definiert werden, der ungenutzt bleiben soll. Es können hier Größen in Bytes, Megabytes \(großes "M" hinter der Zahl\) oder Gigabytes \(großes "G" hinter der Zahl\) angegeben werden. Standardwert ist 0 Bytes.
 
 #### 3.2.7 Parameter: mediaFolder
 
