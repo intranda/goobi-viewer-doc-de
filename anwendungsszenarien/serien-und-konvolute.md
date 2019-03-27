@@ -166,5 +166,7 @@ Beispiel für die Freischaltung in dem Goobi viewer Core:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Anhand der als Gruppen-Identifier definierter Felder werden im Inhaltsverzeichnis die durch die Gruppenzugehörigkeit entstandenen Hierarchien abgebildet. Der Teil des Feldnamens hinter `GROUPID_` bildet dabei eine konkrete Gruppe ab \(hier: `SERIES`\). Über das Feld `GROUPORDER_SERIES` wird dabei die Reihenfolge des Werks innerhalb der Gruppe definiert und entsprechend im Inhaltsverzeichnis verwendet. Ist ein Feld mit dem Namensschema `MD_TITLE_<GRUPPE>` vorhanden \(z.B. `MD_TITLE_SERIES`\), wird daraus das Label des Gruppe gebildet.
+Anhand der als Gruppen-Identifier definierter Felder werden im Inhaltsverzeichnis die durch die Gruppenzugehörigkeit entstandenen Hierarchien abgebildet. Der Teil des Feldnamens hinter `GROUPID_` bildet dabei eine konkrete Gruppe ab \(hier: `SERIES`\). Über das Feld `GROUPORDER_SERIES` wird dabei die Reihenfolge des Werks innerhalb der Gruppe definiert und entsprechend im Inhaltsverzeichnis verwendet. 
+
+Ist ein Feld mit dem Namensschema `MD_TITLE_<GRUPPE>` vorhanden \(z.B. `MD_TITLE_SERIES`\), wird daraus das Label des Gruppe gebildet. Zusätzlich werden alle Felder mit dem Muster `MD_*_<GRUPPE>` in das Solr Doc der Gruppe geschrieben, um dort als Metadaten angezeigt werden zu könne \(ohne Gruppen-Suffix, also aus`MD_PUBLISHER_SERIES` wird z.B. `MD_PUBLISHER`\).
 
