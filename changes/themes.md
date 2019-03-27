@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2019-03-27
+
+Link zur Open Search Unterstützung eingefügt.
+
+* /boilerplate/template.html
+* /boilerplate/templateFullscreen.html
+
 ## 2019-03-25
 
 Änderung an LESS-Template und neues LESS-Template.
