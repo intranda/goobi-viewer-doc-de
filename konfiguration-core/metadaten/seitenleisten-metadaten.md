@@ -14,6 +14,17 @@ Die Konfiguration der Metadaten für die Seitenleiste erfolgt analog zu den Haup
                 <param type="wikifield" key="MD_AUTHOR" />
             </metadata>
         </template>
+        <template name="_GROUPS">
+            <metadata label="MD_TITLE" value="">
+                <param type="field" key="MD_TITLE" />
+            </metadata>
+            <metadata label="MD_PUBLISHER" value="">
+                <param type="field" key="MD_PUBLISHER" />
+            </metadata>
+            <metadata label="MD_PLACEPUBLISH" value="">
+                <param type="field" key="MD_PLACEPUBLISH" />
+            </metadata>
+        </template>
         <template name="Map">
             <metadata label="MD_TITLE" value="">
                 <param type="field" key="MD_TITLE" />
@@ -31,6 +42,8 @@ Die Konfiguration der Metadaten für die Seitenleiste erfolgt analog zu den Haup
 ```
 
 Die Konfigurationen werden dabei jeweils in einem Element `<template>` platziert. Im obigen Beispiel ist für den Strukturtyp Map eine eigene Metadatenliste konfiguriert, die zusätzlich das Metadatum `MD_COORDINATES` anzeigt. 
+
+Das Template `_GROUPS` wird speziell für die Konfiguration von Seitenleisten-Metadaten von Gruppen \(Bandserien\) verwendet.
 
 ![Metadaten in der Seitenleiste](../../.gitbook/assets/seitenleistenmetadaten.png)
 
