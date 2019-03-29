@@ -79,6 +79,8 @@ Im Backend steht eine Seite zur Verfügung auf der die Kategorien verwaltet werd
 
 Werke können nun direkt aus der Goobi viewer Oberfläche gelöscht werden. Dafür steht in dem Widget "Änderungen am Werk" eine neue Option zur Verfügung. Wenn URNs existieren kann ausgewählt werden, ob das Werk entfernt und URNs beibehalten werden, oder das Werk vollständig gelöscht werden soll. Diese Funktionalität steht nur Administratoren zur Verfügung.
 
+![Verschiedene Optionen und Hinweise zum L&#xF6;schen eines Werkes](../../.gitbook/assets/delete_record.png)
+
 ### Indexer: Buffer bei Data-Repositories
 
 Neben verschiedenen Bugfixes hat der Goobi viewer Indexer eine neue Funktionalität bei den Data-Repositories erhalten. Bei der `RemainingSpaceStrategy` kann nun mit dem optionalen `buffer` Attribut ein Speicherpuffer definiert werden, der auf dem Speicherbereich ungenutzt bleiben soll. Siehe auch [Kapitel 3.2.6](../../konfiguration-indexer/verzeichnisse.md#3-2-6-parameter-datarepositories-datarepository).
