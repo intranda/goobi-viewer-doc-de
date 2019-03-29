@@ -81,6 +81,21 @@ Werke können nun direkt aus der Goobi viewer Oberfläche gelöscht werden. Daf�
 
 ![Verschiedene Optionen und Hinweise zum L&#xF6;schen eines Werkes](../../.gitbook/assets/delete_record.png)
 
+Die Funktionalität kann auch via REST an dem folgenden Endpoint genutzt werden:
+
+```text
+https://viewer.example.org/viewer/rest/index/deleterecord/?token=test
+```
+
+An diesen Endpoint muss per POST die folgende Information geschickt werden:
+
+```javascript
+{
+    "pi":"IDENTIFIER",
+    "createTraceDocument":false
+}
+```
+
 ### Indexer: Buffer bei Data-Repositories
 
 Neben verschiedenen Bugfixes hat der Goobi viewer Indexer eine neue Funktionalität bei den Data-Repositories erhalten. Bei der `RemainingSpaceStrategy` kann nun mit dem optionalen `buffer` Attribut ein Speicherpuffer definiert werden, der auf dem Speicherbereich ungenutzt bleiben soll. Siehe auch [Kapitel 3.2.6](../../konfiguration-indexer/verzeichnisse.md#3-2-6-parameter-datarepositories-datarepository).
