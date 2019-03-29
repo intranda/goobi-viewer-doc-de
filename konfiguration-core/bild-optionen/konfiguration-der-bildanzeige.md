@@ -28,12 +28,12 @@ Die einzelnen Konfigurationsparameter werden im Folgenden erklärt:
 
 | **Option** | Beschreibung |
 | :--- | :--- |
-| **tileImage** | Legt fest, ob das Bild als ganzes oder gekachelt angezeigt werden soll. Für die gekachelte |
-| **footerHeight** | Die absolute Höhe des Footers in Pixeln. Um den Footer ganz auszuschalten, kann man hier einen Wert von „0“ eingeben. |
-| **scale** | Diese Konfiguration wird nur für tileImage=“false“ berücksichtigt. Dann gibt sie die Breite des angezeigten Bildes in Pixeln an. Dies ist nicht die Breite der Bildanzeige, die im html-code gestgelegt wird, sondern die Größe des Bildes, das zur Anzeige geladen wird.Diese Konfiguration ist beliebig wiederholbar, um das Bild in verschiedenen Auflösungen anzuzeigen. Größere Versionen des Bildes beim Zoomen der Bildanzeige werden nachgeladen.  |
-| **tileSize** | Diese Konfiguration wird nur für tileImage=“true“ berücksichtigt. Sie besteht aus zwei Teilkonfigurationen: scaleFactors und size.  |
+| **tileImage** | Legt fest, ob das Bild als ganzes oder gekachelt angezeigt werden soll.  |
+| **footerHeight** | Die absolute Höhe des Footers in Pixeln. Um den Footer ganz auszuschalten, kann man hier einen Wert von `"0"` eingeben. |
+| **scale** | Diese Konfiguration wird nur für `tileImage="false"` berücksichtigt. Dann gibt sie die Breite des angezeigten Bildes in Pixeln an. Dies ist nicht die Breite der Bildanzeige, die im HTML Code festgelegt wird, sondern die Größe des Bildes, das zur Anzeige geladen wird.Diese Konfiguration ist beliebig wiederholbar, um das Bild in verschiedenen Auflösungen anzuzeigen. Größere Versionen des Bildes beim Zoomen der Bildanzeige werden nachgeladen.  |
+| **tileSize** | Diese Konfiguration wird nur für `tileImage="true"` berücksichtigt. Sie besteht aus zwei Teilkonfigurationen: `scaleFactors` und `size`.  |
 
-`scaleFactors` ist eine Komma-separierte Liste von Skalierungsfaktoren, um die die Kacheln für die Anzeige verkleinert werden. Werden zum Beispiel die Faktoren 1 und 32 angegeben, werden erst Kacheln angezeigt, die das Bild in der Verkleinerung 1/32 anzeigen. Beim Heranzoomen werden diese Kacheln ersetzt durch solche, die das Bild in voller Auflösung zeigen. Es ist üblich, aber nicht zwingend erforderlich, in Zweierpotenzen zu skalieren. Diese Werte sind jedoch nur Richtlinien für die zugrundeliegende OpenSeadragon Implementierung, die in der Regel mehrere Vergrößerungen zwischen den angegebenen Werten verwendet.
+`scaleFactors` ist eine Komma-separierte Liste von Skalierungsfaktoren, um die die Kacheln für die Anzeige verkleinert werden. Werden zum Beispiel die Faktoren 1 und 32 angegeben, werden erst Kacheln angezeigt, die das Bild in der Verkleinerung 1/32 anzeigen. Beim Heranzoomen werden diese Kacheln ersetzt durch solche, die das Bild in voller Auflösung zeigen. Es ist üblich, aber nicht zwingend erforderlich, in Zweierpotenzen zu skalieren. Diese Werte sind jedoch nur Richtlinien für die zugrunde liegende OpenSeadragon Implementierung, die in der Regel mehrere Vergrößerungen zwischen den angegebenen Werten verwendet.
 
 `size` bestimmt die Größe der einzelnen Kacheln in Pixeln. Welchen Ausschnitt des tatsächlichen Bildes sie dabei abbilden, hängt von dem verwendeten `scaleFactor` ab. Bei einem `scaleFactor` von 4 und einer size von 512, wird ein 2048 mal 2048 Pixel großer Ausschnitt des Originalbildes pro Kachel angezeigt.
 

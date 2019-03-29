@@ -1,5 +1,11 @@
 # 9.2 Theme changes
 
+## 2019-03-29
+
+Änderung an LESS-Template.
+
+* /boilerplate/css/less/viewer/widgets/widgets.less
+
 ## 2019-03-27
 
 Link zur Open Search Unterstützung eingefügt.

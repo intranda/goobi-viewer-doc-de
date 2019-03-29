@@ -1,5 +1,11 @@
 # 9.1 Core changes
 
+## 2019-03-29
+
+Aktualisierung des Goobi viewer Indexers und Anpassen der Konfigurationsdatei `solr_indexerconfig.xml`. Wenn das Metadatum `MD_SERIESTITLE` existiert muss dieses in `MD_TITLE_SERIES` umbenannt werden. Siehe dazu auch den letzten Abschnitt in [Kapitel 6.2](../anwendungsszenarien/serien-und-konvolute.md).
+
+Außerdem kann aus der lokalen `config_viewer.xml` die Definition der Klassifikationen aus dem CMS-Bereich gelöscht werden \(config/cms/classifications\). Die Werte werden inzwischen in der Datenbank vorgehalten.
+
 ## 2019-02-14
 
 Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Mit dem Update des Cores muss zwingend auch der Goobi viewer Indexer und das Solr-Schema aktualisiert werden.
