@@ -1,5 +1,12 @@
 # 9.2 Theme changes
 
+## 2019-04-04
+
+Link für oEmbed Unterstützung eingefügt.
+
+* /boilerplate/template.html
+* /boilerplate/templateFullscreen.html
+
 ## 2019-03-29
 
 Änderung an LESS-Template.
