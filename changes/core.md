@@ -6,6 +6,14 @@ Aktualisierung des Goobi viewer Indexers und Anpassen der Konfigurationsdatei `s
 
 Außerdem kann aus der lokalen `config_viewer.xml` die Definition der Klassifikationen aus dem CMS-Bereich gelöscht werden \(config/cms/classifications\). Die Werte werden inzwischen in der Datenbank vorgehalten.
 
+Durch die Refaktorisierung des Medien-Bereichs sind einige Funktionen von dort an andere Stelle gewandert. Zum Beispiel auch die Zuweisung einer Bild-Datei zu einer Sammlung. Dieser Umzug muss manuell gemacht werden. Dafür ist vor dem Update folgendes SQL auszuführen:
+
+```sql
+SELECT cms_media_item_id, file_name, collection, collection_name, collection_field FROM cms_media_items WHERE collection=1;
+```
+
+Die Query liefert eine Liste aller Medien-Objekte die berücksichtigt werden müssen. Für jedes muss im CMS-Backend eine neue Sammlung angelegt werden mit `collection_field` als Sammlungsfeld und `collection_name` als Sammlungsname. Das Bild muss anhand der `id` oder des Dateinamens identifiziert werden.
+
 ## 2019-02-14
 
 Die Übersichtsseiten-Funktionalität wurde zugunsten einer CMS-Erweiterung entfernt. Mit dem Update des Cores muss zwingend auch der Goobi viewer Indexer und das Solr-Schema aktualisiert werden.
