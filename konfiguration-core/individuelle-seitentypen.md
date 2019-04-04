@@ -5,8 +5,9 @@ In dem URL Schema der Links des Goobi viewers gibt es feststehende Namen für ve
 ```markup
 <viewer>
     <pageTypes>
-        <!-- <viewImage>objekt</viewImage> -->
-        <!-- <search>suche</search> -->
+        <viewObject>objekt</viewObject>
+        <viewImage>objekt</viewImage>
+        <search>suche</search>
         <!-- <viewToc></viewToc> -->
         <!-- <viewThumbs></viewThumbs> -->
         <!-- <viewMetadata></viewMetadata> -->
