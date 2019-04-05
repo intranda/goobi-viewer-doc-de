@@ -1,4 +1,4 @@
-# 5.1.1 Seitenübersicht
+# 5.2.1 Seitenübersicht
 
 Die gesamte Tabelle der Seitenübersicht lässt sich über die Sucheingabe filtern. So ist es zum Beispiel möglich nach einem Seitentitel zu suchen und die Tabelle wird nach dem eingegebenen Begriff gefiltert.
 

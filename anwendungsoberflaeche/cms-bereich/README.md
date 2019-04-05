@@ -1,4 +1,4 @@
-# 5.1 CMS-Bereich
+# 5.2 CMS
 
 Der Goobi viewer verfügt über ein integriertes Content Management System, im Folgenden CMS genannt, mit dem es Benutzern möglich ist statische Inhalte wie Seiten oder Navigationsmenüs anzulegen und nachträglich zu bearbeiten. Dafür muss der Benutzer im Goobi viewer angemeldet sein und der Bentzeraccount über administrative Rechte verfügen.
 

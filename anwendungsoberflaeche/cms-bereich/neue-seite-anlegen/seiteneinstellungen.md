@@ -1,4 +1,4 @@
-# 5.1.2.3 Seiteneinstellungen
+# 5.2.2.3 Seiteneinstellungen
 
 Die Einstellungen der Seite sind in fünf Sektionen aufgeteilt, die sich wie folgt beschreiben.
 

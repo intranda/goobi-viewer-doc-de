@@ -1,4 +1,4 @@
-# 5.1.2.1 Seiteninhalte
+# 5.2.2.1 Seiteninhalte
 
 Die Templates sind so konfiguriert, dass es Pflichtfelder und optionale Eingabefelder gibt. Die Pflichtfelder sind mit einem Sternchen \* markiert. So muss zum Beispiel immer ein Titel und ein Menütitel für die Seite vergeben werden. Die Text- oder Bildeingaben können variieren, je nach dem wie das Template gestaltet wurde.
 

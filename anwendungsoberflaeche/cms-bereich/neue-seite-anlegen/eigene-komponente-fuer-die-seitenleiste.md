@@ -1,4 +1,4 @@
-# 5.1.2.2 Eigene Komponente für die Seitenleiste
+# 5.2.2.2 Eigene Komponente für die Seitenleiste
 
 Nach einem Klick auf die Schaltfläche `Neue Komponente erstellen` kann der Benutzer eigene Elemente für die Seitenleiste erstellen. Es öffnet sich ein Dialogfenster, in dem der Inhalt der Komponente festgelegt werden kann.
 

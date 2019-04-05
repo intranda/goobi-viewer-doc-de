@@ -1,4 +1,4 @@
-# 5.1.4 Medien
+# 5.2.5 Medien
 
 Auf der Medien-Seite des CMS hat der Benutzer die Möglichkeit Bilder für die Seiten und Artikel hochzuladen.
 

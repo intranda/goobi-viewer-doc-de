@@ -1,4 +1,4 @@
-# 5.1.3 Hauptmenü
+# 5.2.6 Menüs
 
 Um das Navigationsmenü des Goobi viewer zu konfigurieren, bietet das CMS die Möglichkeit die Menüpunkte festzulegen und Untermenüs zu erstellen.
 
