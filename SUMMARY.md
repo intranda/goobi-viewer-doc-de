@@ -124,6 +124,8 @@
       * [5.1.2.3 Seiteneinstellungen](anwendungsoberflaeche/cms-bereich/neue-seite-anlegen/seiteneinstellungen.md)
     * [5.1.3 Hauptmenü](anwendungsoberflaeche/cms-bereich/hauptmenue.md)
     * [5.1.4 Medien](anwendungsoberflaeche/cms-bereich/medien.md)
+    * [5.1.5 Subthemes](anwendungsoberflaeche/cms-bereich/5.1.5-subthemes.md)
+    * [5.1.6 Kategorien](anwendungsoberflaeche/cms-bereich/5.1.6-kategorien.md)
 * [6. Anwendungsszenarien](anwendungsszenarien/README.md)
   * [6.1 Crowdsourcing](anwendungsszenarien/crowdsourcing.md)
   * [6.2 Serien und Konvolute](anwendungsszenarien/serien-und-konvolute.md)
