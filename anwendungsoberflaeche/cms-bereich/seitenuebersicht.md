@@ -2,7 +2,7 @@
 
 Die gesamte Tabelle der Seitenübersicht lässt sich über die Sucheingabe filtern. So ist es zum Beispiel möglich nach einem Seitentitel zu suchen und die Tabelle wird nach dem eingegebenen Begriff gefiltert.
 
-![](../../.gitbook/assets/cms_seitenuebersicht.png)
+![](../../.gitbook/assets/cms__page_overview.png)
 
 Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die Tabelle ist wie folgt aufgegliedert:
 

@@ -2,7 +2,7 @@
 
 Um das Navigationsmenü des Goobi viewer zu konfigurieren, bietet das CMS die Möglichkeit die Menüpunkte festzulegen und Untermenüs zu erstellen.
 
-![](../../.gitbook/assets/cms_hauptmenue.png)
+![](../../.gitbook/assets/cms__menu.png)
 
 Die Auswahl ist in zwei Spalten aufgeteilt. In der rechten Spalte `Verfügbare Komponenten` werden die verfügbaren Menüpunkte aufgelistet und in der Spalte `Diese Komponenten verwenden`die angezeigten Menüpunkte aufgelistet.  
   
