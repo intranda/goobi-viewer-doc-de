@@ -36,10 +36,11 @@ Die Einstellungen der Seite sind in fünf Sektionen aufgeteilt, die sich wie fol
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>Klassifikationen </b>(Kategorien)</td>
-      <td style="text-align:left">&#xDC;ber das Auswahlmen&#xFC; kann die Klassifikation der Seite festgelegt
-        werden. Welche Klassifikationen zur Verf&#xFC;gung stehen sollen, kann
-        &#xFC;ber die Konfiguration des viewers festgelegt werden.</td>
+      <td style="text-align:left"><b>Kategorien </b>
+      </td>
+      <td style="text-align:left">&#xDC;ber das Auswahlmen&#xFC; k&#xF6;nnen Seiten einer oder mehreren
+        Kategorien zugewiesen werden. Die Kategorien werden zur Einbettung in andere
+        Templates oder f&#xFC;r die Zugriffsbeschr&#xE4;nkungen verwendet.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>Status</b>

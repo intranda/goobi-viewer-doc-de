@@ -9,9 +9,9 @@ Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die T
 | **Spalte**  | Beschreibung  |
 | :--- | :--- |
 | Typ | Der Typ der Seite beschreibt die Art des ausgewählten Templates in Form eines zugeordneten Symbols. |
-| **de / en / es**  | Diese Spalten zeigen, in welcher Sprache die Seite zur Verfügung steht. Ist die Landesflagge nicht ausgegraut, ist die Seite in die entsprechende Sprache übersetzt.  |
+| **de / es / fr / en**  | Diese Spalten zeigen, in welcher Sprache die Seite zur Verfügung steht. Ist die Landesflagge nicht ausgegraut, ist die Seite in die entsprechende Sprache übersetzt.  |
 | **Titel**  | Diese Spalte listet den Titel der Seite auf. Die Tabelle ist auch nach Titeln sortierbar.   |
-| **Klassifikationen\(Kategorien\)**  | Jede Seite kann klassifiziert werden. Diese Spalte zeigte die Klassifikation der Seite an. Die Tabelle ist auch nach Klassifikationen sortierbar. |
+| **Kategorien**  | Diese Spalte listet die der Seite zugewiesenen Kategorien auf. |
 | **Aktualisiert**  | Diese Spalte zeigt das Datum der letzten Aktualisierung an.  |
 | **Aktionen**  | In dieser Spalte werden die für die Seite verfügbaren Aktionen angezeigt. Die Seite kann bearbeitet, angesehen oder gelöscht werden. Die dazugehörigen Icons sind in den folgenden Abbildungen zu sehen.  |
 

@@ -12,9 +12,3 @@ Die Seitenauswahl listet die zur Verfügung stehenden Templates auf, die für da
 
 Die Eingabemaske zur Generierung einer neuen Seite ist in zwei Bereiche unterteilt. Auf der linken Seite befinden sich die Eingabefelder für die Seiteninhalte. Die rechte Seite zeigt Informationen und Einstellmöglichkeiten für die Seite. Hier sind auch die Schaltflächen zum Generieren einer Vorschau, zum Löschen und zum Speichern der Seite vorhanden.
 
-Möchte man eines der Widgets aktivieren, so muss es per Drag-and-Drop in die linke Spalte `Diese Komponenten` verwenden gezogen werden.  
-
-
-Um die Konfiguration der individuellen Seitenleiste abzuschließen, muss der Benutzer die Seite noch speichern. Über die Vorschau kann nun das Ergebnis überprüft werden.  
-
-
