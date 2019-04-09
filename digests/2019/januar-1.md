@@ -34,7 +34,7 @@ Sobald die IIIF Presentation API 3.0 stabil veröffentlicht wird, werden wir im 
 
 ### IIIF Snippets
 
-* Ein Presentation Manifest kann nun auch eine optionale Beschreibung enthalten. Dafür kann eine Liste an potentiellen Solr-Feldern definiert werden. Die Beschreibung selbst wird dann aus dem ersten gefüllten Feld genommen. Siehe auch [Kapitel 2.33.2](../../konfiguration-core/web-api/iiif.md).
+* Ein Presentation Manifest kann nun auch eine optionale Beschreibung enthalten. Dafür kann eine Liste an potentiellen Solr-Feldern definiert werden. Die Beschreibung selbst wird dann aus dem ersten gefüllten Feld genommen. Siehe auch [Kapitel 2.33.2](../../2/2.33/2.33.2.md).
 * In der Vergleichsansicht werden die Annotationsicons ausgeblendet, da diese Funktionalität dort nicht zur Verfügung steht.
 * Bei LIDO Objekten wird jetzt korrekt auf das LIDO Quelldokument verwiesen.
 
@@ -82,9 +82,9 @@ Außerdem wurden die Übersetzungen für Englisch und Spanisch überarbeitet und
 
 Bei den Zugriffslizenzen gab es eine speziellere Entwicklung bei der Definition von Bedingungen. Bisher konnten nur Solr-Queries als Bedingungen definiert werden um damit zum Beispiel eine Moving-Wall zu realisieren oder den PDF-Download auf bestimmte Dateinamen einzuschränken. Neuerdings kann als Bedingung hier auch mit `FILENAME:{REGEX}` ein regulärer Ausdruck definiert werden um in Kombination mit dem Recht "Dateien herunterzuladen" die Downloadmöglichkeit von Dateien anhand des Dateinamens zu steuern.
 
-Liegt im \_source Ordner ein oder mehrere Dateien die mit INTERN beginnen, so können diese über die Bedingung `FILENAME:{INTERN_.*}` gegriffen und zum Beispiel nur aus dem internen Netz verfügbar gemacht werden. Siehe auch [Kapitel 6.9.1](../../anwendungsszenarien/konfiguration-der-zugriffsbeschraenkung/lizenztypen.md).
+Liegt im \_source Ordner ein oder mehrere Dateien die mit INTERN beginnen, so können diese über die Bedingung `FILENAME:{INTERN_.*}` gegriffen und zum Beispiel nur aus dem internen Netz verfügbar gemacht werden. Siehe auch [Kapitel 6.9.1](../../6/6.8/6.8.1.md).
 
 ### Normalisierung von Sortierfelder
 
-Der Goobi viewer Indexer kann nun Zahlenwerte in Zeichenketten normalisieren um diese für eine korrekte Sortierung aufzubereiten. Siehe auch [Kapitel 3.7.17](../../konfiguration-indexer/weitere-optionen.md#3-7-17-parameter-normalizevalue).
+Der Goobi viewer Indexer kann nun Zahlenwerte in Zeichenketten normalisieren um diese für eine korrekte Sortierung aufzubereiten. Siehe auch [Kapitel 3.7.17](../../3/3.7.md#3-7-17-parameter-normalizevalue).
 

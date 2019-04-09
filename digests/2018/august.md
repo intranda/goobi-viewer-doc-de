@@ -31,5 +31,5 @@ Damit die Suchmaschinen die Reihenfolge von Seiten besser verstehen, wurden auf 
 
 ### Cronjob
 
-Es gibt bestimmte Aufgaben, die im Goobi viewer regelmäßig stattfinden sollen. Diese wurden zusammengetragen und in eine Cron-Datei zusammengefasst. Eine Vorlage dafür befindet sich in der [Updateanleitung](../../changes/core.md#2018-09-06).
+Es gibt bestimmte Aufgaben, die im Goobi viewer regelmäßig stattfinden sollen. Diese wurden zusammengetragen und in eine Cron-Datei zusammengefasst. Eine Vorlage dafür befindet sich in der [Updateanleitung](../../9/9.1.md#2018-09-06).
 

@@ -44,7 +44,7 @@ Außerdem wurde immer mal wieder der Wunsch geäußert auf Seiten mit einem Pagi
 
 ### Authentifizierung
 
-Der Goobi viewer bietet die Möglichkeit sich über einen lokalen oder einen OpenID Account \(zum Beispiel Google\) zu Authentifizieren. Dieser Bereich wurde intern überarbeitet und es besteht jetzt die neue Option sich gegen eine HTTP API von VuFind zu authentifizieren. Die [Dokumentation wurde aktualisiert](../../konfiguration-core/benutzeraccounts/) und [Anmerkungen die bei einem Update des Cores bedacht werden müssen](../../changes/core.md#2018-10-09) in die entsprechende Sektion der Dokumentationsplattform eingepflegt. 
+Der Goobi viewer bietet die Möglichkeit sich über einen lokalen oder einen OpenID Account \(zum Beispiel Google\) zu Authentifizieren. Dieser Bereich wurde intern überarbeitet und es besteht jetzt die neue Option sich gegen eine HTTP API von VuFind zu authentifizieren. Die [Dokumentation wurde aktualisiert](../../2/2.5/) und [Anmerkungen die bei einem Update des Cores bedacht werden müssen](../../9/9.1.md#2018-10-09) in die entsprechende Sektion der Dokumentationsplattform eingepflegt. 
 
 ### Indexer
 

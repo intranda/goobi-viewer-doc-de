@@ -13,11 +13,11 @@ Besonders erwähnenswert sind auch die Entwicklungen die rund um das CMS stattge
 
 Benutzeraccounts können jetzt in Abhängigkeit der jeweiligen Authentifizierungsmethode automatisch zu Gruppen hinzugefügt werden.   
 Ist zum Beispiel konfiguriert, dass der Goobi viewer gegen die Nutzerdatenbank des Bibliothekskatalogs authentifiziert, können alle Benutzer die einen Account im Katalog haben auch automatisch Mitglied einer bestimmten Gruppe im Goobi viewer werden. Im Zusammenspiel mit den Zugriffsbeschränkungen können dann zum Beispiel diesen Benutzern bestimmte Rechte zum Betrachten von Werken eingeräumt werden, die nicht Bibliotheksnutzern verwert bleiben.  
-Siehe auch [Kapitel 2.5](../../konfiguration-core/benutzeraccounts/) und dazugehörige Unterkapitel.
+Siehe auch [Kapitel 2.5](../../2/2.5/) und dazugehörige Unterkapitel.
 
 ### OpenSearch
 
-Der Goobi viewer unterstützt jetzt den OpenSearch Standard. Damit ist es möglich einfacher in den Datenbeständen einer Instanz zu suchen. In der Omnibar von Google Chrome wird automatisch eine Suche angeboten wenn hinter dem Domainnamen Tab gedrückt wird. In Firefox signalisiert das kleine grüne Plus an der Lupe im Feld für die Suchmaschinen die Verfügbarkeit. Für die Konfiguration siehe auch [Kapitel 2.34](../../konfiguration-core/2.34-opensearch.md). 
+Der Goobi viewer unterstützt jetzt den OpenSearch Standard. Damit ist es möglich einfacher in den Datenbeständen einer Instanz zu suchen. In der Omnibar von Google Chrome wird automatisch eine Suche angeboten wenn hinter dem Domainnamen Tab gedrückt wird. In Firefox signalisiert das kleine grüne Plus an der Lupe im Feld für die Suchmaschinen die Verfügbarkeit. Für die Konfiguration siehe auch [Kapitel 2.34](../../2/2.34.md). 
 
 ### Inline-Hilfe und Validierung im CMS
 
@@ -98,5 +98,5 @@ An diesen Endpoint muss per POST die folgende Information geschickt werden:
 
 ### Indexer: Buffer bei Data-Repositories
 
-Neben verschiedenen Bugfixes hat der Goobi viewer Indexer eine neue Funktionalität bei den Data-Repositories erhalten. Bei der `RemainingSpaceStrategy` kann nun mit dem optionalen `buffer` Attribut ein Speicherpuffer definiert werden, der auf dem Speicherbereich ungenutzt bleiben soll. Siehe auch [Kapitel 3.2.6](../../konfiguration-indexer/verzeichnisse.md#3-2-6-parameter-datarepositories-datarepository).
+Neben verschiedenen Bugfixes hat der Goobi viewer Indexer eine neue Funktionalität bei den Data-Repositories erhalten. Bei der `RemainingSpaceStrategy` kann nun mit dem optionalen `buffer` Attribut ein Speicherpuffer definiert werden, der auf dem Speicherbereich ungenutzt bleiben soll. Siehe auch [Kapitel 3.2.6](../../3/3.2.md#3-2-6-parameter-datarepositories-datarepository).
 

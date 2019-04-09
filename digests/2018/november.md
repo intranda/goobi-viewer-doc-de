@@ -22,19 +22,19 @@ Das Widget zeigt sofern vorhanden auch Links zu Volltexten und ALTO Dateien an. 
 
 In der Werksanzeige steht oberhalb des Bildes ein DropDown Menü zur Verfügung mit dem direkt eine Seite im Werk angesprungen werden kann. Der Aufbau war bisher stets "Bildnummer: Paginierungslabel" also zum Beispiel "`8: IV`".
 
-Die Anzeige in diesem DropDown Menü ist nun konfigurierbar. Mit Platzhaltern können jetzt auch Anzeigen wie nur  "`8`" oder "`8 von 17`" realisiert werden. Die Funktionalität ist im Kapitel [2.11.1](../../konfiguration-core/bild-optionen/erweitertes-blaettern-in-der-bildanzeige.md) beschrieben.
+Die Anzeige in diesem DropDown Menü ist nun konfigurierbar. Mit Platzhaltern können jetzt auch Anzeigen wie nur  "`8`" oder "`8 von 17`" realisiert werden. Die Funktionalität ist im Kapitel [2.11.1](../../2/2.11/2.11.1.md) beschrieben.
 
 ### Normdatenanzeige / Provenienzen
 
-Auch im Kontext Werksanzeige steht die neue Möglichkeit die Anzeige der Normdaten jetzt zu konfigurieren. Diese Entwicklung wurde für die Darstellung von Provenienzangaben innerhalb des Goobi viewers umgesetzt. War die Anzeige bisher starr vorgegeben, können die Felder einzeln konfiguriert und in der Reihenfolge festgelegt werden. Die Funktionalität ist in Kapitel [2.19.5](../../konfiguration-core/metadaten/2.19.5-normdatenanzeige.md) beschrieben.
+Auch im Kontext Werksanzeige steht die neue Möglichkeit die Anzeige der Normdaten jetzt zu konfigurieren. Diese Entwicklung wurde für die Darstellung von Provenienzangaben innerhalb des Goobi viewers umgesetzt. War die Anzeige bisher starr vorgegeben, können die Felder einzeln konfiguriert und in der Reihenfolge festgelegt werden. Die Funktionalität ist in Kapitel [2.19.5](../../2/2.19/2.19.5.md) beschrieben.
 
-Geändert hat sich der Feldtyp für die NORM\_URI Einträge in der config\_viewer.xml. Diese sind jetzt vom neuen Typ `normdatauri`. Bitte dafür auch die [Hinweise](../../changes/core.md#2018-11-19) für [Core Changes](../../changes/core.md) für Administratoren beachten.
+Geändert hat sich der Feldtyp für die NORM\_URI Einträge in der config\_viewer.xml. Diese sind jetzt vom neuen Typ `normdatauri`. Bitte dafür auch die [Hinweise](../../9/9.1.md#2018-11-19) für [Core Changes](../../9/9.1.md) für Administratoren beachten.
 
 ![Anzeige von Provenienzinformationen inklusive Normdaten](../../.gitbook/assets/bildschirmfoto-vom-2018-12-01-11-55-03.png)
 
 ### Watermark IDs
 
-Es besteht schon immer die Möglichkeit unter einem Bild einen Footer anzuzeigen. Dieser kann in Abhängigkeit eines Wertes eines Feldes im Solr Suchindex unterschiedlich sein. Neu ist die Möglichkeit den Wert `<watermarkIdField>` mehrfach zu definieren. Verwendet wird dann für die Bildfooter-ID der Wert aus dem ersten Feld, das nicht leer ist. Siehe auch Kapitel [2.11.9](../../konfiguration-core/bild-optionen/footer.md)
+Es besteht schon immer die Möglichkeit unter einem Bild einen Footer anzuzeigen. Dieser kann in Abhängigkeit eines Wertes eines Feldes im Solr Suchindex unterschiedlich sein. Neu ist die Möglichkeit den Wert `<watermarkIdField>` mehrfach zu definieren. Verwendet wird dann für die Bildfooter-ID der Wert aus dem ersten Feld, das nicht leer ist. Siehe auch Kapitel [2.11.9](../../2/2.11/2.11.9.md)
 
 ### Überschreiben von Lizenzen
 
@@ -48,5 +48,5 @@ Der Paginator für Seiten mit wenigen Bildern wurde weiter angepasst. So wird nu
 
 ### Sortierung und LIDO Events
 
-Der Goobi viewer Indexer wurde um eine neue Konfiguration ermöglicht, die es erlaubt Metadatenfelder aus LIDO Events in das Hauptelement zu schreiben. Damit kann dann nach Metadatenfeldern aus dem Event sortiert werden. Siehe Kapitel [3.7.2](../../konfiguration-indexer/weitere-optionen.md#3-7-2-parameter-addsortfieldtotopstruct).
+Der Goobi viewer Indexer wurde um eine neue Konfiguration ermöglicht, die es erlaubt Metadatenfelder aus LIDO Events in das Hauptelement zu schreiben. Damit kann dann nach Metadatenfeldern aus dem Event sortiert werden. Siehe Kapitel [3.7.2](../../3/3.7.md#3-7-2-parameter-addsortfieldtotopstruct).
 

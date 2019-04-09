@@ -62,19 +62,19 @@ Es ist ab sofort möglich nicht nur nach Dokumententypen \(Monographie, Karte, A
 
 ![Suchtreffer und Facettierung nach Sammlung, Dokument- und neu: Strukturtyp](../../.gitbook/assets/bildschirmfoto-vom-2018-12-20-16-35-16.png)
 
-Siehe dazu auch die [Hinweise für Administratoren bei den Core changes am 2018-12-17](../../changes/core.md#2018-12-17) sowie das aktualisierte [Kapitel 2.17.2](../../konfiguration-core/suche/facettierung.md) in der Dokumentation.
+Siehe dazu auch die [Hinweise für Administratoren bei den Core changes am 2018-12-17](../../9/9.1.md#2018-12-17) sowie das aktualisierte [Kapitel 2.17.2](../../2/2.17/2.17.2.md) in der Dokumentation.
 
 ### Authentifizierung gegen Aleph X-Services
 
-Neu hinzugekommen ist die Möglichkeit die Benutzerauthentifizierung auch gegen einen Aleph X-Service laufen zu lassen. Dafür wurde ein neuer Authenticationprovider für bor\_auth implementiert. Siehe auch [Kapitel 2.5.1](../../konfiguration-core/benutzeraccounts/2.5.1-authentifizierungs-provider.md)
+Neu hinzugekommen ist die Möglichkeit die Benutzerauthentifizierung auch gegen einen Aleph X-Service laufen zu lassen. Dafür wurde ein neuer Authenticationprovider für bor\_auth implementiert. Siehe auch [Kapitel 2.5.1](../../2/2.5/2.5.1.md)
 
 ### optional automatische Phrasensuche
 
-Bei der Suche in bestimmten Feldern, zum Beispiel der Signatur, möchte man automatisch eine Phrasensuche haben und keine enthaltenen Übereinstimmungen. Dafür gibt es nun in der erweiterten Suche das Attribut `untokenizeForPhraseSearch="true"`, siehe auch [Kapitel 2.17.3](../../konfiguration-core/suche/erweiterte-suche.md)
+Bei der Suche in bestimmten Feldern, zum Beispiel der Signatur, möchte man automatisch eine Phrasensuche haben und keine enthaltenen Übereinstimmungen. Dafür gibt es nun in der erweiterten Suche das Attribut `untokenizeForPhraseSearch="true"`, siehe auch [Kapitel 2.17.3](../../2/2.17/2.17.3.md)
 
 ### automatisches Öffnen eines Werkes bei nur einem Werk in einer Sammlung
 
-Ist in einer digitalen Sammlung nur ein Werk vorhanden wurde dieses standardmäßig geöffnet. Das Verhalten ist jetzt konfigurierbar und wenn ausgestellt wird eine Suchtrefferliste mit einem Werk angezeigt, siehe auch[ Kapitel 2.18.6](../../konfiguration-core/digitale-kollektionen/weitere-einstellungen.md)
+Ist in einer digitalen Sammlung nur ein Werk vorhanden wurde dieses standardmäßig geöffnet. Das Verhalten ist jetzt konfigurierbar und wenn ausgestellt wird eine Suchtrefferliste mit einem Werk angezeigt, siehe auch[ Kapitel 2.18.6](../../2/2.18/2.18.6.md)
 
 ### Performanceverbesserung bei Inhaltsverzeichnissen
 

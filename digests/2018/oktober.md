@@ -49,7 +49,7 @@ Alle Buttons die es in der Oberfläche gibt wurden analysiert und auf wenige unt
 
 ### Dokumentation
 
-In der Dokumentation sind diesen Monat zwei Dinge hinzugekommen. Zum Einen wurde in der Sektion FAQ die Frage beantwortet: "[Wie kann ich meinen gesamten Datenbestand im Goobi viewer neu indexieren?](../../faq.md#wie-kann-ich-meinen-gesamten-datenbestand-im-goobi-viewer-neu-indexieren)". Zum Anderen ist in den Anwendungsszenarien [Kapitel 6.13](../../anwendungsszenarien/6.13-untersammlungen-konfigurieren-und-anzeigen.md) neu hinzu gekommen in dem die Prozess- und Konfigurationskette beschrieben ist, wie von Goobi workflow angefangen über die Indexierung bis hin zur Anzeige im Goobi viewer Untersammlungen konfiguriert werden müssen.
+In der Dokumentation sind diesen Monat zwei Dinge hinzugekommen. Zum Einen wurde in der Sektion FAQ die Frage beantwortet: "[Wie kann ich meinen gesamten Datenbestand im Goobi viewer neu indexieren?](../../7.md#wie-kann-ich-meinen-gesamten-datenbestand-im-goobi-viewer-neu-indexieren)". Zum Anderen ist in den Anwendungsszenarien [Kapitel 6.13](../../6/6.11.md) neu hinzu gekommen in dem die Prozess- und Konfigurationskette beschrieben ist, wie von Goobi workflow angefangen über die Indexierung bis hin zur Anzeige im Goobi viewer Untersammlungen konfiguriert werden müssen.
 
 ### Indexer
 

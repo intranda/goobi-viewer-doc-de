@@ -52,21 +52,21 @@ Für CMS Seiten auf denen Sammlungen oder Suchtreffer angezeigt werden gibt es e
 
 ### IIIF
 
-Bei der Konfiguration der IIIF Presentation API ist es nun möglich einem Metadatum im Manifest ein anderes Label zu geben als in der Goobi viewer Oberfläche. Außerdem können auch Metadaten aus LIDO Events abgerufen werden. Siehe auch [Kapitel 2.33.2](../../konfiguration-core/web-api/iiif.md).
+Bei der Konfiguration der IIIF Presentation API ist es nun möglich einem Metadatum im Manifest ein anderes Label zu geben als in der Goobi viewer Oberfläche. Außerdem können auch Metadaten aus LIDO Events abgerufen werden. Siehe auch [Kapitel 2.33.2](../../2/2.33/2.33.2.md).
 
 ### Authentifizierung gegen Littera webOPAC
 
-Neu hinzugekommen ist die Möglichkeit der Benutzerauthentifizierung gegen einen Littera webOPAC. Dafür wurde ein weiterer Authenticationprovider implementiert. Siehe auch [Kapitel 2.5.1](../../konfiguration-core/benutzeraccounts/2.5.1-authentifizierungs-provider.md).
+Neu hinzugekommen ist die Möglichkeit der Benutzerauthentifizierung gegen einen Littera webOPAC. Dafür wurde ein weiterer Authenticationprovider implementiert. Siehe auch [Kapitel 2.5.1](../../2/2.5/2.5.1.md).
 
 ### Werke in Sammlungsanzeige wieder konfigurierbar
 
-Im Oktober haben wir die Strukturelemente-Whitelist gegen eine automatische Auflistung der Dokumententypen ersetzt. Unsere Intention dahinter war die vielen Fragen der Anwender obsolet zu machen, warum nach dem Einpflegen eines neuen Dokumententyps in Goobi workflow diese nach dem Export nicht auch im Goobi viewer auftauchen. Dieser Schritt fand nicht nur Zustimmung, da auch Logik entfallen ist die von verschiedenen Einrichtungen genutzt und gewünscht war. Aus diesem Grund steht jetzt wieder eine Konfigurationsoption in angepasster Form zur Verfügung. Anstelle einer Liste von Strukturelementen die aufgelistet werden, kann eine Solr-Query formuliert werden, mit der die Dokumenttypen und Strukturelemente definiert werden können. Siehe auch [Kapitel 2.18.7](../../konfiguration-core/digitale-kollektionen/strukturelement-whitelist.md).
+Im Oktober haben wir die Strukturelemente-Whitelist gegen eine automatische Auflistung der Dokumententypen ersetzt. Unsere Intention dahinter war die vielen Fragen der Anwender obsolet zu machen, warum nach dem Einpflegen eines neuen Dokumententyps in Goobi workflow diese nach dem Export nicht auch im Goobi viewer auftauchen. Dieser Schritt fand nicht nur Zustimmung, da auch Logik entfallen ist die von verschiedenen Einrichtungen genutzt und gewünscht war. Aus diesem Grund steht jetzt wieder eine Konfigurationsoption in angepasster Form zur Verfügung. Anstelle einer Liste von Strukturelementen die aufgelistet werden, kann eine Solr-Query formuliert werden, mit der die Dokumenttypen und Strukturelemente definiert werden können. Siehe auch [Kapitel 2.18.7](../../2/2.18/2.18.7.md).
 
 ### Stöbern
 
-Manchmal dauert das Stöbern in einem großen Datenbestand ganz schön lange. Um hier die Performance zu verbessern kann eine optionale Solr-Query übergeben werden um zum Beispiel nur in Strukturelementen nach Inhalten zu suchen. Mit dieser Anpassung konnte die Zeit für das Generieren der Stöbern-Seite auf einem Kundensystem um drei viertel reduziert werden. Siehe auch [Kapitel 2.19.8](../../konfiguration-core/metadaten/stoebern.md).
+Manchmal dauert das Stöbern in einem großen Datenbestand ganz schön lange. Um hier die Performance zu verbessern kann eine optionale Solr-Query übergeben werden um zum Beispiel nur in Strukturelementen nach Inhalten zu suchen. Mit dieser Anpassung konnte die Zeit für das Generieren der Stöbern-Seite auf einem Kundensystem um drei viertel reduziert werden. Siehe auch [Kapitel 2.19.8](../../2/2.19/2.19.8.md).
 
 ### Dokumentation
 
-Bei dem Brainstorm-Treffen zum Admin-Backend kam heraus, dass nicht bekannt war wie die Mehrsprachigkeit von Themes verwaltet und gesteuert werden kann. Nach kurzer Prüfung ist uns aufgefallen, dass das auch gar nicht dokumentiert war. Das haben wir direkt nachgeholt, für alle die es interessiert sei an dieser Stelle auf die Dokumentation, [Kapitel 6.12](../../anwendungsszenarien/mehrsprachigkeit.md) verwiesen.
+Bei dem Brainstorm-Treffen zum Admin-Backend kam heraus, dass nicht bekannt war wie die Mehrsprachigkeit von Themes verwaltet und gesteuert werden kann. Nach kurzer Prüfung ist uns aufgefallen, dass das auch gar nicht dokumentiert war. Das haben wir direkt nachgeholt, für alle die es interessiert sei an dieser Stelle auf die Dokumentation, [Kapitel 6.12](../../6/6.12.md) verwiesen.
 
