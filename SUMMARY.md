@@ -6,7 +6,7 @@
   * [2.1 Lokale Einstellungen](2/2.1.md)
   * [2.2 Übersetzungen](2/2.2.md)
   * [2.3 Ordnerkonfiguration](2/2.3.md)
-  * [2.4 URL Konfiguration](2/url-konfiguration.md)
+  * [2.4 URL Konfiguration](2/2.4.md)
   * [2.5 Benutzeraccounts](2/2.5/README.md)
     * [2.5.1 Authentifizierungs-Provider](2/2.5/2.5.1.md)
     * [2.5.2 Emailversand](2/2.5/2.5.2.md)
