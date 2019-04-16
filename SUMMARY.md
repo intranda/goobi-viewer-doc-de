@@ -86,6 +86,7 @@
     * [2.33.2 IIIF](2/2.33/2.33.2.md)
     * [2.33.3 Authentifizierung](2/2.33/2.33.3.md)
   * [2.34 OpenSearch](2/2.34.md)
+  * [2.35 Embedding](2/2.35-embedding.md)
 * [3. Konfiguration Indexer](3/README.md)
   * [3.1 Allgemeine Konfiguration](3/3.1.md)
   * [3.2 Verzeichnisse](3/3.2.md)
