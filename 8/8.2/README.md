@@ -1,5 +1,17 @@
 # 8.2 Theme changes
 
+## 2019-06-04
+
+{% hint style="info" %}
+Im Zuge der Umstellung auf Maven hat sich die Ordner- und Dateistruktur der Boilerplate geändert.
+
+Themes müssen an diese neue Struktur angepasst werden, damit sie lauffähig bleiben. Eine Anleitung zur Umstellung findet sich unter [8.2.1 Theme Umstellung zu Maven](8.2.1-theme-umstellung-auf-maven.md).
+{% endhint %}
+
+Änderungen am Gruntflile.
+
+* Gruntfile.js
+
 ## 2019-05-28
 
 Änderung an HTML-Template: Bibliothek für PDF-Anzeige hinzugefügt.
