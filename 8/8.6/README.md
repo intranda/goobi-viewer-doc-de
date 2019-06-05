@@ -26,7 +26,7 @@ Als Plugins empfehlen sich:
 
 ### **Tomcat Download**
 
-Der intranda viewer läuft auf einem Apache Tomcat, den man hier bekommt: [Tomcat Download](https://tomcat.apache.org/download-80.cgi)
+Der Goobi viewer läuft auf einem Apache Tomcat, den man hier bekommt: [Tomcat Download](https://tomcat.apache.org/download-80.cgi)
 
 ### **Tomcat Setup**
 
