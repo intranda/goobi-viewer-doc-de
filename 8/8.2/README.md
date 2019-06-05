@@ -5,7 +5,7 @@
 {% hint style="info" %}
 Im Zuge der Umstellung auf Maven hat sich die Ordner- und Dateistruktur der Boilerplate geändert.
 
-Themes müssen an diese neue Struktur angepasst werden, damit sie lauffähig bleiben. Eine Anleitung zur Umstellung findet sich unter [8.2.1 Theme Umstellung zu Maven](8.2.1-theme-umstellung-auf-maven.md).
+Themes müssen an diese neue Struktur angepasst werden, damit sie lauffähig bleiben. Eine Anleitung zur Umstellung findet sich unter [8.2.1 Theme Umstellung zu Maven](8.2.1.md).
 {% endhint %}
 
 Änderungen am Gruntflile.

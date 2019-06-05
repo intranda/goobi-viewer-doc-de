@@ -162,7 +162,7 @@
 * [8. Entwickler und Administratoren](8/README.md)
   * [8.1 Core changes](8/8.1.md)
   * [8.2 Theme changes](8/8.2/README.md)
-    * [8.2.1 Theme Umstellung zu Maven](8/8.2/8.2.1-theme-umstellung-auf-maven.md)
+    * [8.2.1 Theme Umstellung zu Maven](8/8.2/8.2.1.md)
   * [8.3 API Dokumentation](8/8.3.md)
   * [8.4 CMS-Templates](8/8.4/README.md)
     * [8.4.1 Dateistruktur](8/8.4/8.4.1.md)
