@@ -110,7 +110,11 @@ CREATE DATABASE viewer;
 USE viewer; INSERT INTO users (active,email,password_hash,score,superuser) VALUES (1,"goobiviewer@intranda.com","$2a$10$0iOXAD4/cs6G/XtByM4xPeLcZGhtiyrX7f0SJbKbYFWcOdr4VD4N.",0,1);
 ```
 
-Damit hat man einen Admin-Zugang mit den Zugangsdaten: _goobiviewer@intranda.com / goobiviewer_.
+Damit hat man einen Admin-Zugang mit den Zugangsdaten: _goobiviewer@intranda.com / goobiviewer_. 
+
+{% hint style="info" %}
+Dieser Schritt kann erst gemacht werden, wenn der Goobi viewer einmal gestartet wurde, um alle notwendigen Tabellen in der Datenbank anzulegen.
+{% endhint %}
 
 ## NodeJS
 
