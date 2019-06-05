@@ -169,6 +169,7 @@
     * [8.4.2 Inhalte der Dateien](8/8.4/8.4.2.md)
     * [8.4.3 Inhaltstypen](8/8.4/8.4.3.md)
   * [8.5 Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](8/8.5.md)
-  * [8.6 Entwicklungsumgebung](8/8.6.md)
+  * [8.6 Entwicklungsumgebung](8/8.6/README.md)
+    * [8.6.1 Allgemeine Einstellungen Eclipse](8/8.6/8.6.1-allgemeine-einstellungen-eclipse.md)
 * [9. Zusätzliche Details](9-1.md)
 

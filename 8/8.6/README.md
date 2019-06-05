@@ -1,34 +1,18 @@
 # 8.6 Entwicklungsumgebung
 
-{% hint style="danger" %}
-Im Zuge der Umstellung des Goobi viewers und dessen Themes auf Maven wird dieser Bereich überarbeitet und ist zum größten Teil veraltet. Wir werden ihn sobald wie möglich aktualisieren.
-{% endhint %}
+## JDK / JRE
 
-### JDK / JRE
-
-#### **JDK Download**
+### **JDK Download**
 
 Für die aktuelle eclipse Version ist eine aktuelle JDK notwendig: [JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-#### **JRE Download**
+### **JRE Download**
 
 Für den Tomcat Server und die Anwendung an sich wird ein Java Runtime Environment mindestens in der Version 7 benötigt, welches man hier bekommt: [JRE Download](https://www.java.com/de/download/)
 
-#### **JRE Setup \(macOS\)**
+## eclipse
 
-MacOS unterstützt von Haus aus Java nur bis Version 1.6. Hier muss man manuell Hand anlegen, um eclipse mit einer aktuellen Java-Version auszustatten. Hierzu lädt man sich das oben genannte JRE herunter, installiert es und implementiert es wie folgt:
-
-`Preferences -> Java`
-
-Hier jetzt **Add** anklicken und folgenden Pfad zum JRE \(hier Java 8\) angeben:
-
-`/Library/Java/JavaVirtualMachines/<JDK-Version>/Contents/Home`
-
-Anschließend überprüfen, ob in den JRE system libraries auch überall JDK 8 eingetragen ist. Falls nicht, dann einmal auf **Restore Default** klicken.
-
-### eclipse
-
-#### **eclipse Download**
+### **eclipse Download**
 
 Benötigt wird die Version **Eclipse IDE for Enterprise Java Developers**, die unter folgendem Link zu bekommen ist: [eclipse Download](https://www.eclipse.org/downloads/packages/)
 
@@ -38,17 +22,13 @@ Als Plugins empfehlen sich:
 * [Emmet](https://github.com/emmetio/emmet-eclipse)
 * [LESS](http://www.normalesup.org/~simonet/soft/ow/eclipse-less.html)
 
-Um zu verhindern, dass beim Bauen des Goobi viewers Fehler auftreten.
+## **Tomcat**
 
-* Preferences &gt; Java &gt; Compiler &gt; Building &gt; Build path problems &gt; Circular dependencies = Warning.
-
-### **Tomcat**
-
-#### **Tomcat Download**
+### **Tomcat Download**
 
 Der intranda viewer läuft auf einem Apache Tomcat, den man hier bekommt: [Tomcat Download](https://tomcat.apache.org/download-80.cgi)
 
-#### **Tomcat Setup \(macOS\)**
+### **Tomcat Setup**
 
 Unter macOS lädt man sich von oben genannten Link den gewünschten Tomcat runter und entpackt das Tomcat-Verzeichnis an die Stelle im Dateisystem, wo man den Server liegen haben möchte \(Programme eignet sich ganz gut\).
 
@@ -91,9 +71,9 @@ Hier muss zwischen den beiden &lt;Context&gt;-Tags folgender Eintrag getätigt w
 
 Zum Schluss klickt man mit rechter Maustaste auf das viewer-Projekt und wählt die Option **Run as -&gt; Run on Server** aus. Ist das Projekt im Tomcat geladen, klickt man doppelt auf den Server im Server-Tab und wechselt auf den Reiter **Modules**. Hier das Modul auswählen, auf **Edit...** klicken und **Auto reloading enabled** deaktivieren. Damit wird ein Neustart des Servers nach Dateiänderungen verhindert.
 
-#### JAI Libs
+### JAI Libs
 
-Um eine korrekte Darstellung der Bilder zu gewährleisten, müssen noch einige Bibliotheken in den **/lib/** Ordner im Tomcat-Verzeichnis kopiert werden. Es handelt sich um JAI Libs, die auf dem SHARE liegen:
+Um eine korrekte Darstellung der Bilder zu gewährleisten, müssen noch einige Bibliotheken in den **/lib/** Ordner im Tomcat-Verzeichnis kopiert werden. Es handelt sich um JAI Libs, die sich hier herunterladen lassen:
 
 Deploy/intrandaContentServer/jai\_codec-1.1.2\_01.jar   
 \(Download: [http://www.java2s.com/Code/JarDownload/jai/jai\_codec-1.1.2\_01.jar.zip](http://www.java2s.com/Code/JarDownload/jai/jai_codec-1.1.2_01.jar.zip)\)  
@@ -102,29 +82,21 @@ Deploy/intrandaContentServer/jai\_core-1.1.2\_01.jar
 Deploy/intrandaContentServer/jai\_imageio-1.0\_01.jar  
 \(Download: [http://www.java2s.com/Code/JarDownload/jai/jai\_imageio-1.1.jar.zip](http://www.java2s.com/Code/JarDownload/jai/jai_imageio-1.1.jar.zip)\)
 
-### MySQL
+## MySQL
 
-#### **MySQL Download**
+### **MySQL Download**
 
-Falls man die Datenbank lokal laufen lassen möchte, lädt man sich unter macOS/Windows den folgenden Server-Client runter: [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+Falls man die Datenbank lokal laufen lassen möchte, lädt man sich einen Server-Client für sein Betriebsystem runter. Hier ein paar Beispiele:
 
-Wer lieber mit einer grafischen Oberfläche arbeitet, der kann sich die Workbench-Software herunterladen und installieren: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+* [MySQL Server](https://dev.mysql.com/downloads/mysql/) \(macOS/Windows\)
+* [MAMP](https://www.mamp.info/de/downloads/) \(macOS/Windows\)
+* [XAMPP](https://www.apachefriends.org/de/download.html) \(Windows\)
 
-**macOS:** Via Terminal lässt sich MySQL dann wie folgt aufrufen:
+MAMP und XAMPP bringen beide eine graphische Oberfläche \(PHPMyAdmin\) mit, mit der Datenbanken angelegt und bearbeitet werden können.
 
-`/usr/local/mysql/bin/mysql -u root -p`
+Bei den Komplettlösungen MAMP und XAMPP ist zu beachten, dass sich die Ports des Tomcat- und des Apache-Webservers nicht in die Quere kommen und unterschiedlich vergeben werden müssen \(z.B. Tomcat = 8080; Apache = 8888\).
 
-Das Passwort ist standardmäßig **root**, was man für lokale Zwecke auch so lassen kann.
-
-**Windows:** Via Eingabeaufforderung \(cmd\) lässt sich MySQL dann wie folgt aufrufen:
-
-`C:\Program Files\MySQL Server 5.7\bin\mysql -u root -p`
-
-Das Passwort ist standardmäßig **root**, was man für lokale Zwecke auch so lassen kann.
-
-Natürlich funktionieren auch Komplettpakete wie [XAMPP](https://www.apachefriends.org/de/download.html) für Windows oder [MAMP](https://www.mamp.info/en/downloads/) für macOS. Dabei ist zu beachten, dass sich die Ports des Tomcat- und des Apache-Webservers nicht in die Quere kommen und unterschiedlich vergeben sind. Der Apache-Webserver wird in diesen Paketen für die PHPMyAdmin Oberfläche benötigt, die zur Verwaltung von Datenbanken dient.
-
-Nach dem Setup müssen noch zwei SQL-Statements eingegeben werden:
+### MySQL Setup
 
 1. Datenbank erstellen:
 
@@ -140,11 +112,13 @@ USE viewer; INSERT INTO users (active,email,password_hash,score,superuser) VALUE
 
 Damit hat man einen Admin-Zugang mit den Zugangsdaten: _goobiviewer@intranda.com / goobiviewer_.
 
-### NodeJS
+## NodeJS
 
-#### **NodeJS Download**
+### **NodeJS Download**
 
 Sowohl der Goobi viewer, als auch die Themes arbeiten mit dem Task-Runner **Grunt**, für den NodeJS installiert sein muss. Die aktuelle LTS Version findet man hier: [NodeJS Download](https://nodejs.org/en/download/)
+
+### NodeJS Setup
 
 Nach dem Setup wechselt man in das Installationsverzeichnis von Node und führt über die Konsole folgenden Befehl aus:
 
@@ -158,9 +132,9 @@ Dieser Schritt ist vor allem für **Windows** Nutzer wichtig, da Grunt global ve
 
 Eine Anleitung wie Grunt in eclipse zu benutzen ist findet man hier: [Grunt & eclipse](https://www.eclipse.org/community/eclipse_newsletter/2016/may/article4.php)
 
-### GIT
+## GIT
 
-#### **Repsository via GIT auschecken**
+### **Repsository via GIT auschecken**
 
 Zum auschecken des aktuellen masters oder eines anderen Branches geht man wie folgt vor:
 
@@ -168,14 +142,14 @@ Zum auschecken des aktuellen masters oder eines anderen Branches geht man wie fo
 
 Die URI zum Goobi viewer und dem Boilerplate Theme Repository lautet:
 
-**Goobi viewer Core**: [https://github.com/intranda/goobi-viewer-core.git](https://github.com/intranda/goobi-viewer-core.git)  
-**Goobi viewer Theme Boilerplate**: [https://github.com/intranda/goobi-viewer-theme-boilerplate.git](https://github.com/intranda/goobi-viewer-theme-boilerplate.git)
+**Goobi viewer Core**: [https://github.com/intranda/goobi-viewer-core](https://github.com/intranda/goobi-viewer-core.git)  
+**Goobi viewer Theme Boilerplate**: [https://github.com/intranda/goobi-viewer-theme-boilerplate](https://github.com/intranda/goobi-viewer-theme-boilerplate.git)
 
 Anschließend den Dialogen folgen und das gewünschte Repository auschecken.
 
-### Lokale Konfiguration
+## Lokale Konfiguration
 
-#### **Lokale Konfigurationsdatei anlegen \(macOS\)**
+### **Lokale Konfigurationsdatei anlegen \(macOS\)**
 
 Um die **config\_viewer.xml** lokal mit anderen Parametern überschreiben zu können, legt man sich im Root-Verzeichnis der Festplatte die folgende Orderstruktur an:
 
