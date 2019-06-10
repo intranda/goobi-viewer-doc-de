@@ -113,7 +113,7 @@
     * [4.1.7 MARCXML](4/4.1/4.1.7.md)
     * [4.1.8 Xepicur](4/4.1/4.1.8.md)
     * [4.1.9 Goobi viewer Übersichtsseiten](4/4.1/4.1.9.md)
-    * [4.1.10 Goobi viewer Crowdsourcing-Inhalte](4/4.1/4.1.10.md)
+    * [4.1.10 Goobi viewer Crowdsourcing](4/4.1/4.1.10.md)
     * [4.1.11 Sets definieren](4/4.1/4.1.11.md)
   * [4.2 SRU Schnittstelle](4/4.2.md)
 * [5. Anwendungsoberfläche](5/README.md)
