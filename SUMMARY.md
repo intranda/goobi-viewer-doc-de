@@ -28,7 +28,7 @@
     * [2.11.6 Einschränkung der Bild Skalierung](2/2.11/2.11.6.md)
     * [2.11.7 Thumbnail Einstellungen](2/2.11/2.11.7.md)
     * [2.11.8 Forcierte Bildformatkonversion](2/2.11/2.11.8.md)
-    * [2.11.9 Footer](2/2.11/2.11.9.md)
+    * [2.11.9 Image Footer](2/2.11/2.11.9.md)
   * [2.12 individuelle Seitentypen](2/2.12.md)
   * [2.13 Öffnen bestimmter Dokumententypen in alternativen Seitenansichten](2/2.13.md)
   * [2.14 Volltexthinweise](2/2.14.md)
