@@ -18,5 +18,5 @@ Folgende statische Felder sind stets enthalten:
 | **mediumimage**  | URL zum Thumbnail-Bild des Werkes in \(falls vorhanden\) in der Größe 600x500 px  |
 | **url**  | URL zur Bildansicht dieses Werks  |
 
-Details zur Konfiguration weiterer Felder können unter `Fehler! Verweisquelle konnte nicht gefunden werden.`gefunden werden.
+
 

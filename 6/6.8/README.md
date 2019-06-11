@@ -4,6 +4,8 @@ Der Goobi viewer unterstützt die Möglichkeit, bestimmte Aspekte eines Werks un
 
 Voraussetzung ist das Mitführen von sogenannten Access Conditions im Quelldokument des Werks als Metadatum. Die entsprechenden Werte müssen im Solr Index im das Feld ACCESSCONDITION gemappt werden:
 
+{% code-tabs %}
+{% code-tabs-item title="solr\_indexerconfig.xml" %}
 ```markup
 <ACCESSCONDITION>
     <list>
@@ -15,6 +17,8 @@ Voraussetzung ist das Mitführen von sogenannten Access Conditions im Quelldokum
     </list>
 </ACCESSCONDITION>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 
 
