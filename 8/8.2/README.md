@@ -9,7 +9,7 @@ Ergänzungen in der Datei `/WebContent/WEB-INF/web.xml` zur korrekten Weiterleit
 ```markup
 <filter>
     <filter-name>UrlRedirectFilter</filter-name>
-    <filter-class>de.intranda.digiverso.presentation.filters.UrlRedirectFilter</filter-class>
+    <filter-class>io.goobi.viewer.filters.UrlRedirectFilter</filter-class>
 </filter>
 <filter-mapping>
     <filter-name>UrlRedirectFilter</filter-name>
