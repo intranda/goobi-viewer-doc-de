@@ -1,5 +1,25 @@
 # 8.2 Theme changes
 
+## 2019-06-12
+
+Ergänzungen in der Datei `/WebContent/WEB-INF/web.xml` zur korrekten Weiterleitung von CMS-Seiten. Hier muss folgendes eingetragen werden.
+
+{% code-tabs %}
+{% code-tabs-item title="web.xml" %}
+```markup
+<filter>
+    <filter-name>UrlRedirectFilter</filter-name>
+    <filter-class>de.intranda.digiverso.presentation.filters.UrlRedirectFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>UrlRedirectFilter</filter-name>
+    <url-pattern>*.xhtml</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+</filter-mapping>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## 2019-06-04
 
 {% hint style="info" %}
