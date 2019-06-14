@@ -1,5 +1,11 @@
 # 8.2 Theme changes
 
+## 2019-06-13
+
+Änderung an LESS-Template.
+
+* /boilerplate/css/less/viewer/components/title.less
+
 ## 2019-06-12
 
 Ergänzungen in der Datei `/WebContent/WEB-INF/web.xml` zur korrekten Weiterleitung von CMS-Seiten. Hier muss folgendes eingetragen werden.
