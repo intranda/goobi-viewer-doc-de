@@ -1,5 +1,18 @@
 # 8.2 Theme changes
 
+## 2019-06-18
+
+Änderungen an `.gitignore`, damit verhindert wird, dass Projekteinstellungen von Eclipse in das Repository gepusht werden.
+
+* .gitignore
+
+Damit bereits vorhandene Dateien aus dem Cache des Repos verschwinden müssen noch Anpassungen im lokalen Repo vorgenommen werden. Dazu per Konsole folgende Befehle ausführen.
+
+`git rm --cached .settings/org.eclipse.wst.common.component`  
+`git rm --cached .project`
+
+Anschließend noch die Änderungen commiten und pushen.
+
 ## 2019-06-13
 
 Änderung an LESS-Template.
