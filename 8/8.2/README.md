@@ -1,5 +1,15 @@
 # 8.2 Theme changes
 
+## 2019-06-21
+
+Änderung an LESS-Templates.
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/components/forms/basics.less
+* /boilerplate/css/less/viewer/components/forms/form-controls.less
+* /boilerplate/css/less/viewer/components/buttons.less
+* ~~/boilerplate/css/less/viewer/components/forms.less~~
+
 ## 2019-06-18
 
 Änderungen an `.gitignore`, damit verhindert wird, dass Projekteinstellungen von Eclipse in das Repository gepusht werden.
