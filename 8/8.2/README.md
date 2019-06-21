@@ -9,6 +9,7 @@
 * /boilerplate/css/less/viewer/components/forms/form-controls.less
 * /boilerplate/css/less/viewer/components/buttons.less
 * ~~/boilerplate/css/less/viewer/components/forms.less~~
+* /boilerplate/css/less/viewer/widgets/widgets.less
 
 ## 2019-06-18
 
