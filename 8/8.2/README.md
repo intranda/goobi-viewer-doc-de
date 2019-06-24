@@ -2,10 +2,12 @@
 
 ## 2019-06-24
 
-Änderungen am Gruntfile. Entfernung des CSS-Dev-Ordners.
+Änderungen am Gruntfile. Entfernung des CSS-Dev-Ordners und der statischen Seiten.
 
 * Gruntfile.js
+* /themes/theme-url-mappings.xml
 * ~~/boilerplate/css/dev/~~
+* ~~/boilerplate/pages/~~
 
 ## 2019-06-21
 
