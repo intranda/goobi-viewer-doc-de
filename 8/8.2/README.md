@@ -1,5 +1,12 @@
 # 8.2 Theme changes
 
+## 2019-06-24
+
+Änderungen am Gruntfile. Entfernung des CSS-Dev-Ordners.
+
+* Gruntfile.js
+* ~~/boilerplate/css/dev/~~
+
 ## 2019-06-21
 
 Änderung an LESS-Templates.
