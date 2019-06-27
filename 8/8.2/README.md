@@ -74,8 +74,10 @@ Themes müssen an diese neue Struktur angepasst werden, damit sie lauffähig ble
 
 Änderungen an LESS-Templates.
 
+* /boilerplate/css/less/resets.less
 * /boilerplate/css/less/viewer/constructor.less
 * /boilerplate/css/less/viewer/components/loginNavigation.less
+* ~~/boilerplate/css/less/viewer/components/modals.less~~
 * /boilerplate/css/less/viewer/views/user/user.less
 * ~~/boilerplate/css/less/viewer/views/user/userData.less~~
 * ~~/boilerplate/css/less/viewer/views/user/userAccountCreate.less~~
@@ -97,7 +99,7 @@ Basis Schriftgröße auf 62.5% \(10px\) gesetzt, um besser mit der Einheit `rem`
 
 Einsetzen einer `<h:panelGroup id="subBody">...</h:panelGroup>`, um die Seite mit `<f:ajax render="subBody" />` neu laden zu können, ohne die angehängten Events vom Body-Element zu zerstören.
 
-* \boilerplate\template.html
+* /boilerplate/template.html
 
 ## 2019-05-20
 
