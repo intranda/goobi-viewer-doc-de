@@ -85,6 +85,7 @@
     * [2.33.1 JSON](2/2.33/2.33.1.md)
     * [2.33.2 IIIF](2/2.33/2.33.2.md)
     * [2.33.3 Authentifizierung](2/2.33/2.33.3.md)
+    * [2.33.4 CORS](2/2.33/2.33.4.md)
   * [2.34 OpenSearch](2/2.34.md)
   * [2.35 Embedding](2/2.35.md)
 * [3. Konfiguration Indexer](3/README.md)
