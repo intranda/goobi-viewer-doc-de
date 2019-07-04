@@ -1,5 +1,37 @@
 # 8.2 Theme changes
 
+## 2019-07-04
+
+Änderungen am Gruntfile und HTML-Templates.
+
+* Gruntfile.js
+* /boilerplate/template.html
+* /boilerplate/templateFullscreen.html
+* /boilerplate/includes/customJS.xhtml
+
+Umstrukturierung der Ordner und Dateien im Verzeichnis `/boilerplate/css/less/`.
+
+```text
+less
+  cms
+   |_templates
+  components
+   |_forms
+  crowdsourcing
+   |_components
+   |_views
+  layout
+  misc
+  subthemes
+   |_boilerplate-subtheme
+  views
+   |_common
+   |_fulsscreen
+   |_search
+   |_user
+  widgets
+```
+
 ## 2019-06-24
 
 Änderungen am Gruntfile. Entfernung des CSS-Dev-Ordners und der statischen Seiten.
@@ -8,6 +40,7 @@
 * /themes/theme-url-mappings.xml
 * ~~/boilerplate/css/dev/~~
 * ~~/boilerplate/pages/~~
+* ~~/boilerplate/css/less/views/common/styles.less~~
 
 ## 2019-06-21
 
