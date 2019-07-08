@@ -46,24 +46,18 @@ less
 
 Änderung an LESS-Templates.
 
-* /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/components/forms/basics.less
-* /boilerplate/css/less/viewer/components/forms/form-controls.less
-* /boilerplate/css/less/viewer/components/buttons.less
-* ~~/boilerplate/css/less/viewer/components/forms.less~~
-* /boilerplate/css/less/viewer/widgets/widgets.less
-
-## 2019-06-18
-
-Änderungen an `.gitignore`, damit verhindert wird, dass Projekteinstellungen von Eclipse in das Repository gepusht werden.
-
-* .gitignore
+* /boilerplate/css/less/build.less
+* /boilerplate/css/less/components/forms/basics.less
+* /boilerplate/css/less/components/forms/form-controls.less
+* /boilerplate/css/less/components/buttons.less
+* ~~/boilerplate/css/less/components/forms.less~~
+* /boilerplate/css/less/widgets/widgets.less
 
 ## 2019-06-13
 
 Änderung an LESS-Template.
 
-* /boilerplate/css/less/viewer/components/title.less
+* /boilerplate/css/less/components/title.less
 
 ## 2019-06-12
 
