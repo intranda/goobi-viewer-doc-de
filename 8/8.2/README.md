@@ -9,7 +9,7 @@ ACHTUNG! Noch nicht in den master übernommen. Dient nur als Hinweis!
 Änderungen an LESS-Templates und neue LESS-Templates.
 
 * /boilerplate/css/less/constructor.less 
-* /boilerplate/css/less/components/icons.less 
+* /boilerplate/css/less/layout/misc.less
 * /boilerplate/css/less/views/viewObjectFullscreen.less 
 * /boilerplate/css/less/views/fullscreen/fsSearchInCurrentItem.less 
 * /boilerplate/css/less/views/fullscreen/fsSign.less 
