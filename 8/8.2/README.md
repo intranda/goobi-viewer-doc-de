@@ -1,5 +1,20 @@
 # 8.2 Theme changes
 
+## 2019-07-18
+
+{% hint style="warning" %}
+ACHTUNG! Noch nicht in den master übernommen. Dient nur als Hinweis!
+{% endhint %}
+
+Änderungen an LESS-Templates und neue LESS-Templates.
+
+* /boilerplate/css/less/constructor.less 
+* /boilerplate/css/less/components/icons.less 
+* /boilerplate/css/less/views/viewObjectFullscreen.less 
+* /boilerplate/css/less/views/fullscreen/fsSearchInCurrentItem.less 
+* /boilerplate/css/less/views/fullscreen/fsSign.less 
+* /boilerplate/css/less/views/fullscreen/fsSocialMedia.less
+
 ## 2019-07-04
 
 Änderungen am Gruntfile und HTML-Templates.
