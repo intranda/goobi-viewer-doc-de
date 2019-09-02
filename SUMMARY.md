@@ -178,5 +178,6 @@
   * [8.6 Entwicklungsumgebung](8/8.6/README.md)
     * [8.6.1 Allgemeine Einstellungen Eclipse](8/8.6/8.6.1-allgemeine-einstellungen-eclipse.md)
     * [8.6.2 Alternative Entwicklungsumgebung mit VS Code \(experimentell\)](8/8.6/8.6.2-alternative-entwicklungsumgebung-mit-vs-code-experimentell.md)
+  * [8.7 Installationsanleitung](8/8.7.md)
 * [9. Zusätzliche Details](9-1.md)
 
