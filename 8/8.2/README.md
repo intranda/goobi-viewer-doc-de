@@ -12,8 +12,6 @@ Ersetzen:
 <excludes>MANIFEST.MF,**/pom.*,install/</excludes>
 ```
 
-
-
 ## 2019-07-04
 
 Änderungen am Gruntfile und HTML-Templates.
