@@ -1,19 +1,18 @@
 # 8.2 Theme changes
 
-## 2019-07-18
+## 2019-09.05
 
-{% hint style="warning" %}
-ACHTUNG! Noch nicht in den master übernommen. Dient nur als Hinweis!
-{% endhint %}
+Änderungen an der pom.xml. Damit keine Installationsresourcen mit in die war übernommen werden muss der Ordner bei der unpack-dependency des maven-dependency-plugins mit ausgeschlossen werden.
 
-Änderungen an LESS-Templates und neue LESS-Templates.
+```text
+Suchen:
+<excludes>MANIFEST.MF,**/pom.*</excludes>
 
-* /boilerplate/css/less/constructor.less 
-* /boilerplate/css/less/layout/misc.less
-* /boilerplate/css/less/views/viewObjectFullscreen.less 
-* /boilerplate/css/less/views/fullscreen/fsSearchInCurrentItem.less 
-* /boilerplate/css/less/views/fullscreen/fsSign.less 
-* /boilerplate/css/less/views/fullscreen/fsSocialMedia.less
+Ersetzen:
+<excludes>MANIFEST.MF,**/pom.*,install/</excludes>
+```
+
+
 
 ## 2019-07-04
 
