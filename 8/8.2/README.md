@@ -1,6 +1,12 @@
 # 8.2 Theme changes
 
-## 2019-09.05
+## 2019-10-30
+
+Neues Template Campaign hinzugefügt
+
+* /boilerplate/templateCrowdsourcing.html
+
+## 2019-09-05
 
 Änderungen an der pom.xml. Damit keine Installationsresourcen mit in die war übernommen werden muss der Ordner bei der unpack-dependency des maven-dependency-plugins mit ausgeschlossen werden.
 
