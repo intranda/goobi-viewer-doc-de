@@ -44,8 +44,8 @@ Jetzt sollte man unter den Projekten einen Ordner **Servers** sehen. Hier muss f
 
 Hier muss zwischen den beiden &lt;Context&gt;-Tags folgender Eintrag getätigt werden:
 
-{% code-tabs %}
-{% code-tabs-item title="context.xml" %}
+{% tabs %}
+{% tab title="context.xml" %}
 ```markup
 <Resource 
    	name="viewer" 
@@ -66,8 +66,8 @@ Hier muss zwischen den beiden &lt;Context&gt;-Tags folgender Eintrag getätigt w
 	username="root" 
 	password="root" />
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Zum Schluss klickt man mit rechter Maustaste auf das viewer-Projekt und wählt die Option **Run as -&gt; Run on Server** aus. Ist das Projekt im Tomcat geladen, klickt man doppelt auf den Server im Server-Tab und wechselt auf den Reiter **Modules**. Hier das Modul auswählen, auf **Edit...** klicken und **Auto reloading enabled** deaktivieren. Damit wird ein Neustart des Servers nach Dateiänderungen verhindert.
 
@@ -163,8 +163,8 @@ Alle diese Ordner brauchen Lese- und Schreibrechte \(777\).
 
 Die **config\_viewer.xml** muss dann wie folgt angepasst werden, damit die lokale config erkannt wird:
 
-{% code-tabs %}
-{% code-tabs-item title="config\_viewer.xml" %}
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
 ```markup
 <!-- ##### LOCAL PATHS ##### -->
 <!-- configFolder: contains local configuration files, i.e. this file with local modifications that override the global one -->
@@ -182,8 +182,8 @@ Die **config\_viewer.xml** muss dann wie folgt angepasst werden, damit die lokal
 <!-- oaiConfigFile: location of configuration file for the OAI-PMH interface -->
 <oaiConfigFile>/opt/digiverso/viewer/config/config_oai.xml</oaiConfigFile>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 Jetzt können in eben angelegtem Ordner lokale configs angelegt werden.
 
