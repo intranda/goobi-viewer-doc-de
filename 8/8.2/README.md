@@ -81,8 +81,7 @@ less
 
 Ergänzungen in der Datei `/WebContent/WEB-INF/web.xml` zur korrekten Weiterleitung von CMS-Seiten. Hier muss folgendes eingetragen werden.
 
-{% tabs %}
-{% tab title="web.xml" %}
+{% code title="web.xml" %}
 ```markup
 <filter>
     <filter-name>UrlRedirectFilter</filter-name>
@@ -94,8 +93,7 @@ Ergänzungen in der Datei `/WebContent/WEB-INF/web.xml` zur korrekten Weiterleit
     <dispatcher>REQUEST</dispatcher>
 </filter-mapping>
 ```
-{% endtab %}
-{% endtabs %}
+{% endcode %}
 
 ## 2019-06-04
 
