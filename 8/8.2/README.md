@@ -1,5 +1,24 @@
 # 8.2 Theme changes
 
+## 2019-11-20
+
+Neue header-Zeilen in allen template\*.html-Dateien:  
+Die Zeile
+
+```markup
+	<meta name="version" content="#{navigationHelper.version}" />
+```
+
+ersetzen durch
+
+```markup
+	<meta name="application" content="#{navigationHelper.applicationName}" />
+	<meta name="version" content="#{navigationHelper.version}" />
+	<meta name="public version" content="#{navigationHelper.publicVersion}" />
+	<meta name="build date" content="#{navigationHelper.buildDate}" />
+	<meta name="git-revision" content="#{navigationHelper.buildVersion}" />
+```
+
 ## 2019-10-30
 
 Neues Template Campaign hinzugefügt
