@@ -1,8 +1,19 @@
 # 8.2 Theme changes
 
+## 2019-11-29
+
+In die Datei template.html folgende Zeile einfügen:
+
+```markup
+    <script type="text/javascript" src="#{request.contextPath}/resources/javascript/dist/browsersupport.min.js"></script>
+```
+
+Am besten oberhalb der Zeile, die das viewer.min.js Script einbindet.
+
 ## 2019-11-20
 
-Neue header-Zeilen in allen template\*.html-Dateien:  
+Neue header-Zeilen in allen template\*.html-Dateien:
+
 Die Zeile
 
 ```markup
