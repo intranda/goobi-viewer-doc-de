@@ -1,5 +1,16 @@
 # 8.2 Theme changes
 
+## 2019-12-02
+
+Folgende Komponenten sind als obsolet entfernt worden:
+
+* `resources/components/widgets/widget_bookshelves.xhtml`
+* `resources/components/widgets/widget_bookshelfList.xhtml`
+* `resources/components/widgets/widget_mySearches.xhtml`
+* `resources/components/dialogAddToBookshelf.xhtml`
+
+Die entsprechenden Includes müssen entfernt werden. Die entsprechenden Funktionalitäten können im Login-Menü hinzugefügt werden \(vgl. Reference-Theme\).
+
 ## 2019-11-29
 
 In die Datei template.html folgende Zeile einfügen:
