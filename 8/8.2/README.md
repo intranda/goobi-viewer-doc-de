@@ -2,14 +2,23 @@
 
 ## 2019-12-02
 
-Folgende Komponenten sind als obsolet entfernt worden:
+Folgende Komponenten sind im Core entfernt worden:
 
 * `resources/components/widgets/widget_bookshelves.xhtml`
 * `resources/components/widgets/widget_bookshelfList.xhtml`
 * `resources/components/widgets/widget_mySearches.xhtml`
 * `resources/components/dialogAddToBookshelf.xhtml`
 
-Die entsprechenden Includes müssen entfernt werden. Die entsprechenden Funktionalitäten können im Login-Menü hinzugefügt werden \(vgl. Reference-Theme\).
+Die entsprechenden Includes müssen aus den HTML/XHTML Dateien der Themes entfernt werden.
+
+Änderung an LESS-Templates:
+
+* boilerplate/css/less/build.less
+* ~~boilerplate/css/less/widgets/widgetBookshelves.less~~
+* ~~boilerplate/css/less/widgets/widgetBookshelfList.less~~
+* ~~boilerplate/css/less/widgets/widgetMySearches.less~~
+
+ Die entsprechenden Funktionalitäten können im Login-Menü hinzugefügt werden \(vgl. Reference-Theme\).
 
 ## 2019-11-29
 
