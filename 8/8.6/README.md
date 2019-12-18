@@ -1,185 +1,269 @@
 # 8.6 Entwicklungsumgebung
 
-## JDK / JRE
+## Einleitung
 
-### **JDK Download**
+Die folgende Anleitung für die Einrichtung einer Entwicklungsumgebung wurde für Ubuntu Linux geschrieben und ist analog auf andere Betriebssysteme übertragbar. Sie ist als Schritt für Schritt Anleitung von oben nach unten geschrieben, das bedeutet, dass Einstellungen und Konfigurationen aufeinander aufbauen. Wird die Reihenfolge nicht eingehalten, können unter Umständen unerwünschte Effekte auftreten.
 
-Für die aktuelle eclipse Version ist eine aktuelle JDK notwendig: [JDK Download](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+## Vorbereitung
 
-### **JRE Download**
+Im Homeverzeichnis einen Ordner `Entwicklungsumgebung`anlegen:
 
-Für den Tomcat Server und die Anwendung an sich wird ein Java Runtime Environment mindestens in der Version 7 benötigt, welches man hier bekommt: [JRE Download](https://www.java.com/de/download/)
-
-## eclipse
-
-### **eclipse Download**
-
-Benötigt wird die Version **Eclipse IDE for Enterprise Java Developers**, die unter folgendem Link zu bekommen ist: [eclipse Download](https://www.eclipse.org/downloads/packages/)
-
-Als Plugins empfehlen sich:
-
-* [Darkest Dark Theme](https://marketplace.eclipse.org/content/darkest-dark-theme-devstyle) \(eclipse Marketplace\)
-* [Emmet](https://github.com/emmetio/emmet-eclipse)
-* [LESS](http://www.normalesup.org/~simonet/soft/ow/eclipse-less.html)
-
-## **Tomcat**
-
-### **Tomcat Download**
-
-Der Goobi viewer läuft auf einem Apache Tomcat, den man hier bekommt: [Tomcat Download](https://tomcat.apache.org/download-80.cgi)
-
-### **Tomcat Setup**
-
-Unter macOS lädt man sich von oben genannten Link den gewünschten Tomcat runter und entpackt das Tomcat-Verzeichnis an die Stelle im Dateisystem, wo man den Server liegen haben möchte \(Programme eignet sich ganz gut\).
-
-Anschließend bindet man ihn wie folgt in eclipse ein:
-
-`Window -> Show View -> Servers -> New -> Server`
-
-Jetzt den Ordner **Apache** auswählen und den entsprechenden Server auswählen. **Next** klicken. Jetzt den Pfad zum Tomcat in das entsprechende Feld eintragen und als JRE **Workbench default JRE** auswählen. Anschließend auf **Finish** klicken.
-
-Jetzt sollte man unter den Projekten einen Ordner **Servers** sehen. Hier muss folgende Datei editiert werden, um Verbindung zur Datenbank zu bekommen:
-
-`Servers -> Tomcat v8.0 Server at localhost-config -> context.xml`
-
-Hier muss zwischen den beiden &lt;Context&gt;-Tags folgender Eintrag getätigt werden:
-
-{% code title="context.xml" %}
-```markup
-<Resource 
-   	name="viewer" 
-   	auth="Container"
-	type="javax.sql.DataSource" 
-	driverClassName="org.mariadb.jdbc.Driver"
-	removeAbandoned="true" 
-	removeAbandonedTimeout="120" 
-	logAbandoned="true"
-	maxActive="100" 
-	maxIdle="30" 
-	maxWait="30s" 
-	testWhileIdle="true"
-	testOnBorrow="true" 
-	testOnReturn="true"
-	validationQuery="SELECT SQL_NO_CACHE 1"
-	url="jdbc:mysql://localhost:3306/viewer?characterEncoding=UTF-8&amp;autoReconnect=true&amp;autoReconnectForPools=true"
-	username="root" 
-	password="root" />
+```text
+mkdir ~/Entwicklungsumgebung
 ```
-{% endcode %}
 
-Zum Schluss klickt man mit rechter Maustaste auf das viewer-Projekt und wählt die Option **Run as -&gt; Run on Server** aus. Ist das Projekt im Tomcat geladen, klickt man doppelt auf den Server im Server-Tab und wechselt auf den Reiter **Modules**. Hier das Modul auswählen, auf **Edit...** klicken und **Auto reloading enabled** deaktivieren. Damit wird ein Neustart des Servers nach Dateiänderungen verhindert.
+## Download
 
-### JAI Libs
+Die folgenden Pakete herunterladen und entpacken:
 
-Um eine korrekte Darstellung der Bilder zu gewährleisten, müssen noch einige Bibliotheken in den **/lib/** Ordner im Tomcat-Verzeichnis kopiert werden. Es handelt sich um JAI Libs, die sich hier herunterladen lassen:
+* [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/)
+* [Apache Tomcat 8.5](https://tomcat.apache.org/download-80.cgi)
 
-Deploy/intrandaContentServer/jai\_codec-1.1.2\_01.jar   
-\(Download: [http://www.java2s.com/Code/JarDownload/jai/jai\_codec-1.1.2\_01.jar.zip](http://www.java2s.com/Code/JarDownload/jai/jai_codec-1.1.2_01.jar.zip)\)  
-Deploy/intrandaContentServer/jai\_core-1.1.2\_01.jar  
-\(Download: [http://www.java2s.com/Code/JarDownload/jai/jai\_core-1.1.2\_01.jar.zip](http://www.java2s.com/Code/JarDownload/jai/jai_core-1.1.2_01.jar.zip)\)  
-Deploy/intrandaContentServer/jai\_imageio-1.0\_01.jar  
-\(Download: [http://www.java2s.com/Code/JarDownload/jai/jai\_imageio-1.1.jar.zip](http://www.java2s.com/Code/JarDownload/jai/jai_imageio-1.1.jar.zip)\)
+Eclipse wird in dem Ordner `Entwicklungsumgebung/Eclipse` abgelegt und der Tomcat unter `Entwicklungsumgebung/Tomcat/8.5.XX`
+
+Danach im Verzeichnis `Entwicklungsumgebung/Eclipse` die folgende Datei ablegen:
+
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
+```markup
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <configFolder>/opt/digiverso/viewer/config/</configFolder>
+</config>
+```
+{% endtab %}
+{% endtabs %}
+
+## Verzeichnisstruktur anlegen
+
+Der Goobi viewer benötigt die folgende Ordnerstruktur und darin Lese- und Schreibrechte:
+
+```text
+/opt
+    |_ /digiverso	
+        |_ /logs
+        |_ /viewer
+            |_ /cache
+            |_ /cms_media
+            |_ /config
+
+```
+
+Das kann unter Linux mit dem folgenden Kommando angelegt werden:
+
+```bash
+mkdir -p /opt/digiverso/{logs,viewer/{cache,cms_media,config}}
+chown -R "$(logname)." /opt/digiverso
+```
+
+Anschließend die folgende lokale Konfigurationsdatei erzeugen. In dieser können dann alle lokalen Einstellungen hinterlegt werden:
+
+```markup
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+        <configFolder>/opt/digiverso/viewer/config/</configFolder>
+
+        <viewer>
+                <theme subTheme="false" mainTheme="reference" discriminatorField="" autoSwitch="true" addFilterQuery="false" filterQueryVisible="false" />
+        </viewer>
+</config>
+```
 
 ## MySQL
 
-### **MySQL Download**
+Der Goobi viewer benötigt eine lokale Datenbank. Die Installation und Einrichtung erfolgt mit den folgenden Befehlen:
 
-Falls man die Datenbank lokal laufen lassen möchte, lädt man sich einen Server-Client für sein Betriebsystem runter. Hier ein paar Beispiele:
-
-* [MySQL Server](https://dev.mysql.com/downloads/mysql/) \(macOS/Windows\)
-* [MAMP](https://www.mamp.info/de/downloads/) \(macOS/Windows\)
-* [XAMPP](https://www.apachefriends.org/de/download.html) \(Windows\)
-
-MAMP und XAMPP bringen beide eine graphische Oberfläche \(PHPMyAdmin\) mit, mit der Datenbanken angelegt und bearbeitet werden können.
-
-Bei den Komplettlösungen MAMP und XAMPP ist zu beachten, dass sich die Ports des Tomcat- und des Apache-Webservers nicht in die Quere kommen und unterschiedlich vergeben werden müssen \(z.B. Tomcat = 8080; Apache = 8888\).
-
-### MySQL Setup
-
-1. Datenbank erstellen:
-
-```sql
-CREATE DATABASE viewer;
+```bash
+apt install mariadb-server
 ```
 
-2. Benutzer erstellen erstellen:
-
-```sql
-USE viewer; INSERT INTO users (active,email,password_hash,score,superuser) VALUES (1,"goobiviewer@intranda.com","$2a$10$0iOXAD4/cs6G/XtByM4xPeLcZGhtiyrX7f0SJbKbYFWcOdr4VD4N.",0,1);
+```bash
+mysql -e "CREATE DATABASE viewer;
+CREATE USER 'viewer'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON viewer.* TO 'viewer'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;"
 ```
 
-Damit hat man einen Admin-Zugang mit den Zugangsdaten: _goobiviewer@intranda.com / goobiviewer_. 
+## Eclipse einrichten
 
-{% hint style="info" %}
-Dieser Schritt kann erst gemacht werden, wenn der Goobi viewer einmal gestartet wurde, um alle notwendigen Tabellen in der Datenbank anzulegen.
-{% endhint %}
+Die folgenden Schritte beschreiben die Einrichtung von Eclipse
 
-## NodeJS
+### Workspace 
 
-### **NodeJS Download**
+Der Workspace soll als Unterordner von `Entwicklungsumgebung` angelegt werden, also zum Beispiel `Entwicklungsumgebung/eclipse-workspace` 
 
-Sowohl der Goobi viewer, als auch die Themes arbeiten mit dem Task-Runner **Grunt**, für den NodeJS installiert sein muss. Die aktuelle LTS Version findet man hier: [NodeJS Download](https://nodejs.org/en/download/)
+### Welcome Screen
 
-### NodeJS Setup
+In dem Welcome Screen unten rechts die Checkbox **Always show Welcome at start up** deaktivieren und den Welcome Screen danach schließen.
 
-Nach dem Setup wechselt man in das Installationsverzeichnis von Node und führt über die Konsole folgenden Befehl aus:
+### Allgemeine Einstellungen
 
-`npm install -g npm`
+Folgende allgemeine Einstellungen in Eclipse vornehmen. 
 
-Damit hat man die neuste NPM Version, die zur Installation von Grunt benötigt wird. Immer noch im Installationsverzeichnis von Node führt man zur Installation von Grunt folgenden Befehlt auf der Konsole aus.
+1. Fehlermeldungen beim Kompilieren des Goobi viewers abschalten: `Window ->  Preferences ->  Java ->  Compiler ->  Building ->  Build path problems ->  Circular dependencies = Warning`
+2. GIT Staging abschalten:   `Window ->  Preferences ->  Team ->  Git ->  Committing -> "Use Staging View to commit instead of Commit Dialog" deaktivieren`
+3. Textfile Encoding
 
-`npm install –g grunt-cli`
+   `Window ->   
+   Preferences ->   
+   General ->   
+   Workspace ->   
+   Text file encoding ->   
+   Other: UTF-8`
 
-Dieser Schritt ist vor allem für **Windows** Nutzer wichtig, da Grunt global verfügbar sein muss.
+### Git Repositories klonen
 
-Eine Anleitung wie Grunt in eclipse zu benutzen ist findet man hier: [Grunt & eclipse](https://www.eclipse.org/community/eclipse_newsletter/2016/may/article4.php)
+Es müssen drei Git-Repositories importiert werden: Core, Core-Config und ein Theme. In diesem Beispiel das Reference-Theme. Dafür wie folgt vorgehen.
 
-## GIT
+Im Menü folgendes auswählen:
 
-### **Repsository via GIT auschecken**
+* File -&gt; Import
+* In dem sich öffnenden Dialogfeld im Ordner **Git** den Eintrag **Projects from Git** auswählen und Next klicken.
+*  **Clone URI** wählen und `Next` klicken. 
+* Als URI die folgende URL eingeben und `Next` klicken: `https://github.com/intranda/goobi-viewer-core.git`. 
+* Als Branch nur den **master** auswählen und `Next` klicken. 
+* Als Verzeichnis in das geklont werden soll `Entwicklungsumgebung/git/goobi-viewer-core` eintragen und `Next` klicken. 
+* Das klonen dauert nun ein wenig. Anschließend den Dialog mit einem Klick auf `Next` und `Finish` abschließen.  
 
-Zum auschecken des aktuellen masters oder eines anderen Branches geht man wie folgt vor:
+Den gleichen Weg auch für die folgenden beiden URIs durchführen:
 
-`File -> Import -> Git -> Projects from Git -> Next -> Clone URI`
+* `https://github.com/intranda/goobi-viewer-core-config.git`
+* `https://github.com/intranda/goobi-viewer-theme-reference.git`
 
-Die URI zum Goobi viewer und dem Boilerplate Theme Repository lautet:
+### Maven
 
-**Goobi viewer Core**: [https://github.com/intranda/goobi-viewer-core](https://github.com/intranda/goobi-viewer-core.git)  
-**Goobi viewer Theme Boilerplate**: [https://github.com/intranda/goobi-viewer-theme-boilerplate](https://github.com/intranda/goobi-viewer-theme-boilerplate.git)
+Im Project Explorer nun mit einem rechten Mausklick auf das Projekt `goobi-viewer-theme-reference` das Kontexmenü öffnen und dort `Run As -> Maven install` wählen. 
 
-Anschließend den Dialogen folgen und das gewünschte Repository auschecken.
+Anschließend für das selbe Projekt das Kontextmenü erneut öffnen und `Maven -> Update Project...` wählen. Dort in "Available Maven Codebases" die anderen beiden Projekte ebenfalls auswählen und mit `OK` bestätigen.
 
-## Lokale Konfiguration
+### Tomcat Einbindung
 
-### **Lokale Konfigurationsdatei anlegen \(macOS\)**
+Der Tomcat wird in Eclipse eingebunden. Dafür im Menü folgendes auswählen:
 
-Um die **config\_viewer.xml** lokal mit anderen Parametern überschreiben zu können, legt man sich im Root-Verzeichnis der Festplatte die folgende Orderstruktur an:
+* Window -&gt; Show View -&gt; Servers
 
-`/opt/digiverso/viewer/config/`
+Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No servers are available. Click this link to create a new server...` 
 
-Alle diese Ordner brauchen Lese- und Schreibrechte \(777\).
+In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v8.5 Server** auswählen, als **Server name** `Apache Tomcat v8.5` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/8.5.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
 
-Die **config\_viewer.xml** muss dann wie folgt angepasst werden, damit die lokale config erkannt wird:
+Im Project Explorer auf der Linken Seite ist nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren: 
 
-{% code title="config\_viewer.xml" %}
+* `Servers/Tomcat v8.5-config/context.xml`
+
+Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
+
+{% tabs %}
+{% tab title="context.xml" %}
 ```markup
-<!-- ##### LOCAL PATHS ##### -->
-<!-- configFolder: contains local configuration files, i.e. this file with local modifications that override the global one -->
-<configFolder>/opt/digiverso/viewer/config/</configFolder>
-<!-- viewerHome: root path of (usually) all viewer data -->
-<viewerHome>/opt/digiverso/viewer/</viewerHome>
-<!-- dataRepositoriesHome: root folder for data repositories -->
-<dataRepositoriesHome>/opt/digiverso/viewer/data/</dataRepositoriesHome>
-<!-- hotfolder: defines the hotfolder from the solr Indexer for indexing uploaded born-digital-material (see <content> also) -->
-<hotfolder>/opt/digiverso/viewer/hotfolder/</hotfolder>
-<!-- tempFolder: defines a temp folder for the processing of born-digital-material (see <content> also) -->
-<tempFolder>/opt/digiverso/viewer/temp/</tempFolder>
-<!-- stopwordsFile: location of the stopword.txt file used in Solr -->
-<stopwordsFile>/opt/digiverso/viewer/apache-solr/conf/stopwords.txt</stopwordsFile>
-<!-- oaiConfigFile: location of configuration file for the OAI-PMH interface -->
-<oaiConfigFile>/opt/digiverso/viewer/config/config_oai.xml</oaiConfigFile>
+<Resource 
+    name="viewer"
+    auth="Container"
+    factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+    type="javax.sql.DataSource"
+    driverClassName="org.mariadb.jdbc.Driver"
+    username="viewer"
+    password="password"
+    maxActive="100" 
+    maxIdle="30" 
+    minIdle="4"
+    maxWait="10000" 
+    testOnBorrow="true" 
+    testWhileIdle="true"
+    validationQuery="SELECT SQL_NO_CACHE 1"
+    removeAbandoned="true" 
+    removeAbandonedTimeout="120" 
+    url="jdbc:mysql://localhost:3306/viewer?characterEncoding=UTF-8&amp;autoReconnect=true&amp;autoReconnectForPools=true" />
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
-Jetzt können in eben angelegtem Ordner lokale configs angelegt werden.
+### Applikation einmalig starten
+
+Der Goobi viewer wird nun einmalig im Tomcat ausgeführt. Dabei werden zum Beispiel Datenbanktabellen angelegt und es sind anschließend auch weitere Konfigurationsmöglichkeiten in Eclipse vorhanden.
+
+Zum Starten im Projekt Explorer auf das Projekt **goobi-viewer-theme-reference** mit einem rechten Mausklick das Kontextmenü öffnen und `Run as -> Run on Server` auswählen. In dem sich öffnenden Dialog dann  `Tomcat v.8.5 Server` auswählen und mit einem Klick auf `Finish` bestätigen.
+
+Sobald die Applikation einmalig deployt wurde den Tomcat wieder stoppen
+
+### Tomcat Konfiguration
+
+Nun wieder den Server View aufrufen `Window > Show View Servers` und per Doppelklick auf den Tomcat v8.5 Server die Einstellungen aufrufen. 
+
+In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. Dann die Registerkarte "Modules" öffnen, auf "Edit" klicken und die Checkbox bei **Auto reloading enabled** entfernen. Damit wird ein Neustart des Servers bei Dateiänderungen verhindert.
+
+Die Einstellungen mit der Tastenkombination Strg+S speichern und die Einstellungsmaske schließen.
+
+### Benutzeraccount anlegen
+
+Um sich später im Goobi viewer Backend anmelden zu können muss ein Benutzeraccount angelegt werden. Mit dem folgenden Kommando wird ein Testaccount mit dem Benutzernamen `goobi@intranda.com` und dem Passwort `viewer` in die Datenbank eingefügt:
+
+```bash
+mysql -e 'USE viewer;
+INSERT INTO users (active,email,password_hash,score,superuser) VALUES (1,"goobi@intranda.com","$2a$10$Z5GTNKND9ZbuHt0ayDh0Remblc7pKUNlqbcoCxaNgKza05fLtkuYO",0,1);'
+```
+
+## Frontend Entwickler
+
+Die Entwicklung am Theme und Styling erfordert aufgrund der Projektstruktur weitere Einstellungen
+
+### NPM und Grunt
+
+Für den LESS- und JS-Compiler ist die Installation von npm und grunt notwendig. Dafür die folgenden beiden Pakete auf der Kommandozeile installieren:
+
+```bash
+sudo apt install npm grunt
+```
+
+Anschließend in Eclipse in dem Project Explorer bei dem goobi-viewer-theme-reference einen **rechten Mausklick** auf die Datei `package.json` ausführen und dort `Run as -> npm install` wählen.
+
+Nun einen **rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
+
+Änderungen in den LESS und JavaScript Dateien werden nun direkt kompiliert und stehen als aktualisierte min-Dateien zur Verfügung. 
+
+## Backend Entwickler
+
+Die Entwicklung am Java Backend erfordert in der Regel bei jeder neu kompilierten Klasse ein Neuladen des Tomcats mit den neuen Binaries. Um dieses zu verhindern kann der HotSwapAgent eingesetzt werden. Die Einrichtung ist in den folgenden Schritten beschrieben
+
+### HotSwapAgent
+
+Die neuste hotswap-agent.jar von der folgenden Adresse herunterladen und in dem Ordner `~/Entwicklungsumgebung/` speichern:
+
+* [https://github.com/HotswapProjects/HotswapAgent/releases](https://github.com/HotswapProjects/HotswapAgent/releases)
+
+### TravaOpenJDK
+
+Das TravaOpenJDK für Linux herunterladen, entpacken und in dem Ordner `~/Entwicklungsumgebung/Java/` abspeichern:
+
+* [https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases)
+
+### Eclipse Konfiguration
+
+In Eclipse muss das JDK als Standard JRE konfiguriert werden:
+
+1. Einstellungen öffnen `Window -> Preferences -> Java -> Installed JREs`
+2. Neues JRE hinzufügen `Add`
+3. Die Dialogfelder mit den folgenden Einstellungen übernehmen: `Standard VM -> JRE home: Entwicklungsumgebung/Java/java8-openjdk-dcevm-linux/dcevm8u232b09  Finish`
+4. Das neue JRE in dem noch offenen Einstellungsdialog auswählen und mit einem Klick auf `Apply and Close` übernehmen.
+
+### Tomcat Konfiguration
+
+In Eclipse im Menü folgendes auswählen:
+
+* Window -&gt; Show View -&gt; Servers
+
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `General Information` auf den Link `Open launch configuration` klicken und in dem sich öffnenden Konfigurationsdialog in den Reiter `Arguments` wechseln.
+
+In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME\] und \[VERSION\] den eigenen Gegebenheiten anpassen:
+
+```bash
+-javaagent:/home/[USERNAME]/Entwicklungsumgebung/hotswap-agent-[VERSION].jar
+```
+
+Die Einstellungen mit einem Klick auf den `OK` Button übernehmen.
+
+Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Never publish automatically` auswählen, die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
+
+### Anmerkung zur Benutzung
+
+Der **Tomcat** muss im **Debug-Modus** gestartet werden. Ansonsten funktioniert das class-Reloading nicht.
 
