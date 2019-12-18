@@ -216,6 +216,20 @@ sudo apt install npm grunt
 
 Anschließend in Eclipse in dem Project Explorer bei dem goobi-viewer-theme-reference einen **rechten Mausklick** auf die Datei `package.json` ausführen und dort `Run as -> npm install` wählen.
 
+Damit die mit Grunt erstellten statischen Resourcen direkt im tomcat landen, muss noch eine Konfigurationsdatei im home-Verzeichnis des Nutzers angelegt werden, in der hinterlegt ist, wo der tomcat liegt. Diese Datei wird unter folgendem Pfad erwartet:
+
+```bash
+~/.config/grunt_userconfig.json
+```
+
+In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des tomcat konfiguriert. Der Inhalt sieht folgendermaßen aus, es muss nur der Platzhalter \[USERNAME\] ersetzt werden:
+
+```javascript
+{
+    "tomcat_dir": "/home/[USERNAME]/Entwicklungsumgebung/Tomcat/8.5.XX/wtpwebapps/"
+}
+```
+
 Nun einen **rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
 
 Änderungen in den LESS und JavaScript Dateien werden nun direkt kompiliert und stehen als aktualisierte min-Dateien zur Verfügung. 
@@ -261,7 +275,7 @@ In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzha
 
 Die Einstellungen mit einem Klick auf den `OK` Button übernehmen.
 
-Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Never publish automatically` auswählen, die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
+Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Automatically  publish when resources change` auswählen. Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet werden - dieser befindet sich am unteren Rand der tomcat-Einstellungen. Dort das Modul für den viewer auswählen, auf `Edit...` klicken und den Haken bei `Auto reloading enabled` entfernen. Auf OK klicken. die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
 
 ### Anmerkung zur Benutzung
 
