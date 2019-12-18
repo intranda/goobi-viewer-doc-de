@@ -222,11 +222,15 @@ Damit die mit Grunt erstellten statischen Resourcen direkt im tomcat landen, mus
 ~/.config/grunt_userconfig.json
 ```
 
-In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des tomcat konfiguriert. Der Inhalt sieht folgendermaßen aus, es muss nur der Platzhalter \[USERNAME\] ersetzt werden:
+In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des tomcat konfiguriert. Dieser ist allerdings nicht so einfach herauszufinden, dazu in Eclipse im Menü folgendes auswählen:
+
+* Window -&gt; Show View -&gt; Servers
+
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des tomcat-Verzeichnisses hinterlegt. Wir benötigen den `Server path` und den `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
 
 ```javascript
 {
-    "tomcat_dir": "/home/[USERNAME]/Entwicklungsumgebung/Tomcat/8.5.XX/wtpwebapps/"
+    "tomcat_dir": "/home/[USERNAME]/eclipse-workspace/[Server Path]/[Deploy path]/"
 }
 ```
 
