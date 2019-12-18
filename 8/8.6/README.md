@@ -146,7 +146,11 @@ Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No ser
 
 In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v8.5 Server** auswählen, als **Server name** `Apache Tomcat v8.5` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/8.5.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
 
-Im Project Explorer auf der Linken Seite ist nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren: 
+Nun per Doppelklick auf den Tomcat v8.5 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. 
+
+Die Einstellungen mit der Tastenkombination Strg+S speichern und die Maske schließen.
+
+Dann ist im Project Explorer auf der linken Seite nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren: 
 
 * `Servers/Tomcat v8.5-config/context.xml`
 
@@ -185,14 +189,6 @@ Zum Starten im Projekt Explorer auf das Projekt **goobi-viewer-theme-reference**
 
 Sobald die Applikation einmalig deployt wurde den Tomcat wieder stoppen
 
-### Tomcat Konfiguration
-
-Nun wieder den Server View aufrufen `Window > Show View Servers` und per Doppelklick auf den Tomcat v8.5 Server die Einstellungen aufrufen. 
-
-In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. Dann die Registerkarte "Modules" öffnen, auf "Edit" klicken und die Checkbox bei **Auto reloading enabled** entfernen. Damit wird ein Neustart des Servers bei Dateiänderungen verhindert.
-
-Die Einstellungen mit der Tastenkombination Strg+S speichern und die Einstellungsmaske schließen.
-
 ### Benutzeraccount anlegen
 
 Um sich später im Goobi viewer Backend anmelden zu können muss ein Benutzeraccount angelegt werden. Mit dem folgenden Kommando wird ein Testaccount mit dem Benutzernamen `goobi@intranda.com` und dem Passwort `viewer` in die Datenbank eingefügt:
@@ -216,17 +212,17 @@ sudo apt install npm grunt
 
 Anschließend in Eclipse in dem Project Explorer bei dem goobi-viewer-theme-reference einen **rechten Mausklick** auf die Datei `package.json` ausführen und dort `Run as -> npm install` wählen.
 
-Damit die mit Grunt erstellten statischen Resourcen direkt im tomcat landen, muss noch eine Konfigurationsdatei im home-Verzeichnis des Nutzers angelegt werden, in der hinterlegt ist, wo der tomcat liegt. Diese Datei wird unter folgendem Pfad erwartet:
+Damit die mit Grunt erstellten statischen Resourcen direkt im Tomcat landen, muss noch eine Konfigurationsdatei im home-Verzeichnis des Nutzers angelegt werden, in der hinterlegt ist, wo der Tomcat liegt. Diese Datei wird unter folgendem Pfad erwartet:
 
 ```bash
 ~/.config/grunt_userconfig.json
 ```
 
-In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des tomcat konfiguriert. Dieser ist allerdings nicht so einfach herauszufinden, dazu in Eclipse im Menü folgendes auswählen:
+In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des Tomcats konfiguriert. Dieser ist allerdings nicht so einfach herauszufinden, dazu in Eclipse im Menü folgendes auswählen:
 
 * Window -&gt; Show View -&gt; Servers
 
-Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des tomcat-Verzeichnisses hinterlegt. Wir benötigen den `Server path` und den `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des Tomcat-Verzeichnisses hinterlegt. Benötigt wird der `Server path` und der `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
 
 ```javascript
 {
@@ -279,7 +275,9 @@ In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzha
 
 Die Einstellungen mit einem Klick auf den `OK` Button übernehmen.
 
-Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Automatically  publish when resources change` auswählen. Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet werden - dieser befindet sich am unteren Rand der tomcat-Einstellungen. Dort das Modul für den viewer auswählen, auf `Edit...` klicken und den Haken bei `Auto reloading enabled` entfernen. Auf OK klicken. die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
+Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Automatically publish when resources change` auswählen. 
+
+Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet werden - dieser befindet sich am unteren Rand der tomcat-Einstellungen. Dort das Modul für den viewer auswählen, auf `Edit...` klicken und den Haken bei `Auto reloading enabled` entfernen. Auf OK klicken. die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
 
 ### Anmerkung zur Benutzung
 
