@@ -101,8 +101,7 @@ In dem Welcome Screen unten rechts die Checkbox **Always show Welcome at start u
 Folgende allgemeine Einstellungen in Eclipse vornehmen. 
 
 1. Fehlermeldungen beim Kompilieren des Goobi viewers abschalten: `Window ->  Preferences ->  Java ->  Compiler ->  Building ->  Build path problems ->  Circular dependencies = Warning`
-2. GIT Staging abschalten:   `Window ->  Preferences ->  Team ->  Git ->  Committing -> "Use Staging View to commit instead of Commit Dialog" deaktivieren`
-3. Textfile Encoding
+2. Textfile Encoding
 
    `Window ->   
    Preferences ->   
