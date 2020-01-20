@@ -179,5 +179,6 @@
     * [8.6.1 Allgemeine Einstellungen Eclipse](8/8.6/8.6.1-allgemeine-einstellungen-eclipse.md)
     * [8.6.2 Troubleshooting](8/8.6/8.6.2-troubleshooting.md)
   * [8.7 Installationsanleitung](8/8.7.md)
+  * [8.8 Release erstellen](8/8.8.md)
 * [9. Zusätzliche Details](9-1.md)
 
