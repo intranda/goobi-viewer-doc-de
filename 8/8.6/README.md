@@ -56,8 +56,9 @@ mkdir -p /opt/digiverso/{logs,viewer/{cache,cms_media,config}}
 chown -R "$(logname)." /opt/digiverso
 ```
 
-Anschließend die folgende lokale Konfigurationsdatei erzeugen. In dieser können dann alle lokalen Einstellungen hinterlegt werden:
+Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />` Pfad erzeugen. Hier können alle lokalen Einstellungen hinterlegt werden:
 
+{% code title="config\_viewer.xml" %}
 ```markup
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
@@ -68,6 +69,7 @@ Anschließend die folgende lokale Konfigurationsdatei erzeugen. In dieser könne
         </viewer>
 </config>
 ```
+{% endcode %}
 
 ## MySQL
 
