@@ -115,6 +115,7 @@ Durch die Refaktorisierung der Bücherregale/Merklisten müssen die folgenden LE
 
 ### **Weitere Änderungen im Theme:**
 
+* In der layout.xhtml die Komponente `<viewerComponent:bookshelfNavigation />` umbenennen zu `<viewerComponent:bookmarkListNavigation />`
 * In der **pageheader.xhtml** oder **layout.xhtml** prüfen ob in dem div mit der Klasse topactions -&gt; whatchlist existiert und gegebenenfalls watchlist zu bookmark ändern
 * `data-` __Attribute mit bookshel\* löschen
 
