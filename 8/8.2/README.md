@@ -1,5 +1,130 @@
 # 8.2 Theme changes
 
+## 2020-01-24
+
+### **Änderungen an der custom.js und customJS.xhtml:**
+
+Löschen des folgenden Blocks aus der `custom.js`:
+
+{% code title="custom.js" %}
+```javascript
+// init bookmarks if enabled
+if ( bookshelvesEnabled ) {
+    viewerJS.bookmarks.init( watchlistConfig );
+}
+```
+{% endcode %}
+
+Suchen und Ersetzen des folgenden Blocks in der `customJS.xhtml.`
+
+**Suchen**:
+
+{% code title="customJS.xhtml" %}
+```javascript
+var bookshelvesEnabled = #{configurationBean.bookshelvesEnabled};
+var watchlistConfig = {
+    root: "#{request.contextPath}",
+    msg: {
+        resetBookmarkLists: "#{msg.bookmarkList_reset}",
+        deleteBookmarkList: "#{msg.bookmarkList_delete}",
+        sendBookmarkList: "#{msg.bookmarkList_session_mail_sendList}",
+        searchInBookmarkList: "#{msg.action__search_in_bookmarks}",
+        resetBookmarkListsConfirm: "#{msg.bookmarkList_resetConfirm}",
+        noItemsAvailable: "#{msg.bookmarkList_noItemsAvailable}",
+        selectBookmarkList: "#{msg.bookmarkList_selectBookmarkList}",
+        addNewBookmarkList: "#{msg.bookmarkList_addNewBookmarkList}",
+        openInMirador: "#{msg.bookmarkList_openMirador}",
+        type_label: "#{msg.bookmarkList_type_label}",
+        typeRecord: "#{msg.bookmarkList_typeRecord}",
+        typePage: "#{msg.bookmarkList_typePage}"
+    },
+    userLoggedIn: userLoggedIn
+};
+```
+{% endcode %}
+
+**Ersetzen**:
+
+{% code title="customJS.xhtml" %}
+```javascript
+var bookmarksEnabled = #{configurationBean.bookmarksEnabled};
+var rootURL = "#{request.contextPath}";
+var restURL = "#{configurationBean.restApiUrl}";
+```
+{% endcode %}
+
+### **Änderungen an LESS Templates:**
+
+* /boilerplate/css/less/viewer/constructor.less
+  * -&gt; build.less umbenennen zu constructor.less \(falls Dateiname = build.less\)
+* /boilerplate/Gruntfile.js
+  * Sofern die build.less umbenannt wurde, in der Gruntfile nach build.less suchen und durch constructor.less ersetzen
+* -&gt; Dateinamen aus der folgenden Auflistung umbenennen
+
+Durch die Refaktorisierung der Bücherregale/Merklisten müssen die folgenden LESS Templates umbenannt werden:
+
+* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/viewer/components/**bookshelves.less → bookmarks.less**
+* /boilerplate/css/less/viewer/views/user/**userBookshelfEdit.less → userBookmarkEdit.less**
+* /boilerplate/css/less/viewer/views/user/**userBookshelfSendList.less → userBookmarkSendList.less**
+* /boilerplate/css/less/viewer/views/user/**userBookshelfSingle.less → userBookmarkSingle.less**
+* /boilerplate/css/less/viewer/views/user/**userBookshelves.less → userBookmarks.less**
+* ~~/boilerplate/css/less/viewer/views/user/userBookshelfOther.less~~
+* ~~/boilerplate/css/less/viewer/widgets/widgetBookshelfList.less~~
+* ~~/boilerplate/css/less/viewer/widgets/widgetBookshelves.less~~
+
+### **Anpassung der Klassennamen:**
+
+#### **bookmarks.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .bookshelf-navigation | .bookmark-navigation |
+| .bookshelf-popup | .bookmark-popup |
+
+#### **imageControls.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .add-to-bookshelf | .add-to-bookmark |
+
+#### **userBookmarkEdit.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .user-bookshelf-edit | .user-bookmark-edit |
+
+#### **userBookmarks.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .user-bookshelves | .user-bookmark |
+| &add-bookshelf | &add-bookmark |
+
+#### **userBookmarkSendList.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .user-bookshelf-send-list | .user-bookmark-send-list |
+
+#### **userBookmarkSingle.less**
+
+| Alt | Neu |
+| :--- | :--- |
+| .view-bookshelf | .view-bookmark |
+
+### **Weitere Änderungen im Theme:**
+
+* In der **pageheader.xhtml** oder **layout.xhtml** prüfen ob in dem div mit der Klasse topactions -&gt; whatchlist existiert und gegebenenfalls watchlist zu bookmark ändern
+* `data-` __Attribute mit bookshel\* löschen
+
+
+
+TODO:
+
+* /boilerplate/css/less/viewer/widgets/widgetConvolutes.less
+* widgetChronology
+
 ## 2019-12-02
 
 Folgende Komponenten sind im Core entfernt worden:
