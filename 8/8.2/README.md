@@ -119,12 +119,11 @@ Durch die Refaktorisierung der Bücherregale/Merklisten müssen die folgenden LE
 * In der **pageheader.xhtml** oder **layout.xhtml** prüfen ob in dem div mit der Klasse topactions -&gt; whatchlist existiert und gegebenenfalls watchlist zu bookmark ändern
 * `data-` __Attribute mit bookshel\* löschen
 
-Links zu Anchor und Serienwerken werden nun standardmäßig angezeigt. Deswegen das `display:none;` und `visibility:hidden;` entfernen:
 
-* /boilerplate/css/less/viewer/widgets/widgetConvolutes.less
 
 TODO:
 
+* /boilerplate/css/less/viewer/widgets/widgetConvolutes.less
 * widgetChronology
 
 ## 2019-12-02
