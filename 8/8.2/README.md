@@ -1,5 +1,28 @@
 # 8.2 Theme changes
 
+## 4.4.0
+
+### Javascript Library Update in template-Dateien
+
+In den `template*.html` Dateien die Zeile folgende Zeile ersetzen:
+
+**Alt:**
+
+```markup
+<script src="#{request.contextPath}/resources/javascript/libs/reactiveX/rx.lite.min.js"></script>
+```
+
+**Neu:**
+
+```markup
+<script src="#{request.contextPath}/resources/javascript/libs/reactiveX/rxjs.umd.min.js"></script>
+```
+
+Aufgrund von Änderungen im Core ist es außerdem gut das Styling der folgenden Elemente zu prüfen:
+
+* widget-chronology-slider \(Facettierung nach Zeitraum in der Suche\)
+* currentSearchForm \(Sucheingabefeld auf Suchtrefferliste bei öffnen von Sammlung\)
+
 ## 2020-01-24
 
 ### **Änderungen an der custom.js und customJS.xhtml:**
