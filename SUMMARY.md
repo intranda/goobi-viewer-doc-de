@@ -65,6 +65,7 @@
     * [2.19.8 Stöbern](2/2.19/2.19.8.md)
     * [2.19.9 Metadaten in den HTML Seiten](2/2.19/2.19.9.md)
     * [2.19.10 mehrsprachige Metadaten](2/2.19/2.19.10.md)
+    * [2.19.11 Weitere Einstellungen](2/2.19/2.19.11-weitere-einstellungen.md)
   * [2.20 Inhaltsverzeichnisse](2/2.20/README.md)
     * [2.20.1 Haupt Inhaltsverzeichnis](2/2.20/2.20.1.md)
     * [2.20.2 Seitenleisten Inhaltsverzeichnis](2/2.20/2.20.2.md)
