@@ -89,6 +89,7 @@
     * [2.33.4 CORS](2/2.33/2.33.4.md)
   * [2.34 OpenSearch](2/2.34.md)
   * [2.35 Embedding](2/2.35.md)
+  * [2.36 Karten](2/2.36-karten.md)
 * [3. Konfiguration Indexer](3/README.md)
   * [3.1 Hauptkonfiguration](3/3.1.md)
   * [3.2 Verzeichnisse](3/3.2.md)
