@@ -1,15 +1,5 @@
 # 8.2 Theme changes
 
-## 4.5.0
-
-### MapBox Token
-
-In der Datei `customJS.xhtml` folgende Zeile bei der Deklaration der Javascript-Variablen ergänzen:
-
-```markup
-var mapBoxToken = "#{configurationBean.mapBoxToken}";
-```
-
 ## 4.4.0
 
 ### Javascript Library Update in template-Dateien
