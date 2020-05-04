@@ -112,6 +112,10 @@ Folgende allgemeine Einstellungen in Eclipse vornehmen.
    Text file encoding ->   
    Other: UTF-8`
 
+### Logging
+
+Standardmäßig ist das Logging in der Eclipse-Console auf `ERROR` eingestellt. Um hier ein verboseres Log-Level zu aktivieren, muss die Umgebungsvariable `LOGGERLEVEL` \(mit dem Wert `INFO`, `DEBUG` oder `TRACE`\) entweder im Betriebssystem oder in der Run Configuration in Eclipse definiert werden.
+
 ### Git Repositories klonen
 
 Es müssen drei Git-Repositories importiert werden: Core, Core-Config und ein Theme. In diesem Beispiel das Reference-Theme. Dafür wie folgt vorgehen.
