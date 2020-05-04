@@ -1,5 +1,68 @@
 # 8.2 Theme changes
 
+## 4.6.0
+
+### HTML language attribute
+
+Für eine bessere  Sprachunterstützung sollte in den `template*.html` Dateien im `<html>`-Tag der folgende Eintrag ergänzt werden:
+
+```markup
+lang="#{navigationHelper.localeString}"
+```
+
+* [ ] /boilerplate/template.html
+* [ ] /boilerplate/templateAdmin.html
+* [ ] /boilerplate/templateCrowdsourcing.html
+* [ ] /boilerplate/templateFullscreen.html
+* [ ] /boilerplate/templateMirador.html
+
+### e-pub vs. born-digital
+
+Um besser zwischen dem EPUB-Format für E-Bookreader und E-Publikationen unterscheiden zu können wurde das LESS Template sowie die darin enthaltene CSS-Klasse `e-pub` zu `born-digital` umbenannt:
+
+* [ ] ~~/boilerplate/css/less/viewer/components/ePub.less~~
+* [ ] /boilerplate/css/less/viewer/components/bornDigital.less
+* [ ] /boilerplate/css/less/viewer/constructor.less
+
+### Timematrix
+
+Die Timematrix wurde refaktorisiert, nutzt nun einen riotJS Tag und folgt den Goobi viewer CSS Konventionen:
+
+* [ ] /boilerplate/css/less/viewer/views/viewTimematrix.less
+
+### Subthemes
+
+Der Standardwert für Subthemes hat sich verändert, war er früher leer, so ist es nun "-". Aus diesem Grund muss in der `template.html` und der `templateFullscreen.html` die rendered Bedingung angepasst werden:
+
+```markup
+rendered="#{navigationHelper.subthemeSelected and navigationHelper.subThemeDiscriminatorValue!='-'}"
+```
+
+* [ ] /boilerplate/template.html
+* [ ] /boilerplate/templateFullscreen.html
+
+### Karten
+
+Damit die Kartenunterstützung funktioniert, muss das CSS und JavaScript von Leaflet geladen werden. Dafür sind die folgenden beiden Zeilen in der `template.html` und der `templateAdmin.html` Dateien einzufügen:
+
+```markup
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/leaflet.css?${buildNumber}" />
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/leaflet.js"></script>
+```
+
+* [ ] /boilerplate/template.html
+* [ ] /boilerplate/templateAdmin.html
+
+## 4.5.0
+
+### MapBox Token
+
+In der Datei `customJS.xhtml` folgende Zeile bei der Deklaration der Javascript-Variablen ergänzen:
+
+```markup
+var mapBoxToken = "#{configurationBean.mapBoxToken}";
+```
+
 ## 4.4.0
 
 ### Javascript Library Update in template-Dateien
