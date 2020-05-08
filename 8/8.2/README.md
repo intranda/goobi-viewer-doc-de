@@ -53,6 +53,10 @@ Damit die Kartenunterstützung funktioniert, muss das CSS und JavaScript von Lea
 * [ ] /boilerplate/template.html
 * [ ] /boilerplate/templateAdmin.html
 
+### CSS für 3D-Objekte
+
+* [ ] /boilerplate/css/less/views/viewObject.less
+
 ## 4.5.0
 
 ### MapBox Token
