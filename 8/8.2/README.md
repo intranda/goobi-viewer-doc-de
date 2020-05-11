@@ -53,6 +53,14 @@ Damit die Kartenunterstützung funktioniert, muss das CSS und JavaScript von Lea
 * [ ] /boilerplate/template.html
 * [ ] /boilerplate/templateAdmin.html
 
+Eventuell vorhandene Referenzen zu dem alten Geokoordinaten-Widget in individuellen Seiten oder Templates müssen gelöscht werden. Der Code lautet:
+
+```markup
+<widgetComponent:widget_geoLocations widget="#{element}" />
+```
+
+
+
 ### CSS für 3D-Objekte
 
 * [ ] /boilerplate/css/less/viewer/views/viewObject.less
