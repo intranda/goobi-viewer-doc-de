@@ -73,7 +73,7 @@ Eventuell vorhandene Referenzen zu dem alten Geokoordinaten-Widget in individuel
 
 ### CSS für 3D-Objekte
 
-* [ ] /boilerplate/css/less/viewer/views/**viewObject.less**
+* [ ] /boilerplate/css/less/views/**viewObject.less**
 
 ## 4.5.0
 
@@ -161,7 +161,7 @@ var restURL = "#{configurationBean.restApiUrl}";
 
 ### **Änderungen an LESS Templates:**
 
-* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/constructor.less
   * -&gt; build.less umbenennen zu constructor.less \(falls Dateiname = build.less\)
 * /boilerplate/Gruntfile.js
   * Sofern die build.less umbenannt wurde, in der Gruntfile nach build.less suchen und durch constructor.less ersetzen
@@ -169,15 +169,15 @@ var restURL = "#{configurationBean.restApiUrl}";
 
 Durch die Refaktorisierung der Bücherregale/Merklisten müssen die folgenden LESS Templates umbenannt werden:
 
-* /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/components/**bookshelves.less → bookmarks.less**
-* /boilerplate/css/less/viewer/views/user/**userBookshelfEdit.less → userBookmarkEdit.less**
-* /boilerplate/css/less/viewer/views/user/**userBookshelfSendList.less → userBookmarkSendList.less**
-* /boilerplate/css/less/viewer/views/user/**userBookshelfSingle.less → userBookmarkSingle.less**
-* /boilerplate/css/less/viewer/views/user/**userBookshelves.less → userBookmarks.less**
-* ~~/boilerplate/css/less/viewer/views/user/userBookshelfOther.less~~
-* ~~/boilerplate/css/less/viewer/widgets/widgetBookshelfList.less~~
-* ~~/boilerplate/css/less/viewer/widgets/widgetBookshelves.less~~
+* /boilerplate/css/less/constructor.less
+* /boilerplate/css/less/components/**bookshelves.less → bookmarks.less**
+* /boilerplate/css/less/views/user/**userBookshelfEdit.less → userBookmarkEdit.less**
+* /boilerplate/css/less/views/user/**userBookshelfSendList.less → userBookmarkSendList.less**
+* /boilerplate/css/less/views/user/**userBookshelfSingle.less → userBookmarkSingle.less**
+* /boilerplate/css/less/views/user/**userBookshelves.less → userBookmarks.less**
+* ~~/boilerplate/css/less/views/user/userBookshelfOther.less~~
+* ~~/boilerplate/css/less/widgets/widgetBookshelfList.less~~
+* ~~/boilerplate/css/less/widgets/widgetBookshelves.less~~
 
 ### **Anpassung der Klassennamen:**
 
@@ -227,11 +227,11 @@ Durch die Refaktorisierung der Bücherregale/Merklisten müssen die folgenden LE
 
 Links zu Anchor und Serienwerken werden nun standardmäßig angezeigt. Deswegen das `display:none;` und `visibility:hidden;` entfernen:
 
-* /boilerplate/css/less/viewer/widgets/widgetConvolutes.less
+* /boilerplate/css/less/widgets/widgetConvolutes.less
 
 Das Widget zum Facettieren nach Zeitraum wurde umgebaut:
 
-* /boilerplate/css/less/viewer/widgets/widgetChronology.less
+* /boilerplate/css/less/widgets/widgetChronology.less
 
 ## 2019-12-02
 
@@ -401,13 +401,13 @@ Themes müssen an diese neue Struktur angepasst werden, damit sie lauffähig ble
 Änderungen an LESS-Templates.
 
 * /boilerplate/css/less/resets.less
-* /boilerplate/css/less/viewer/constructor.less
-* /boilerplate/css/less/viewer/components/loginNavigation.less
-* ~~/boilerplate/css/less/viewer/components/modals.less~~
-* /boilerplate/css/less/viewer/views/user/user.less
-* ~~/boilerplate/css/less/viewer/views/user/userData.less~~
-* ~~/boilerplate/css/less/viewer/views/user/userAccountCreate.less~~
-* ~~/boilerplate/css/less/viewer/views/user/userAccountRetrieve.less~~
+* /boilerplate/css/less/constructor.less
+* /boilerplate/css/less/components/loginNavigation.less
+* ~~/boilerplate/css/less/components/modals.less~~
+* /boilerplate/css/less/views/user/user.less
+* ~~/boilerplate/css/less/views/user/userData.less~~
+* ~~/boilerplate/css/less/views/user/userAccountCreate.less~~
+* ~~/boilerplate/css/less/views/user/userAccountRetrieve.less~~
 
 ## 2019-05-23
 
@@ -435,8 +435,8 @@ Neue Komponente `/resources/includes/user/userLogin.xhtml` für Benutzeranmeldun
 
 Neues LESS-Template.
 
-* /boilerplate/css/less/viewer/views/user/userLogin.less
-* /boilerplate/css/less/viewer/constructor.less
+* /boilerplate/css/less/views/user/userLogin.less
+* /boilerplate/css/less/constructor.less
 
 Entfernung des Widgets **widget\_user.xhtml** aus den Seitenleisten der XHTML-Dateien.
 
@@ -446,14 +446,14 @@ Entfernung des Widgets **widget\_user.xhtml** aus den Seitenleisten der XHTML-Da
 
 Änderung an LESS-Templates.
 
-* ~~/boilerplate/css/less/viewer/widgets/widgetUser.less~~
-* /boilerplate/css/less/viewer/constructor.less
+* ~~/boilerplate/css/less/widgets/widgetUser.less~~
+* /boilerplate/css/less/constructor.less
 
 ## 2019-04-17
 
 Änderungen an LESS-Templates.
 
-* /boilerplate/css/less/viewer/widgets/widgetSearchDrillDown.less
+* /boilerplate/css/less/widgets/widgetSearchDrillDown.less
 
 ## 2019-04-15
 
@@ -477,7 +477,7 @@ Link für oEmbed Unterstützung eingefügt.
 
 Änderung an LESS-Template.
 
-* /boilerplate/css/less/viewer/widgets/widgets.less
+* /boilerplate/css/less/widgets/widgets.less
 
 ## 2019-03-27
 
