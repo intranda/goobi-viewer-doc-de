@@ -1,5 +1,15 @@
 # 8.2 Theme changes
 
+## 4.7.0-SNAPSHOT
+
+### Widget für Serien
+
+Das Widget für die Anzeige von Verlinkungen zu Serien / Konvoluten und mehrbändigen Werken wurde umbenannt und die LESS Struktur überarbeitet:
+
+* [ ] boilerplate/css/less/~~widgets~~/~~**widgetConvolutes**~~**.**~~**less**~~
+* [ ] boilerplate/css/less/widgets**/widgetRelatedGroups.less**
+* [ ] boilerplate/css/less/**constructor.less**
+
 ## 4.6.0
 
 ### HTML language attribute
@@ -10,25 +20,25 @@ Für eine bessere  Sprachunterstützung sollte in den `template*.html` Dateien i
 lang="#{navigationHelper.localeString}"
 ```
 
-* [ ] /boilerplate/template.html
-* [ ] /boilerplate/templateAdmin.html
-* [ ] /boilerplate/templateCrowdsourcing.html
-* [ ] /boilerplate/templateFullscreen.html
-* [ ] /boilerplate/templateMirador.html
+* [ ] /boilerplate/**template.html**
+* [ ] /boilerplate/**templateAdmin.html**
+* [ ] /boilerplate/**templateCrowdsourcing.html**
+* [ ] /boilerplate/**templateFullscreen.html**
+* [ ] /boilerplate/**templateMirador.html**
 
 ### e-pub vs. born-digital
 
 Um besser zwischen dem EPUB-Format für E-Bookreader und E-Publikationen unterscheiden zu können wurde das LESS Template sowie die darin enthaltene CSS-Klasse `e-pub` zu `born-digital` umbenannt:
 
-* [ ] ~~/boilerplate/css/less/viewer/components/ePub.less~~
-* [ ] /boilerplate/css/less/viewer/components/bornDigital.less
-* [ ] /boilerplate/css/less/viewer/constructor.less
+* [ ] ~~/boilerplate/css/less/components/**ePub.less**~~
+* [ ] /boilerplate/css/less/components/**bornDigital.less**
+* [ ] /boilerplate/css/less/**constructor.less**
 
 ### Timematrix
 
 Die Timematrix wurde refaktorisiert, nutzt nun einen riotJS Tag und folgt den Goobi viewer CSS Konventionen:
 
-* [ ] /boilerplate/css/less/viewer/views/viewTimematrix.less
+* [ ] /boilerplate/css/less/views/**viewTimematrix.less**
 
 ### Subthemes
 
@@ -38,8 +48,8 @@ Der Standardwert für Subthemes hat sich verändert, war er früher leer, so ist
 rendered="#{navigationHelper.subthemeSelected and navigationHelper.subThemeDiscriminatorValue!='-'}"
 ```
 
-* [ ] /boilerplate/template.html
-* [ ] /boilerplate/templateFullscreen.html
+* [ ] /boilerplate/**template.html**
+* [ ] /boilerplate/**templateFullscreen.html**
 
 ### Karten
 
@@ -50,8 +60,8 @@ Damit die Kartenunterstützung funktioniert, muss das CSS und JavaScript von Lea
 <script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/leaflet.js"></script>
 ```
 
-* [ ] /boilerplate/template.html
-* [ ] /boilerplate/templateAdmin.html
+* [ ] /boilerplate/**template.html**
+* [ ] /boilerplate/**templateAdmin.html**
 
 Eventuell vorhandene Referenzen zu dem alten Geokoordinaten-Widget in individuellen Seiten oder Templates müssen gelöscht werden. Der Code lautet:
 
@@ -63,7 +73,7 @@ Eventuell vorhandene Referenzen zu dem alten Geokoordinaten-Widget in individuel
 
 ### CSS für 3D-Objekte
 
-* [ ] /boilerplate/css/less/viewer/views/viewObject.less
+* [ ] /boilerplate/css/less/viewer/views/**viewObject.less**
 
 ## 4.5.0
 
