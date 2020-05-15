@@ -108,8 +108,6 @@ Aufgrund von Änderungen im Core ist es außerdem gut das Styling der folgenden 
 * widget-chronology-slider \(Facettierung nach Zeitraum in der Suche\)
 * currentSearchForm \(Sucheingabefeld auf Suchtrefferliste bei öffnen von Sammlung\)
 
-## 2020-01-24
-
 ### **Änderungen an der custom.js und customJS.xhtml:**
 
 Löschen des folgenden Blocks aus der `custom.js`:
