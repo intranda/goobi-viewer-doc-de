@@ -2,6 +2,34 @@
 
 ## 4.7.0-SNAPSHOT
 
+### Karten
+
+Für die individuellen Marker auf Karten sowie der oEmbed Anzeige sind die folgenden Anpassungen notwendig. 
+
+Hinzufügen der neuen Template Datei `templateBlank.html`
+
+* [ ] boilerplate/**templateBlank.html**
+
+Hinzufügen des Overlay includes in die `layout.xhtml` nach dem userLogin:
+
+* [ ] boilerplate/includes/**layout.xhtml**
+
+{% code title="layout.xhtml" %}
+```markup
+<ui:include src="/resources/includes/overlay.xhtml" />
+```
+{% endcode %}
+
+Hinzufügen der CSS und JS Resourcen für das Leaflet Extra Markers Plugin in die template Dateien:
+
+```markup
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/extra-markers/leaflet.extra-markers.min.css?${buildNumber}" />
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/extra-markers/leaflet.extra-markers.min.js"></script>
+```
+
+* [ ] boilerplate/**template.html**
+* [ ] boilerplate/**templateAdmin.html**
+
 ### Widget für Serien
 
 Das Widget für die Anzeige von Verlinkungen zu Serien / Konvoluten und mehrbändigen Werken wurde umbenannt und die LESS Struktur überarbeitet:
