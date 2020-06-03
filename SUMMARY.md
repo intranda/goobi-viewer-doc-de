@@ -167,6 +167,7 @@
     * [6.13.2 Goobi viewer: Auswerten der Instanz](6/6.13/6.13.2.md)
     * [6.13.3 Goobi workflow: Erfassen von individuellen Sammlungen](6/6.13/6.13.3.md)
     * [6.13.4 Goobi viewer: Anzeigen von individuellen Sammlungen](6/6.13/6.13.4.md)
+  * [6.14 Suche nach Koordinaten](6/6.14.md)
 * [7. FAQ](7.md)
 * [8. Entwickler und Administratoren](8/README.md)
   * [8.1 Core changes](8/8.1.md)
