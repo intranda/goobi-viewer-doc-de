@@ -167,7 +167,6 @@ Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
 <Resource 
     name="viewer"
     auth="Container"
-    factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
     type="javax.sql.DataSource"
     driverClassName="org.mariadb.jdbc.Driver"
     username="viewer"
