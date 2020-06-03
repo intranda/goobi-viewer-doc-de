@@ -4,12 +4,17 @@ Die Suche im Goobi viewer erlaubt eine kombinierte Suche sowohl in den Metadaten
 
 ![Einfache Suche](../../.gitbook/assets/2.17.png)
 
-Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sich hunderte beziehungsweise tausende Suchtreffer ergeben, die auf einer über mehrere Seiten verteilten Suchtrefferliste angezeigt werden. Die Anzahl der pro Seite angezeigten Suchtreffer kann über das folgende Element konfiguriert werden \(der Standardwert ist 10\):
+Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sichsehr viele Suchtreffer ergeben. Diese werden über mehrere Seiten verteilt dargestellt. Dem Nutzer steht ein DropDown Menü zur Verfügung, in der er die Anzahl der pro Seite angezeigten Suchtreffer auswählen kann. Diese Liste kann wie folgt konfiguriert werden:
 
 {% code title="config\_viewer.xml" %}
 ```markup
 <search>
-    <hitsPerPage>10</hitsPerPage>
+    <hitsPerPage>
+        <value default="true">10</value>
+        <value>25</value>
+        <value>50</value>
+        <value>100</value>
+    </hitsPerPage>
     <fulltextFragmentLength>120</fulltextFragmentLength>
 </search>
 ```
