@@ -1,6 +1,6 @@
 # 8.2 Theme changes
 
-## 4.7.0-SNAPSHOT
+## 4.7.0
 
 ### Karten
 
