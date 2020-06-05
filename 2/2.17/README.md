@@ -4,7 +4,7 @@ Die Suche im Goobi viewer erlaubt eine kombinierte Suche sowohl in den Metadaten
 
 ![Einfache Suche](../../.gitbook/assets/2.17.png)
 
-Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sichsehr viele Suchtreffer ergeben. Diese werden über mehrere Seiten verteilt dargestellt. Dem Nutzer steht ein DropDown Menü zur Verfügung, in der er die Anzahl der pro Seite angezeigten Suchtreffer auswählen kann. Diese Liste kann wie folgt konfiguriert werden:
+Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sich sehr viele Suchtreffer ergeben. Diese werden über mehrere Seiten verteilt dargestellt. Dem Nutzer steht ein DropDown Menü zur Verfügung, in der er die Anzahl der pro Seite angezeigten Suchtreffer auswählen kann. Diese Liste kann wie folgt konfiguriert werden:
 
 {% code title="config\_viewer.xml" %}
 ```markup
