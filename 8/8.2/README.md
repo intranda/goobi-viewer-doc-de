@@ -29,7 +29,7 @@ Die Klasse `.col-xs-` existiert in Bootstrap 4 nicht mehr und sollte über Suche
 * [ ] boilerplate/css/less/widgets/**widgetGeoLocations.less**
 * [ ] boilerplate/css/less/widgets/**widgetSearchDrillDown.less**
 
-Die CSS Klasse `.input-group-addon` existiert ebenso nicht mehr und wird - abhängig davon, ob der Input Button vor- oder nachgelagert im Inputfeld ist - zu `.input-group-append` oder `.input-group-prepend`
+Die CSS Klasse `.input-group-addon` wird im Standard ebenso nicht mehr von Bootstrap verwendet. Inputfelder mit Aktionsbuttons sind daher auf ihre Optik zu überprüfen. Die neue Klasse für Inputfelder mit nachgelagerten Aktionsbuttons ist `.input-group-append`. Dateien, die möglicherweise angepasst werden müssen:
 
 * [ ] boilerplate/css/less/views/fullscreen/**fsSearchInCurrentItem.less**
 * [ ] boilerplate/css/less/search/search/**searchAdvanced.less**
