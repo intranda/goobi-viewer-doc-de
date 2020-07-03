@@ -1,5 +1,63 @@
 # 8.2 Theme changes
 
+## 4.8.0-SNAPSHOT
+
+### Migration auf Bootstrap 4
+
+In den `template*.html` Dateien müssen die CSS und Javascript Ressourcen angepasst werden. Dazu die alten Einträge löschen und die neuen hinzufügen:
+
+**Alt:**
+
+```markup
+<link rel="stylesheet" href="#{request.contextPath}/resources/css/libs/bs/bootstrap.min.css" />
+<script src="#{request.contextPath}/resources/javascript/libs/bs/bootstrap.min.js"></script>
+```
+
+**Neu:**
+
+```markup
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/bs/bootstrap.custom.css" />
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/bs/bootstrap.bundle.min.js"></script>
+```
+
+Durch die neue Bootstrap Version _können_ an verschiedenen Stellen Struktur- oder Stylingänderung notwendig werden. Insbesondere sind Struktur und Darstellung der Dateien `inlucdes/layout.xhtml` sowie die sonstigen überschriebenen Seiten unter `urlMappings` zu überprüfen.
+
+Die Klasse `.col-xs-` existiert in Bootstrap 4 nicht mehr und sollte über Suchen & Ersetzen zu `.col-` geändert werden. Entsprechend müssen eventuell LESS und gegebenenfalls XHTML Dateien angepasst werden:
+
+* [ ] boilerplate/css/less/views/search/**searchListGrid.less**
+* [ ] boilerplate/css/less/views/search/**searchListList.less**
+* [ ] boilerplate/css/less/widgets/**widgetGeoLocations.less**
+* [ ] boilerplate/css/less/widgets/**widgetSearchDrillDown.less**
+
+Die CSS Klasse `.input-group-addon` existiert ebenso nicht mehr und wird - abhängig davon, ob der Input Button vor- oder nachgelagert im Inputfeld ist - zu `.input-group-append` oder `.input-group-prepend`
+
+* [ ] boilerplate/css/less/views/fullscreen/**fsSearchInCurrentItem.less**
+* [ ] boilerplate/css/less/search/search/**searchAdvanced.less**
+* [ ] boilerplate/css/less/search/search/**searchList.less**
+* [ ] boilerplate/css/less/widgets/**widgetSearchfield.less**
+* [ ] boilerplate/css/less/widgets/**widgetSearchInCurrentItem.less**
+
+Aus der CSS Klasse `.label-default` wird `.badge`:
+
+* [ ] boilerplate/css/less/views/fullscreen/**fsUsage.less**
+* [ ] boilerplate/css/less/widgets/**widgetUsage.less**
+
+Aus der CSS Klasse `.panel` wird `.card` wobei die Darstellung der Elemente sich erheblich unterscheiden kann:
+
+* [ ] boilerplate/css/less/cms/templates/**15\_templateStackedCollections.less**
+* [ ] boilerplate/css/less/cms/templates/**21\_templateFaq.less**
+* [ ] boilerplate/css/less/components/**searchHelpText.less**
+* [ ] boilerplate/css/less/views/search/**searchStandard.less**
+* [ ] boilerplate/css/less/views/**viewDownload.less**
+
+Weiter kann es insbesondere bei folgenden Elementen zu Veränderungen kommen, abhängig vom Design des Themes:
+
+* Bookmarks
+* CMS Templates
+* Image Controls
+* Buttons
+* Input Felder
+
 ## 4.7.0
 
 ### Karten
@@ -117,7 +175,7 @@ var mapBoxToken = "#{configurationBean.mapBoxToken}";
 
 ### Javascript Library Update in template-Dateien
 
-In den `template*.html` Dateien die Zeile folgende Zeile ersetzen:
+In den `template*.html` Dateien die folgende Zeile ersetzen:
 
 **Alt:**
 
