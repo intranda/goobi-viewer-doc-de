@@ -1,5 +1,24 @@
 # 8.2 Theme changes
 
+## 4.9.0-SNAPSHOT
+
+### Caching von CSS und Javascript Dateien
+
+Um das Neuladen von veränderten CSS und Javscript Dateien zu forcieren muss in den `template*.html` Dateien bei den CSS und JS Ressourcen die aus dem `/dist/` Ordner eingebunden sind der folgende Suffix angehängt werden:
+
+```markup
+?${navigationHelper.buildVersion}
+```
+
+Sofern ein `?${buildNumber}` Eintrag bereits existiert ist dieser zu ersetzen. Die folgenden Dateien sind betroffen:
+
+* [ ] css/dist/**viewer.min.css**
+* [ ] themes/THEMENAME/dist/css/**THEMENAME.css**
+* [ ] themes/THEMENAME/dist/css/**SUBTHEMENAME.css**
+* [ ] javascript/dist/**browsersupport.min.js**
+* [ ] javascript/dist/**viewer.min.js**
+* [ ] javascript/dist/**riot-tags.js**
+
 ## 4.8.0
 
 ### Migration auf Bootstrap 4
