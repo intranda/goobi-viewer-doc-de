@@ -19,6 +19,19 @@ Sofern ein `?${buildNumber}` Eintrag bereits existiert ist dieser zu ersetzen. D
 * [ ] javascript/dist/**viewer.min.js**
 * [ ] javascript/dist/**riot-tags.js**
 
+### Javascript für Geomap-Marker Clustering
+
+Für das Clustering der Geomap Marker wird ein weiteres Leaflet Plugin eingesetzt. Dafür müssen die folgenden beiden Zeilen mit dem CSS und JS in die betroffenen template Dateien eingebunden werden:
+
+* [ ] boilerplate/**template.html**
+* [ ] boilerplate/**templateAdmin.html**
+* [ ] boilerplate/**templateBlank.html**
+
+```markup
+	<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/markercluster/MarkerCluster.css?${navigationHelper.buildVersion}" />
+	<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/markercluster/leaflet.markercluster.js"></script>
+```
+
 ## 4.8.0
 
 ### Migration auf Bootstrap 4
