@@ -17,9 +17,9 @@ mkdir ~/Entwicklungsumgebung
 Die folgenden Pakete herunterladen und entpacken:
 
 * [Eclipse IDE for Enterprise Java Developers](https://www.eclipse.org/downloads/packages/)
-* [Apache Tomcat 8.5](https://tomcat.apache.org/download-80.cgi)
+* [Apache Tomcat 9.0](https://tomcat.apache.org/download-90.cgi)
 
-Eclipse wird in dem Ordner `Entwicklungsumgebung/Eclipse` abgelegt und der Tomcat unter `Entwicklungsumgebung/Tomcat/8.5.XX`
+Eclipse wird in dem Ordner `Entwicklungsumgebung/Eclipse` abgelegt und der Tomcat unter `Entwicklungsumgebung/Tomcat/9.0.XX`
 
 Danach im Verzeichnis `Entwicklungsumgebung/Eclipse` die folgende Datei ablegen:
 
@@ -149,15 +149,15 @@ Der Tomcat wird in Eclipse eingebunden. Dafür im Menü folgendes auswählen:
 
 Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No servers are available. Click this link to create a new server...` 
 
-In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v8.5 Server** auswählen, als **Server name** `Apache Tomcat v8.5` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/8.5.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
+In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v9.0 Server** auswählen, als **Server name** `Apache Tomcat v9.0` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/9.0.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
 
-Nun per Doppelklick auf den Tomcat v8.5 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. 
+Nun per Doppelklick auf den Tomcat v9.0 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. 
 
 Die Einstellungen mit der Tastenkombination Strg+S speichern und die Maske schließen.
 
 Dann ist im Project Explorer auf der linken Seite nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren: 
 
-* `Servers/Tomcat v8.5-config/context.xml`
+* `Servers/Tomcat v9.0-config/context.xml`
 
 Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
 
@@ -189,7 +189,7 @@ Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
 
 Der Goobi viewer wird nun einmalig im Tomcat ausgeführt. Dabei werden zum Beispiel Datenbanktabellen angelegt und es sind anschließend auch weitere Konfigurationsmöglichkeiten in Eclipse vorhanden.
 
-Zum Starten im Projekt Explorer auf das Projekt **goobi-viewer-theme-reference** mit einem rechten Mausklick das Kontextmenü öffnen und `Run as -> Run on Server` auswählen. In dem sich öffnenden Dialog dann  `Tomcat v.8.5 Server` auswählen und mit einem Klick auf `Finish` bestätigen.
+Zum Starten im Projekt Explorer auf das Projekt **goobi-viewer-theme-reference** mit einem rechten Mausklick das Kontextmenü öffnen und `Run as -> Run on Server` auswählen. In dem sich öffnenden Dialog dann  `Tomcat v.9.0 Server` auswählen und mit einem Klick auf `Finish` bestätigen.
 
 Sobald die Applikation einmalig deployt wurde den Tomcat wieder stoppen
 
@@ -226,7 +226,7 @@ In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des Tomcats konfigurie
 
 * Window -&gt; Show View -&gt; Servers
 
-Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des Tomcat-Verzeichnisses hinterlegt. Benötigt wird der `Server path` und der `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des Tomcat-Verzeichnisses hinterlegt. Benötigt wird der `Server path` und der `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
 
 ```javascript
 {
@@ -252,7 +252,7 @@ Die neuste hotswap-agent.jar von der folgenden Adresse herunterladen und in dem 
 
 Das TravaOpenJDK für Linux herunterladen, entpacken und in dem Ordner `~/Entwicklungsumgebung/Java/` abspeichern:
 
-* [https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-8-dcevm/releases)
+* [https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases)
 
 ### Eclipse Konfiguration
 
@@ -260,7 +260,7 @@ In Eclipse muss das JDK als Standard JRE konfiguriert werden:
 
 1. Einstellungen öffnen `Window -> Preferences -> Java -> Installed JREs`
 2. Neues JRE hinzufügen `Add`
-3. Die Dialogfelder mit den folgenden Einstellungen übernehmen: `Standard VM -> JRE home: Entwicklungsumgebung/Java/java8-openjdk-dcevm-linux/dcevm8u232b09  Finish`
+3. Die Dialogfelder mit den folgenden Einstellungen übernehmen: `Standard VM -> JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1  Finish`
 4. Das neue JRE in dem noch offenen Einstellungsdialog auswählen und mit einem Klick auf `Apply and Close` übernehmen.
 
 ### Tomcat Konfiguration
@@ -269,12 +269,14 @@ In Eclipse im Menü folgendes auswählen:
 
 * Window -&gt; Show View -&gt; Servers
 
-Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v8.5` die Einstellungen öffnen. In dem Bereich `General Information` auf den Link `Open launch configuration` klicken und in dem sich öffnenden Konfigurationsdialog in den Reiter `Arguments` wechseln.
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellungen öffnen. In dem Bereich `General Information` auf den Link `Open launch configuration` klicken und in dem sich öffnenden Konfigurationsdialog in den Reiter `Arguments` wechseln.
 
-In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME\] und \[VERSION\] den eigenen Gegebenheiten anpassen:
+In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME\] und \[VERSION\] den eigenen Gegebenheiten anpassen.
+
+Folgende Argumente müssen ggf. entfernt werden:
 
 ```bash
--javaagent:/home/[USERNAME]/Entwicklungsumgebung/hotswap-agent-[VERSION].jar
+-Djava.endorsed.dirs=...
 ```
 
 Die Einstellungen mit einem Klick auf den `OK` Button übernehmen.
