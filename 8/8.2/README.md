@@ -1,6 +1,6 @@
 # 8.2 Theme changes
 
-## 4.9.0-SNAPSHOT
+## 4.9.0
 
 ### Caching von CSS und Javascript Dateien
 
