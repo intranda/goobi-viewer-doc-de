@@ -1,5 +1,14 @@
 # 8.2 Theme changes
 
+## 4.10.0
+
+#### Bookmarks für Objekte ohne Bild/Thumbnail
+
+Der Button für Bookmarks für Werke ohne Bild/Thumbnail in der Suchtrefferliste sowie in der Metadatenansicht muss gestylt werden. Zu ergänzende Dateien:
+
+* [ ] css/less/views/search/**searchList.less**
+* [ ] css/less/views/**viewMetadata.less**
+
 ## 4.9.0
 
 ### Caching von CSS und Javascript Dateien
