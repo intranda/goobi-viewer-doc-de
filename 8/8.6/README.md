@@ -65,7 +65,7 @@ Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />`
         <configFolder>/opt/digiverso/viewer/config/</configFolder>
 
         <viewer>
-                <theme subTheme="false" mainTheme="reference" discriminatorField="" autoSwitch="true" addFilterQuery="false" filterQueryVisible="false" />
+                <theme mainTheme="reference" discriminatorField="" />
         </viewer>
 </config>
 ```
