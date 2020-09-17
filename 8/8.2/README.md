@@ -1,8 +1,23 @@
 # 8.2 Theme changes
 
+## 4.11.0-SNAPSHOT
+
+### Kartenfunktionalität in den Crowdsourcing Kampagnen
+
+Folgende Javascript und CSS Dateien sin in der `templateCrowdsourcing.html` einzubinden:
+
+```markup
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/leaflet.css?${navigationHelper.buildVersion}" />
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/extra-markers/leaflet.extra-markers.min.css?${navigationHelper.buildVersion}" />
+<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/markercluster/MarkerCluster.css?${navigationHelper.buildVersion}" />
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/leaflet.js"></script>
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/extra-markers/leaflet.extra-markers.min.js"></script>
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/markercluster/leaflet.markercluster.js"></script>
+```
+
 ## 4.10.0
 
-#### Bookmarks für Objekte ohne Bild/Thumbnail
+### Bookmarks für Objekte ohne Bild/Thumbnail
 
 Der Button für Bookmarks für Werke ohne Bild/Thumbnail in der Suchtrefferliste sowie in der Metadatenansicht muss gestylt werden. Zu ergänzende Dateien:
 
