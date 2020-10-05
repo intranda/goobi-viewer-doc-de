@@ -4,7 +4,9 @@
 
 ### Kartenfunktionalität in den Crowdsourcing Kampagnen
 
-Folgende Javascript und CSS Dateien sin in der `templateCrowdsourcing.html` einzubinden:
+Folgende Javascript und CSS Dateien müssen im Crowdsourcing Template eingebunden werden:
+
+* [ ] boilerplate/**templateCrowdsourcing.html**
 
 ```markup
 <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/libs/leaflet/leaflet.css?${navigationHelper.buildVersion}" />
@@ -13,6 +15,65 @@ Folgende Javascript und CSS Dateien sin in der `templateCrowdsourcing.html` einz
 <script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/leaflet.js"></script>
 <script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/extra-markers/leaflet.extra-markers.min.js"></script>
 <script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/leaflet/markercluster/leaflet.markercluster.js"></script>
+```
+
+### Seitentitel aus Konfigurationsdatei
+
+Um einen einheitlichen Seitentitel auch bei neuen Seiten und zu gewährleisten wird der Seitentitel jetzt aus der `config_viewer.xml` gelesen. Dafür sind die `<title></title>` Einträge in den template\*.html Dateien wie folgt anzupassen:
+
+* [ ] /boilerplate/**template.html**
+* [ ] /boilerplate/**templateFullscreen.html**
+* [ ] /boilerplate/**templateBlank.html**
+
+```markup
+<title><h:outputText value="#{activeDocumentBean.titleBarLabel} - " rendered="#{activeDocumentBean.titleBarLabel != null}" />#{configurationBean.name}</title>
+```
+
+* [ ] /boilerplate/**templateMirador.html**
+
+```markup
+<title>#{msg.viewMirador} - #{configurationBean.name}</title>
+```
+
+* [ ] boilerplate/**templateCrowdsourcing.html**
+
+```markup
+<title>Crowdsourcing - #{configurationBean.name}</title>
+```
+
+### Namespace, Login, Nutzungsbedingungen
+
+Verschiedene Funktionen implizieren Anpassungen an der `layout.xhtml` die an dieser Stelle zusammengefasst wurden.
+
+* [ ] boilerplate/includes/**layout.xhtml**
+
+Für die Unterstützung von Datensätzen ohne Bilder auf den Merklisten ist bei ui:composition der folgende Namespace zu ergänzen:
+
+```markup
+xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+```
+
+Der Login wurde grundlegend umgestaltet und um optionale Nutzungsbedingungen ergänzt. Dafür sind die folgenden Anpassungen notwendig:
+
+**Alt:**
+
+```markup
+<ui:include src="/resources/includes/user/userLogin.xhtml" />
+```
+
+**Neu:**
+
+```markup
+<viewerComponent:modalUserLogin id="userLoginModal"/>
+<viewerComponent:modalUserTerms id="userTermsModal"/>
+```
+
+### Optional: Impressum
+
+Das Impressum kann jetzt im Backend bearbeitet werden. Dafür bei Bedarf in der `layout.xhtml` einen Link zum Impressum ergänzen, typischerweise im Footer:
+
+```markup
+<a href="#{request.contextPath}/imprint/">#{msg.imprint}</a>
 ```
 
 ## 4.10.0
