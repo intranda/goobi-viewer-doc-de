@@ -1,6 +1,6 @@
 # 8.2 Theme changes
 
-## 4.11.0-SNAPSHOT
+## 4.11.0
 
 ### Kartenfunktionalität in den Crowdsourcing Kampagnen
 
@@ -67,6 +67,12 @@ Der Login wurde grundlegend umgestaltet und um optionale Nutzungsbedingungen erg
 <viewerComponent:modalUserLogin id="userLoginModal"/>
 <viewerComponent:modalUserTerms id="userTermsModal"/>
 ```
+
+### Login
+
+* [ ] css/less/components/**loginNavigation.less**
+
+In der genannten Datei muss `button[data-toggle="login"]` zu `button[data-toggle="modal"]` geändert werden. Der Login Button muss auf korrektes Styling überprüft werden.
 
 ### Optional: Impressum
 
