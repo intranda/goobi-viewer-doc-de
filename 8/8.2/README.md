@@ -95,7 +95,7 @@ Der Button für Bookmarks für Werke ohne Bild/Thumbnail in der Suchtrefferliste
 
 ### Caching von CSS und Javascript Dateien
 
-Um das Neuladen von veränderten CSS und Javscript Dateien zu forcieren muss in den `template*.html` Dateien bei den CSS und JS Ressourcen die aus dem `/dist/` Ordner eingebunden sind der folgende Suffix angehängt werden:
+Um das Neuladen von veränderten CSS und Javscript Dateien zu forcieren muss in den `template*.html` Dateien und in der `customJS.xhtml` bei den CSS und JS Ressourcen die aus dem `/dist/` Ordner eingebunden sind der folgende Suffix angehängt werden:
 
 ```markup
 ?${navigationHelper.buildVersion}
@@ -109,6 +109,8 @@ Sofern ein `?${buildNumber}` Eintrag bereits existiert ist dieser zu ersetzen. D
 * [ ] javascript/dist/**browsersupport.min.js**
 * [ ] javascript/dist/**viewer.min.js**
 * [ ] javascript/dist/**riot-tags.js**
+* [ ] javascript/dist/**custom.min.js -** _customJS.xhtml_
+* [ ] javascript/dist/**THEMENAME\_tags.js -** _customJS.xhtml_
 
 ### Javascript für Geomap-Marker Clustering
 
