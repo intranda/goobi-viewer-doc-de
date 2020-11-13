@@ -1,5 +1,29 @@
 # 8.2 Theme changes
 
+## 4.12.0
+
+### ​Ergänzung Admin Template
+
+Folgende Javascript Datei muss im Admin Template eingebunden werden:
+
+* [ ] /boilerplate/**templateAdmin.html**
+
+```markup
+<script type="text/javascript" src="#{request.contextPath}/resources/javascript/libs/hcsticky/hc-sticky.js?${navigationHelper.buildVersion}"></script>
+```
+
+### Refaktorisierung Merklistenfunktion im Header
+
+Der Merklistenbutton wird für ausgeloggte Nutzer jetzt nur eingeblendet, wenn mindestens ein Werk auf der Merkliste ist. Für eingeloggte Nutzer wurde dieser Bereich in das Nutzerdropdown verschoben. Es ist daher das Styling des Merklistendropdowns sowie der Nutzernavigation für eingeloggte Nutzer insgesamt zu prüfen.
+
+* [ ] /less/components/**loginNavigation.less ​**
+
+### **Annotationen**
+
+Im Rahmen der umfassenden Änderungen der Annotationserstellung- und ansicht, sind die Annotationen in der Werksansicht nun in einem eigenen Widget in der Seitenleiste verfügbar. Dieses Widget muss auf sein Styling überprüft werden sowie eine entsprechende LESS Datei ergänzt werden:
+
+* [ ] /less/widgets/**widgetAnnotations.less**
+
 ## 4.11.0
 
 ### Kartenfunktionalität in den Crowdsourcing Kampagnen
