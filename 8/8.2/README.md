@@ -1,5 +1,53 @@
 # 8.2 Theme changes
 
+## 4.13.0-SNAPSHOT
+
+### Ergänzungen Template Dateien
+
+Es ist folgende Templatedatei für die Archivansicht neu hinzugekommen:
+
+* [ ] boilerplate/**templateArchives.html**
+
+Folgende Zeile ist aus allen template\*.html Dateien zu entfernen:
+
+```markup
+<meta name="public version" content="#{navigationHelper.publicVersion}" />
+```
+
+In der `templateFullscreen.html` ist eventuell folgende Zeile anzupassen:
+
+#### Alt:
+
+```markup
+<h:panelGroup rendered="#{navigationHelper.subthemeSelected}">
+```
+
+#### Neu:
+
+```markup
+<h:panelGroup rendered="#{navigationHelper.subthemeSelected and navigationHelper.subThemeDiscriminatorValue!='-'}">
+```
+
+### Anpassungen Optik Privacy Template
+
+Das Template Privacy \(/privacy\) wurde um ein zusätzliches Feld ergänzt. Es ist möglicherweise die Optik anzupassen:
+
+* [ ] boilerplate/css/less/cms/templates/**18\_templatePrivacy.less**
+
+### Widget Annotationen
+
+Das neue Widget muss ein dem bisherigen Design entsprechendes Styling bekommen:
+
+* [ ] boilerplate/css/less/widgets/**widgetAnnotations.less**
+* [ ] boilerplate/css/less/**constructor.less**
+
+### Searchbutton Icons \(Lupe\)
+
+Der Searchbutton wurde angepasst und ist daher auf sein Styling zu überprüfen. Teilweise müssen Hintergrundgrafiken deaktiviert werden und das Icon in der Farbe angepasst werden. Das Icon taucht im Header, in der Sidebar sowie im Fullscreen Modus auf.
+
+* [ ] boilerplate/css/less/widgets/**widgetSearchField.less**
+* [ ] boilerplate/css/less/widgets/**widgetSearchInCurrentItem.less**
+
 ## 4.12.0
 
 ### ​Ergänzung Admin Template
