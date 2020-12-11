@@ -48,6 +48,19 @@ Der Searchbutton wurde angepasst und ist daher auf sein Styling zu überprüfen.
 * [ ] boilerplate/css/less/widgets/**widgetSearchField.less**
 * [ ] boilerplate/css/less/widgets/**widgetSearchInCurrentItem.less**
 
+### Initialisierung Javascript Admin Backend
+
+Prüfung, ob das Javascript Modul für das Adminbackend korrekt initialisiert wird:
+
+* [ ] boilerplate/includes/**customJS.xhtml**
+
+```javascript
+// init admin module
+if ( currentPage.indexOf( 'admin' ) > -1 ) {
+    adminJS.init();        
+}
+```
+
 ## 4.12.0
 
 ### ​Ergänzung Admin Template
