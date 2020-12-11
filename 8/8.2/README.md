@@ -10,6 +10,14 @@ Es ist folgende Templatedatei für die Archivansicht neu hinzugekommen:
 
 Folgende Zeile ist aus allen template\*.html Dateien zu entfernen:
 
+* [ ] boilerplate/**template.html**
+* [ ] boilerplate/**templateAdmin.html**
+* [ ] boilerplate/**templateArchives.html**
+* [ ] boilerplate/**templateBlank.html**
+* [ ] boilerplate/**templateCrowdsourcing.html**
+* [ ] boilerplate/**templateFullscreen.html**
+* [ ] boilerplate/**templateMirador.html**
+
 ```markup
 <meta name="public version" content="#{navigationHelper.publicVersion}" />
 ```
