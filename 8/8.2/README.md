@@ -2,7 +2,7 @@
 
 ## 4.13.0-SNAPSHOT
 
-### Ergänzungen Template Dateien
+### Anpassungen an Template Dateien
 
 Es ist folgende Templatedatei für die Archivansicht neu hinzugekommen:
 
