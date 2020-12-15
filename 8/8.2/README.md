@@ -69,6 +69,23 @@ if ( currentPage.indexOf( 'admin' ) > -1 ) {
 }
 ```
 
+### Ordnung der Überschriften im Frontend
+
+An mehreren Stellen wurden die Überschriften WCAG konform angepasst. Dadurch kann es nötig sein, das Styling anzupassen beziehungsweise CSS-Selektoren zu tauschen, zum Beispiel eine h4 gegen eine  h3. Die folgenden Dateien sind entsprechend zu prüfen:
+
+* [ ] boilerplate/css/less/components/**title.less**
+* [ ] boilerplate/css/less/cms/templates/**14\_templateRSSFeed.less**
+* [ ] boilerplate/css/less/cms/templates/**11\_templateMasonry.less** 
+* [ ] boilerplate/css/less/views/**viewObjectFullscreen.less**
+* [ ] boilerplate/css/less/views/user/**userBookmarks.less**
+* [ ] boilerplate/css/less/views/user/**userBookmarkSingle.less**
+
+### Nav-Element gegen div getauscht ​
+
+In der `browseElement.xhtml` wurde das nav-Element mit der Klasse `search-list__hit-docstruct` gegen ein div-Element mit identischer Klasse getauscht. Das Styling sollte in der folgenden Datei geprüft werden: 
+
+* [ ] boilerplate/css/less/views/search/**searchList.less**
+
 ## 4.12.0
 
 ### ​Ergänzung Admin Template
