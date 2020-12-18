@@ -1,25 +1,5 @@
 # 8.2 Theme changes
 
-## 4.13.1
-
-In der /includes/customJS.xhtml muss 
-
-```markup
-    var mapBoxToken = "#{configurationBean.mapBoxToken}";
-```
-
-ersetzt werden durch
-
-```markup
-    viewerJS.mapBoxConfig = {
-	        token : "#{configurationBean.mapBoxToken}",
-	        user : "#{configurationBean.mapBoxUser}",
-	        styleId : "#{configurationBean.mapBoxStyleId}",
-	};
-```
-
-
-
 ## 4.13.0
 
 ### Anpassungen an Template Dateien
