@@ -22,8 +22,10 @@ Fährt man mit der Maus über eine Tabellenzeile erscheinen drei potentielle Lin
 * **Vorschau**: Öffnet die gewählte CMS-Seite in einem neuen Tab
 * **Löschen**: Löscht die CMS-Seite
 
+
+
 {% hint style="warning" %}
-Eine CMS-Seite kann nur gelöscht werden, wenn sie nicht als statische Seite definiert oder im Menü verlinkt ist.
+Das Löschen einer CMS-Seite ist nur möglich, wenn sie nicht als statische Seite definiert oder im Menü verlinkt ist.
 {% endhint %}
 
 
