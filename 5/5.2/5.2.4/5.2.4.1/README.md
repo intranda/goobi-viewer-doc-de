@@ -1,17 +1,30 @@
 # 5.2.4.1 Seiten
 
-Die gesamte Tabelle der Seitenübersicht lässt sich über die Sucheingabe filtern. So ist es zum Beispiel möglich nach einem Seitentitel zu suchen und die Tabelle wird nach dem eingegebenen Begriff gefiltert.
+Die Seite "Seiten" listet alle CMS-Seiten in tabellarischer Form auf.
 
-![](../../../../.gitbook/assets/5.2.1.png)
+![&#xDC;bersicht der CMS-Seiten](../../../../.gitbook/assets/5.2.4.1_de_seiten.png)
 
-Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die Tabelle ist wie folgt aufgegliedert:
+Rechts neben der Seitenüberschrift befindet sich ein Button um eine neue CMS-Seite hinzuzufügen.
 
-| **Spalte**  | Beschreibung  |
-| :--- | :--- |
-| **Typ** | Der Typ der Seite beschreibt die Art des ausgewählten Templates in Form eines zugeordneten Symbols. |
-| **de / es / fr / en**  | Diese Spalten zeigen, in welcher Sprache die Seite zur Verfügung steht. Ist die Landesflagge nicht ausgegraut, ist die Seite in die entsprechende Sprache übersetzt.  |
-| **Titel**  | Diese Spalte listet den Titel der Seite auf. Die Tabelle ist auch nach Titeln sortierbar.   |
-| **Kategorien**  | Diese Spalte listet die der Seite zugewiesenen Kategorien auf. |
-| **Aktualisiert**  | Diese Spalte zeigt das Datum der letzten Aktualisierung an.  |
-| **Aktionen**  | In dieser Spalte werden die für die Seite verfügbaren Aktionen angezeigt. Die Seite kann bearbeitet 🖋 , angesehen 👁🗨 oder gelöscht 🗑 werden.  |
+Oberhalb der Tabelle befindet sich zwei Bereiche:
+
+* **Links**: Ein Paginator. In der Tabelle werden maximal 15 Einträge angezeigt. Enthält ein Trefferset mehr als diese 15 Einträge, kann dort in den Treffern navigiert werden.
+* **Rechts**: Ein Suchschlitz. Gesucht wird im dem Seitentitel, den Kategorien und den Subthemes.
+
+Wird die Überschrift einer Spalte als Link dargestellt besteht die Möglichkeit nach dieser Spalte zu sortieren. Fährt man mit der Maus über eine Überschrift zeigt einem ein kleiner Pfeil an wie sortiert werden würde wenn man klickt. Nach der Sortierung wird dieser Pfeil dauerhaft angezeigt.
+
+Die Tabelle zeigt in der ersten Spalte eine Grafik an, die einen schematischen Eindruck vom Seitenaufbau gibt. Daneben steht der Seitentitel und der Menütitel der Seite, sofern dieser vom Seitentitel abweicht. Ist die CMS-Seite einem Subtheme zugewiesen ist das dort in Klammern ebenfalls ersichtlich.  
+Die zweite Spalte zeigt an, ob einer Seite Kategorien zugewiesen wurden, oder ob sie als statische Seite festgelegt wurde. In der dritten Spalte stehen Datum und Uhrzeit, wann die CMS-Seiten das letzte Mal aktualisiert wurden. Am Ende folgt eine Auflistung der aktivierten Sprachen und die Visualisierung in Form von Checkboxen, ob die Übersetzung bereits fertig gestellt ist oder nicht.
+
+Fährt man mit der Maus über eine Tabellenzeile erscheinen drei potentielle Links:
+
+* **Bearbeiten**: Wechselt für die gewählte CMS-Seite in den Bearbeiten Modus
+* **Vorschau**: Öffnet die gewählte CMS-Seite in einem neuen Tab
+* **Löschen**: Löscht die CMS-Seite
+
+{% hint style="warning" %}
+Eine CMS-Seite kann nur gelöscht werden, wenn sie nicht als statische Seite definiert oder im Menü verlinkt ist.
+{% endhint %}
+
+
 
