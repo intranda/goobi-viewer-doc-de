@@ -1,8 +1,8 @@
-# 5.4.1 Seiten
+# 5.2.4.1 Seiten
 
 Die gesamte Tabelle der Seitenübersicht lässt sich über die Sucheingabe filtern. So ist es zum Beispiel möglich nach einem Seitentitel zu suchen und die Tabelle wird nach dem eingegebenen Begriff gefiltert.
 
-![](../../../.gitbook/assets/5.2.1.png)
+![](../../../../.gitbook/assets/5.2.1.png)
 
 Seitenübersicht des CMS werden alle bisher erstellten Seiten aufgelistet. Die Tabelle ist wie folgt aufgegliedert:
 
