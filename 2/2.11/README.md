@@ -2,5 +2,5 @@
 
 In diesem Abschnitt werden Ihnen die verfügbaren Optionen zur Beschränkung beziehungsweise Manipulation der Bildanzeige im Goobi viewer erklärt.
 
-![](../../.gitbook/assets/2.11.png)
+![](../../.gitbook/assets/de_bildanzeige.png)
 
