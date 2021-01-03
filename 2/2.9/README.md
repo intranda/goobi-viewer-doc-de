@@ -1,7 +1,6 @@
 # 2.9 PDF Download
 
-Die PDF-Download Links starten die Generierung eines PDFs des gesamten aktuellen Werkes oder eines bestimmten Strukturelementes. Letzteres ist nur aus der Inhaltsverzeichnis-Ansicht eines Werkes möglich.  
-Jedem Inhaltsverzeichniseintrag kann ein Link zum Generieren des entsprechenden PDFs hinzugefügt werden.
+Für das gesamte Werk wie auch für einzelne Strukturelemente oder Bilder können PDF-Dateien generiert werden. Die Optionen stehen im Widget "Zitieren und Nachnutzen" oder teilweise in der Inhaltsverzeichnis Ansicht zur Verfügung.
 
 ![](../../.gitbook/assets/de_pdfdownload.png)
 
