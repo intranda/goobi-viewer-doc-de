@@ -1,4 +1,4 @@
-# 6.6 REST API
+# 6.10 REST API
 
 Die REST API erlaubt es, Informationen zu Werken als JSON-Datensätze über einen einfachen GET-URL-Aufruf zu erhalten. Die Datensätze des Treffersets bestehen jeweils aus statisch definierten, sowie optionalen frei konfigurierbaren Feldern.
 
