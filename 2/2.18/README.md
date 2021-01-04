@@ -1,4 +1,4 @@
-# 2.18 Digitale Kollektionen
+# 2.18 Sammlungen
 
-In diesem Abschnitt wird die Konfiguration der Auflistung Ihrer digitalen Kollektionen erläutert.
+In diesem Abschnitt wird die Konfiguration der Auflistung der Sammlungen erläutert.
 
