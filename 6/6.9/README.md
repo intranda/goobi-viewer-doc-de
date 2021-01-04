@@ -1,22 +1,16 @@
-# 6.9 Konfiguration der Zugriffsbeschränkung
+# 6.9 REST API
 
-Der Goobi viewer unterstützt die Möglichkeit, bestimmte Aspekte eines Werks unzugänglich beziehungsweise nur bestimmten Kreisen zugänglich zu machen.
+Die REST API erlaubt es, Informationen zu Werken als JSON-Datensätze über einen einfachen GET-URL-Aufruf zu erhalten. Die Datensätze des Treffersets bestehen jeweils aus statisch definierten, sowie optionalen frei konfigurierbaren Feldern.
 
-Voraussetzung ist das Mitführen von sogenannten Access Conditions im Quelldokument des Werks als Metadatum. Die entsprechenden Werte müssen im Solr Index im das Feld ACCESSCONDITION gemappt werden:
+Folgende statische Felder sind stets enthalten:
 
-{% code title="solr\_indexerconfig.xml" %}
-```markup
-<ACCESSCONDITION>
-    <list>
-        <item>
-            <xpath>mets:xmlData/mods:mods/mods:accessCondition[@type='restriction on access']</xpath>
-            <addToDefault>false</addToDefault>
-            <addUntokenizedVersion>false</addUntokenizedVersion>
-        </item>
-    </list>
-</ACCESSCONDITION>
-```
-{% endcode %}
-
-
+| **Feldname**  | Inhalt |
+| :--- | :--- |
+| **id** | Identifier des Werks |
+| **title**  | Titels des Werks |
+| **dateCreated**  | Importdatum des Werks in den Goobi viewer  |
+| **collection**  | Erster Sammlungs-Eintrage für dieses Werk |
+| **thumbnailUrl**  | URL zum Thumbnail-Bild des Werkes in \(falls vorhanden\) in der Größe 100x120px |
+| **mediumimage**  | URL zum Thumbnail-Bild des Werkes in \(falls vorhanden\) in der Größe 600x500px  |
+| **url**  | URL zur Bildansicht dieses Werks  |
 
