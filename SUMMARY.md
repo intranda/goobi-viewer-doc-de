@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Goobi viewer Handbuch](README.md)
-* [Dokumentationsübersicht](dokumentationsuebersicht.md)
-* [Was ist der Goobi viewer?](1.md)
+* [Dokumentationsübersicht](overview.md)
+* [Was ist der Goobi viewer?](about.md)
 
 ## Konfiguration <a id="conf"></a>
 
