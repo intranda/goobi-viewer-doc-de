@@ -164,6 +164,7 @@
   * [1.8 Mehrere parallele Goobi viewer Instanzen](misc/1/8.md)
   * [1.9 Crowdsourcing Modul](misc/1/9.md)
 * [2. FAQ](misc/2.md)
+* [3. Glossar](misc/3.md)
 
 ## Devs & Ops <a id="devop"></a>
 
