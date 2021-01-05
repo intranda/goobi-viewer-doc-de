@@ -250,7 +250,7 @@ Die neuste hotswap-agent.jar von der folgenden Adresse herunterladen und in dem 
 
 ### TravaOpenJDK
 
-Das TravaOpenJDK für Linux herunterladen, entpacken und in dem Ordner `~/Entwicklungsumgebung/Java/` abspeichern:
+Das TravaOpenJDK für das gewünschte Betriebssystem herunterladen, entpacken und in dem Ordner `~/Entwicklungsumgebung/Java/` abspeichern:
 
 * [https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases)
 
