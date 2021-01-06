@@ -273,7 +273,7 @@ Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellung
 
 In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME\] und \[VERSION\] den eigenen Gegebenheiten anpassen.
 
-Folgende Argumente müssen ggf. entfernt werden:
+Folgende Argumente müssen gegebenenfalls entfernt werden:
 
 ```bash
 -Djava.endorsed.dirs=...
