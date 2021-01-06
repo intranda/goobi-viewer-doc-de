@@ -1,5 +1,5 @@
 ---
-description: Dokumentation für die Open-Source-Software Goobi viewer von intranda
+description: Dokumentation für die Open Source Software Goobi viewer von intranda
 ---
 
 # Goobi viewer Handbuch
