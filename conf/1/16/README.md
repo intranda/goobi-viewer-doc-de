@@ -4,14 +4,12 @@ Falls Ihr Goobi viewer mit einem eigenen Theme installiert wurde, ist das dazuge
 
 {% tabs %}
 {% tab title="config\_viewer.xml" %}
-{% code title="" %}
 ```markup
 <viewer>
     <theme mainTheme="reference"
            discriminatorField="" />
 </viewer>
 ```
-{% endcode %}
 {% endtab %}
 {% endtabs %}
 

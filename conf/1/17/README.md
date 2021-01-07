@@ -8,7 +8,6 @@ Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werk
 
 {% tabs %}
 {% tab title="config\_viewer.xml" %}
-{% code title="" %}
 ```markup
 <search>
     <hitsPerPage>
@@ -20,7 +19,6 @@ Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werk
     <fulltextFragmentLength>120</fulltextFragmentLength>
 </search>
 ```
-{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -30,7 +28,6 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
 
 {% tabs %}
 {% tab title="config\_viewer.xml" %}
-{% code title="" %}
 ```markup
 <search>
     <filters>
@@ -42,7 +39,6 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
     </filters>
 </search>
 ```
-{% endcode %}
 {% endtab %}
 {% endtabs %}
 
