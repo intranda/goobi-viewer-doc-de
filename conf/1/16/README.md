@@ -2,7 +2,9 @@
 
 Falls Ihr Goobi viewer mit einem eigenen Theme installiert wurde, ist das dazugehörige Name in folgendem Konfigurationselement enthalten:
 
-{% code title="config\_viewer.xml" %}
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
+{% code title="" %}
 ```markup
 <viewer>
     <theme mainTheme="reference"
@@ -10,6 +12,8 @@ Falls Ihr Goobi viewer mit einem eigenen Theme installiert wurde, ist das dazuge
 </viewer>
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 Das Attribut `mainTheme` enthält den Namen des Themes, in dem obigen Beispiel den Wert `reference`. Dieser muss dem Ordnernamen entsprechen, in dem die Theme-Dateien liegen.
 

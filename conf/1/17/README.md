@@ -6,7 +6,9 @@ Die Suche im Goobi viewer erlaubt eine kombinierte Suche sowohl in den Metadaten
 
 Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sich sehr viele Suchtreffer ergeben. Diese werden über mehrere Seiten verteilt dargestellt. Dem Nutzer steht ein DropDown Menü zur Verfügung, in der er die Anzahl der pro Seite angezeigten Suchtreffer auswählen kann. Diese Liste kann wie folgt konfiguriert werden:
 
-{% code title="config\_viewer.xml" %}
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
+{% code title="" %}
 ```markup
 <search>
     <hitsPerPage>
@@ -19,12 +21,16 @@ Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werk
 </search>
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 Das Element `fulltextFragmentLength` definiert die ungefähre länge der Volltext-Ausschnitte für die Suchtrefferanzeige. Standardwert ist 200.
 
 Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigurationsblock zur Verfügung:
 
-{% code title="config\_viewer.xml" %}
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
+{% code title="" %}
 ```markup
 <search>
     <filters>
@@ -37,6 +43,8 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
 </search>
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 Jeder filter-Eintrag erzeugt einen neuen Radiobutton unterhalb der einfachen Suche.
 
