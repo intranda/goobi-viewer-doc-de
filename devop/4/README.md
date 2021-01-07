@@ -58,7 +58,9 @@ chown -R "$(logname)." /opt/digiverso
 
 Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />` Pfad erzeugen. Hier können alle lokalen Einstellungen hinterlegt werden:
 
-{% code title="config\_viewer.xml" %}
+{% tabs %}
+{% tab title="config\_viewer.xml" %}
+{% code title="" %}
 ```markup
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
@@ -70,6 +72,8 @@ Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />`
 </config>
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
 
 ## MySQL
 
