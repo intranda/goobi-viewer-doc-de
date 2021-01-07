@@ -121,7 +121,7 @@
     * [3.1.9 Goobi viewer Crowdsourcing](conf/3/1/9.md)
     * [3.1.10 TEI](conf/3/1/10.md)
     * [3.1.11 CMDI](conf/3/1/11.md)
-    * [3.1.12 Sets definieren](conf/3/1/12.md)
+    * [3.1.12 Sets](conf/3/1/12.md)
   * [3.2 SRU Schnittstelle](conf/3/2.md)
 
 ## Oberfläche <a id="ui"></a>
@@ -148,7 +148,7 @@
     * [2.4.4 Medien](ui/2/4/4.md)
     * [2.4.5 Menüs](ui/2/4/5.md)
     * [2.4.6 Sammlungen](ui/2/4/6.md)
-    * [5.2.4.7 Karten](ui/2/4/5.2.4.7.md)
+    * [2.4.7 Karten](ui/2/4/7.md)
 
 ## Verschiedenes <a id="misc"></a>
 
