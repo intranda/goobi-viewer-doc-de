@@ -54,7 +54,7 @@
     * [1.18.1 Untersammlungen](conf/1/18/1.md)
     * [1.18.2 Sortierung der Werke](conf/1/18/2.md)
     * [1.18.3 Sortierung der Sammlungen](conf/1/18/3.md)
-    * [1.18.4 Ausblenden](conf/1/18/4.md)
+    * [1.18.4 Blacklist](conf/1/18/4.md)
     * [1.18.5 Sammlungsgröße](conf/1/18/5.md)
     * [1.18.6 Weitere Einstellungen](conf/1/18/6.md)
     * [1.18.7 Strukturelement-Whitelist](conf/1/18/7.md)
