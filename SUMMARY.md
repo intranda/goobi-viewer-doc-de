@@ -181,4 +181,5 @@
   * [6.2 Überschreiben von Standard XHTML Seiten mit eigenen, angepassten Seiten](devop/6/2.md)
   * [6.3 Theme Umstellung zu Maven](devop/6/3.md)
   * [6.4. Release erstellen](devop/6/4.md)
+  * [6.5 Theme Anpassungen](devop/6/5.md)
 
