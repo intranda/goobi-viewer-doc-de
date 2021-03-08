@@ -161,6 +161,7 @@
   * [1.7 Untersammlungen](misc/1/7.md)
   * [1.8 Mehrere Goobi viewer](misc/1/8.md)
   * [1.9 Crowdsourcing Modul](misc/1/9.md)
+  * [1.10 Archivalien](misc/1/10.md)
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
