@@ -16,7 +16,7 @@
     * [1.5.2 Emailversand](conf/1/5/2.md)
     * [1.5.3 Weitere Einstellungen](conf/1/5/3.md)
   * [1.6 Performanz](conf/1/6.md)
-  * [1.7 Unbeschränkter Zugriff auf Thumbnails von zugriffsbeschränkten Bildern](conf/1/7.md)
+  * [1.7 Zugriffsbeschränkungen und Bilder](conf/1/7.md)
   * [1.8 Captcha](conf/1/8.md)
   * [1.9 PDF Download](conf/1/9/README.md)
     * [1.9.1 Varianten](conf/1/9/1.md)
