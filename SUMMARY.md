@@ -25,7 +25,7 @@
   * [1.10 ePub Download](conf/1/10.md)
   * [1.11 Bild Optionen](conf/1/11/README.md)
     * [1.11.1 Erweitertes Blättern in der Bildanzeige](conf/1/11/1.md)
-    * [1.11.2 Doppelseitenansicht](conf/1/11/2.md)
+    * [1.11.2 Weitere Navigation](conf/1/11/2.md)
     * [1.11.3 Konfiguration der Bildanzeige](conf/1/11/3.md)
     * [1.11.4 Erhalt des Zooms und der Rotation beim Blättern in der Bildanzeige](conf/1/11/4.md)
     * [1.11.5 Externe Bilder](conf/1/11/5.md)
