@@ -246,17 +246,19 @@ Nun einen **rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort
 
 Die Entwicklung am Java Backend erfordert in der Regel bei jeder neu kompilierten Klasse ein Neuladen des Tomcats mit den neuen Binaries. Um dieses zu verhindern kann der HotSwapAgent eingesetzt werden. Die Einrichtung ist in den folgenden Schritten beschrieben
 
-### HotSwapAgent
-
-Die neuste hotswap-agent.jar von der folgenden Adresse herunterladen und in dem Ordner `~/Entwicklungsumgebung/` speichern:
-
-* [https://github.com/HotswapProjects/HotswapAgent/releases](https://github.com/HotswapProjects/HotswapAgent/releases)
-
-### TravaOpenJDK
+### TravaOpenJDK mit HotSwapAgent
 
 Das TravaOpenJDK für das gewünschte Betriebssystem herunterladen, entpacken und in dem Ordner `~/Entwicklungsumgebung/Java/` abspeichern:
 
-* [https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm/releases)
+* [https://github.com/TravaOpenJDK/trava-jdk-11-dcevm-newgen/releases](https://github.com/TravaOpenJDK/trava-jdk-11-dcevm-newgen/releases)
+
+Dieses JDK bringt HotSwapAgent mit.
+
+Beim Tomcat-Start muss folgender Flag als VM Argument konfiguriert werden:
+
+```bash
+-XX:HotswapAgent=fatjar
+```
 
 ### Eclipse Konfiguration
 
