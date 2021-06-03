@@ -43,7 +43,7 @@
     * [1.17.1 Sortierung](conf/1/17/1.md)
     * [1.17.2 Facettierung](conf/1/17/2.md)
     * [1.17.3 Erweiterte Suche](conf/1/17/3.md)
-    * [1.17.4 Timeline](conf/1/17/4.md)
+    * [1.17.4 Zeitleiste](conf/1/17/4.md)
     * [1.17.5 Kalender](conf/1/17/5.md)
     * [1.17.6 Suche Speichern](conf/1/17/6.md)
     * [1.17.7 Boosting von ganzen Werken in der Relevanz-Sortierung](conf/1/17/7.md)
