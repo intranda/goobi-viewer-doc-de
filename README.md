@@ -6,7 +6,7 @@ description: Dokumentation für die Open Source Software Goobi viewer von intran
 
 ## Über dieses Handbuch
 
-Vor Ihnen liegt das Goobi viewer Handbuch. Die Dokumentation besteht aus mehreren Teilen. Es werden die Konfigurationsmöglichkeiten der Komponenten [Core](conf/1/), [Indexer](conf/2/) und [Connector](conf/3/) ausführlich beschrieben. Darüber sind Teile der Anwendungsoberfläche und [Anwendungsszenarien](misc/1/) beschrieben.
+Die Goobi viewer Dokumentation besteht aus mehreren Teilen. Es werden die Konfigurationsmöglichkeiten der Komponenten [Core](conf/1/), [Indexer](conf/2/) und [Connector](conf/3/) ausführlich beschrieben. Darüber sind Teile der Anwendungsoberfläche und [Anwendungsszenarien](misc/1/) beschrieben.
 
 Der Quelltext des Goobi viewers und der dazugehörigen Komponenten befindet sich auf GitHub.
 
