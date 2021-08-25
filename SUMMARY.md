@@ -89,7 +89,6 @@
   * [1.31 Piwik/Matomo](conf/1/31.md)
   * [1.32 Sitelinks](conf/1/32.md)
   * [1.33 API](conf/1/33/README.md)
-    * [1.33.1 JSON](conf/1/33/1.md)
     * [1.33.2 IIIF](conf/1/33/2.md)
     * [1.33.3 Authentifizierung](conf/1/33/3.md)
     * [1.33.4 CORS](conf/1/33/4.md)
