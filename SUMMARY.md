@@ -170,7 +170,9 @@
 
 * [1. Core Updates](devop/1.md)
 * [2. Theme Updates](devop/2.md)
-* [3. Installationsanleitung](devop/3.md)
+* [3. Installationsanleitung](devop/3/README.md)
+  * [3.1 Klassisch](devop/3/1.md)
+  * [3.2 Docker](devop/3/2.md)
 * [4. Entwicklungsumgebung](devop/4/README.md)
   * [4.1 Eclipse Einstellungen](devop/4/1.md)
   * [4.2 Troubleshooting](devop/4/2.md)
