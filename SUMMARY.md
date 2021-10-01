@@ -168,8 +168,14 @@
 
 ## Devs & Ops <a id="devop"></a>
 
-* [1. Core Updates](devop/1.md)
-* [2. Theme Updates](devop/2.md)
+* [1. Core Updates](devop/1/README.md)
+  * [2020](devop/1/2020.md)
+  * [2019](devop/1/2019.md)
+  * [2018](devop/1/2018.md)
+* [2. Theme Updates](devop/2/README.md)
+  * [2020](devop/2/2020.md)
+  * [2019](devop/2/2019.md)
+  * [2018](devop/2/2018.md)
 * [3. Installationsanleitung](devop/3/README.md)
   * [3.1 Klassisch](devop/3/1.md)
   * [3.2 Docker](devop/3/2.md)
