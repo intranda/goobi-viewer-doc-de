@@ -11,7 +11,7 @@
   * [1.2 Übersetzungen](conf/1/2.md)
   * [1.3 Ordnerkonfiguration](conf/1/3.md)
   * [1.4 URL Konfiguration](conf/1/4.md)
-  * [1.5 Benutzerkonten](conf/1/5/README.md)
+  * [1.5 Konten](conf/1/5/README.md)
     * [1.5.1 Authentifizierungs-Provider](conf/1/5/1.md)
     * [1.5.2 Emailversand](conf/1/5/2.md)
     * [1.5.3 Weitere Einstellungen](conf/1/5/3.md)
