@@ -17,7 +17,7 @@ wget -O /tmp/M2M.war https://github.com/intranda/goobi-viewer-connector/releases
 mv /tmp/M2M.war /var/lib/tomcat9/webapps/M2M.war
 ```
 
-## 21.09-SNAPSHOT
+## 21.09
 
 ### Cronjobs
 
