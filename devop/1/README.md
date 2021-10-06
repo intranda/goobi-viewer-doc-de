@@ -385,7 +385,7 @@ Prüfen, ob bei Indexierfehlern eine E-Mail versendet wird und dieses gegebenenf
 {% endtab %}
 {% endtabs %}
 
-### Goobi viewer ConnectorDoku und dem dok
+### Goobi viewer Connector
 
 Bei einem Update ist die Sektion mit den `<sets />` zu prüfen, ob die ausgegebenen Ergebnisse mit der Intention der konfigurierten Einträge übereinstimmt. Dabei ist ein besonderes Augenmerk auf Solr-Queries mit den Feldern `DC` und `DOCSTRCT` zu richten. Da diese Felder in alle Solr-Docs eines Datensatzes geschrieben werden müssen sie eventuell mit `+(ISWORK:true ISANCHOR:true)` weiter eingeschränkt werden.
 
