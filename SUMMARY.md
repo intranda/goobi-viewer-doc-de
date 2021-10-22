@@ -168,11 +168,11 @@
 
 ## Devs & Ops <a href="devop" id="devop"></a>
 
-* [1. Core Updates](devop/1/README.md)
+* [1. Core Changelog](devop/1/README.md)
   * [2020](devop/1/2020.md)
   * [2019](devop/1/2019.md)
   * [2018](devop/1/2018.md)
-* [2. Theme Updates](devop/2/README.md)
+* [2. Theme Changelog](devop/2/README.md)
   * [2020](devop/2/2020.md)
   * [2019](devop/2/2019.md)
   * [2018](devop/2/2018.md)
