@@ -1,4 +1,4 @@
-# 1. Core Updates
+# 1. Core Changelog
 
 ## Allgemein
 
@@ -33,6 +33,7 @@ Der Link zu den Quelldateien wird nun anders aus der Konfigurationsdatei ausgele
     </metadata>
 </urls>
 
+
 <!-- NEU -->
 <urls>
     <metadata>
@@ -62,6 +63,7 @@ Neu eingeführt wird weiter der Konfigurationsbereich \<archives />. Die Sektion
     <basexMetadataList />
 </metadata>
 
+
 <!-- NEU -->
 <urls>
     <basex>https://basex.example.org/basex/</basex>
@@ -69,14 +71,14 @@ Neu eingeführt wird weiter der Konfigurationsbereich \<archives />. Die Sektion
 
 <archives enabled="false">
     <metadataList />
-</archives
+</archives>
 ```
 
+{% hint style="info" %}
+Für die Funktionalität zur Auswahl eines Archivbestandes muss die neue Datei [findDB.xq](https://raw.githubusercontent.com/intranda/goobi-plugin-administration-archive-management/master/plugin/src/main/resources/findDb.xq) im webapps Verzeichnis der baseX Installation vorliegen
+{% endhint %}
+
 ## 21.09
-
-
-
-
 
 ### Cronjobs
 
