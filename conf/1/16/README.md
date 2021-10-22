@@ -3,7 +3,7 @@
 Falls Ihr Goobi viewer mit einem eigenen Theme installiert wurde, ist das dazugehörige Name in folgendem Konfigurationselement enthalten:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <viewer>
     <theme mainTheme="reference" discriminatorField="" />
@@ -19,4 +19,3 @@ Das optionale Attribut `discriminatorField` enthält dabei den Namen des Solr-Fe
 {% hint style="info" %}
 Grundsätzlich wird der Goobi viewer mit nur einem Theme ausgeliefert. Bei Änderungen der Theme-Definition auf einen ungültigen Wert, werden leere Seiten angezeigt.
 {% endhint %}
-

@@ -2,12 +2,12 @@
 
 Die Suche im Goobi viewer erlaubt eine kombinierte Suche sowohl in den Metadaten als auch in den Volltexten. Je nach Auswahl kann eine Suche ebenfalls lediglich auf die Metadaten oder die Volltexte der digitalen Sammlungen eingeschränkt werden. Verknüpfungen von Suchbegriffen, eine Suche mit Rechts- oder Linkstrunkierung oder auch eine Phrasensuche sind ebenfalls realisierbar.
 
-![Einfache Suche](../../../.gitbook/assets/conf_1.17.png)
+![Einfache Suche](../../../.gitbook/assets/conf\_1.17.png)
 
 Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werke können sich sehr viele Suchtreffer ergeben. Diese werden über mehrere Seiten verteilt dargestellt. Dem Nutzer steht ein DropDown Menü zur Verfügung, in der er die Anzahl der pro Seite angezeigten Suchtreffer auswählen kann. Diese Liste kann wie folgt konfiguriert werden:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <search>
     <hitsPerPage>
@@ -27,7 +27,7 @@ Das Element `fulltextFragmentLength` definiert die ungefähre länge der Volltex
 Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigurationsblock zur Verfügung:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <search>
     <filters>
@@ -43,4 +43,3 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
 {% endtabs %}
 
 Jeder filter-Eintrag erzeugt einen neuen Radiobutton unterhalb der einfachen Suche.
-

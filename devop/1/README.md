@@ -4,7 +4,7 @@
 
 Zum Update des Goobi viewer Indexers und des Goobi viewer Connectors auf die neuste Version immer die folgenden Kommandos benutzen:
 
-```text
+```
 mkdir /root/BACKUP/$(date -I)
 
 systemctl stop solrindexer
@@ -17,7 +17,66 @@ wget -O /tmp/M2M.war https://github.com/intranda/goobi-viewer-connector/releases
 mv /tmp/M2M.war /var/lib/tomcat9/webapps/M2M.war
 ```
 
+## 21.10-SNAPSHOT
+
+### Goobi viewer Core
+
+#### Metsresolver wird zu Sourcefile
+
+Der Link zu den Quelldateien wird nun anders aus der Konfigurationsdatei ausgelesen. Dafür wird die Einstellung unter **urls/metadata/mets** umbenannt zu **sourcefile** und auch die URL muss angepasst werden:
+
+```xml
+<!-- ALT -->
+<urls>
+    <metadata>
+        <mets>https://viewer.example.org/viewer/oai?verb=GetRecord&amp;metadataPrefix=mets&amp;identifier=</mets>
+    </metadata>
+</urls>
+
+<!-- NEU -->
+<urls>
+    <metadata>
+         <sourcefile>https://viewer.example.org/viewer/sourcefile?id=</sourcefile>
+    </metadata>
+</urls>
+```
+
+#### Archivkonfiguration
+
+Weiter wurde die Konfiguration für die Archivansicht umgestellt. Im Bereich urls/basex entfällt die Unterteilung nach URL und Datenbank, sondern es wird nur noch die URL angegeben.
+
+Neu eingeführt wird weiter der Konfigurationsbereich \<archives />. Die Sektion metadata/basexMetadataList wird dorthin als metadataList verschoben.&#x20;
+
+```xml
+<!-- ALT -->
+<urls>
+    <!--
+    <basex>
+        <url>https://basex.example.org/basex/</url>
+        <defaultDatabase>Example - EAD_FILENAME.XML</defaultDatabase>
+    </basex>
+    -->
+</urls>
+
+<metadata>
+    <basexMetadataList />
+</metadata>
+
+<!-- NEU -->
+<urls>
+    <basex>https://basex.example.org/basex/</basex>
+</urls>
+
+<archives enabled="false">
+    <metadataList />
+</archives
+```
+
 ## 21.09
+
+
+
+
 
 ### Cronjobs
 
@@ -35,7 +94,7 @@ Für den automatischen Pull sollte der reguläre Ausdruck am Ende des minütlich
 
 In der `robots.txt` sollten die folgenden drei Zeilen hinzugefügt werden:
 
-```text
+```
 Disallow: /viewer/login/
 Disallow: /viewer/crowd/
 Disallow: /viewer/error/
@@ -46,7 +105,7 @@ Disallow: /viewer/error/
 Der Splitting Character hat sich geändert und aus einem Komma wurde ein Semikolon. Deswegen muss - sofern vorhanden - in der lokalen `config_viewer.xml` unter viewer/zoomXXXView/tileSize/scaleFactors aus einem `,` ein `;` gemacht werden:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <!-- Beispiel Alt -->
 <scaleFactors>1,32</scaleFactors>
@@ -62,7 +121,7 @@ Der Splitting Character hat sich geändert und aus einem Komma wurde ein Semikol
 Durch die Umstellung auf commons-configuration2 musste der Elementname `<xmlns>` in der Konfigurationsdatei zu `<namespace>` umbenannt werden. Die lokale Konfigurationsdatei muss geprüft und gegebenenfalls angepasst werden:
 
 {% tabs %}
-{% tab title="config\_oai.xml" %}
+{% tab title="config_oai.xml" %}
 ```markup
 <!-- ALT -->
 <oai-identifier>
@@ -81,11 +140,11 @@ Durch die Umstellung auf commons-configuration2 musste der Elementname `<xmlns>`
 
 ### pom.xml und Jenkinsfile im Theme
 
-Der Goobi viewer verwendet jetzt Java 11 als Abhängigkeit. Dafür muss die `pom.xml` des Themes geprüft werden. 
+Der Goobi viewer verwendet jetzt Java 11 als Abhängigkeit. Dafür muss die `pom.xml` des Themes geprüft werden.&#x20;
 
 Zuerst sollten die Maven Plugins aktualisiert werden:
 
-```text
+```
 mvn versions:display-plugin-updates
 ```
 
@@ -162,7 +221,7 @@ Außerdem wurde in der Konfigurationsdatei viel aufgeräumt und eine einheitlich
 
 Der Schalter `<getchilds />` wurde umbenannt zu `<getchildren />`. Die Änderung muss in der Konfigurationsdatei nachgezogen werden:
 
-```text
+```
 mkdir /root/BACKUP/$(date -I)
 cp /opt/digiverso/indexer/solr_indexerconfig.xml /root/BACKUP/$(date -I)
 sed 's|getchilds|getchildren|g' -i /opt/digiverso/indexer/solr_indexerconfig.xml
@@ -202,7 +261,7 @@ Mit der internen Umstellung der Art- und Weise des Einlesens der Konfigurationsd
 
 Die Installation der OAI und SRU Schnittstelle wird vereinfacht. Dafür sind die folgenden Schritte auszuführen:
 
-```text
+```
 mkdir /root/BACKUP/$(date -I)
 systemctl stop tomcat9
 mv /etc/tomcat9/Catalina/localhost/M2M.xml /root/BACKUP/$(date -I)
@@ -288,7 +347,7 @@ Die Konfigurationsoption urls/contentServer wird nicht mehr verwenden und kann a
 <contentServer external="false">/</contentServer>
 ```
 
-Nach dem Update ist zu prüfen welche Identifier als Zitierlinks angezeigt werden sollen \(URN, DOI, Handle, ...\) und die Anzeige bei Bedarf anzupassen und zu ergänzen.
+Nach dem Update ist zu prüfen welche Identifier als Zitierlinks angezeigt werden sollen (URN, DOI, Handle, ...) und die Anzeige bei Bedarf anzupassen und zu ergänzen.
 
 ## 21.0.6
 
@@ -309,7 +368,7 @@ ALTER TABLE `cms_collections` ADD UNIQUE `solr_field_solr_value_unique`(`solr_fi
 Die Anzeige für die Anzahl der Bände ist nicht mehr hart im Quelltext verankert sondern konfigurierbar. Sofern eine lokale Konfiguration für die `<titleBarMetadataList />` und die `<searchHitMetadataList />` existieren muss der folgende Abschnitt hinzugefügt werden:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <!-- Number of volumes for anchors -->
 <metadata label="numVolumes">
@@ -322,7 +381,7 @@ Die Anzeige für die Anzahl der Bände ist nicht mehr hart im Quelltext veranker
 Um bei indexierten Geokoordinaten die Facettierung auf einer Karte anzuzeigen ist in einen eventuell vorhandenen lokalen Abschnitt `<drillDown />` in der lokalen Konfigurationsdatei der folgende Eintrag hinzuzufügen:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <geoField>WKT_COORDS</geoField>
 ```
@@ -335,7 +394,7 @@ Um bei indexierten Geokoordinaten die Facettierung auf einer Karte anzuzeigen is
 
 Der Schalter `<unconditionalImageAccessMaxWidth />` wurde umbenannt zu `<thumbnailImageAccessMaxWidth />` und muss - sofern vorhanden - auch in der lokalen Konfigurationsdatei umbenannt werden:
 
-```text
+```
 mkdir /root/BACKUP/$(date -I)
 cp /opt/digiverso/viewer/config/config_viewer.xml /root/BACKUP/$(date -I)
 sed 's|unconditionalImageAccesMaxWidth|thumbnailImageAccessMaxWidth|g' -i /opt/digiverso/viewer/config/config_viewer.xml
@@ -344,7 +403,7 @@ sed 's|unconditionalImageAccesMaxWidth|thumbnailImageAccessMaxWidth|g' -i /opt/d
 Der Schalter `<doublePageMode />` wurden umbenannt zu `<doublePageNavigation />` und das Unterelement `<enabled />`  in ein Attribut verschoben. Die lokale Konfigurationsdatei ist zu prüfen und gegebenenfalls anzupassen:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <!-- ALT -->
 <doublePageMode>
@@ -368,7 +427,7 @@ Bei einem Update auf die Version 21.04 müssen die im Backend konfigurierten Zug
 Prüfen, ob bei Indexierfehlern eine E-Mail versendet wird und dieses gegebenenfalls nachkonfigurieren:
 
 {% tabs %}
-{% tab title="solr\_indexerconfig.xml" %}
+{% tab title="solr_indexerconfig.xml" %}
 ```markup
 <init>
     <email>
@@ -393,10 +452,10 @@ Bei einem Update ist die Sektion mit den `<sets />` zu prüfen, ob die ausgegebe
 
 ### Apache
 
-Es ist aufgefallen, dass die `robots.txt` einen erstaunlich starken Einfluss auf die Suchmaschinen hat. Deswegen ist zu prüfen, ob sie existiert, darauf zugegriffen werden kann und sinnvolle Werte inklusive der Sitemap enthalten sind.   
+Es ist aufgefallen, dass die `robots.txt` einen erstaunlich starken Einfluss auf die Suchmaschinen hat. Deswegen ist zu prüfen, ob sie existiert, darauf zugegriffen werden kann und sinnvolle Werte inklusive der Sitemap enthalten sind. \
 Bei den Werten muss vor allem darauf geachtet werden, ob der Goobi viewer mit einem /viewer/ Präfix deployt ist oder nicht.
 
-```text
+```
 User-agent: *
 Disallow: /viewer/content*action=pdf
 Disallow: /viewer/rest/pdf/*
@@ -417,20 +476,20 @@ Crawl-delay: 10
 
 #### Umbenennung der mainMetadataList
 
-Bibliographische Daten können jetzt auf mehrere Seiten aufgeteilt werden. Dafür wurde der Bereich `<mainMetadataList />` in der Konfigurationsdatei umbenannt zu `<metadataView index="0" />`. Bei dem Update muss das in der lokalen `config_viewer.xml` ebenfalls erfolgen:
+Bibliographische Daten können jetzt auf mehrere Seiten aufgeteilt werden. Dafür wurde der Bereich `<mainMetadataList />` in der Konfigurationsdatei umbenannt zu `<metadataView index="0" />`. Bei dem Update muss das in der lokalen `config_viewer.xml `ebenfalls erfolgen:
 
-```text
+```
 mkdir /root/BACKUP/$(date -I)
 cd /opt/digiverso/viewer/config/
 cp config_viewer.xml /root/BACKUP/$(date -I)
 sed -e 's|<mainMetadataList>|<metadataView index="0">|g' -e 's|</mainMetadataList>|</metadataView>|g' -i config_viewer.xml
 ```
 
-Außerdem ist zu prüfen ob in den lokalen messages Dateien individuelle Namen für einzelne Blöcke vergeben wurden. Wenn ja sind diese Anzupassen, denn das Namensschema dafür hat sich verändert. Aus `metadataTab0` für die Überschrift des ersten Metadatenblocks \(`type="0"`\) wurde `metadataTab_0_0`, der neue Infix zeigt das `index="0"` Attribut an. 
+Außerdem ist zu prüfen ob in den lokalen messages Dateien individuelle Namen für einzelne Blöcke vergeben wurden. Wenn ja sind diese Anzupassen, denn das Namensschema dafür hat sich verändert. Aus `metadataTab0` für die Überschrift des ersten Metadatenblocks (`type="0"`) wurde `metadataTab_0_0`, der neue Infix zeigt das `index="0"` Attribut an.&#x20;
 
 Wenn das folgende Kommando eine Ausgabe liefert muss eine Anpassung erfolgen:
 
-```text
+```
 grep -i metadataTab /opt/digiverso/viewer/config/messages_*.properties
 ```
 
@@ -461,7 +520,7 @@ Um die Anzeige der Metadaten auf der Seite "Bibliographische Daten" ein bisschen
 
 Um sicherzustellen, dass bei der Dublin Core Ausgabe die Sammlungsnamen korrekt übersetzt werden, muss in der lokalen `config_oai.xml` der `<oaiFolder />` auf den config Ordner des Goobi viewer Core zeigen:
 
-```text
+```
 cd /opt/digiverso/viewer/config/
 grep oaiFolder config_oai.xml
 mkdir /root/BACKUP/$(date -I)
@@ -475,13 +534,13 @@ sed 's|<oaiFolder>/opt/digiverso/viewer/oai/</oaiFolder>|<oaiFolder>/opt/digiver
 
 Damit die IIIF Manifeste ebenfalls gzip Komprimiert ausgeliefert werden muss der folgende Output Filter zusätzlich in dem Abschnitt für mod\_deflate hinzugefügt werden:
 
-```text
+```
 AddOutputFilterByType DEFLATE application/json
 ```
 
 Anschließend den Dienst neu starten:
 
-```text
+```
 systemctl restart apache2
 ```
 
@@ -507,7 +566,7 @@ Die Konfiguration des Beschreibungstextes für das Widget "Zitieren und Nachnutz
 Durch die Refaktorisierung der Sammlungsauflistung muss in Themes, die die Gruppierung von Suchtreffern verwenden, das Gruppierfeld neu gesetzt werden.
 {% endhint %}
 
-Im selben Widget sind die Konfigurationsoptionen `<displayLinkToJpegImage />` und `<displayLinkToMasterImage />` durch den neuen Block `<downloadOptions><option>...` ersetzt worden. Die lokale Konfigurationsdatei muss auf vom vorherigen Standard abweichende Einträge geprüft und dann auf das neue Format migriert werden. 
+Im selben Widget sind die Konfigurationsoptionen `<displayLinkToJpegImage />` und `<displayLinkToMasterImage />` durch den neuen Block `<downloadOptions><option>...` ersetzt worden. Die lokale Konfigurationsdatei muss auf vom vorherigen Standard abweichende Einträge geprüft und dann auf das neue Format migriert werden.&#x20;
 
 ```markup
 <!-- ALT -->
@@ -574,7 +633,7 @@ In der Goobi viewer Cronjob Datei müssen verschiedene Aufrufe angepasst werden.
 
 ### Solr
 
-Der Dienst soll auf localhost eingeschränkt und die Garbage Collector Optionen für eine verbesserte Performance angepasst werden. 
+Der Dienst soll auf localhost eingeschränkt und die Garbage Collector Optionen für eine verbesserte Performance angepasst werden.&#x20;
 
 ```bash
 patch /etc/default/solr.in.sh << "EOF"
@@ -651,5 +710,4 @@ curl "http://localhost:8983/solr/admin/collections?action=RELOAD&name=collection
 Der Datenbestand muss anschließend neu indexiert werden. Andernfalls kann es zu Fehlermeldungen in der Benutzeroberfläche kommen wenn das Feld `CURRENTNOSORT` vermischt als Datentyp INT und LONG im Solr Index vorhanden ist.
 {% endhint %}
 
-## 
-
+##

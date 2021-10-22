@@ -8,7 +8,7 @@ Die folgende Anleitung für die Einrichtung einer Entwicklungsumgebung wurde fü
 
 Im Homeverzeichnis einen Ordner `Entwicklungsumgebung`anlegen:
 
-```text
+```
 mkdir ~/Entwicklungsumgebung
 ```
 
@@ -24,7 +24,7 @@ Eclipse wird in dem Ordner `Entwicklungsumgebung/Eclipse` abgelegt und der Tomca
 Danach im Verzeichnis `Entwicklungsumgebung/Eclipse` die folgende Datei ablegen:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 ```markup
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
@@ -38,7 +38,7 @@ Danach im Verzeichnis `Entwicklungsumgebung/Eclipse` die folgende Datei ablegen:
 
 Der Goobi viewer benötigt die folgende Ordnerstruktur und darin Lese- und Schreibrechte:
 
-```text
+```
 /opt
     |_ /digiverso	
         |_ /logs
@@ -59,7 +59,7 @@ chown -R "$(logname)." /opt/digiverso
 Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />` Pfad erzeugen. Hier können alle lokalen Einstellungen hinterlegt werden:
 
 {% tabs %}
-{% tab title="config\_viewer.xml" %}
+{% tab title="config_viewer.xml" %}
 {% code title="" %}
 ```markup
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -94,9 +94,9 @@ FLUSH PRIVILEGES;"
 
 Die folgenden Schritte beschreiben die Einrichtung von Eclipse
 
-### Workspace 
+### Workspace&#x20;
 
-Der Workspace soll als Unterordner von `Entwicklungsumgebung` angelegt werden, also zum Beispiel `Entwicklungsumgebung/eclipse-workspace` 
+Der Workspace soll als Unterordner von `Entwicklungsumgebung` angelegt werden, also zum Beispiel` Entwicklungsumgebung/eclipse-workspace`&#x20;
 
 ### Welcome Screen
 
@@ -104,21 +104,28 @@ In dem Welcome Screen unten rechts die Checkbox **Always show Welcome at start u
 
 ### Allgemeine Einstellungen
 
-Folgende allgemeine Einstellungen in Eclipse vornehmen. 
+Folgende allgemeine Einstellungen in Eclipse vornehmen.&#x20;
 
-1. Fehlermeldungen beim Kompilieren des Goobi viewers abschalten: `Window ->  Preferences ->  Java ->  Compiler ->  Building ->  Build path problems ->  Circular dependencies = Warning`
-2. Textfile Encoding
+1. Fehlermeldungen beim Kompilieren des Goobi viewers abschalten:\
+   `Window -> `\
+   `Preferences -> `\
+   `Java -> `\
+   `Compiler -> `\
+   `Building -> `\
+   `Build path problems -> `\
+   `Circular dependencies = Warning`
+2.  Textfile Encoding
 
-   `Window ->   
-   Preferences ->   
-   General ->   
-   Workspace ->   
-   Text file encoding ->   
-   Other: UTF-8`
+    `Window -> `\
+    `Preferences -> `\
+    `General -> `\
+    `Workspace -> `\
+    `Text file encoding -> `\
+    `Other: UTF-8`
 
 ### Logging
 
-Standardmäßig ist das Logging in der Eclipse-Console auf `ERROR` eingestellt. Um hier ein verboseres Log-Level zu aktivieren, muss die Umgebungsvariable `LOGGERLEVEL` \(mit dem Wert `INFO`, `DEBUG` oder `TRACE`\) entweder im Betriebssystem oder in der Run Configuration in Eclipse definiert werden.
+Standardmäßig ist das Logging in der Eclipse-Console auf `ERROR` eingestellt. Um hier ein verboseres Log-Level zu aktivieren, muss die Umgebungsvariable `LOGGERLEVEL `(mit dem Wert `INFO`, `DEBUG `oder `TRACE`) entweder im Betriebssystem oder in der Run Configuration in Eclipse definiert werden.
 
 ### Git Repositories klonen
 
@@ -126,22 +133,24 @@ Es müssen drei Git-Repositories importiert werden: Core, Core-Config und ein Th
 
 Im Menü folgendes auswählen:
 
-* File -&gt; Import
+* File -> Import
 * In dem sich öffnenden Dialogfeld im Ordner **Git** den Eintrag **Projects from Git** auswählen und Next klicken.
-*  **Clone URI** wählen und `Next` klicken. 
-* Als URI die folgende URL eingeben und `Next` klicken: `https://github.com/intranda/goobi-viewer-core.git`. 
-* Als Branch nur den **master** auswählen und `Next` klicken. 
-* Als Verzeichnis in das geklont werden soll `Entwicklungsumgebung/git/goobi-viewer-core` eintragen und `Next` klicken. 
-* Das klonen dauert nun ein wenig. Anschließend den Dialog mit einem Klick auf `Next` und `Finish` abschließen.  
+* &#x20;**Clone URI** wählen und `Next` klicken.&#x20;
+* Als URI die folgende URL eingeben und `Next` klicken: `https://github.com/intranda/goobi-viewer-core.git`.&#x20;
+* Als Branch nur den **master** auswählen und `Next` klicken.&#x20;
+* Als Verzeichnis in das geklont werden soll `Entwicklungsumgebung/git/goobi-viewer-core` eintragen und `Next` klicken.&#x20;
+* Das klonen dauert nun ein wenig. Anschließend den Dialog mit einem Klick auf `Next` und `Finish` abschließen. &#x20;
 
 Den gleichen Weg auch für die folgenden beiden URIs durchführen:
 
 * `https://github.com/intranda/goobi-viewer-core-config.git`
-* `https://github.com/intranda/goobi-viewer-theme-reference.git`
+*   `https://github.com/intranda/goobi-viewer-theme-reference.git`
+
+
 
 ### Maven
 
-Im Project Explorer nun mit einem rechten Mausklick auf das Projekt `goobi-viewer-theme-reference` das Kontexmenü öffnen und dort `Run As -> Maven install` wählen. 
+Im Project Explorer nun mit einem rechten Mausklick auf das Projekt `goobi-viewer-theme-reference` das Kontexmenü öffnen und dort `Run As -> Maven install` wählen.&#x20;
 
 Anschließend für das selbe Projekt das Kontextmenü erneut öffnen und `Maven -> Update Project...` wählen. Dort in "Available Maven Codebases" die anderen beiden Projekte ebenfalls auswählen und mit `OK` bestätigen.
 
@@ -149,17 +158,17 @@ Anschließend für das selbe Projekt das Kontextmenü erneut öffnen und `Maven 
 
 Der Tomcat wird in Eclipse eingebunden. Dafür im Menü folgendes auswählen:
 
-* Window -&gt; Show View -&gt; Servers
+* Window -> Show View -> Servers
 
-Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No servers are available. Click this link to create a new server...` 
+Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No servers are available. Click this link to create a new server...`&#x20;
 
-In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v9.0 Server** auswählen, als **Server name** `Apache Tomcat v9.0` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/9.0.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
+In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v9.0 Server **auswählen, als **Server name** `Apache Tomcat v9.0` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/9.0.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
 
-Nun per Doppelklick auf den Tomcat v9.0 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start \(in seconds\)** den Wert `80` setzen. 
+Nun per Doppelklick auf den Tomcat v9.0 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start (in seconds)** den Wert `80` setzen.&#x20;
 
 Die Einstellungen mit der Tastenkombination Strg+S speichern und die Maske schließen.
 
-Dann ist im Project Explorer auf der linken Seite nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren: 
+Dann ist im Project Explorer auf der linken Seite nun ein neuer Eintrag "Servers" zu sehen. Dort die folgende Datei editieren:&#x20;
 
 * `Servers/Tomcat v9.0-config/context.xml`
 
@@ -228,9 +237,9 @@ Damit die mit Grunt erstellten statischen Resourcen direkt im Tomcat landen, mus
 
 In dieser Datei wird nur der Pfad zum webapps-Verzeichnis des Tomcats konfiguriert. Dieser ist allerdings nicht so einfach herauszufinden, dazu in Eclipse im Menü folgendes auswählen:
 
-* Window -&gt; Show View -&gt; Servers
+* Window -> Show View -> Servers
 
-Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des Tomcat-Verzeichnisses hinterlegt. Benötigt wird der `Server path` und der `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad \(Variablen müssen ersetzt werden\):
+Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellungen öffnen. In dem Bereich `Server Locations` ist der Pfad des Tomcat-Verzeichnisses hinterlegt. Benötigt wird der `Server path` und der `Deploy path`. Mit diesen beiden Informationen kann nun der Inhalt der Konfigurationsdatei geschrieben werden. Der `Server path` ist relativ zum Eclipse workspace, deswegen ergibt sich folgender Pfad (Variablen müssen ersetzt werden):
 
 ```javascript
 {
@@ -238,9 +247,9 @@ Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellung
 }
 ```
 
-Nun einen **rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
+Nun einen** rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
 
-Änderungen in den LESS und JavaScript Dateien werden nun direkt kompiliert und stehen als aktualisierte min-Dateien zur Verfügung. 
+Änderungen in den LESS und JavaScript Dateien werden nun direkt kompiliert und stehen als aktualisierte min-Dateien zur Verfügung.&#x20;
 
 ## Backend Entwickler
 
@@ -264,20 +273,28 @@ Beim Tomcat-Start muss folgender Flag als VM Argument konfiguriert werden:
 
 In Eclipse muss das JDK als Standard JRE konfiguriert werden:
 
-1. Einstellungen öffnen `Window -> Preferences -> Java -> Installed JREs`
-2. Neues JRE hinzufügen `Add`
-3. Die Dialogfelder mit den folgenden Einstellungen übernehmen: `Standard VM -> JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1  Finish`
+1. Einstellungen öffnen\
+   `Window ->`\
+   `Preferences ->`\
+   `Java ->`\
+   `Installed JREs`
+2. Neues JRE hinzufügen\
+   `Add`
+3. Die Dialogfelder mit den folgenden Einstellungen übernehmen:\
+   `Standard VM ->`\
+   `JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1 `\
+   `Finish`
 4. Das neue JRE in dem noch offenen Einstellungsdialog auswählen und mit einem Klick auf `Apply and Close` übernehmen.
 
 ### Tomcat Konfiguration
 
 In Eclipse im Menü folgendes auswählen:
 
-* Window -&gt; Show View -&gt; Servers
+* Window -> Show View -> Servers
 
 Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellungen öffnen. In dem Bereich `General Information` auf den Link `Open launch configuration` klicken und in dem sich öffnenden Konfigurationsdialog in den Reiter `Arguments` wechseln.
 
-In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME\] und \[VERSION\] den eigenen Gegebenheiten anpassen.
+In der Textbox für die VM arguments die folgende Zeile anfügen und die Platzhalter für \[USERNAME] und \[VERSION] den eigenen Gegebenheiten anpassen.
 
 Folgende Argumente müssen gegebenenfalls entfernt werden:
 
@@ -287,11 +304,10 @@ Folgende Argumente müssen gegebenenfalls entfernt werden:
 
 Die Einstellungen mit einem Klick auf den `OK` Button übernehmen.
 
-Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Automatically publish when resources change` auswählen. 
+Danach auf der noch offenen Einstellungsseite in dem Bereich `Publishing` die Option `Automatically publish when resources change` auswählen.&#x20;
 
-Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet werden - dieser befindet sich am unteren Rand der tomcat-Einstellungen. Dort das Modul für den viewer auswählen, auf `Edit...` klicken und den Haken bei `Auto reloading enabled` entfernen. Auf OK klicken. die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen. 
+Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet werden - dieser befindet sich am unteren Rand der tomcat-Einstellungen. Dort das Modul für den viewer auswählen, auf `Edit...` klicken und den Haken bei `Auto reloading enabled` entfernen. Auf OK klicken. die Änderungen mit Strg+S Speichern und die Tomcat Einstellungen danach schließen.&#x20;
 
 ### Anmerkung zur Benutzung
 
 Der **Tomcat** muss im **Debug-Modus** gestartet werden. Ansonsten funktioniert das class-Reloading nicht.
-

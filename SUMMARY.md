@@ -4,7 +4,7 @@
 * [Dokumentationsübersicht](overview.md)
 * [Was ist der Goobi viewer?](about.md)
 
-## Konfiguration <a id="conf"></a>
+## Konfiguration <a href="conf" id="conf"></a>
 
 * [1. Goobi viewer Core](conf/1/README.md)
   * [1.1 Lokale Einstellungen](conf/1/1.md)
@@ -71,7 +71,6 @@
     * [1.19.10 mehrsprachige Metadaten](conf/1/19/10.md)
     * [1.19.11 Weitere Einstellungen](conf/1/19/11.md)
     * [1.19.12 Lizenzen](conf/1/19/12.md)
-    * [1.19.13 BaseX Metadaten](conf/1/19/13.md)
   * [1.20 Inhaltsverzeichnisse](conf/1/20/README.md)
     * [1.20.1 Haupt Inhaltsverzeichnis](conf/1/20/1.md)
     * [1.20.2 Sidebar Inhaltsverzeichnis](conf/1/20/2.md)
@@ -96,6 +95,7 @@
   * [1.35 Embedding](conf/1/35.md)
   * [1.36 Karten](conf/1/36.md)
   * [1.37 Übersetzungen](conf/1/37.md)
+  * [1.38 Archiv](conf/1/38.md)
 * [2. Goobi viewer Indexer](conf/2/README.md)
   * [2.1 Hauptkonfiguration](conf/2/1.md)
   * [2.2 Verzeichnisse](conf/2/2.md)
@@ -123,7 +123,7 @@
     * [3.1.12 Sets](conf/3/1/12.md)
   * [3.2 SRU Schnittstelle](conf/3/2.md)
 
-## Oberfläche <a id="ui"></a>
+## Oberfläche <a href="ui" id="ui"></a>
 
 * [1. Frontend](ui/1.md)
 * [2. Backend](ui/2/README.md)
@@ -149,7 +149,7 @@
     * [2.4.6 Sammlungen](ui/2/4/6.md)
     * [2.4.7 Karten](ui/2/4/7.md)
 
-## Verschiedenes <a id="misc"></a>
+## Verschiedenes <a href="misc" id="misc"></a>
 
 * [1. Anwendungsszenarien](misc/1/README.md)
   * [1.1 Serien und Konvolute](misc/1/1.md)
@@ -166,7 +166,7 @@
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
-## Devs & Ops <a id="devop"></a>
+## Devs & Ops <a href="devop" id="devop"></a>
 
 * [1. Core Updates](devop/1/README.md)
   * [2020](devop/1/2020.md)
@@ -192,4 +192,3 @@
   * [6.3 Theme Umstellung zu Maven](devop/6/3.md)
   * [6.4. Release erstellen](devop/6/4.md)
   * [6.5 Theme Anpassungen](devop/6/5.md)
-
