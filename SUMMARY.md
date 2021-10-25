@@ -192,3 +192,6 @@
   * [6.3 Theme Umstellung zu Maven](devop/6/3.md)
   * [6.4. Release erstellen](devop/6/4.md)
   * [6.5 Theme Anpassungen](devop/6/5.md)
+  * [6.6 Updates von Abhängigkeiten](devop/6/6/README.md)
+    * [6.6.1 Java](devop/6/6/1.md)
+    * [6.6.2 CSS und Javascript](devop/6/6/2.md)
