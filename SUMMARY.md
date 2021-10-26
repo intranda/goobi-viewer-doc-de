@@ -194,4 +194,5 @@
   * [6.5 Theme Anpassungen](devop/6/5.md)
   * [6.6 Updates von Abhängigkeiten](devop/6/6/README.md)
     * [6.6.1 Java](devop/6/6/1.md)
-    * [6.6.2 CSS und Javascript](devop/6/6/2.md)
+    * [6.6.2 CSS und Javascript](devop/6/6/2/README.md)
+      * [6.6.2.1 Tests](devop/6/6/2/1.md)

@@ -2,7 +2,7 @@
 
 ## Allgemein
 
-Für die Verwaltung der vom Goobi viewer verwendeten CSS und Javascript Bibliotheken wird eine Kombination aus NPM und Grunt verwendet. Die Abhängigkeiten werden in der `package.json` verwaltet.
+Für die Verwaltung der vom Goobi viewer verwendeten CSS und Javascript Abhängigkeiten wird eine Kombination aus NPM und Grunt verwendet. Sie werden in der `package.json` verwaltet.
 
 ## Vorbereitungen
 
@@ -40,7 +40,7 @@ Liegt kein Update vor, ist die Ausgabe leer.
 
 ### Patch-Releases
 
-npm ist so konfiguriert, dass nur Patch-Versionen installierter Bibliotheken eingespielt werden.
+npm ist so konfiguriert, dass nur Patch-Versionen installierter Abhängigkeiten eingespielt werden.
 
 Nach einem Update müssen die aktualisierten Pakete aus dem `node_modules` Verzeichnis in den Goobi viewer Core kopiert werden:
 
@@ -98,11 +98,11 @@ npm install
 grunt copyDeps
 ```
 
-## Library hinzufügen
+## Abhängigkeit hinzufügen
 
-Um eine neue Library hinzuzufügen muss folgendes passieren:
+Um eine neue Abhängigkeit hinzuzufügen muss folgendes passieren:
 
-#### Installation der neuen Library
+#### Installation der neuen Abhängigkeit
 
 ```
 npm install [<@scope>/]PAKETNAME
