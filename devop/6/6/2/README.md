@@ -55,8 +55,7 @@ grunt copyDeps [--verbose]
 ### Major- und Minor Releases
 
 {% hint style="info" %}
-Es sollte vor einem Update geprüft werden, ob bei der Verwendung bestimmter Pakete Besonderheiten zu beachten sind. Angaben dazu finden Sie in einer Übersicht der Javascript und CSS Bibliotheken, die im Goobi viewer Core benutzt werden.\
-Sie sind unter dem Punkt `Besonderheiten` vermerkt. Unter `Test` finden Sie Hinweise, wie sich die Funktionalität nach einen Update manuell überprüfen lässt.
+Es sollte vor einem Update geprüft werden, ob bei der Verwendung bestimmter Pakete Besonderheiten zu beachten sind. Angaben dazu befinden sich in der Unterseite 6.6.2.1.&#x20;
 {% endhint %}
 
 Für die Installation von Major- oder Minor Releases muss diese explizit in der `package.json` in dem Abschnitt _dependencies_ angepasst werden. Dies ist hier exemplarisch mit einem Update von TinyMCE 5.9.1 auf 5.10.0 gezeigt:
