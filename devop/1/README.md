@@ -21,6 +21,14 @@ mv /tmp/M2M.war /var/lib/tomcat9/webapps/M2M.war
 
 ### Goobi viewer Core
 
+#### Stopwords
+
+Der Tomcat Prozess darf die `stopwords.txt` Datei im Solr Kontext nicht lesen. Aus diesem Grund muss die dort vorliegende Datei an einen anderen Ort kopiert werden. Der Pfad in der globalen Konfigurationsdatei wird mit dem Update automatisch angepasst.
+
+```
+cp /opt/digiverso/solr/solr/server/solr/configsets/goobiviewer/conf/lang/stopwords.txt /opt/digiverso/viewer/config/
+```
+
 #### Metsresolver wird zu Sourcefile
 
 Der Link zu den Quelldateien wird nun anders aus der Konfigurationsdatei ausgelesen. Dafür wird die Einstellung unter **urls/metadata/mets** umbenannt zu **sourcefile** und auch die URL muss angepasst werden:
