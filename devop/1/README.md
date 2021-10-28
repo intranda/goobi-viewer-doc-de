@@ -2,7 +2,7 @@
 
 ## Allgemein
 
-Zum Update des Goobi viewer Indexers und des Goobi viewer Connectors auf die neuste Version immer die folgenden Kommandos benutzen:
+Zum Update des Goobi viewer Indexers auf die neuste Version immer die folgenden Kommandos benutzen:
 
 ```
 mkdir /root/BACKUP/$(date -I)
@@ -11,10 +11,6 @@ systemctl stop solrindexer
 mv /opt/digiverso/indexer/solrIndexer.jar /root/BACKUP/$(date -I)
 wget -O /opt/digiverso/indexer/solrIndexer.jar https://github.com/intranda/goobi-viewer-indexer/releases/latest/download/solrIndexer.jar
 systemctl start solrindexer
-
-cp /var/lib/tomcat9/webapps/M2M.war /root/BACKUP/$(date -I)
-wget -O /tmp/M2M.war https://github.com/intranda/goobi-viewer-connector/releases/latest/download/M2M.war
-mv /tmp/M2M.war /var/lib/tomcat9/webapps/M2M.war
 ```
 
 ## 21.10-SNAPSHOT
@@ -84,6 +80,24 @@ Neu eingeführt wird weiter der Konfigurationsbereich \<archives />. Die Sektion
 
 {% hint style="info" %}
 Für die Funktionalität zur Auswahl eines Archivbestandes muss die neue Datei [findDB.xq](https://raw.githubusercontent.com/intranda/goobi-plugin-administration-archive-management/master/plugin/src/main/resources/findDb.xq) im webapps Verzeichnis der baseX Installation vorliegen
+{% endhint %}
+
+### Goobi viewer Connector
+
+Die Integration des Connectors wurde geändert und wird nun als direkte Abhängigkeit des Themes mit installiert. Eine vorhandene Installation der M2M.war muss zurückgebaut werden. Alle weiteren Einstellungen bleiben so erhalten wie sie sind.
+
+```
+mkdir -p /root/BACKUP/$(date -I)
+systemctl stop tomcat9
+mv /var/lib/tomcat9/webapps/M2M* /root/BACKUP/$(date -I)
+mv /etc/tomcat9/Catalina/localhost/M2M.xml /root/BACKUP/$(date -I)
+systemctl start tomcat9
+
+vim /etc/apache2/sites-enabled/VIEWER.EXAMPLE.ORG.conf
+```
+
+{% hint style="warning" %}
+Der Goobi viewer Connector verwendet jetzt die selben Zugriffslizenzen wie der Goobi viewer Core. Sollten vorher welch
 {% endhint %}
 
 ## 21.09
