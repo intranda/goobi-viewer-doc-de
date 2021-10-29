@@ -96,8 +96,23 @@ systemctl start tomcat9
 vim /etc/apache2/sites-enabled/VIEWER.EXAMPLE.ORG.conf
 ```
 
+Anschließend ist die `pom.xml` des Themes anzupassen damit der Connector als neue Abhängigkeit mit aufgenommen wird:
+
+```xml
+<!-- NEU -->
+    <dependency>
+        <groupId>io.goobi.viewer</groupId>
+        <artifactId>viewer-connector</artifactId>
+        <version>21.10-SNAPSHOT</version>
+    </dependency>
+
+<!-- ANPASSEN IM maven-dependency-plugin -->
+<excludeArtifactIds>viewer-core,viewer-connector</excludeArtifactIds>
+<excludes>MANIFEST.MF,**/pom.*,install/,docker/,**/*.class,web-fragment.xml</excludes>
+```
+
 {% hint style="warning" %}
-Der Goobi viewer Connector verwendet jetzt die selben Zugriffslizenzen wie der Goobi viewer Core. Sollten vorher welch
+Der Goobi viewer Connector verwendet jetzt die selben Zugriffslizenzen wie der Goobi viewer Core. Sollten vorher welche im Abschnitt solr/restrictions in der config\_oai.xml definiert worden sein müssen diese bei einem Update geprüft werden.
 {% endhint %}
 
 ## 21.09
