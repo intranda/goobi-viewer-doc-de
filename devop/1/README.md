@@ -13,7 +13,7 @@ wget -O /opt/digiverso/indexer/solrIndexer.jar https://github.com/intranda/goobi
 systemctl start solrindexer
 ```
 
-## 21.10-SNAPSHOT
+## 21.10
 
 ### Goobi viewer Core
 
