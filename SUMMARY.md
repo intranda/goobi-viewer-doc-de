@@ -4,7 +4,7 @@
 * [Dokumentationsübersicht](overview.md)
 * [Was ist der Goobi viewer?](about.md)
 
-## Konfiguration <a href="conf" id="conf"></a>
+## Konfiguration <a href="#conf" id="conf"></a>
 
 * [1. Goobi viewer Core](conf/1/README.md)
   * [1.1 Lokale Einstellungen](conf/1/1.md)
@@ -81,7 +81,7 @@
   * [1.24 Navigation und Anzeige](conf/1/24.md)
   * [1.25 RSS Feed](conf/1/25.md)
   * [1.26 Merklisten](conf/1/26.md)
-  * [1.27 Benutzerkommentare](conf/1/27.md)
+  * [1.27 Kommentare](conf/1/27.md)
   * [1.28 CMS](conf/1/28.md)
   * [1.29 Transkribus](conf/1/29.md)
   * [1.30 Originalinhalte](conf/1/30.md)
@@ -123,7 +123,7 @@
     * [3.1.12 Sets](conf/3/1/12.md)
   * [3.2 SRU Schnittstelle](conf/3/2.md)
 
-## Oberfläche <a href="ui" id="ui"></a>
+## Oberfläche <a href="#ui" id="ui"></a>
 
 * [1. Frontend](ui/1.md)
 * [2. Backend](ui/2/README.md)
@@ -149,7 +149,7 @@
     * [2.4.6 Sammlungen](ui/2/4/6.md)
     * [2.4.7 Karten](ui/2/4/7.md)
 
-## Verschiedenes <a href="misc" id="misc"></a>
+## Verschiedenes <a href="#misc" id="misc"></a>
 
 * [1. Anwendungsszenarien](misc/1/README.md)
   * [1.1 Serien und Konvolute](misc/1/1.md)
@@ -166,7 +166,7 @@
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
-## Devs & Ops <a href="devop" id="devop"></a>
+## Devs & Ops <a href="#devop" id="devop"></a>
 
 * [1. Core Changelog](devop/1/README.md)
   * [2021](devop/1/2021.md)
