@@ -50,6 +50,7 @@
     * [1.17.8 aggregierte Suchtrefferanzeige](conf/1/17/8.md)
     * [1.17.9 Versionierung von Werken](conf/1/17/9.md)
     * [1.17.10 Export von Suchtreffern](conf/1/17/10.md)
+    * [1.17.11 Unscharfe Suche](conf/1/17/11.md)
   * [1.18 Sammlungen](conf/1/18/README.md)
     * [1.18.1 Untersammlungen](conf/1/18/1.md)
     * [1.18.2 Sortierung der Werke](conf/1/18/2.md)
