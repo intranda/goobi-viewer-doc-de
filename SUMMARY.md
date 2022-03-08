@@ -164,6 +164,7 @@
   * [1.9 Crowdsourcing Modul](misc/1/9.md)
   * [1.10 Archivalien](misc/1/10.md)
   * [1.11 Solr Queries](misc/1/11.md)
+  * [1.12 Verlinkung aus METS Dateigruppen](misc/1/12.md)
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
