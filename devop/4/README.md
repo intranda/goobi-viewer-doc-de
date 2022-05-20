@@ -96,7 +96,7 @@ Die folgenden Schritte beschreiben die Einrichtung von Eclipse
 
 ### Workspace&#x20;
 
-Der Workspace soll als Unterordner von `Entwicklungsumgebung` angelegt werden, also zum Beispiel` Entwicklungsumgebung/eclipse-workspace`&#x20;
+Der Workspace soll als Unterordner von `Entwicklungsumgebung` angelegt werden, also zum Beispiel `Entwicklungsumgebung/eclipse-workspace`&#x20;
 
 ### Welcome Screen
 
@@ -107,25 +107,25 @@ In dem Welcome Screen unten rechts die Checkbox **Always show Welcome at start u
 Folgende allgemeine Einstellungen in Eclipse vornehmen.&#x20;
 
 1. Fehlermeldungen beim Kompilieren des Goobi viewers abschalten:\
-   `Window -> `\
-   `Preferences -> `\
-   `Java -> `\
-   `Compiler -> `\
-   `Building -> `\
-   `Build path problems -> `\
+   `Window ->` \
+   `Preferences ->` \
+   `Java ->` \
+   `Compiler ->` \
+   `Building ->` \
+   `Build path problems ->` \
    `Circular dependencies = Warning`
 2.  Textfile Encoding
 
-    `Window -> `\
-    `Preferences -> `\
-    `General -> `\
-    `Workspace -> `\
-    `Text file encoding -> `\
+    `Window ->` \
+    `Preferences ->` \
+    `General ->` \
+    `Workspace ->` \
+    `Text file encoding ->` \
     `Other: UTF-8`
 
 ### Logging
 
-Standardmäßig ist das Logging in der Eclipse-Console auf `ERROR` eingestellt. Um hier ein verboseres Log-Level zu aktivieren, muss die Umgebungsvariable `LOGGERLEVEL `(mit dem Wert `INFO`, `DEBUG `oder `TRACE`) entweder im Betriebssystem oder in der Run Configuration in Eclipse definiert werden.
+Standardmäßig ist das Logging in der Eclipse-Console auf `ERROR` eingestellt. Um hier ein verboseres Log-Level zu aktivieren, muss die Umgebungsvariable `LOGGERLEVEL` (mit dem Wert `INFO`, `DEBUG` oder `TRACE`) entweder im Betriebssystem oder in der Run Configuration in Eclipse definiert werden.
 
 ### Git Repositories klonen
 
@@ -162,7 +162,7 @@ Der Tomcat wird in Eclipse eingebunden. Dafür im Menü folgendes auswählen:
 
 Anschließend im unteren Bildschirmbereich auf den folgenden Link klicken`No servers are available. Click this link to create a new server...`&#x20;
 
-In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v9.0 Server **auswählen, als **Server name** `Apache Tomcat v9.0` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/9.0.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
+In dem sich öffnenden Dialogfeld im Ordner **Apache** den Eintrag **Tomcat v9.0 Server** auswählen, als **Server name** `Apache Tomcat v9.0` eingeben und `Next` klicken. Bei dem **Tomcat installation directory** den Pfad zu `Entwicklungsumgebung/Tomcat/9.0.XX` hinterlegen und die Einstellungen mit `Finish` übernehmen.
 
 Nun per Doppelklick auf den Tomcat v9.0 Server die Einstellungen aufrufen. In der ersten offenen Registerkarte "Overview" in dem Bereich "Timeouts" bei **Start (in seconds)** den Wert `80` setzen.&#x20;
 
@@ -247,7 +247,7 @@ Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellung
 }
 ```
 
-Nun einen** rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
+Nun einen **rechten Mausklick** auf die Datei `Gruntfile.js` ausführen und dort `Run as -> Grunt Task` wählen.
 
 Änderungen in den LESS und JavaScript Dateien werden nun direkt kompiliert und stehen als aktualisierte min-Dateien zur Verfügung.&#x20;
 
@@ -282,7 +282,7 @@ In Eclipse muss das JDK als Standard JRE konfiguriert werden:
    `Add`
 3. Die Dialogfelder mit den folgenden Einstellungen übernehmen:\
    `Standard VM ->`\
-   `JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1 `\
+   `JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1` \
    `Finish`
 4. Das neue JRE in dem noch offenen Einstellungsdialog auswählen und mit einem Klick auf `Apply and Close` übernehmen.
 
