@@ -96,6 +96,7 @@
   * [1.36 Karten](conf/1/36.md)
   * [1.37 Übersetzungen](conf/1/37.md)
   * [1.38 Archiv](conf/1/19/13.md)
+  * [1.39 Kampagnen](conf/1/39.md)
 * [2. Goobi viewer Indexer](conf/2/README.md)
   * [2.1 Hauptkonfiguration](conf/2/1.md)
   * [2.2 Verzeichnisse](conf/2/2.md)
