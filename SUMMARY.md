@@ -97,6 +97,7 @@
   * [1.37 Übersetzungen](conf/1/37.md)
   * [1.38 Archiv](conf/1/19/13.md)
   * [1.39 Kampagnen](conf/1/39.md)
+  * [1.40 Inhalte beitragen](conf/1/40.md)
 * [2. Goobi viewer Indexer](conf/2/README.md)
   * [2.1 Hauptkonfiguration](conf/2/1.md)
   * [2.2 Verzeichnisse](conf/2/2.md)
@@ -165,6 +166,7 @@
   * [1.10 Archivalien](misc/1/10.md)
   * [1.11 Solr Queries](misc/1/11.md)
   * [1.12 Verlinkung aus METS Dateigruppen](misc/1/12.md)
+  * [1.13 Inhalte beitragen](misc/1/13.md)
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
