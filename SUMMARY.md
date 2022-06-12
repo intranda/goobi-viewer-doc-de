@@ -46,7 +46,7 @@
     * [1.17.4 Zeitleiste](conf/1/17/4.md)
     * [1.17.5 Kalender](conf/1/17/5.md)
     * [1.17.6 Suche Speichern](conf/1/17/6.md)
-    * [1.17.7 Boosting von ganzen Werken in der Relevanz-Sortierung](conf/1/17/7.md)
+    * [1.17.7 Expand Query für Such-Untertreffer](conf/1/17/7.md)
     * [1.17.8 aggregierte Suchtrefferanzeige](conf/1/17/8.md)
     * [1.17.9 Versionierung von Werken](conf/1/17/9.md)
     * [1.17.10 Export von Suchtreffern](conf/1/17/10.md)
