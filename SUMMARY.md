@@ -107,7 +107,7 @@
   * [2.6 Starten und Beenden](conf/2/6.md)
   * [2.7 Indexieren von Werken](conf/2/7.md)
   * [2.8 Aktualisierung einzelner Seitendokumente](conf/2/8.md)
-  * [2.9  Löschen von Werken](conf/2/9.md)
+  * [2.9 Löschen von Werken](conf/2/9.md)
   * [2.10 Solr Schema](conf/2/10.md)
 * [3. Goobi viewer Connector](conf/3/README.md)
   * [3.1 OAI-Schnittstelle](conf/3/1/README.md)
@@ -155,7 +155,7 @@
 
 * [1. Anwendungsszenarien](misc/1/README.md)
   * [1.1 Serien und Konvolute](misc/1/1.md)
-  * [1.2 Zugriffslizenzen](misc/1/2.md)
+  * [1.2 Zugriffsbeschränkungen](misc/1/2.md)
   * [1.3 Subthemes](misc/1/3.md)
   * [1.4 Normdaten](misc/1/4.md)
   * [1.5 Mehrsprachigkeit](misc/1/5.md)
