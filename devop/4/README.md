@@ -193,7 +193,7 @@ Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
     validationQuery="SELECT SQL_NO_CACHE 1"
     removeAbandoned="true" 
     removeAbandonedTimeout="120" 
-    url="jdbc:mysql://localhost:3306/viewer?characterEncoding=UTF-8&amp;autoReconnect=true&amp;autoReconnectForPools=true" />
+    url="jdbc:mariadb://localhost:3306/viewer?characterEncoding=UTF-8&amp;autoReconnectForPools=true" />
 ```
 {% endtab %}
 {% endtabs %}
