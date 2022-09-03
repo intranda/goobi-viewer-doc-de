@@ -99,6 +99,7 @@
   * [1.39 Kampagnen](conf/1/39.md)
   * [1.40 Inhalte beitragen](conf/1/40.md)
   * [1.41 Nutzungszahlen](conf/1/41.md)
+  * [1.42 Config Editor](conf/1/42.md)
 * [2. Goobi viewer Indexer](conf/2/README.md)
   * [2.1 Hauptkonfiguration](conf/2/1.md)
   * [2.2 Verzeichnisse](conf/2/2.md)
