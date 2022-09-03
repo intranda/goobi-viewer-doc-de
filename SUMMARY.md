@@ -98,6 +98,7 @@
   * [1.38 Archiv](conf/1/38.md)
   * [1.39 Kampagnen](conf/1/39.md)
   * [1.40 Inhalte beitragen](conf/1/40.md)
+  * [1.41 Nutzungszahlen](conf/1/1.41-nutzungszahlen.md)
 * [2. Goobi viewer Indexer](conf/2/README.md)
   * [2.1 Hauptkonfiguration](conf/2/1.md)
   * [2.2 Verzeichnisse](conf/2/2.md)
