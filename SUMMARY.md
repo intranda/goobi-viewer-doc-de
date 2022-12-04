@@ -166,6 +166,7 @@
   * [1.11 Solr Queries](misc/1/11.md)
   * [1.12 Verlinkung aus METS Dateigruppen](misc/1/12.md)
   * [1.13 Inhalte beitragen](misc/1/13.md)
+  * [1.14 Shibboleth](misc/1/14.md)
 * [2. FAQ](misc/2.md)
 * [3. Glossar](misc/3.md)
 
