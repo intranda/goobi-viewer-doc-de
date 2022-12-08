@@ -108,6 +108,7 @@
   * [2.8 Aktualisierung einzelner Seitendokumente](conf/2/8.md)
   * [2.9 Löschen von Werken](conf/2/9.md)
   * [2.10 Solr Schema](conf/2/10.md)
+  * [2.11 Weitere Einstellungen](conf/2/11.md)
 * [3. Goobi viewer Connector](conf/3/README.md)
   * [3.1 OAI-Schnittstelle](conf/3/1/README.md)
     * [3.1.1 Hauptkonfiguration](conf/3/1/1.md)
