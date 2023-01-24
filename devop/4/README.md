@@ -324,3 +324,7 @@ Als letztes muss noch in den tomcat-Einstellungen der Tab `Modules` geöffnet we
 ### Anmerkung zur Benutzung
 
 Der **Tomcat** muss im **Debug-Modus** gestartet werden. Ansonsten funktioniert das class-Reloading nicht.
+
+### Maven&#x20;
+
+Ale erstes einen install auf das config Projekt machen, dann auf den Core und als drittes auf das Theme.
