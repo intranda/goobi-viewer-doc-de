@@ -75,6 +75,8 @@ Anschließend die folgende Konfigurationsdatei im definierten `<configFolder />`
 {% endtab %}
 {% endtabs %}
 
+Außerdem wird in dem `<configFolder />` die Datei `stopwords.txt` erwartet. Für die Entwicklungsumgebung kann es sich einfach um eine leere Textdatei handeln.
+
 ## MySQL
 
 Der Goobi viewer benötigt eine lokale Datenbank. Die Installation und Einrichtung erfolgt mit den folgenden Befehlen:
@@ -198,6 +200,8 @@ Innerhalb von `<Context />` den folgenden Eintrag hinzufügen:
 {% endtab %}
 {% endtabs %}
 
+Außerdem dort die Zeile `<Manager pathname="" />` einkommentieren.
+
 ### Applikation einmalig starten
 
 Der Goobi viewer wird nun einmalig im Tomcat ausgeführt. Dabei werden zum Beispiel Datenbanktabellen angelegt und es sind anschließend auch weitere Konfigurationsmöglichkeiten in Eclipse vorhanden.
@@ -243,7 +247,7 @@ Dann im unteren Bereich per Doppelklick auf `Apache Tomcat v9.0` die Einstellung
 
 ```javascript
 {
-    "tomcat_dir": "/home/[USERNAME]/eclipse-workspace/[Server Path]/[Deploy path]/"
+    "tomcat_dir": "/home/[USERNAME]/Entwicklungsumgebung/eclipse-workspace/[Server Path]/[Deploy path]/"
 }
 ```
 
@@ -285,6 +289,15 @@ In Eclipse muss das JDK als Standard JRE konfiguriert werden:
    `JRE home: Entwicklungsumgebung/Java/java11-openjdk-dcevm-linux/dcevm-11.0.8+1` \
    `Finish`
 4. Das neue JRE in dem noch offenen Einstellungsdialog auswählen und mit einem Klick auf `Apply and Close` übernehmen.
+
+Außerdem sind die folgenden Einstellungen sinnvoll:
+
+```
+Allgemeine Einstellungen
+  Windows / Preferences /Java Persistence / JPA / Errors/Warnings / Persistence Unit-> Class is listed in the persistence.xml file but is not annotated auf ignore setzen
+  Windows / Preferences /Java Persistence / JPA / Errors/Warnings / Attribute / -> The java field for attriute is final auf ignore setzen
+  Window / Preferences / Validation -> Facelet HTML Validator, HTML Syntax Validator, JavaScript Validation, XML Validator, XSL Validator den Haken bei Build entfernen
+```
 
 ### Tomcat Konfiguration
 
