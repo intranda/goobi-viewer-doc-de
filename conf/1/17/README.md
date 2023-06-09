@@ -16,11 +16,14 @@ Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werk
         <value>50</value>
         <value>100</value>
     </hitsPerPage>
+    <displayHitNumbers enabled="false" />
     <fulltextFragmentLength>120</fulltextFragmentLength>
 </search>
 ```
 {% endtab %}
 {% endtabs %}
+
+In demElement `displayHitNumbers` kann mit dem `enabled` Attribut gesteuert werden, ob die Suchtreffer durchnummeriert angezeigt werden sollen. Standardwert ist false.
 
 Das Element `fulltextFragmentLength` definiert die ungefähre länge der Volltext-Ausschnitte für die Suchtrefferanzeige. Standardwert ist 200.
 
