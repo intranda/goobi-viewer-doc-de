@@ -27,14 +27,14 @@ In dem Element `displayHitNumbers` kann mit dem `enabled` Attribut gesteuert wer
 
 Das Element `fulltextFragmentLength` definiert die ungefähre länge der Volltext-Ausschnitte für die Suchtrefferanzeige. Standardwert ist 200.
 
-Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigurationsblock zur Verfügung:
+Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigurationsblock zur Verfügung. Der Standardwert kann mit dem Attribut `default="true"` gesetzt werden. Existiert dieses nicht, wird automatisch der Wert `filter_ALL` angenommen.
 
 {% tabs %}
 {% tab title="config_viewer.xml" %}
 ```markup
 <search>
     <filters>
-        <filter>filter_ALL</filter>
+        <filter default="true">filter_ALL</filter>
         <filter>filter_DEFAULT</filter>
         <filter>filter_FULLTEXT</filter>
         <!-- <filter>filter_NORMDATATERMS</filter> -->
