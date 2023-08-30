@@ -35,7 +35,7 @@
   * [1.12 individuelle Seitentypen](conf/1/12.md)
   * [1.13 Öffnen bestimmter Dokumententypen in alternativen Seitenansichten](conf/1/13.md)
   * [1.14 Volltexthinweise](conf/1/14.md)
-  * [1.15. Sprachumschaltung bei mehrsprachigen Metadaten](conf/1/15.md)
+  * [1.15. Fallback auf Standardsprache](conf/1/15.md)
   * [1.16 Theme](conf/1/16/README.md)
     * [1.16.1 externe Themes](conf/1/16/1.md)
   * [1.17 Suche](conf/1/17/README.md)
