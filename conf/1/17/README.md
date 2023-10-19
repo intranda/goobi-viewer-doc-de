@@ -46,3 +46,18 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
 {% endtabs %}
 
 Jeder filter-Eintrag erzeugt einen neuen Radiobutton unterhalb der einfachen Suche.
+
+Sind Untertreffer vorhanden kann mit den folgenden beiden Schaltern eingestellt werden ab wann diese angezeigt und wie viele jeweils nachgeladen werden sollen:
+
+{% tabs %}
+{% tab title="config_viewer.xml" %}
+```xml
+<search>
+    <childHits>
+        <initialLoadLimit>0</initialLoadLimit>
+        <loadOnExpand>20</loadOnExpand>
+    </childHits>
+</search>
+```
+{% endtab %}
+{% endtabs %}
