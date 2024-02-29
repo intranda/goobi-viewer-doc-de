@@ -16,6 +16,21 @@ Abhängig von der Präzision der Suchabfrage und der Anzahl der indexierten Werk
         <value>50</value>
         <value>100</value>
     </hitsPerPage>
+</search>
+```
+{% endtab %}
+{% endtabs %}
+
+Weiter kann konfiguriert bis zu welcher Anzahl Untertreffer automatisch ausgeklappt dargestellt werden und wie viele Untertreffer nachgeladen werden sollen, wenn auf den "Mehr Treffer laden" Link geklickt wird. Dafür sind die Optionen unterhalb von `<childHits />` relevant:
+
+{% tabs %}
+{% tab title="config_viewer.xml" %}
+```markup
+<search>
+    <childHits>
+        <initialLoadLimit>5</initialLoadLimit>
+        <loadOnExpand>20</loadOnExpand>
+    </childHits>
     <displayHitNumbers enabled="false" />
     <fulltextFragmentLength>120</fulltextFragmentLength>
 </search>
