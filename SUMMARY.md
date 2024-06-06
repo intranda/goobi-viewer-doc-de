@@ -117,7 +117,7 @@
   * [3.1 OAI-Schnittstelle](conf/3/1/README.md)
     * [3.1.1 Hauptkonfiguration](conf/3/1/1.md)
     * [3.1.2 Dublin Core](conf/3/1/2.md)
-    * [3.1.3 ESE](conf/3/1/3.md)
+    * [3.1.3 Europeana](conf/3/1/3.md)
     * [3.1.4 METS](conf/3/1/4.md)
     * [3.1.5 LIDO](conf/3/1/5.md)
     * [3.1.6 MARCXML](conf/3/1/6.md)
