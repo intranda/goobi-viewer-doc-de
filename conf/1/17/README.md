@@ -54,6 +54,8 @@ Um die Suchbereiche der einfachen Suche zu definieren steht der folgende Konfigu
         <filter>filter_FULLTEXT</filter>
         <!-- <filter>filter_NORMDATATERMS</filter> -->
         <!-- <filter>filter_UGCTERMS</filter> -->
+        <!-- <filter>filter_SEARCHTERMS_ARCHIVE</filter> -->
+        <!-- <filter>filter_CMS_TEXT_ALL</filter> -->
     </filters>
 </search>
 ```
