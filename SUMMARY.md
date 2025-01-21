@@ -180,6 +180,7 @@
 ## Devs & Ops <a href="#devop" id="devop"></a>
 
 * [1. Core Changelog](devop/1/README.md)
+  * [2025](devop/1/2025.md)
   * [2024](devop/1/2024.md)
   * [2023](devop/1/2023.md)
   * [2022](devop/1/2022.md)
