@@ -189,6 +189,7 @@
   * [2019](devop/1/2019.md)
   * [2018](devop/1/2018.md)
 * [2. Theme Changelog](devop/2/README.md)
+  * [2025](devop/2/2025.md)
   * [2024](devop/2/2024.md)
   * [2023](devop/2/2023.md)
   * [2022](devop/2/2022.md)
